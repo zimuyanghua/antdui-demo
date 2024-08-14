@@ -10,3 +10,8 @@
 
 3. 编译运行
 ```
+
+## 控件演示
+
+### Button
+![Button](assets/screenshots/Button.png)
