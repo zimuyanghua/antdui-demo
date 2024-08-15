@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ButtonDemo));
             this.stackPanel1 = new AntdUI.StackPanel();
+            this.flowPanel7 = new AntdUI.FlowPanel();
+            this.button39 = new AntdUI.Button();
+            this.label9 = new AntdUI.Label();
             this.flowPanel6 = new AntdUI.FlowPanel();
             this.panel3 = new AntdUI.Panel();
             this.button36 = new AntdUI.Button();
@@ -81,10 +84,8 @@
             this.divider1 = new AntdUI.Divider();
             this.label2 = new AntdUI.Label();
             this.label1 = new AntdUI.Label();
-            this.flowPanel7 = new AntdUI.FlowPanel();
-            this.button39 = new AntdUI.Button();
-            this.label9 = new AntdUI.Label();
             this.stackPanel1.SuspendLayout();
+            this.flowPanel7.SuspendLayout();
             this.flowPanel6.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -93,7 +94,6 @@
             this.flowPanel3.SuspendLayout();
             this.flowPanel2.SuspendLayout();
             this.flowPanel1.SuspendLayout();
-            this.flowPanel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // stackPanel1
@@ -123,6 +123,37 @@
             this.stackPanel1.Text = "stackPanel1";
             this.stackPanel1.Vertical = true;
             // 
+            // flowPanel7
+            // 
+            this.flowPanel7.Controls.Add(this.button39);
+            this.flowPanel7.Location = new System.Drawing.Point(3, 571);
+            this.flowPanel7.Name = "flowPanel7";
+            this.flowPanel7.Size = new System.Drawing.Size(718, 38);
+            this.flowPanel7.TabIndex = 18;
+            this.flowPanel7.Text = "flowPanel7";
+            // 
+            // button39
+            // 
+            this.button39.BackExtend = "135, #6253E1, #04BEFE";
+            this.button39.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button39.ImageSvg = resources.GetString("button39.ImageSvg");
+            this.button39.Location = new System.Drawing.Point(3, 3);
+            this.button39.Name = "button39";
+            this.button39.Size = new System.Drawing.Size(156, 32);
+            this.button39.TabIndex = 7;
+            this.button39.Text = "Gradient Button";
+            this.button39.Type = AntdUI.TTypeMini.Primary;
+            this.button39.WaveSize = 0;
+            // 
+            // label9
+            // 
+            this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label9.Location = new System.Drawing.Point(3, 541);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(718, 24);
+            this.label9.TabIndex = 17;
+            this.label9.Text = "渐变按钮";
+            // 
             // flowPanel6
             // 
             this.flowPanel6.Controls.Add(this.panel3);
@@ -150,7 +181,7 @@
             this.button36.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button36.Ghost = true;
             this.button36.JoinLeft = true;
-            this.button36.Location = new System.Drawing.Point(77, 3);
+            this.button36.Location = new System.Drawing.Point(78, 3);
             this.button36.Name = "button36";
             this.button36.Size = new System.Drawing.Size(75, 32);
             this.button36.TabIndex = 4;
@@ -727,37 +758,6 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Button 按钮";
             // 
-            // flowPanel7
-            // 
-            this.flowPanel7.Controls.Add(this.button39);
-            this.flowPanel7.Location = new System.Drawing.Point(3, 571);
-            this.flowPanel7.Name = "flowPanel7";
-            this.flowPanel7.Size = new System.Drawing.Size(718, 38);
-            this.flowPanel7.TabIndex = 18;
-            this.flowPanel7.Text = "flowPanel7";
-            // 
-            // button39
-            // 
-            this.button39.BackExtend = "135, #6253E1, #04BEFE";
-            this.button39.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button39.ImageSvg = resources.GetString("button39.ImageSvg");
-            this.button39.Location = new System.Drawing.Point(3, 3);
-            this.button39.Name = "button39";
-            this.button39.Size = new System.Drawing.Size(156, 32);
-            this.button39.TabIndex = 7;
-            this.button39.Text = "Gradient Button";
-            this.button39.Type = AntdUI.TTypeMini.Primary;
-            this.button39.WaveSize = 0;
-            // 
-            // label9
-            // 
-            this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label9.Location = new System.Drawing.Point(3, 541);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(718, 24);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "渐变按钮";
-            // 
             // ButtonDemo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -765,7 +765,9 @@
             this.Controls.Add(this.stackPanel1);
             this.Name = "ButtonDemo";
             this.Size = new System.Drawing.Size(724, 629);
+            this.Load += new System.EventHandler(this.ButtonDemo_Load);
             this.stackPanel1.ResumeLayout(false);
+            this.flowPanel7.ResumeLayout(false);
             this.flowPanel6.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -774,7 +776,6 @@
             this.flowPanel3.ResumeLayout(false);
             this.flowPanel2.ResumeLayout(false);
             this.flowPanel1.ResumeLayout(false);
-            this.flowPanel7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

@@ -49,6 +49,10 @@ namespace AntdUIDemo
             var name = item.Tag;
             if (control != null)
             {
+                if (control is FloatButtonDemo floatButtonDemo)
+                {
+                    floatButtonDemo.CloseFloatButtonForm(); // 清理浮动按钮窗体
+                }
                 panel_content.Controls.Clear();
                 control.Dispose();
                 control = null;
@@ -57,6 +61,9 @@ namespace AntdUIDemo
             {
                 case "Button":
                     control = new ButtonDemo();
+                    break;
+                case "FloatButton":
+                    control = new FloatButtonDemo(this);
                     break;
             }
             if (control != null)

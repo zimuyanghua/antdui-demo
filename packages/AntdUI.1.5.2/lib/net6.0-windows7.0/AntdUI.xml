@@ -4806,11 +4806,6 @@
             间距
             </summary>
         </member>
-        <member name="P:AntdUI.Table.CheckSize">
-            <summary>
-            复选框大小
-            </summary>
-        </member>
         <member name="P:AntdUI.Table.FixedHeader">
             <summary>
             固定表头
@@ -4844,6 +4839,21 @@
         <member name="P:AntdUI.Table.Radius">
             <summary>
             圆角
+            </summary>
+        </member>
+        <member name="P:AntdUI.Table.CheckSize">
+            <summary>
+            复选框大小
+            </summary>
+        </member>
+        <member name="P:AntdUI.Table.SwitchSize">
+            <summary>
+            开关大小
+            </summary>
+        </member>
+        <member name="P:AntdUI.Table.TreeButtonSize">
+            <summary>
+            树开关按钮大小
             </summary>
         </member>
         <member name="P:AntdUI.Table.ClipboardCopy">
