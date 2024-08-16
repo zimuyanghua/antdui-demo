@@ -102,7 +102,7 @@
             this.stackPanel6.Controls.Add(this.label15);
             this.stackPanel6.Controls.Add(this.input_badge);
             this.stackPanel6.Controls.Add(this.label17);
-            this.stackPanel6.Location = new System.Drawing.Point(3, 321);
+            this.stackPanel6.Location = new System.Drawing.Point(3, 327);
             this.stackPanel6.Name = "stackPanel6";
             this.stackPanel6.Size = new System.Drawing.Size(704, 32);
             this.stackPanel6.TabIndex = 12;
@@ -110,9 +110,9 @@
             // 
             // colorPicker
             // 
-            this.colorPicker.Location = new System.Drawing.Point(447, 3);
+            this.colorPicker.Location = new System.Drawing.Point(469, 3);
             this.colorPicker.Name = "colorPicker";
-            this.colorPicker.Size = new System.Drawing.Size(75, 26);
+            this.colorPicker.Size = new System.Drawing.Size(80, 26);
             this.colorPicker.TabIndex = 15;
             this.colorPicker.Text = "colorPicker1";
             this.colorPicker.Value = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(119)))), ((int)(((byte)(255)))));
@@ -121,17 +121,17 @@
             // label16
             // 
             this.label16.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label16.Location = new System.Drawing.Point(353, 3);
+            this.label16.Location = new System.Drawing.Point(371, 3);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(88, 26);
+            this.label16.Size = new System.Drawing.Size(92, 26);
             this.label16.TabIndex = 14;
             this.label16.Text = "BadgeBack";
             // 
             // input_badgesize
             // 
-            this.input_badgesize.Location = new System.Drawing.Point(272, 3);
+            this.input_badgesize.Location = new System.Drawing.Point(285, 3);
             this.input_badgesize.Name = "input_badgesize";
-            this.input_badgesize.Size = new System.Drawing.Size(75, 26);
+            this.input_badgesize.Size = new System.Drawing.Size(80, 26);
             this.input_badgesize.TabIndex = 13;
             this.input_badgesize.Text = "6";
             this.input_badgesize.Value = new decimal(new int[] {
@@ -144,17 +144,17 @@
             // label15
             // 
             this.label15.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label15.Location = new System.Drawing.Point(178, 3);
+            this.label15.Location = new System.Drawing.Point(187, 3);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(88, 26);
+            this.label15.Size = new System.Drawing.Size(92, 26);
             this.label15.TabIndex = 12;
             this.label15.Text = "BadgeSize";
             // 
             // input_badge
             // 
-            this.input_badge.Location = new System.Drawing.Point(97, 3);
+            this.input_badge.Location = new System.Drawing.Point(101, 3);
             this.input_badge.Name = "input_badge";
-            this.input_badge.Size = new System.Drawing.Size(75, 26);
+            this.input_badge.Size = new System.Drawing.Size(80, 26);
             this.input_badge.TabIndex = 5;
             this.input_badge.WaveSize = 1;
             // 
@@ -163,7 +163,7 @@
             this.label17.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label17.Location = new System.Drawing.Point(3, 3);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(88, 26);
+            this.label17.Size = new System.Drawing.Size(92, 26);
             this.label17.TabIndex = 4;
             this.label17.Text = "Badge";
             // 
@@ -175,7 +175,7 @@
             this.stackPanel5.Controls.Add(this.label13);
             this.stackPanel5.Controls.Add(this.select_shape);
             this.stackPanel5.Controls.Add(this.label14);
-            this.stackPanel5.Location = new System.Drawing.Point(3, 283);
+            this.stackPanel5.Location = new System.Drawing.Point(3, 289);
             this.stackPanel5.Name = "stackPanel5";
             this.stackPanel5.Size = new System.Drawing.Size(704, 32);
             this.stackPanel5.TabIndex = 11;
@@ -183,9 +183,9 @@
             // 
             // input_radius
             // 
-            this.input_radius.Location = new System.Drawing.Point(447, 3);
+            this.input_radius.Location = new System.Drawing.Point(469, 3);
             this.input_radius.Name = "input_radius";
-            this.input_radius.Size = new System.Drawing.Size(75, 26);
+            this.input_radius.Size = new System.Drawing.Size(80, 26);
             this.input_radius.TabIndex = 11;
             this.input_radius.Text = "6";
             this.input_radius.Value = new decimal(new int[] {
@@ -198,9 +198,9 @@
             // label12
             // 
             this.label12.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label12.Location = new System.Drawing.Point(353, 3);
+            this.label12.Location = new System.Drawing.Point(371, 3);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(88, 26);
+            this.label12.Size = new System.Drawing.Size(92, 26);
             this.label12.TabIndex = 10;
             this.label12.Text = "Radius";
             // 
@@ -208,18 +208,18 @@
             // 
             this.select_type.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.select_type.List = true;
-            this.select_type.Location = new System.Drawing.Point(272, 3);
+            this.select_type.Location = new System.Drawing.Point(285, 3);
             this.select_type.Name = "select_type";
-            this.select_type.Size = new System.Drawing.Size(75, 26);
+            this.select_type.Size = new System.Drawing.Size(80, 26);
             this.select_type.TabIndex = 9;
             this.select_type.WaveSize = 1;
             // 
             // label13
             // 
             this.label13.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label13.Location = new System.Drawing.Point(178, 3);
+            this.label13.Location = new System.Drawing.Point(187, 3);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(88, 26);
+            this.label13.Size = new System.Drawing.Size(92, 26);
             this.label13.TabIndex = 8;
             this.label13.Text = "Type";
             // 
@@ -227,9 +227,9 @@
             // 
             this.select_shape.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.select_shape.List = true;
-            this.select_shape.Location = new System.Drawing.Point(97, 3);
+            this.select_shape.Location = new System.Drawing.Point(101, 3);
             this.select_shape.Name = "select_shape";
-            this.select_shape.Size = new System.Drawing.Size(75, 26);
+            this.select_shape.Size = new System.Drawing.Size(80, 26);
             this.select_shape.TabIndex = 5;
             this.select_shape.WaveSize = 1;
             // 
@@ -238,14 +238,14 @@
             this.label14.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label14.Location = new System.Drawing.Point(3, 3);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(88, 26);
+            this.label14.Size = new System.Drawing.Size(92, 26);
             this.label14.TabIndex = 4;
             this.label14.Text = "Shape";
             // 
             // label11
             // 
             this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
-            this.label11.Location = new System.Drawing.Point(3, 253);
+            this.label11.Location = new System.Drawing.Point(3, 259);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(704, 24);
             this.label11.TabIndex = 10;
@@ -259,7 +259,7 @@
             this.stackPanel4.Controls.Add(this.label7);
             this.stackPanel4.Controls.Add(this.input_size);
             this.stackPanel4.Controls.Add(this.label9);
-            this.stackPanel4.Location = new System.Drawing.Point(3, 215);
+            this.stackPanel4.Location = new System.Drawing.Point(3, 221);
             this.stackPanel4.Name = "stackPanel4";
             this.stackPanel4.Size = new System.Drawing.Size(704, 32);
             this.stackPanel4.TabIndex = 9;
@@ -267,45 +267,55 @@
             // 
             // input_my
             // 
-            this.input_my.Location = new System.Drawing.Point(447, 3);
+            this.input_my.Location = new System.Drawing.Point(469, 3);
             this.input_my.Name = "input_my";
-            this.input_my.Size = new System.Drawing.Size(75, 26);
+            this.input_my.Size = new System.Drawing.Size(80, 26);
             this.input_my.TabIndex = 9;
-            this.input_my.Text = "0";
+            this.input_my.Text = "24";
+            this.input_my.Value = new decimal(new int[] {
+            24,
+            0,
+            0,
+            0});
             this.input_my.WaveSize = 1;
             // 
             // label8
             // 
             this.label8.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label8.Location = new System.Drawing.Point(353, 3);
+            this.label8.Location = new System.Drawing.Point(371, 3);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(88, 26);
+            this.label8.Size = new System.Drawing.Size(92, 26);
             this.label8.TabIndex = 8;
             this.label8.Text = "MarginY";
             // 
             // input_mx
             // 
-            this.input_mx.Location = new System.Drawing.Point(272, 3);
+            this.input_mx.Location = new System.Drawing.Point(285, 3);
             this.input_mx.Name = "input_mx";
-            this.input_mx.Size = new System.Drawing.Size(75, 26);
+            this.input_mx.Size = new System.Drawing.Size(80, 26);
             this.input_mx.TabIndex = 7;
-            this.input_mx.Text = "0";
+            this.input_mx.Text = "24";
+            this.input_mx.Value = new decimal(new int[] {
+            24,
+            0,
+            0,
+            0});
             this.input_mx.WaveSize = 1;
             // 
             // label7
             // 
             this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.Location = new System.Drawing.Point(178, 3);
+            this.label7.Location = new System.Drawing.Point(187, 3);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(88, 26);
+            this.label7.Size = new System.Drawing.Size(92, 26);
             this.label7.TabIndex = 6;
             this.label7.Text = "MarginX";
             // 
             // input_size
             // 
-            this.input_size.Location = new System.Drawing.Point(97, 3);
+            this.input_size.Location = new System.Drawing.Point(101, 3);
             this.input_size.Name = "input_size";
-            this.input_size.Size = new System.Drawing.Size(75, 26);
+            this.input_size.Size = new System.Drawing.Size(80, 26);
             this.input_size.TabIndex = 5;
             this.input_size.Text = "40";
             this.input_size.Value = new decimal(new int[] {
@@ -320,7 +330,7 @@
             this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label9.Location = new System.Drawing.Point(3, 3);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(88, 26);
+            this.label9.Size = new System.Drawing.Size(92, 26);
             this.label9.TabIndex = 4;
             this.label9.Text = "Size";
             // 
@@ -332,7 +342,7 @@
             this.stackPanel3.Controls.Add(this.label6);
             this.stackPanel3.Controls.Add(this.select_align);
             this.stackPanel3.Controls.Add(this.label10);
-            this.stackPanel3.Location = new System.Drawing.Point(3, 177);
+            this.stackPanel3.Location = new System.Drawing.Point(3, 183);
             this.stackPanel3.Name = "stackPanel3";
             this.stackPanel3.Size = new System.Drawing.Size(704, 32);
             this.stackPanel3.TabIndex = 8;
@@ -345,10 +355,10 @@
             "True",
             "Flase"});
             this.select_vertical.List = true;
-            this.select_vertical.Location = new System.Drawing.Point(447, 3);
+            this.select_vertical.Location = new System.Drawing.Point(469, 3);
             this.select_vertical.Name = "select_vertical";
             this.select_vertical.SelectedValue = "是";
-            this.select_vertical.Size = new System.Drawing.Size(75, 26);
+            this.select_vertical.Size = new System.Drawing.Size(80, 26);
             this.select_vertical.TabIndex = 11;
             this.select_vertical.Text = "True";
             this.select_vertical.WaveSize = 1;
@@ -356,9 +366,9 @@
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(353, 3);
+            this.label5.Location = new System.Drawing.Point(371, 3);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(88, 26);
+            this.label5.Size = new System.Drawing.Size(92, 26);
             this.label5.TabIndex = 10;
             this.label5.Text = "Vertical";
             // 
@@ -369,10 +379,10 @@
             "True",
             "Flase"});
             this.select_topmost.List = true;
-            this.select_topmost.Location = new System.Drawing.Point(272, 3);
+            this.select_topmost.Location = new System.Drawing.Point(285, 3);
             this.select_topmost.Name = "select_topmost";
             this.select_topmost.SelectedValue = "是";
-            this.select_topmost.Size = new System.Drawing.Size(75, 26);
+            this.select_topmost.Size = new System.Drawing.Size(80, 26);
             this.select_topmost.TabIndex = 9;
             this.select_topmost.Text = "True";
             this.select_topmost.WaveSize = 1;
@@ -380,9 +390,9 @@
             // label6
             // 
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.Location = new System.Drawing.Point(178, 3);
+            this.label6.Location = new System.Drawing.Point(187, 3);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 26);
+            this.label6.Size = new System.Drawing.Size(92, 26);
             this.label6.TabIndex = 8;
             this.label6.Text = "TopMost";
             // 
@@ -390,9 +400,9 @@
             // 
             this.select_align.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.select_align.List = true;
-            this.select_align.Location = new System.Drawing.Point(97, 3);
+            this.select_align.Location = new System.Drawing.Point(101, 3);
             this.select_align.Name = "select_align";
-            this.select_align.Size = new System.Drawing.Size(75, 26);
+            this.select_align.Size = new System.Drawing.Size(80, 26);
             this.select_align.TabIndex = 5;
             this.select_align.WaveSize = 1;
             // 
@@ -401,14 +411,14 @@
             this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label10.Location = new System.Drawing.Point(3, 3);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(88, 26);
+            this.label10.Size = new System.Drawing.Size(92, 26);
             this.label10.TabIndex = 4;
             this.label10.Text = "Align";
             // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
-            this.label4.Location = new System.Drawing.Point(3, 147);
+            this.label4.Location = new System.Drawing.Point(3, 153);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(704, 24);
             this.label4.TabIndex = 6;
@@ -421,7 +431,7 @@
             this.stackPanel2.Controls.Add(this.buttonOpen);
             this.stackPanel2.Location = new System.Drawing.Point(3, 109);
             this.stackPanel2.Name = "stackPanel2";
-            this.stackPanel2.Size = new System.Drawing.Size(704, 32);
+            this.stackPanel2.Size = new System.Drawing.Size(704, 38);
             this.stackPanel2.TabIndex = 5;
             this.stackPanel2.Text = "stackPanel2";
             // 
@@ -430,7 +440,7 @@
             this.buttonCZ.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.buttonCZ.Location = new System.Drawing.Point(165, 3);
             this.buttonCZ.Name = "buttonCZ";
-            this.buttonCZ.Size = new System.Drawing.Size(75, 26);
+            this.buttonCZ.Size = new System.Drawing.Size(75, 32);
             this.buttonCZ.TabIndex = 4;
             this.buttonCZ.Text = "重 置";
             this.buttonCZ.Type = AntdUI.TTypeMini.Warn;
@@ -442,7 +452,7 @@
             this.buttonClose.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.buttonClose.Location = new System.Drawing.Point(84, 3);
             this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(75, 26);
+            this.buttonClose.Size = new System.Drawing.Size(75, 32);
             this.buttonClose.TabIndex = 3;
             this.buttonClose.Text = "关 闭";
             this.buttonClose.Type = AntdUI.TTypeMini.Error;
@@ -454,7 +464,7 @@
             this.buttonOpen.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.buttonOpen.Location = new System.Drawing.Point(3, 3);
             this.buttonOpen.Name = "buttonOpen";
-            this.buttonOpen.Size = new System.Drawing.Size(75, 26);
+            this.buttonOpen.Size = new System.Drawing.Size(75, 32);
             this.buttonOpen.TabIndex = 2;
             this.buttonOpen.Text = "开 启";
             this.buttonOpen.Type = AntdUI.TTypeMini.Primary;
@@ -490,8 +500,7 @@
             // 
             // FloatButtonDemo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.stackPanel1);
             this.Name = "FloatButtonDemo";
             this.Size = new System.Drawing.Size(710, 372);

@@ -65,6 +65,15 @@ namespace AntdUIDemo
                 case "FloatButton":
                     control = new FloatButtonDemo(this);
                     break;
+                case "FlowPanel":
+                    control = new FlowPanelDemo();
+                    break;
+                case "GridPanel":
+                    control = new GridPanelDemo();
+                    break;
+                case "Panel":
+                    control = new PanelDemo();
+                    break;
             }
             if (control != null)
             {

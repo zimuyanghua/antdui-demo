@@ -21,10 +21,10 @@ namespace AntdUIDemo.Views
         private void ButtonDemo_Load(object sender, EventArgs e)
         {
             // 遍历窗体中的所有控件并绑定 tooltip
-            BindButtonMouseHoverEvent(this);
+            BindButtonWithToolTip(this);
         }
 
-        private void BindButtonMouseHoverEvent(Control parent)
+        private void BindButtonWithToolTip(Control parent)
         {
             foreach (Control control in parent.Controls)
             {
@@ -44,7 +44,7 @@ namespace AntdUIDemo.Views
                     var backentend = button.BackExtend;
                     // 构建SetTip文本
                     var tooltipText = new StringBuilder();
-                    tooltipComponent.Font = new Font("Microsoft JhengHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+                    tooltipComponent.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
                     tooltipText.AppendLine($"Type: {type}");
                     tooltipText.AppendLine($"BorderWidth: {borderwidth}");
                     tooltipText.AppendLine($"Radius: {radius}");
@@ -81,7 +81,7 @@ namespace AntdUIDemo.Views
                 // 递归遍历子控件
                 if (control.HasChildren)
                 {
-                    BindButtonMouseHoverEvent(control);
+                    BindButtonWithToolTip(control);
                 }
             }
         }

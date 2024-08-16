@@ -181,7 +181,7 @@
             this.button36.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button36.Ghost = true;
             this.button36.JoinLeft = true;
-            this.button36.Location = new System.Drawing.Point(78, 3);
+            this.button36.Location = new System.Drawing.Point(77, 3);
             this.button36.Name = "button36";
             this.button36.Size = new System.Drawing.Size(75, 32);
             this.button36.TabIndex = 4;
