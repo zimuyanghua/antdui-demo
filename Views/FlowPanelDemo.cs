@@ -7,8 +7,10 @@ namespace AntdUIDemo.Views
 {
     public partial class FlowPanelDemo : UserControl
     {
-        public FlowPanelDemo()
+        private AntdUI.Window form;
+        public FlowPanelDemo(Window _form)
         {
+            form = _form;
             InitializeComponent();
             //初始化下拉框
             InitSelectItems();
@@ -46,7 +48,7 @@ namespace AntdUIDemo.Views
         // 添加按钮
         private void buttonADD_Click(object sender, EventArgs e)
         {
-            flowPanel.Controls.Add(new AntdUI.Button()
+            var control = new AntdUI.Button()
             {
                 Text = "Button",
                 Type = TTypeMini.Primary,
@@ -54,7 +56,9 @@ namespace AntdUIDemo.Views
                 Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(134))),
                 Size = new Size(90, 42),
 
-            });
+            };
+            form.AutoDpi(control);
+            flowPanel.Controls.Add(control);
         }
 
         // 删除按钮
@@ -76,7 +80,7 @@ namespace AntdUIDemo.Views
             flowPanel.Controls.Clear();
             for (int i = 0; i < 14; i++)
             {
-                flowPanel.Controls.Add(new AntdUI.Button()
+                var control = new AntdUI.Button()
                 {
                     Text = "Button",
                     Type = TTypeMini.Primary,
@@ -84,7 +88,9 @@ namespace AntdUIDemo.Views
                     Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(134))),
                     Size = new Size(90, 42),
 
-                });
+                };
+                form.AutoDpi(control);
+                flowPanel.Controls.Add(control);
             }
 
         }

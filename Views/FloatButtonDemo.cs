@@ -107,16 +107,25 @@ namespace AntdUIDemo.Views
                 }, btn =>
                 {
                     //回调事件
+                    AntdUI.Message.info(form, btn.Tooltip, autoClose: 1);
                 })
+                // 浮动全局配置
                 {
-                    // 配置
+                    //字体
                     Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point),
+                    //附着控件
                     Control = null,
+                    //位置
                     Align = (TAlign)select_align.SelectedIndex,
+                    //是否垂直方向
                     Vertical = select_vertical.SelectedIndex == 0,
+                    //是否置顶
                     TopMost = select_topmost.SelectedIndex == 0,
+                    //尺寸大小
                     Size = Convert.ToInt32(input_size.Value),
+                    //相对于Align位置X轴偏移
                     MarginX = Convert.ToInt32(input_mx.Value),
+                    //相对于Align位置Y轴偏移
                     MarginY = Convert.ToInt32(input_my.Value),
                 });
             }

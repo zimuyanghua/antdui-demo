@@ -10,6 +10,7 @@ namespace AntdUIDemo
         public MainWindow()
         {
             InitializeComponent();
+            AntdUI.Config.ShowInWindow = true;
             //加载菜单
             LoadMenu();
             menu.SelectChanged += Menu_SelectChanged;
@@ -58,7 +59,7 @@ namespace AntdUIDemo
                     control = new FloatButtonDemo(this);
                     break;
                 case "FlowPanel":
-                    control = new FlowPanelDemo();
+                    control = new FlowPanelDemo(this);
                     break;
                 case "GridPanel":
                     control = new GridPanelDemo();

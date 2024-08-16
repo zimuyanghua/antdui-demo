@@ -502,6 +502,7 @@
             // 
             // FloatButtonDemo
             // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.Controls.Add(this.stackPanel1);
             this.Name = "FloatButtonDemo";
             this.Size = new System.Drawing.Size(710, 372);

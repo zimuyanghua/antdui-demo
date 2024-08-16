@@ -6,7 +6,7 @@
 ```
 1. git clone 或者直接下载本项目
 
-2. 使用 Visual Studio打开项目，需按照提示或自行安装 .NET Framework4.8
+2. 若电脑缩放不是100%，使用 Visual Studio 在100%缩放模式下(命令行使用 devenv /noScale 命令启动 Visual Studio)打开项目，并按照提示或自行安装 .NET Framework4.8
 
 3. 编译运行
 ```
