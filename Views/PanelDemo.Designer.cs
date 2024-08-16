@@ -568,7 +568,6 @@
             // 
             // PanelDemo
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.stackPanel1);
             this.Name = "PanelDemo";
             this.Size = new System.Drawing.Size(679, 435);

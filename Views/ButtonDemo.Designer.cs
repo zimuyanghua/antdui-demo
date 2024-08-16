@@ -760,8 +760,6 @@
             // 
             // ButtonDemo
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.stackPanel1);
             this.Name = "ButtonDemo";
             this.Size = new System.Drawing.Size(724, 629);

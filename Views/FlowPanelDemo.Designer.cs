@@ -445,7 +445,6 @@
             // 
             // FlowPanelDemo
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.stackPanel1);
             this.Name = "FlowPanelDemo";
             this.Size = new System.Drawing.Size(707, 496);
