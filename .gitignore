@@ -1,7 +1,21 @@
-################################################################################
-# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
-################################################################################
+﻿# Build and Release Folders
+bin-debug/
+bin-release/
+[Oo]bj/
+[Bb]in/
 
-/bin
-/obj/Debug
+# Other files and folders
+*.csproj.user
+
+# Executables
+*.swf
+*.air
+*.ipa
+*.apk
+*.vcxproj.filters
+*.vcxproj.user
+*.pubxml.user
+
+# Projects
 /.vs
+/packages

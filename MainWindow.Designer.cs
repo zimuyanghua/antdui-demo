@@ -79,7 +79,6 @@
             // 
             // MainWindow
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1008, 624);
             this.ControlBox = false;
             this.Controls.Add(this.panel_content);

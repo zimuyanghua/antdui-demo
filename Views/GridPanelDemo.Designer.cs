@@ -259,7 +259,6 @@
             // 
             // GridPanelDemo
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.stackPanel1);
             this.Name = "GridPanelDemo";
             this.Size = new System.Drawing.Size(683, 475);
