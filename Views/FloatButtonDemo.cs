@@ -27,6 +27,7 @@ namespace AntdUIDemo.Views
             LoadBaseFloatButton();
         }
 
+        // 初始化下拉框
         private void InitSelectItems()
         {
             //初始化方向
@@ -49,6 +50,7 @@ namespace AntdUIDemo.Views
             }
         }
 
+        // 设置默认值
         private void SetDefaultSelectItem()
         {
             select_align.SelectedIndex = 7;
@@ -64,17 +66,17 @@ namespace AntdUIDemo.Views
             input_badge.Text = "";
             input_badgesize.Value = 6;
             colorPicker.Value = Color.FromArgb(22, 119, 255);
-
         }
 
+        // 加载浮动按钮
         private void LoadBaseFloatButton()
         {
             if (floatButtonForm == null || floatButtonForm.IsDisposed)
             {
-                floatButtonForm = AntdUI.FloatButton.open(new AntdUI.FloatButton.Config(form, new AntdUI.FloatButton.ConfigBtn[]
+                floatButtonForm = FloatButton.open(new FloatButton.Config(form, new FloatButton.ConfigBtn[]
                 {
                    // 使用 svg 图片
-                   new AntdUI.FloatButton.ConfigBtn("按钮1","",true)
+                   new FloatButton.ConfigBtn("按钮1","",true)
                 {
                     Tooltip = "SVG图片按钮",
                     IconSvg = "<svg t=\"1723689594681\" class=\"icon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"3131\" width=\"200\" height=\"200\"><path d=\"M527.034926 942.620551c-247.174496 0-447.543989-200.370517-447.543989-447.538873 0-190.783161 119.585609-353.238137 287.701514-417.622516l0 69.242014c-131.960451 60.646242-223.765343 193.624882-223.765343 348.381525 0 211.845872 171.759899 383.606795 383.606795 383.606795 211.845872 0 383.605771-171.762969 383.605771-383.606795 0-154.75562-91.811032-287.736307-223.771483-348.411201L686.868191 77.459163c168.113859 64.384379 287.702538 226.840378 287.702538 417.622516C974.573799 742.250034 774.203282 942.620551 527.034926 942.620551L527.034926 942.620551zM495.066841 47.538713l63.931055 0L558.997895 496.231875l-63.931055 0L495.066841 47.538713 495.066841 47.538713z\" fill=\"#272636\" p-id=\"3132\"></path></svg>",
@@ -82,29 +84,29 @@ namespace AntdUIDemo.Views
                     Type = (TTypeMini)select_type.SelectedValue,
                     Radius = Convert.ToInt32(input_radius.Value),
                     Badge = input_badge.Text,
-                    BadgeSize = Convert.ToInt32(input_badgesize.Value),
+                    BadgeSize = (float)input_badgesize.Value,
                     BadgeBack = colorPicker.Value,
                 },
                    // 使用资源图片
-                new AntdUI.FloatButton.ConfigBtn("按钮2", Properties.Resources.关闭)
+                new FloatButton.ConfigBtn("按钮2", Properties.Resources.关闭)
                 {
                     Tooltip = "资源图片按钮",
                     Shape = select_shape.SelectedIndex == 0 ? TShape.Default :(select_shape.SelectedIndex == 1 ? TShape.Round : TShape.Circle),
                     Type = (TTypeMini)select_type.SelectedValue,
                     Radius = Convert.ToInt32(input_radius.Value),
                     Badge = input_badge.Text,
-                    BadgeSize = Convert.ToInt32(input_badgesize.Value),
+                    BadgeSize = (float)input_badgesize.Value,
                     BadgeBack = colorPicker.Value,
                 },
                   // 使用文本
-                new AntdUI.FloatButton.ConfigBtn("按钮3", "关闭")
+                new FloatButton.ConfigBtn("按钮3", "关闭")
                 {
                     Tooltip = "文本按钮",
                     Shape = select_shape.SelectedIndex == 0 ? TShape.Default :(select_shape.SelectedIndex == 1 ? TShape.Round : TShape.Circle),
                     Type = (TTypeMini)select_type.SelectedValue,
                     Radius = Convert.ToInt32(input_radius.Value),
                     Badge = input_badge.Text,
-                    BadgeSize = Convert.ToInt32(input_badgesize.Value),
+                    BadgeSize = (float)input_badgesize.Value,
                     BadgeBack = colorPicker.Value,
                 },
 
@@ -114,13 +116,13 @@ namespace AntdUIDemo.Views
                 })
                 {
                     // 配置
-                    Font = new Font("Microsoft JhengHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point),
+                    Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point),
                     Control = null,
                     Align = (TAlign)select_align.SelectedIndex,
                     Vertical = select_vertical.SelectedIndex == 0,
                     TopMost = select_topmost.SelectedIndex == 0,
-                    Size =Convert.ToInt32(input_size.Value),
-                    MarginX =  Convert.ToInt32(input_mx.Value),
+                    Size = Convert.ToInt32(input_size.Value),
+                    MarginX = Convert.ToInt32(input_mx.Value),
                     MarginY = Convert.ToInt32(input_my.Value),
                 });
             }
@@ -137,17 +139,22 @@ namespace AntdUIDemo.Views
             }
         }
 
+        // 重置
         private void buttonCZ_Click(object sender, EventArgs e)
         {
             SetDefaultSelectItem();
+            CloseFloatButtonForm();
+            LoadBaseFloatButton();
         }
 
+        // 设置
         private void buttonOpen_Click(object sender, EventArgs e)
         {
             CloseFloatButtonForm();
             LoadBaseFloatButton();
         }
 
+        // 关闭
         private void buttonClose_Click(object sender, EventArgs e)
         {
             CloseFloatButtonForm();

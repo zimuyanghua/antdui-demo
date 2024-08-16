@@ -58,10 +58,17 @@ namespace AntdUIDemo.Views
             input_shadowY.Value = 0;
             input_shadowO.Value = (decimal)0.2;
             input_shadowOH.Value = (decimal)0.3;
+
+            LoadPanel();
         }
 
         // 设置
         private void buttonSZ_Click(object sender, EventArgs e)
+        {
+            LoadPanel();
+        }
+
+        private void LoadPanel()
         {
             panel.ArrowAlign = (TAlign)select_arrowalign.SelectedValue;
             panel.ArrowSize = (int)input_arrowsize.Value;
