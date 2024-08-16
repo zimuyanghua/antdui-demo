@@ -16,7 +16,6 @@ namespace AntdUIDemo
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //AntdUI.Config.TextRenderingHint = System.Drawing.Text.TextRenderingHint.ClearTypeGridFit;
             Application.Run(new MainWindow());
         }
     }

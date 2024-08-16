@@ -337,15 +337,15 @@
             this.select_autoscroll.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.select_autoscroll.Items.AddRange(new object[] {
             "True",
-            "Flase"});
+            "False"});
             this.select_autoscroll.List = true;
             this.select_autoscroll.Location = new System.Drawing.Point(97, 3);
             this.select_autoscroll.Name = "select_autoscroll";
             this.select_autoscroll.SelectedIndex = 1;
-            this.select_autoscroll.SelectedValue = "Flase";
+            this.select_autoscroll.SelectedValue = "False";
             this.select_autoscroll.Size = new System.Drawing.Size(105, 26);
             this.select_autoscroll.TabIndex = 11;
-            this.select_autoscroll.Text = "Flase";
+            this.select_autoscroll.Text = "False";
             this.select_autoscroll.WaveSize = 1;
             this.select_autoscroll.SelectedIndexChanged += new AntdUI.IntEventHandler(this.select_autoscroll_SelectedIndexChanged);
             // 

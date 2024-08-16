@@ -134,7 +134,7 @@
             this.input_badgesize.Name = "input_badgesize";
             this.input_badgesize.Size = new System.Drawing.Size(90, 26);
             this.input_badgesize.TabIndex = 13;
-            this.input_badgesize.Text = "6";
+            this.input_badgesize.Text = "6.00";
             this.input_badgesize.Value = new decimal(new int[] {
             6,
             0,
@@ -354,11 +354,12 @@
             this.select_vertical.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.select_vertical.Items.AddRange(new object[] {
             "True",
-            "Flase"});
+            "False"});
             this.select_vertical.List = true;
             this.select_vertical.Location = new System.Drawing.Point(489, 3);
             this.select_vertical.Name = "select_vertical";
-            this.select_vertical.SelectedValue = "是";
+            this.select_vertical.SelectedIndex = 0;
+            this.select_vertical.SelectedValue = "True";
             this.select_vertical.Size = new System.Drawing.Size(90, 26);
             this.select_vertical.TabIndex = 11;
             this.select_vertical.Text = "True";
@@ -378,7 +379,7 @@
             this.select_topmost.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.select_topmost.Items.AddRange(new object[] {
             "True",
-            "Flase"});
+            "False"});
             this.select_topmost.List = true;
             this.select_topmost.Location = new System.Drawing.Point(295, 3);
             this.select_topmost.Name = "select_topmost";
