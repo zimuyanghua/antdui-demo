@@ -13,10 +13,8 @@ namespace AntdUIDemo.Views
 {
     public partial class StackPanelDemo : UserControl
     {
-        private Window form;
-        public StackPanelDemo(Window _form)
+        public StackPanelDemo()
         {
-            form = _form;
             InitializeComponent();
             //设置默认值
             InitData();
@@ -45,7 +43,6 @@ namespace AntdUIDemo.Views
                     WaveSize = 0,
                     Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(134))),
                 };
-                form.AutoDpi(control);
                 stackPanel.Controls.Add(control);
             }
         }
@@ -76,7 +73,6 @@ namespace AntdUIDemo.Views
                 WaveSize = 0,
                 Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(134))),
             };
-            form.AutoDpi(control);
             stackPanel.Controls.Add(control);
         }
 

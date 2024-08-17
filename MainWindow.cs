@@ -68,7 +68,7 @@ namespace AntdUIDemo
                     control = new PanelDemo();
                     break;
                 case "StackPanel":
-                    control = new StackPanelDemo(this);
+                    control = new StackPanelDemo();
                     break;
             }
             if (control != null)
