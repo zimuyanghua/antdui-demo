@@ -11,10 +11,6 @@ namespace AntdUIDemo.Views
         public ButtonDemo()
         {
             InitializeComponent();
-        }
-
-        private void ButtonDemo_Load(object sender, EventArgs e)
-        {
             // 遍历窗体中的所有控件并绑定 tooltip
             BindButtonWithToolTip(this);
         }

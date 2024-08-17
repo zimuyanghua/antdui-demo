@@ -31,13 +31,9 @@
             this.stackPanel1 = new AntdUI.StackPanel();
             this.stackPanel2 = new AntdUI.StackPanel();
             this.gridPanel = new AntdUI.GridPanel();
-            this.button5 = new AntdUI.Button();
-            this.button4 = new AntdUI.Button();
-            this.button3 = new AntdUI.Button();
-            this.button2 = new AntdUI.Button();
             this.stackPanel3 = new AntdUI.StackPanel();
             this.buttonCZ = new AntdUI.Button();
-            this.buttonSPAN = new AntdUI.Button();
+            this.buttonSZ = new AntdUI.Button();
             this.stackPanel4 = new AntdUI.StackPanel();
             this.input_gap = new AntdUI.InputNumber();
             this.label4 = new AntdUI.Label();
@@ -49,7 +45,6 @@
             this.label1 = new AntdUI.Label();
             this.stackPanel1.SuspendLayout();
             this.stackPanel2.SuspendLayout();
-            this.gridPanel.SuspendLayout();
             this.stackPanel3.SuspendLayout();
             this.stackPanel4.SuspendLayout();
             this.stackPanel5.SuspendLayout();
@@ -64,7 +59,7 @@
             this.stackPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.stackPanel1.Location = new System.Drawing.Point(0, 0);
             this.stackPanel1.Name = "stackPanel1";
-            this.stackPanel1.Size = new System.Drawing.Size(683, 475);
+            this.stackPanel1.Size = new System.Drawing.Size(700, 475);
             this.stackPanel1.TabIndex = 0;
             this.stackPanel1.Text = "stackPanel1";
             this.stackPanel1.Vertical = true;
@@ -75,71 +70,23 @@
             this.stackPanel2.Controls.Add(this.stackPanel3);
             this.stackPanel2.Location = new System.Drawing.Point(3, 97);
             this.stackPanel2.Name = "stackPanel2";
-            this.stackPanel2.Size = new System.Drawing.Size(677, 299);
+            this.stackPanel2.Size = new System.Drawing.Size(694, 299);
             this.stackPanel2.TabIndex = 9;
             this.stackPanel2.Text = "stackPanel2";
             // 
             // gridPanel
             // 
             this.gridPanel.BackColor = System.Drawing.Color.White;
-            this.gridPanel.Controls.Add(this.button5);
-            this.gridPanel.Controls.Add(this.button4);
-            this.gridPanel.Controls.Add(this.button3);
-            this.gridPanel.Controls.Add(this.button2);
             this.gridPanel.Location = new System.Drawing.Point(289, 3);
             this.gridPanel.Name = "gridPanel";
-            this.gridPanel.Size = new System.Drawing.Size(384, 293);
+            this.gridPanel.Size = new System.Drawing.Size(400, 293);
             this.gridPanel.TabIndex = 1;
             this.gridPanel.Text = "gridPanel1";
-            // 
-            // button5
-            // 
-            this.button5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button5.Location = new System.Drawing.Point(195, 149);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(186, 140);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "Button";
-            this.button5.Type = AntdUI.TTypeMini.Primary;
-            this.button5.WaveSize = 0;
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button4.Location = new System.Drawing.Point(3, 149);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(186, 140);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "Button";
-            this.button4.Type = AntdUI.TTypeMini.Primary;
-            this.button4.WaveSize = 0;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button3.Location = new System.Drawing.Point(195, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(186, 140);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "Button";
-            this.button3.Type = AntdUI.TTypeMini.Primary;
-            this.button3.WaveSize = 0;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(3, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(186, 140);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Button";
-            this.button2.Type = AntdUI.TTypeMini.Primary;
-            this.button2.WaveSize = 0;
             // 
             // stackPanel3
             // 
             this.stackPanel3.Controls.Add(this.buttonCZ);
-            this.stackPanel3.Controls.Add(this.buttonSPAN);
+            this.stackPanel3.Controls.Add(this.buttonSZ);
             this.stackPanel3.Controls.Add(this.stackPanel4);
             this.stackPanel3.Controls.Add(this.stackPanel5);
             this.stackPanel3.Location = new System.Drawing.Point(3, 3);
@@ -152,32 +99,30 @@
             // buttonCZ
             // 
             this.buttonCZ.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.buttonCZ.Location = new System.Drawing.Point(3, 206);
+            this.buttonCZ.Location = new System.Drawing.Point(3, 136);
             this.buttonCZ.Name = "buttonCZ";
             this.buttonCZ.Size = new System.Drawing.Size(274, 32);
             this.buttonCZ.TabIndex = 20;
             this.buttonCZ.Text = "重 置";
             this.buttonCZ.Type = AntdUI.TTypeMini.Warn;
             this.buttonCZ.WaveSize = 0;
-            this.buttonCZ.Click += new System.EventHandler(this.buttonCZ_Click);
             // 
-            // buttonSPAN
+            // buttonSZ
             // 
-            this.buttonSPAN.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.buttonSPAN.Location = new System.Drawing.Point(3, 168);
-            this.buttonSPAN.Name = "buttonSPAN";
-            this.buttonSPAN.Size = new System.Drawing.Size(274, 32);
-            this.buttonSPAN.TabIndex = 19;
-            this.buttonSPAN.Text = "设 置";
-            this.buttonSPAN.Type = AntdUI.TTypeMini.Primary;
-            this.buttonSPAN.WaveSize = 0;
-            this.buttonSPAN.Click += new System.EventHandler(this.buttonSPAN_Click);
+            this.buttonSZ.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonSZ.Location = new System.Drawing.Point(3, 98);
+            this.buttonSZ.Name = "buttonSZ";
+            this.buttonSZ.Size = new System.Drawing.Size(274, 32);
+            this.buttonSZ.TabIndex = 19;
+            this.buttonSZ.Text = "设 置";
+            this.buttonSZ.Type = AntdUI.TTypeMini.Primary;
+            this.buttonSZ.WaveSize = 0;
             // 
             // stackPanel4
             // 
             this.stackPanel4.Controls.Add(this.input_gap);
             this.stackPanel4.Controls.Add(this.label4);
-            this.stackPanel4.Location = new System.Drawing.Point(3, 130);
+            this.stackPanel4.Location = new System.Drawing.Point(3, 60);
             this.stackPanel4.Name = "stackPanel4";
             this.stackPanel4.Size = new System.Drawing.Size(274, 32);
             this.stackPanel4.TabIndex = 18;
@@ -208,7 +153,7 @@
             this.stackPanel5.Controls.Add(this.label3);
             this.stackPanel5.Location = new System.Drawing.Point(3, 3);
             this.stackPanel5.Name = "stackPanel5";
-            this.stackPanel5.Size = new System.Drawing.Size(274, 121);
+            this.stackPanel5.Size = new System.Drawing.Size(274, 51);
             this.stackPanel5.TabIndex = 15;
             this.stackPanel5.Text = "stackPanel5";
             // 
@@ -218,7 +163,8 @@
             this.input_span.Location = new System.Drawing.Point(97, 3);
             this.input_span.Multiline = true;
             this.input_span.Name = "input_span";
-            this.input_span.Size = new System.Drawing.Size(175, 115);
+            this.input_span.PlaceholderText = "分号隔开为行,空格隔开为列(可设置固定值或百分号)";
+            this.input_span.Size = new System.Drawing.Size(175, 45);
             this.input_span.TabIndex = 5;
             this.input_span.Text = "50% 50%;50% 50%";
             this.input_span.WaveSize = 0;
@@ -228,7 +174,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label3.Location = new System.Drawing.Point(3, 3);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 115);
+            this.label3.Size = new System.Drawing.Size(88, 45);
             this.label3.TabIndex = 4;
             this.label3.Text = "Span";
             // 
@@ -236,7 +182,7 @@
             // 
             this.divider1.Location = new System.Drawing.Point(3, 79);
             this.divider1.Name = "divider1";
-            this.divider1.Size = new System.Drawing.Size(677, 12);
+            this.divider1.Size = new System.Drawing.Size(694, 12);
             this.divider1.TabIndex = 8;
             // 
             // label2
@@ -244,7 +190,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.Location = new System.Drawing.Point(3, 49);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(677, 24);
+            this.label2.Size = new System.Drawing.Size(694, 24);
             this.label2.TabIndex = 7;
             this.label2.Text = "精准划分区域的网格布局容器。";
             // 
@@ -253,7 +199,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.Location = new System.Drawing.Point(3, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(677, 40);
+            this.label1.Size = new System.Drawing.Size(694, 40);
             this.label1.TabIndex = 6;
             this.label1.Text = "GridPanel 网格布局";
             // 
@@ -261,10 +207,10 @@
             // 
             this.Controls.Add(this.stackPanel1);
             this.Name = "GridPanelDemo";
-            this.Size = new System.Drawing.Size(683, 475);
+            this.Size = new System.Drawing.Size(700, 475);
+            this.Load += new System.EventHandler(this.GridPanelDemo_Load);
             this.stackPanel1.ResumeLayout(false);
             this.stackPanel2.ResumeLayout(false);
-            this.gridPanel.ResumeLayout(false);
             this.stackPanel3.ResumeLayout(false);
             this.stackPanel4.ResumeLayout(false);
             this.stackPanel5.ResumeLayout(false);
@@ -284,14 +230,10 @@
         private AntdUI.Input input_span;
         private AntdUI.Label label3;
         private AntdUI.GridPanel gridPanel;
-        private AntdUI.Button buttonCZ;
-        private AntdUI.Button buttonSPAN;
+        private AntdUI.Button buttonSZ;
         private AntdUI.StackPanel stackPanel4;
         private AntdUI.InputNumber input_gap;
         private AntdUI.Label label4;
-        private AntdUI.Button button5;
-        private AntdUI.Button button4;
-        private AntdUI.Button button3;
-        private AntdUI.Button button2;
+        private AntdUI.Button buttonCZ;
     }
 }

@@ -118,7 +118,7 @@
             this.stackPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.stackPanel1.Location = new System.Drawing.Point(0, 0);
             this.stackPanel1.Name = "stackPanel1";
-            this.stackPanel1.Size = new System.Drawing.Size(724, 629);
+            this.stackPanel1.Size = new System.Drawing.Size(700, 629);
             this.stackPanel1.TabIndex = 1;
             this.stackPanel1.Text = "stackPanel1";
             this.stackPanel1.Vertical = true;
@@ -128,7 +128,7 @@
             this.flowPanel7.Controls.Add(this.button39);
             this.flowPanel7.Location = new System.Drawing.Point(3, 571);
             this.flowPanel7.Name = "flowPanel7";
-            this.flowPanel7.Size = new System.Drawing.Size(718, 38);
+            this.flowPanel7.Size = new System.Drawing.Size(694, 38);
             this.flowPanel7.TabIndex = 18;
             this.flowPanel7.Text = "flowPanel7";
             // 
@@ -150,7 +150,7 @@
             this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label9.Location = new System.Drawing.Point(3, 541);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(718, 24);
+            this.label9.Size = new System.Drawing.Size(694, 24);
             this.label9.TabIndex = 17;
             this.label9.Text = "渐变按钮";
             // 
@@ -160,7 +160,7 @@
             this.flowPanel6.Controls.Add(this.panel2);
             this.flowPanel6.Location = new System.Drawing.Point(3, 497);
             this.flowPanel6.Name = "flowPanel6";
-            this.flowPanel6.Size = new System.Drawing.Size(718, 38);
+            this.flowPanel6.Size = new System.Drawing.Size(694, 38);
             this.flowPanel6.TabIndex = 16;
             this.flowPanel6.Text = "flowPanel6";
             // 
@@ -258,7 +258,7 @@
             this.label8.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label8.Location = new System.Drawing.Point(3, 467);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(718, 24);
+            this.label8.Size = new System.Drawing.Size(694, 24);
             this.label8.TabIndex = 15;
             this.label8.Text = "组合按钮";
             // 
@@ -271,7 +271,7 @@
             this.flowPanel5.Controls.Add(this.button29);
             this.flowPanel5.Location = new System.Drawing.Point(3, 423);
             this.flowPanel5.Name = "flowPanel5";
-            this.flowPanel5.Size = new System.Drawing.Size(718, 38);
+            this.flowPanel5.Size = new System.Drawing.Size(694, 38);
             this.flowPanel5.TabIndex = 14;
             this.flowPanel5.Text = "flowPanel5";
             // 
@@ -348,7 +348,7 @@
             this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label7.Location = new System.Drawing.Point(3, 393);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(718, 24);
+            this.label7.Size = new System.Drawing.Size(694, 24);
             this.label7.TabIndex = 13;
             this.label7.Text = "分割按钮";
             // 
@@ -362,7 +362,7 @@
             this.flowPanel4.Controls.Add(this.button24);
             this.flowPanel4.Location = new System.Drawing.Point(3, 349);
             this.flowPanel4.Name = "flowPanel4";
-            this.flowPanel4.Size = new System.Drawing.Size(718, 38);
+            this.flowPanel4.Size = new System.Drawing.Size(694, 38);
             this.flowPanel4.TabIndex = 12;
             this.flowPanel4.Text = "flowPanel4";
             // 
@@ -447,7 +447,7 @@
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label6.Location = new System.Drawing.Point(3, 319);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(718, 24);
+            this.label6.Size = new System.Drawing.Size(694, 24);
             this.label6.TabIndex = 11;
             this.label6.Text = "图标按钮";
             // 
@@ -461,7 +461,7 @@
             this.flowPanel3.Controls.Add(this.button18);
             this.flowPanel3.Location = new System.Drawing.Point(3, 275);
             this.flowPanel3.Name = "flowPanel3";
-            this.flowPanel3.Size = new System.Drawing.Size(718, 38);
+            this.flowPanel3.Size = new System.Drawing.Size(694, 38);
             this.flowPanel3.TabIndex = 10;
             this.flowPanel3.Text = "flowPanel3";
             // 
@@ -547,7 +547,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label5.Location = new System.Drawing.Point(3, 245);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(718, 24);
+            this.label5.Size = new System.Drawing.Size(694, 24);
             this.label5.TabIndex = 9;
             this.label5.Text = "文本按钮(带边框)";
             // 
@@ -561,7 +561,7 @@
             this.flowPanel2.Controls.Add(this.button12);
             this.flowPanel2.Location = new System.Drawing.Point(3, 201);
             this.flowPanel2.Name = "flowPanel2";
-            this.flowPanel2.Size = new System.Drawing.Size(718, 38);
+            this.flowPanel2.Size = new System.Drawing.Size(694, 38);
             this.flowPanel2.TabIndex = 8;
             this.flowPanel2.Text = "flowPanel2";
             // 
@@ -641,7 +641,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label4.Location = new System.Drawing.Point(3, 171);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(718, 24);
+            this.label4.Size = new System.Drawing.Size(694, 24);
             this.label4.TabIndex = 7;
             this.label4.Text = "文本按钮";
             // 
@@ -655,7 +655,7 @@
             this.flowPanel1.Controls.Add(this.button1);
             this.flowPanel1.Location = new System.Drawing.Point(3, 127);
             this.flowPanel1.Name = "flowPanel1";
-            this.flowPanel1.Size = new System.Drawing.Size(718, 38);
+            this.flowPanel1.Size = new System.Drawing.Size(694, 38);
             this.flowPanel1.TabIndex = 6;
             this.flowPanel1.Text = "flowPanel1";
             // 
@@ -729,7 +729,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label3.Location = new System.Drawing.Point(3, 97);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(718, 24);
+            this.label3.Size = new System.Drawing.Size(694, 24);
             this.label3.TabIndex = 5;
             this.label3.Text = "按钮类型";
             // 
@@ -737,7 +737,7 @@
             // 
             this.divider1.Location = new System.Drawing.Point(3, 79);
             this.divider1.Name = "divider1";
-            this.divider1.Size = new System.Drawing.Size(718, 12);
+            this.divider1.Size = new System.Drawing.Size(694, 12);
             this.divider1.TabIndex = 4;
             // 
             // label2
@@ -745,7 +745,7 @@
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label2.Location = new System.Drawing.Point(3, 49);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(718, 24);
+            this.label2.Size = new System.Drawing.Size(694, 24);
             this.label2.TabIndex = 1;
             this.label2.Text = "按钮用于开始一个即时操作。";
             // 
@@ -754,7 +754,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.Location = new System.Drawing.Point(3, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(718, 40);
+            this.label1.Size = new System.Drawing.Size(694, 40);
             this.label1.TabIndex = 0;
             this.label1.Text = "Button 按钮";
             // 
@@ -762,8 +762,7 @@
             // 
             this.Controls.Add(this.stackPanel1);
             this.Name = "ButtonDemo";
-            this.Size = new System.Drawing.Size(724, 629);
-            this.Load += new System.EventHandler(this.ButtonDemo_Load);
+            this.Size = new System.Drawing.Size(700, 629);
             this.stackPanel1.ResumeLayout(false);
             this.flowPanel7.ResumeLayout(false);
             this.flowPanel6.ResumeLayout(false);

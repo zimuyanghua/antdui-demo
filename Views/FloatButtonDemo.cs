@@ -16,9 +16,22 @@ namespace AntdUIDemo.Views
             //初始化下拉框
             InitSelectItems();
             //设置默认值
-            SetDefaultSelectItem();
+            InitData();
+            // 绑定按钮事件
+            BindButtonClick();
+        }
+
+        private void FloatButtonDemo_Load(object sender, EventArgs e)
+        {
             // 加载浮动按钮
-            LoadBaseFloatButton();
+            LoadFloatButton();
+        }
+
+        private void BindButtonClick()
+        {
+            buttonOpen.Click += buttonOpen_Click;
+            buttonClose.Click += buttonClose_Click;
+            buttonCZ.Click += buttonCZ_Click;
         }
 
         // 初始化下拉框
@@ -45,7 +58,7 @@ namespace AntdUIDemo.Views
         }
 
         // 设置默认值
-        private void SetDefaultSelectItem()
+        private void InitData()
         {
             select_align.SelectedIndex = 7;
             select_shape.SelectedIndex = 0;
@@ -63,7 +76,7 @@ namespace AntdUIDemo.Views
         }
 
         // 加载浮动按钮
-        private void LoadBaseFloatButton()
+        private void LoadFloatButton()
         {
             if (floatButtonForm == null || floatButtonForm.IsDisposed)
             {
@@ -145,16 +158,16 @@ namespace AntdUIDemo.Views
         // 重置
         private void buttonCZ_Click(object sender, EventArgs e)
         {
-            SetDefaultSelectItem();
+            InitData();
             CloseFloatButtonForm();
-            LoadBaseFloatButton();
+            LoadFloatButton();
         }
 
         // 设置
         private void buttonOpen_Click(object sender, EventArgs e)
         {
             CloseFloatButtonForm();
-            LoadBaseFloatButton();
+            LoadFloatButton();
         }
 
         // 关闭

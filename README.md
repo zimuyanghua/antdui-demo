@@ -25,3 +25,5 @@
 ![GridPanel](assets/screenshots/GridPanel.png)
 ### Panel
 ![Panel](assets/screenshots/Panel.png)
+### StackPanel
+![StackPanel](assets/screenshots/StackPanel.png)

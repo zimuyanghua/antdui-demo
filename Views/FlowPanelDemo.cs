@@ -7,15 +7,68 @@ namespace AntdUIDemo.Views
 {
     public partial class FlowPanelDemo : UserControl
     {
-        private AntdUI.Window form;
+        private Window form;
         public FlowPanelDemo(Window _form)
         {
             form = _form;
             InitializeComponent();
             //初始化下拉框
             InitSelectItems();
+            //设置默认值
+            InitData();
+            // 绑定按钮事件
+            BindButtonClick();
         }
 
+        private void FlowPanelDemo_Load(object sender, EventArgs e)
+        {
+            //初始化FlowPanel
+            LoadFlowPanel();
+        }
+
+        //初始化panel
+        private void LoadFlowPanel()
+        {
+            flowPanel.Align = (TAlignFlow)select_align.SelectedValue;
+            flowPanel.Gap = (int)input_gap.Value;
+            flowPanel.AutoScroll = select_autoscroll.SelectedIndex == 0;
+
+            flowPanel.Controls.Clear();
+            for (int i = 0; i < 14; i++)
+            {
+                var control = new AntdUI.Button()
+                {
+                    Text = "Button",
+                    Type = TTypeMini.Primary,
+                    WaveSize = 0,
+                    Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(134))),
+                    Size = new Size(90, 42),
+
+                };
+                // 通过主窗口设置DPI控制添加控件保持缩放比例
+                form.AutoDpi(control);
+                flowPanel.Controls.Add(control);
+            }
+        }
+
+        // 设置默认值
+        private void InitData()
+        {
+            select_align.SelectedIndex = 0;
+            input_gap.Value = 0;
+            select_autoscroll.SelectedIndex = 1;
+        }
+
+        // 绑定按钮事件
+        private void BindButtonClick()
+        {
+            buttonSZ.Click += buttonSZ_Click;
+            buttonCZ.Click += buttonCZ_Click;
+            buttonADD.Click += buttonADD_Click;
+            buttonDEL.Click += buttonDEL_Click;
+        }
+
+        // 初始化下拉框
         private void InitSelectItems()
         {
             //初始化方向
@@ -24,25 +77,6 @@ namespace AntdUIDemo.Views
             {
                 select_align.Items.Add(align);
             }
-            select_align.SelectedIndex = 0;
-        }
-
-        // 选择对齐方式
-        private void select_align_SelectedIndexChanged(object sender, int value)
-        {
-            flowPanel.Align = (TAlignFlow)select_align.SelectedValue;
-        }
-
-        // 输入间隔
-        private void input_gap_ValueChanged(object sender, decimal value)
-        {
-            flowPanel.Invoke((MethodInvoker)(() => flowPanel.Gap = (int)value));
-        }
-
-        // 是否添加滚动
-        private void select_autoscroll_SelectedIndexChanged(object sender, int value)
-        {
-            flowPanel.AutoScroll = select_autoscroll.SelectedIndex == 0;
         }
 
         // 添加按钮
@@ -71,28 +105,20 @@ namespace AntdUIDemo.Views
             }
         }
 
+        // 设置
+        private void buttonSZ_Click(object sender, EventArgs e)
+        {
+            flowPanel.Align = (TAlignFlow)select_align.SelectedValue;
+            flowPanel.Gap = (int)input_gap.Value;
+            flowPanel.AutoScroll = select_autoscroll.SelectedIndex == 0;
+        }
+
         // 重置
         private void buttonCZ_Click(object sender, EventArgs e)
         {
-            select_align.SelectedIndex = 0;
-            input_gap.Value = 0;
-            select_autoscroll.SelectedIndex = 1;
-            flowPanel.Controls.Clear();
-            for (int i = 0; i < 14; i++)
-            {
-                var control = new AntdUI.Button()
-                {
-                    Text = "Button",
-                    Type = TTypeMini.Primary,
-                    WaveSize = 0,
-                    Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(134))),
-                    Size = new Size(90, 42),
-
-                };
-                form.AutoDpi(control);
-                flowPanel.Controls.Add(control);
-            }
-
+            InitData();
+            LoadFlowPanel();
         }
+
     }
 }
