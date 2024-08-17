@@ -16,74 +16,74 @@
 ## 控件演示
 
 ### 通用
-#### Button
+#### Button 按钮
 ![Button](assets/screenshots/Button.png)
-#### FloatButton
+#### FloatButton 悬浮按钮
 ![FloatButton](assets/screenshots/FloatButton.png)
 
 ### 布局
-#### FlowPanel
+#### FlowPanel 流动布局
 ![FlowPanel](assets/screenshots/FlowPanel.png)
-#### GridPanel
+#### GridPanel 网格布局
 ![GridPanel](assets/screenshots/GridPanel.png)
-#### Panel
+#### Panel 面板
 ![Panel](assets/screenshots/Panel.png)
-#### StackPanel
+#### StackPanel 堆叠布局
 ![StackPanel](assets/screenshots/StackPanel.png)
 
 ### 导航
-#### 下拉菜单
-#### 导航菜单
-#### 分页
-#### 步骤条
+#### DropDown 下拉菜单
+#### Menu 导航菜单
+#### Pagination 分页
+#### Steps 步骤条
 
 ### 数据录入
-#### 复选框
-#### 颜色选择器
-#### 日期选择器
-#### 日期范围选择器
-#### 输入框
-#### 数字输入框
-#### 单选框
-#### 评分
-#### 选择器
-#### 多选选择器
-#### 滑动输入条
-#### 开关
-#### 时间选择框
+#### CheckBox 复选框
+#### ColorPicker 颜色选择器
+#### DatePicker 日期选择器
+#### DatePickerRange 日期范围选择器
+#### Input 输入框
+#### InputNumber 数字输入框
+#### Radio 单选框
+#### Rate 评分
+#### Select 选择器
+#### SelectMultiple 多选选择器
+#### Slider 滑动输入条
+#### Switch 开关
+#### TimePicker 时间选择框
 
 ### 数据展示
-#### 头像
-#### 徽标数
-#### 日历
-#### 走马灯
-#### 标签
-#### 气泡卡片
-#### 图片预览
-#### 分段控制器
-#### 表格
-#### 标签页
-#### 标签
-#### 时间轴
-#### 文字提示
-#### 树形控件
+#### Avatar 头像
+#### Badge 徽标数
+#### Calendar 日历
+#### Carousel 走马灯
+#### Label 标签
+#### Popver 气泡卡片
+#### Preview 图片预览
+#### Segmented 分段控制器
+#### Table 表格
+#### Tabs 标签页
+#### Tag 标签
+#### Timeline 时间轴
+#### Tooltip 文字提示
+#### Tree 树形控件
 
 ### 反馈
-#### 警告提示
-#### 抽屉
-#### 全局提示
-#### 对话框
-#### 通知提醒框
-#### 进度条
-#### 加载中
+#### Alert 警告提示
+#### Drawer 抽屉
+#### Message 全局提示
+#### Modal 对话框
+#### Notification 通知提醒框
+#### Progress 进度条
+#### Spin 加载中
 
 ### 聊天
-#### 气泡聊天列表
-#### 好友消息列表
+#### ChatList 气泡聊天列表
+#### MsgList 好友消息列表
 
 ### 其它
-#### 电池
-#### 右键菜单
-#### 分割线
-#### 图片3D
-#### 窗口栏
+#### Battery 电池
+#### ContextMenuStrip 右键菜单
+#### Divider 分割线
+#### Image3D 图片3D
+#### WindowBar 窗口栏
