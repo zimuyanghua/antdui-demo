@@ -1,5 +1,8 @@
-﻿using AntdUIDemo.Models;
+﻿using AntdUI;
+using AntdUIDemo.Controls;
+using AntdUIDemo.Models;
 using AntdUIDemo.Views;
+using System;
 using System.Windows.Forms;
 
 namespace AntdUIDemo
@@ -13,7 +16,20 @@ namespace AntdUIDemo
             AntdUI.Config.ShowInWindow = true;
             //加载菜单
             LoadMenu();
+            buttonSZ.Click += ButtonSZ_Click;
             menu.SelectChanged += Menu_SelectChanged;
+        }
+
+        private void ButtonSZ_Click(object sender, EventArgs e)
+        {
+            using(var form = new SystemSet())
+            {
+                AntdUI.Modal.open(new AntdUI.Modal.Config(this,"系统设置", form, TType.Info)
+                {
+                    
+                });
+            }
+            
         }
 
         private void LoadMenu()

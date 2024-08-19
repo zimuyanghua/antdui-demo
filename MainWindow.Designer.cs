@@ -30,16 +30,16 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.titlebar = new AntdUI.WindowBar();
+            this.buttonSZ = new AntdUI.Button();
             this.divider = new AntdUI.Divider();
             this.menu = new AntdUI.Menu();
             this.panel_content = new AntdUI.StackPanel();
-            this.button1 = new AntdUI.Button();
             this.titlebar.SuspendLayout();
             this.SuspendLayout();
             // 
             // titlebar
             // 
-            this.titlebar.Controls.Add(this.button1);
+            this.titlebar.Controls.Add(this.buttonSZ);
             this.titlebar.Dock = System.Windows.Forms.DockStyle.Top;
             this.titlebar.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.titlebar.Location = new System.Drawing.Point(6, 0);
@@ -49,6 +49,18 @@
             this.titlebar.SubText = "Demo";
             this.titlebar.TabIndex = 0;
             this.titlebar.Text = "AntdUI";
+            // 
+            // buttonSZ
+            // 
+            this.buttonSZ.Dock = System.Windows.Forms.DockStyle.Right;
+            this.buttonSZ.Ghost = true;
+            this.buttonSZ.ImageSvg = resources.GetString("buttonSZ.ImageSvg");
+            this.buttonSZ.Location = new System.Drawing.Point(856, 0);
+            this.buttonSZ.Name = "buttonSZ";
+            this.buttonSZ.Radius = 0;
+            this.buttonSZ.Size = new System.Drawing.Size(50, 40);
+            this.buttonSZ.TabIndex = 0;
+            this.buttonSZ.WaveSize = 0;
             // 
             // divider
             // 
@@ -80,18 +92,6 @@
             this.panel_content.TabIndex = 10;
             this.panel_content.Vertical = true;
             // 
-            // button1
-            // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button1.Ghost = true;
-            this.button1.ImageSvg = resources.GetString("button1.ImageSvg");
-            this.button1.Location = new System.Drawing.Point(832, 0);
-            this.button1.Name = "button1";
-            this.button1.Radius = 0;
-            this.button1.Size = new System.Drawing.Size(50, 40);
-            this.button1.TabIndex = 0;
-            this.button1.WaveSize = 0;
-            // 
             // MainWindow
             // 
             this.ClientSize = new System.Drawing.Size(1008, 624);
@@ -118,6 +118,6 @@
         private AntdUI.Divider divider;
         private AntdUI.Menu menu;
         private AntdUI.StackPanel panel_content;
-        private AntdUI.Button button1;
+        private AntdUI.Button buttonSZ;
     }
 }
