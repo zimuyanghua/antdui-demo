@@ -73,10 +73,11 @@
             this.tabs.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
             this.tabs.Gap = 12;
             this.tabs.Location = new System.Drawing.Point(0, 0);
+            this.tabs.Margin = new System.Windows.Forms.Padding(6);
             this.tabs.Name = "tabs";
             this.tabs.Pages.Add(this.tabPage1);
             this.tabs.Pages.Add(this.tabPage2);
-            this.tabs.Size = new System.Drawing.Size(620, 420);
+            this.tabs.Size = new System.Drawing.Size(598, 396);
             this.tabs.Style = styleLine1;
             this.tabs.TabIndex = 0;
             this.tabs.Text = "tabs1";
@@ -86,9 +87,9 @@
             this.tabPage1.Controls.Add(this.stackPanel1);
             this.tabPage1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabPage1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
-            this.tabPage1.Location = new System.Drawing.Point(87, 3);
+            this.tabPage1.Location = new System.Drawing.Point(90, 6);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(530, 414);
+            this.tabPage1.Size = new System.Drawing.Size(502, 384);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "基本设置";
             // 
@@ -101,7 +102,7 @@
             this.stackPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.stackPanel1.Location = new System.Drawing.Point(0, 0);
             this.stackPanel1.Name = "stackPanel1";
-            this.stackPanel1.Size = new System.Drawing.Size(530, 414);
+            this.stackPanel1.Size = new System.Drawing.Size(502, 384);
             this.stackPanel1.TabIndex = 1;
             this.stackPanel1.Text = "stackPanel1";
             this.stackPanel1.Vertical = true;
@@ -112,7 +113,7 @@
             this.stackPanel5.Controls.Add(this.label4);
             this.stackPanel5.Location = new System.Drawing.Point(3, 117);
             this.stackPanel5.Name = "stackPanel5";
-            this.stackPanel5.Size = new System.Drawing.Size(524, 32);
+            this.stackPanel5.Size = new System.Drawing.Size(496, 32);
             this.stackPanel5.TabIndex = 3;
             this.stackPanel5.Text = "stackPanel5";
             // 
@@ -144,7 +145,7 @@
             this.stackPanel4.Controls.Add(this.label3);
             this.stackPanel4.Location = new System.Drawing.Point(3, 79);
             this.stackPanel4.Name = "stackPanel4";
-            this.stackPanel4.Size = new System.Drawing.Size(524, 32);
+            this.stackPanel4.Size = new System.Drawing.Size(496, 32);
             this.stackPanel4.TabIndex = 2;
             this.stackPanel4.Text = "stackPanel4";
             // 
@@ -177,7 +178,7 @@
             this.stackPanel3.Controls.Add(this.label2);
             this.stackPanel3.Location = new System.Drawing.Point(3, 41);
             this.stackPanel3.Name = "stackPanel3";
-            this.stackPanel3.Size = new System.Drawing.Size(524, 32);
+            this.stackPanel3.Size = new System.Drawing.Size(496, 32);
             this.stackPanel3.TabIndex = 1;
             this.stackPanel3.Text = "stackPanel3";
             // 
@@ -210,7 +211,7 @@
             this.stackPanel2.Controls.Add(this.label1);
             this.stackPanel2.Location = new System.Drawing.Point(3, 3);
             this.stackPanel2.Name = "stackPanel2";
-            this.stackPanel2.Size = new System.Drawing.Size(524, 32);
+            this.stackPanel2.Size = new System.Drawing.Size(496, 32);
             this.stackPanel2.TabIndex = 0;
             this.stackPanel2.Text = "stackPanel2";
             // 
@@ -324,12 +325,11 @@
             // 
             // SystemSet
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.Controls.Add(this.tabs);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SystemSet";
-            this.Size = new System.Drawing.Size(620, 420);
+            this.Size = new System.Drawing.Size(598, 396);
             this.tabs.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.stackPanel1.ResumeLayout(false);

@@ -93,6 +93,7 @@ namespace AntdUIDemo
         {
             using (var form = new SystemSet(this))
             {
+                //AutoDpi(form);
                 AntdUI.Modal.open(new AntdUI.Modal.Config(this, "系统设置", form, TType.Info)
                 {
                     CloseIcon = true,

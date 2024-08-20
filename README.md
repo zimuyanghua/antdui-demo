@@ -12,6 +12,14 @@
 
 4. 编译运行
 ```
+## 系统设置
+- ✅ 支持浅色/深色模式,并且随系统自动切换
+- ✅ 支持启用/关闭动画效果
+- ✅ 支持启用/关闭阴影效果
+- ✅ 支持显示/隐藏滚动条
+- ✅ 支持设置Message/Notification消息显示位置
+
+![SystemSet](assets/screenshots/SystemSet.png)
 
 ## 控件演示
 

@@ -47,6 +47,8 @@ namespace AntdUIDemo.Controls
         {
             AppSetting.UpdateAppSetting("ShowInWindow", value ? "True" : "False");
             AntdUI.Config.ShowInWindow = value;
+            AntdUI.Message.success(Window,"切换成功!",autoClose: 1);
+            AntdUI.Notification.success(Window, "提示","切换成功!", autoClose: 3);
         }
 
         private void switch_scrollbar_CheckedChanged(object sender, bool value)
