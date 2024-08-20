@@ -43,12 +43,6 @@ namespace AntdUIDemo.Views
             {
                 select_align.Items.Add(align);
             }
-            //初始化形状
-            select_shape.Items.Clear();
-            foreach (TShape shape in Enum.GetValues(typeof(TShape)))
-            {
-                select_shape.Items.Add(shape);
-            }
             //初始化类型
             select_type.Items.Clear();
             foreach (TTypeMini type in Enum.GetValues(typeof(TTypeMini)))
@@ -61,7 +55,7 @@ namespace AntdUIDemo.Views
         private void InitData()
         {
             select_align.SelectedIndex = 7;
-            select_shape.SelectedIndex = 0;
+            select_round.SelectedIndex = 1;
             select_type.SelectedIndex = 0;
             select_topmost.SelectedIndex = 1;
             select_vertical.SelectedIndex = 0;
@@ -86,8 +80,8 @@ namespace AntdUIDemo.Views
                    new FloatButton.ConfigBtn("按钮1","",true)
                 {
                     Tooltip = "SVG图片按钮",
-                    IconSvg = "<svg t=\"1723689594681\" class=\"icon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"3131\" width=\"200\" height=\"200\"><path d=\"M527.034926 942.620551c-247.174496 0-447.543989-200.370517-447.543989-447.538873 0-190.783161 119.585609-353.238137 287.701514-417.622516l0 69.242014c-131.960451 60.646242-223.765343 193.624882-223.765343 348.381525 0 211.845872 171.759899 383.606795 383.606795 383.606795 211.845872 0 383.605771-171.762969 383.605771-383.606795 0-154.75562-91.811032-287.736307-223.771483-348.411201L686.868191 77.459163c168.113859 64.384379 287.702538 226.840378 287.702538 417.622516C974.573799 742.250034 774.203282 942.620551 527.034926 942.620551L527.034926 942.620551zM495.066841 47.538713l63.931055 0L558.997895 496.231875l-63.931055 0L495.066841 47.538713 495.066841 47.538713z\" fill=\"#272636\" p-id=\"3132\"></path></svg>",
-                    Shape = select_shape.SelectedIndex == 0 ? TShape.Default :(select_shape.SelectedIndex == 1 ? TShape.Round : TShape.Circle),
+                    IconSvg = "<svg t=\"1724131255903\" class=\"icon\" viewBox=\"0 0 1024 1024\" version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" p-id=\"1768\" width=\"200\" height=\"200\"><path d=\"M511.878001 1023.989c-62.999385 0-124.098788-11.699886-181.698225-34.999658-55.699456-22.49978-105.798967-54.499468-148.798547-95.599067-43.099579-40.9996-76.899249-88.899132-100.599018-142.198611-24.59976-55.29946-36.999639-114.098886-36.999639-174.698294 0-76.79925 20.699798-152.498511 59.899415-219.197859 37.799631-64.099374 92.299099-119.098837 157.498462-158.598451 14.699856-8.999912 33.899669-4.299958 42.899581 10.499897 8.999912 14.699856 4.299958 33.899669-10.499897 42.899581-56.399449 34.199666-103.498989 81.599203-136.19867 137.098661-33.599672 56.999443-51.1995 121.798811-51.1995 187.39817 0 102.498999 41.99959 199.098056 118.298845 271.697347 76.699251 73.099286 178.798254 113.298894 287.497192 113.298893s210.797941-40.299606 287.497193-113.298893c76.299255-72.799289 118.298845-169.198348 118.298844-271.797346 0-130.298728-68.699329-250.797551-183.798205-322.296852-14.599857-9.099911-19.099813-28.299724-9.999902-42.99958 9.099911-14.599857 28.299724-19.099813 42.99958-9.999903 64.099374 39.799611 117.498853 94.599076 154.59849 158.398453 38.399625 66.099354 58.699427 140.998623 58.699427 217.09788 0 60.599408-12.499878 119.398834-36.999639 174.698294-23.699769 53.299479-57.499438 101.199012-100.599017 142.198612-42.99958 40.899601-93.099091 73.099286-148.798547 95.599066-57.799436 23.099774-118.998838 34.79966-181.998223 34.79966zM511.878001 506.394055c-17.199832 0-31.199695-13.899864-31.199695-31.199696v-443.995664c0-17.199832 13.899864-31.199695 31.199695-31.199695 17.199832 0 31.199695 13.899864 31.199696 31.199695v443.895665c0.099999 17.199832-13.999863 31.299694-31.199696 31.299695z\" p-id=\"1769\"></path></svg>",
+                    Round = select_round.SelectedIndex == 0,
                     Type = (TTypeMini)select_type.SelectedValue,
                     Radius = Convert.ToInt32(input_radius.Value),
                     Badge = input_badge.Text,
@@ -98,7 +92,7 @@ namespace AntdUIDemo.Views
                 new FloatButton.ConfigBtn("按钮2", Properties.Resources.关闭)
                 {
                     Tooltip = "资源图片按钮",
-                    Shape = select_shape.SelectedIndex == 0 ? TShape.Default :(select_shape.SelectedIndex == 1 ? TShape.Round : TShape.Circle),
+                    Round = select_round.SelectedIndex == 0,
                     Type = (TTypeMini)select_type.SelectedValue,
                     Radius = Convert.ToInt32(input_radius.Value),
                     Badge = input_badge.Text,
@@ -109,7 +103,7 @@ namespace AntdUIDemo.Views
                 new FloatButton.ConfigBtn("按钮3", "关闭")
                 {
                     Tooltip = "文本按钮",
-                    Shape = select_shape.SelectedIndex == 0 ? TShape.Default :(select_shape.SelectedIndex == 1 ? TShape.Round : TShape.Circle),
+                    Round = select_round.SelectedIndex == 0,
                     Type = (TTypeMini)select_type.SelectedValue,
                     Radius = Convert.ToInt32(input_radius.Value),
                     Badge = input_badge.Text,

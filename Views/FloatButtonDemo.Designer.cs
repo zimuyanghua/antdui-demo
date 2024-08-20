@@ -41,7 +41,7 @@
             this.label12 = new AntdUI.Label();
             this.select_type = new AntdUI.Select();
             this.label13 = new AntdUI.Label();
-            this.select_shape = new AntdUI.Select();
+            this.select_round = new AntdUI.Select();
             this.label14 = new AntdUI.Label();
             this.label11 = new AntdUI.Label();
             this.stackPanel4 = new AntdUI.StackPanel();
@@ -176,7 +176,7 @@
             this.stackPanel5.Controls.Add(this.label12);
             this.stackPanel5.Controls.Add(this.select_type);
             this.stackPanel5.Controls.Add(this.label13);
-            this.stackPanel5.Controls.Add(this.select_shape);
+            this.stackPanel5.Controls.Add(this.select_round);
             this.stackPanel5.Controls.Add(this.label14);
             this.stackPanel5.Location = new System.Drawing.Point(3, 307);
             this.stackPanel5.Name = "stackPanel5";
@@ -226,15 +226,21 @@
             this.label13.TabIndex = 8;
             this.label13.Text = "Type";
             // 
-            // select_shape
+            // select_round
             // 
-            this.select_shape.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.select_shape.List = true;
-            this.select_shape.Location = new System.Drawing.Point(101, 3);
-            this.select_shape.Name = "select_shape";
-            this.select_shape.Size = new System.Drawing.Size(90, 26);
-            this.select_shape.TabIndex = 5;
-            this.select_shape.WaveSize = 1;
+            this.select_round.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.select_round.Items.AddRange(new object[] {
+            "True",
+            "False"});
+            this.select_round.List = true;
+            this.select_round.Location = new System.Drawing.Point(101, 3);
+            this.select_round.Name = "select_round";
+            this.select_round.SelectedIndex = 1;
+            this.select_round.SelectedValue = "False";
+            this.select_round.Size = new System.Drawing.Size(90, 26);
+            this.select_round.TabIndex = 5;
+            this.select_round.Text = "False";
+            this.select_round.WaveSize = 1;
             // 
             // label14
             // 
@@ -243,7 +249,7 @@
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(92, 26);
             this.label14.TabIndex = 4;
-            this.label14.Text = "Shape";
+            this.label14.Text = "Round";
             // 
             // label11
             // 
@@ -541,7 +547,7 @@
         private AntdUI.Label label12;
         private AntdUI.Select select_type;
         private AntdUI.Label label13;
-        private AntdUI.Select select_shape;
+        private AntdUI.Select select_round;
         private AntdUI.Label label14;
         private AntdUI.Label label11;
         private AntdUI.StackPanel stackPanel4;
