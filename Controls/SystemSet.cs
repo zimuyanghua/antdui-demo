@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AntdUI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Configuration;
@@ -13,8 +14,10 @@ namespace AntdUIDemo.Controls
 {
     public partial class SystemSet : UserControl
     {
-        public SystemSet()
+        private Window Window;
+        public SystemSet(Window _window)
         {
+            Window = _window;
             InitializeComponent();
             //初始化下拉框
             InitSelectItems();
@@ -50,14 +53,14 @@ namespace AntdUIDemo.Controls
             if (value)
             {
                 AntdUI.Config.IsLight = true;
-                BackColor = Color.White;
-                ForeColor = Color.Black;
+                Window.BackColor = Color.White;
+                Window.ForeColor = Color.Black;
             }
             else
             {
                 AntdUI.Config.IsDark = true;// 设置为深色模式
-                BackColor = Color.Black;
-                ForeColor = Color.White;
+                Window.BackColor = Color.Black;
+                Window.ForeColor = Color.White;
             }
         }
 
