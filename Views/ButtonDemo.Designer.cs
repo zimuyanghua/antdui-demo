@@ -206,7 +206,7 @@
             // panel2
             // 
             this.panel2.Back = System.Drawing.Color.Transparent;
-            this.panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.button33);
             this.panel2.Controls.Add(this.button34);
             this.panel2.Controls.Add(this.button35);

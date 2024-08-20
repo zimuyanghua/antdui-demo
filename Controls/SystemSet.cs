@@ -1,4 +1,5 @@
 ﻿using AntdUI;
+using AntdUIDemo.Utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -49,28 +50,28 @@ namespace AntdUIDemo.Controls
 
         private void switch_colormode_CheckedChanged(object sender, bool value)
         {
-            ConfigurationManager.AppSettings["ColorMode"] = value ? "Light" : "Dark";
+            AppSetting.UpdateAppSetting("ColorMode", value ? "Light" : "Dark");
             if (value)
             {
                 AntdUI.Config.IsLight = true;
                 Window.BackColor = Color.White;
-                Window.ForeColor = Color.Black;
+                Window.ForeColor = Color.FromArgb(17, 17, 17);
                 BackColor = Color.White;
-                ForeColor = Color.Black;
+                ForeColor = Color.FromArgb(17, 17, 17);
             }
             else
             {
                 AntdUI.Config.IsDark = true;// 设置为深色模式
-                Window.BackColor = Color.Black;
+                Window.BackColor = Color.FromArgb(17, 17, 17);
                 Window.ForeColor = Color.White;
-                BackColor = Color.Black;
+                BackColor = Color.FromArgb(17, 17, 17);
                 ForeColor = Color.White;
             }
         }
 
         private void switch_animation_CheckedChanged(object sender, bool value)
         {
-            ConfigurationManager.AppSettings["Animation"] = value ? "True" : "False";
+            AppSetting.UpdateAppSetting("ColorMode", value ? "Light" : "Dark");
         }
     }
 }

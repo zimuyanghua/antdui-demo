@@ -34,11 +34,13 @@
             this.divider = new AntdUI.Divider();
             this.menu = new AntdUI.Menu();
             this.panel_content = new AntdUI.StackPanel();
+            this.button_color = new AntdUI.Button();
             this.titlebar.SuspendLayout();
             this.SuspendLayout();
             // 
             // titlebar
             // 
+            this.titlebar.Controls.Add(this.button_color);
             this.titlebar.Controls.Add(this.buttonSZ);
             this.titlebar.Dock = System.Windows.Forms.DockStyle.Top;
             this.titlebar.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -92,6 +94,19 @@
             this.panel_content.TabIndex = 10;
             this.panel_content.Vertical = true;
             // 
+            // button_color
+            // 
+            this.button_color.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button_color.Ghost = true;
+            this.button_color.IconRatio = 0.6F;
+            this.button_color.ImageSvg = resources.GetString("button_color.ImageSvg");
+            this.button_color.Location = new System.Drawing.Point(806, 0);
+            this.button_color.Name = "button_color";
+            this.button_color.Radius = 0;
+            this.button_color.Size = new System.Drawing.Size(50, 40);
+            this.button_color.TabIndex = 1;
+            this.button_color.WaveSize = 0;
+            // 
             // MainWindow
             // 
             this.ClientSize = new System.Drawing.Size(1008, 624);
@@ -119,5 +134,6 @@
         private AntdUI.Menu menu;
         private AntdUI.StackPanel panel_content;
         private AntdUI.Button buttonSZ;
+        private AntdUI.Button button_color;
     }
 }

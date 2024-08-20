@@ -1,8 +1,10 @@
 ﻿using AntdUI;
 using AntdUIDemo.Controls;
 using AntdUIDemo.Models;
+using AntdUIDemo.Utils;
 using AntdUIDemo.Views;
 using System;
+using System.Configuration;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -15,10 +17,49 @@ namespace AntdUIDemo
         {
             InitializeComponent();
             AntdUI.Config.ShowInWindow = true;
+            //加载色彩模式
+            LoadColorMode();
             //加载菜单
             LoadMenu();
             buttonSZ.Click += ButtonSZ_Click;
+            button_color.Click += Button_color_Click;
             menu.SelectChanged += Menu_SelectChanged;
+        }
+
+        private void LoadColorMode()
+        {
+            //加载色彩模式
+            var value = ConfigurationManager.AppSettings["ColorMode"];
+            if (value == "Dark")
+            {
+                AntdUI.Config.IsDark = true;// 设置为深色模式
+                BackColor = Color.FromArgb(17, 17, 17);
+                ForeColor = Color.White;
+            }
+            else
+            {
+                AntdUI.Config.IsLight = true;
+                BackColor = Color.White;
+                ForeColor = Color.FromArgb(17, 17, 17);
+            }
+        }
+
+        private void Button_color_Click(object sender, EventArgs e)
+        {
+            var value = ConfigurationManager.AppSettings["ColorMode"];
+            AppSetting.UpdateAppSetting("ColorMode", value == "Dark" ? "Light" : "Dark");
+            if (value == "Dark")
+            {
+                AntdUI.Config.IsLight = true;
+                BackColor = Color.White;
+                ForeColor = Color.FromArgb(17, 17, 17);
+            }
+            else
+            {
+                AntdUI.Config.IsDark = true;// 设置为深色模式
+                BackColor = Color.FromArgb(17, 17, 17);
+                ForeColor = Color.White;
+            }
         }
 
         private void ButtonSZ_Click(object sender, EventArgs e)
