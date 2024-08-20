@@ -39,10 +39,10 @@
             this.switch3 = new AntdUI.Switch();
             this.label3 = new AntdUI.Label();
             this.stackPanel3 = new AntdUI.StackPanel();
-            this.switch2 = new AntdUI.Switch();
+            this.switch_animation = new AntdUI.Switch();
             this.label2 = new AntdUI.Label();
             this.stackPanel2 = new AntdUI.StackPanel();
-            this.switch1 = new AntdUI.Switch();
+            this.switch_colormode = new AntdUI.Switch();
             this.label1 = new AntdUI.Label();
             this.tabPage2 = new AntdUI.TabPage();
             this.stackPanel6 = new AntdUI.StackPanel();
@@ -88,7 +88,7 @@
             // tabs
             // 
             this.tabs.Alignment = System.Windows.Forms.TabAlignment.Left;
-            this.tabs.Cursor = System.Windows.Forms.Cursors.Default;
+            this.tabs.Cursor = System.Windows.Forms.Cursors.Hand;
             this.tabs.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabs.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
             this.tabs.Gap = 12;
@@ -194,7 +194,7 @@
             // 
             // stackPanel3
             // 
-            this.stackPanel3.Controls.Add(this.switch2);
+            this.stackPanel3.Controls.Add(this.switch_animation);
             this.stackPanel3.Controls.Add(this.label2);
             this.stackPanel3.Location = new System.Drawing.Point(3, 41);
             this.stackPanel3.Name = "stackPanel3";
@@ -202,19 +202,19 @@
             this.stackPanel3.TabIndex = 1;
             this.stackPanel3.Text = "stackPanel3";
             // 
-            // switch2
+            // switch_animation
             // 
-            this.switch2.AutoCheck = true;
-            this.switch2.Checked = true;
-            this.switch2.CheckedText = "是";
-            this.switch2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.switch2.Location = new System.Drawing.Point(129, 3);
-            this.switch2.Name = "switch2";
-            this.switch2.Size = new System.Drawing.Size(75, 26);
-            this.switch2.TabIndex = 1;
-            this.switch2.Text = "switch2";
-            this.switch2.UnCheckedText = "否";
-            this.switch2.WaveSize = 0;
+            this.switch_animation.AutoCheck = true;
+            this.switch_animation.Checked = true;
+            this.switch_animation.CheckedText = "是";
+            this.switch_animation.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.switch_animation.Location = new System.Drawing.Point(129, 3);
+            this.switch_animation.Name = "switch_animation";
+            this.switch_animation.Size = new System.Drawing.Size(75, 26);
+            this.switch_animation.TabIndex = 1;
+            this.switch_animation.Text = "switch2";
+            this.switch_animation.UnCheckedText = "否";
+            this.switch_animation.WaveSize = 0;
             // 
             // label2
             // 
@@ -227,7 +227,7 @@
             // 
             // stackPanel2
             // 
-            this.stackPanel2.Controls.Add(this.switch1);
+            this.stackPanel2.Controls.Add(this.switch_colormode);
             this.stackPanel2.Controls.Add(this.label1);
             this.stackPanel2.Location = new System.Drawing.Point(3, 3);
             this.stackPanel2.Name = "stackPanel2";
@@ -235,19 +235,19 @@
             this.stackPanel2.TabIndex = 0;
             this.stackPanel2.Text = "stackPanel2";
             // 
-            // switch1
+            // switch_colormode
             // 
-            this.switch1.AutoCheck = true;
-            this.switch1.Checked = true;
-            this.switch1.CheckedText = "浅色";
-            this.switch1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.switch1.Location = new System.Drawing.Point(129, 3);
-            this.switch1.Name = "switch1";
-            this.switch1.Size = new System.Drawing.Size(75, 26);
-            this.switch1.TabIndex = 1;
-            this.switch1.Text = "switch1";
-            this.switch1.UnCheckedText = "深色";
-            this.switch1.WaveSize = 0;
+            this.switch_colormode.AutoCheck = true;
+            this.switch_colormode.Checked = true;
+            this.switch_colormode.CheckedText = "浅色";
+            this.switch_colormode.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.switch_colormode.Location = new System.Drawing.Point(129, 3);
+            this.switch_colormode.Name = "switch_colormode";
+            this.switch_colormode.Size = new System.Drawing.Size(75, 26);
+            this.switch_colormode.TabIndex = 1;
+            this.switch_colormode.Text = "switch1";
+            this.switch_colormode.UnCheckedText = "深色";
+            this.switch_colormode.WaveSize = 0;
             // 
             // label1
             // 
@@ -531,10 +531,10 @@
         private AntdUI.Switch switch3;
         private AntdUI.Label label3;
         private AntdUI.StackPanel stackPanel3;
-        private AntdUI.Switch switch2;
+        private AntdUI.Switch switch_animation;
         private AntdUI.Label label2;
         private AntdUI.StackPanel stackPanel2;
-        private AntdUI.Switch switch1;
+        private AntdUI.Switch switch_colormode;
         private AntdUI.Label label1;
         private AntdUI.StackPanel stackPanel6;
         private AntdUI.StackPanel stackPanel7;

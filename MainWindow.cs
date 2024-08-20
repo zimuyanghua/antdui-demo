@@ -3,6 +3,7 @@ using AntdUIDemo.Controls;
 using AntdUIDemo.Models;
 using AntdUIDemo.Views;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace AntdUIDemo
@@ -22,14 +23,15 @@ namespace AntdUIDemo
 
         private void ButtonSZ_Click(object sender, EventArgs e)
         {
-            using(var form = new SystemSet())
+
+            using (var form = new SystemSet())
             {
-                AntdUI.Modal.open(new AntdUI.Modal.Config(this,"系统设置", form, TType.Info)
+                AntdUI.Modal.open(new AntdUI.Modal.Config(this, "系统设置", form, TType.Info)
                 {
-                    
+                    CloseIcon = true,
+                    BtnHeight = 0,
                 });
             }
-            
         }
 
         private void LoadMenu()

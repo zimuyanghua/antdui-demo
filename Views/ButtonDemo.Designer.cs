@@ -401,6 +401,7 @@
             this.button19.ImageSvg = resources.GetString("button19.ImageSvg");
             this.button19.Location = new System.Drawing.Point(160, 3);
             this.button19.Name = "button19";
+            this.button19.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.button19.Size = new System.Drawing.Size(75, 32);
             this.button19.TabIndex = 3;
             this.button19.Text = "搜索";
@@ -716,6 +717,7 @@
             // 
             // button1
             // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Default;
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button1.Location = new System.Drawing.Point(3, 3);
             this.button1.Name = "button1";

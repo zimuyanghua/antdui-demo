@@ -29,7 +29,11 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="AntdUI" Version="1.5.2" />
+	  <PackageReference Include="AntdUI" Version="1.5.3" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Reference Include="System.Configuration" />
 	</ItemGroup>
 
 </Project>
