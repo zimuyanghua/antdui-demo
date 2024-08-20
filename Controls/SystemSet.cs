@@ -55,16 +55,12 @@ namespace AntdUIDemo.Controls
                 AntdUI.Config.IsLight = true;
                 Window.BackColor = Color.White;
                 Window.ForeColor = Color.Black;
-                BackColor = Color.White;
-                ForeColor = Color.Black;
             }
             else
             {
                 AntdUI.Config.IsDark = true;// 设置为深色模式
                 Window.BackColor = Color.Black;
                 Window.ForeColor = Color.White;
-                BackColor = Color.Black;
-                ForeColor = Color.White;
             }
         }
 
