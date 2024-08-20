@@ -33,7 +33,6 @@
             this.gridPanel = new AntdUI.GridPanel();
             this.stackPanel3 = new AntdUI.StackPanel();
             this.buttonCZ = new AntdUI.Button();
-            this.buttonSZ = new AntdUI.Button();
             this.stackPanel4 = new AntdUI.StackPanel();
             this.input_gap = new AntdUI.InputNumber();
             this.label4 = new AntdUI.Label();
@@ -76,7 +75,6 @@
             // 
             // gridPanel
             // 
-            this.gridPanel.BackColor = System.Drawing.Color.White;
             this.gridPanel.Location = new System.Drawing.Point(289, 3);
             this.gridPanel.Name = "gridPanel";
             this.gridPanel.Size = new System.Drawing.Size(400, 293);
@@ -86,7 +84,6 @@
             // stackPanel3
             // 
             this.stackPanel3.Controls.Add(this.buttonCZ);
-            this.stackPanel3.Controls.Add(this.buttonSZ);
             this.stackPanel3.Controls.Add(this.stackPanel4);
             this.stackPanel3.Controls.Add(this.stackPanel5);
             this.stackPanel3.Location = new System.Drawing.Point(3, 3);
@@ -99,24 +96,13 @@
             // buttonCZ
             // 
             this.buttonCZ.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.buttonCZ.Location = new System.Drawing.Point(3, 136);
+            this.buttonCZ.Location = new System.Drawing.Point(3, 98);
             this.buttonCZ.Name = "buttonCZ";
             this.buttonCZ.Size = new System.Drawing.Size(274, 32);
             this.buttonCZ.TabIndex = 20;
             this.buttonCZ.Text = "重 置";
             this.buttonCZ.Type = AntdUI.TTypeMini.Warn;
             this.buttonCZ.WaveSize = 0;
-            // 
-            // buttonSZ
-            // 
-            this.buttonSZ.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.buttonSZ.Location = new System.Drawing.Point(3, 98);
-            this.buttonSZ.Name = "buttonSZ";
-            this.buttonSZ.Size = new System.Drawing.Size(274, 32);
-            this.buttonSZ.TabIndex = 19;
-            this.buttonSZ.Text = "设 置";
-            this.buttonSZ.Type = AntdUI.TTypeMini.Primary;
-            this.buttonSZ.WaveSize = 0;
             // 
             // stackPanel4
             // 
@@ -230,7 +216,6 @@
         private AntdUI.Input input_span;
         private AntdUI.Label label3;
         private AntdUI.GridPanel gridPanel;
-        private AntdUI.Button buttonSZ;
         private AntdUI.StackPanel stackPanel4;
         private AntdUI.InputNumber input_gap;
         private AntdUI.Label label4;

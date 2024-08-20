@@ -34,8 +34,6 @@
             this.stackPanel3 = new AntdUI.StackPanel();
             this.buttonDEL = new AntdUI.Button();
             this.buttonADD = new AntdUI.Button();
-            this.buttonCZ = new AntdUI.Button();
-            this.buttonSZ = new AntdUI.Button();
             this.stackPanel6 = new AntdUI.StackPanel();
             this.select_autoscroll = new AntdUI.Select();
             this.label4 = new AntdUI.Label();
@@ -48,6 +46,7 @@
             this.divider1 = new AntdUI.Divider();
             this.label2 = new AntdUI.Label();
             this.label1 = new AntdUI.Label();
+            this.buttonCZ = new AntdUI.Button();
             this.stackPanel1.SuspendLayout();
             this.stackPanel2.SuspendLayout();
             this.stackPanel3.SuspendLayout();
@@ -82,7 +81,6 @@
             // 
             // flowPanel
             // 
-            this.flowPanel.BackColor = System.Drawing.Color.White;
             this.flowPanel.Badge = "";
             this.flowPanel.Location = new System.Drawing.Point(289, 3);
             this.flowPanel.Name = "flowPanel";
@@ -91,10 +89,9 @@
             // 
             // stackPanel3
             // 
+            this.stackPanel3.Controls.Add(this.buttonCZ);
             this.stackPanel3.Controls.Add(this.buttonDEL);
             this.stackPanel3.Controls.Add(this.buttonADD);
-            this.stackPanel3.Controls.Add(this.buttonCZ);
-            this.stackPanel3.Controls.Add(this.buttonSZ);
             this.stackPanel3.Controls.Add(this.stackPanel6);
             this.stackPanel3.Controls.Add(this.stackPanel5);
             this.stackPanel3.Controls.Add(this.stackPanel4);
@@ -108,7 +105,7 @@
             // buttonDEL
             // 
             this.buttonDEL.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.buttonDEL.Location = new System.Drawing.Point(3, 231);
+            this.buttonDEL.Location = new System.Drawing.Point(3, 155);
             this.buttonDEL.Name = "buttonDEL";
             this.buttonDEL.Size = new System.Drawing.Size(274, 32);
             this.buttonDEL.TabIndex = 36;
@@ -119,35 +116,13 @@
             // buttonADD
             // 
             this.buttonADD.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.buttonADD.Location = new System.Drawing.Point(3, 193);
+            this.buttonADD.Location = new System.Drawing.Point(3, 117);
             this.buttonADD.Name = "buttonADD";
             this.buttonADD.Size = new System.Drawing.Size(274, 32);
             this.buttonADD.TabIndex = 35;
             this.buttonADD.Text = "添加 Button";
             this.buttonADD.Type = AntdUI.TTypeMini.Info;
             this.buttonADD.WaveSize = 0;
-            // 
-            // buttonCZ
-            // 
-            this.buttonCZ.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.buttonCZ.Location = new System.Drawing.Point(3, 155);
-            this.buttonCZ.Name = "buttonCZ";
-            this.buttonCZ.Size = new System.Drawing.Size(274, 32);
-            this.buttonCZ.TabIndex = 34;
-            this.buttonCZ.Text = "重 置";
-            this.buttonCZ.Type = AntdUI.TTypeMini.Warn;
-            this.buttonCZ.WaveSize = 0;
-            // 
-            // buttonSZ
-            // 
-            this.buttonSZ.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.buttonSZ.Location = new System.Drawing.Point(3, 117);
-            this.buttonSZ.Name = "buttonSZ";
-            this.buttonSZ.Size = new System.Drawing.Size(274, 32);
-            this.buttonSZ.TabIndex = 33;
-            this.buttonSZ.Text = "设 置";
-            this.buttonSZ.Type = AntdUI.TTypeMini.Primary;
-            this.buttonSZ.WaveSize = 0;
             // 
             // stackPanel6
             // 
@@ -267,6 +242,17 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "FlowPanel 流动布局";
             // 
+            // buttonCZ
+            // 
+            this.buttonCZ.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonCZ.Location = new System.Drawing.Point(3, 193);
+            this.buttonCZ.Name = "buttonCZ";
+            this.buttonCZ.Size = new System.Drawing.Size(274, 32);
+            this.buttonCZ.TabIndex = 37;
+            this.buttonCZ.Text = "重 置";
+            this.buttonCZ.Type = AntdUI.TTypeMini.Warn;
+            this.buttonCZ.WaveSize = 0;
+            // 
             // FlowPanelDemo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -302,9 +288,8 @@
         private AntdUI.StackPanel stackPanel6;
         private AntdUI.Select select_autoscroll;
         private AntdUI.Label label4;
-        private AntdUI.Button buttonCZ;
-        private AntdUI.Button buttonSZ;
         private AntdUI.Button buttonDEL;
         private AntdUI.Button buttonADD;
+        private AntdUI.Button buttonCZ;
     }
 }

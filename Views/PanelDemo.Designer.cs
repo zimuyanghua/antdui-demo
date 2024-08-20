@@ -33,7 +33,6 @@
             this.stackPanel15 = new AntdUI.StackPanel();
             this.panel = new AntdUI.Panel();
             this.buttonCZ = new AntdUI.Button();
-            this.buttonSZ = new AntdUI.Button();
             this.stackPanel13 = new AntdUI.StackPanel();
             this.input_shadowOH = new AntdUI.InputNumber();
             this.label12 = new AntdUI.Label();
@@ -124,7 +123,6 @@
             // 
             this.stackPanel15.Controls.Add(this.panel);
             this.stackPanel15.Controls.Add(this.buttonCZ);
-            this.stackPanel15.Controls.Add(this.buttonSZ);
             this.stackPanel15.Controls.Add(this.stackPanel13);
             this.stackPanel15.Controls.Add(this.stackPanel14);
             this.stackPanel15.Location = new System.Drawing.Point(289, 3);
@@ -136,8 +134,8 @@
             // 
             // panel
             // 
-            this.panel.BackColor = System.Drawing.SystemColors.Control;
-            this.panel.Location = new System.Drawing.Point(3, 155);
+            this.panel.BackColor = System.Drawing.Color.Transparent;
+            this.panel.Location = new System.Drawing.Point(3, 117);
             this.panel.Name = "panel";
             this.panel.Shadow = 12;
             this.panel.ShadowOpacityAnimation = true;
@@ -148,24 +146,13 @@
             // buttonCZ
             // 
             this.buttonCZ.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.buttonCZ.Location = new System.Drawing.Point(3, 117);
+            this.buttonCZ.Location = new System.Drawing.Point(3, 79);
             this.buttonCZ.Name = "buttonCZ";
             this.buttonCZ.Size = new System.Drawing.Size(360, 32);
             this.buttonCZ.TabIndex = 33;
             this.buttonCZ.Text = "重 置";
             this.buttonCZ.Type = AntdUI.TTypeMini.Warn;
             this.buttonCZ.WaveSize = 0;
-            // 
-            // buttonSZ
-            // 
-            this.buttonSZ.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.buttonSZ.Location = new System.Drawing.Point(3, 79);
-            this.buttonSZ.Name = "buttonSZ";
-            this.buttonSZ.Size = new System.Drawing.Size(360, 32);
-            this.buttonSZ.TabIndex = 32;
-            this.buttonSZ.Text = "设 置";
-            this.buttonSZ.Type = AntdUI.TTypeMini.Primary;
-            this.buttonSZ.WaveSize = 0;
             // 
             // stackPanel13
             // 
@@ -680,7 +667,6 @@
         private AntdUI.StackPanel stackPanel15;
         private AntdUI.Panel panel;
         private AntdUI.Button buttonCZ;
-        private AntdUI.Button buttonSZ;
         private AntdUI.StackPanel stackPanel13;
         private AntdUI.InputNumber input_shadowOH;
         private AntdUI.Label label12;

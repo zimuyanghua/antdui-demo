@@ -33,39 +33,25 @@
             this.tabPage1 = new AntdUI.TabPage();
             this.stackPanel1 = new AntdUI.StackPanel();
             this.stackPanel5 = new AntdUI.StackPanel();
-            this.switch4 = new AntdUI.Switch();
+            this.switch_scrollbar = new AntdUI.Switch();
             this.label4 = new AntdUI.Label();
             this.stackPanel4 = new AntdUI.StackPanel();
-            this.switch3 = new AntdUI.Switch();
+            this.switch_shadow = new AntdUI.Switch();
             this.label3 = new AntdUI.Label();
             this.stackPanel3 = new AntdUI.StackPanel();
             this.switch_animation = new AntdUI.Switch();
             this.label2 = new AntdUI.Label();
             this.stackPanel2 = new AntdUI.StackPanel();
-            this.switch_colormode = new AntdUI.Switch();
+            this.select_colormode = new AntdUI.Select();
             this.label1 = new AntdUI.Label();
             this.tabPage2 = new AntdUI.TabPage();
             this.stackPanel6 = new AntdUI.StackPanel();
             this.stackPanel8 = new AntdUI.StackPanel();
-            this.inputNumber1 = new AntdUI.InputNumber();
+            this.input_offset = new AntdUI.InputNumber();
             this.label6 = new AntdUI.Label();
             this.stackPanel7 = new AntdUI.StackPanel();
-            this.switch5 = new AntdUI.Switch();
+            this.switch_showinwindow = new AntdUI.Switch();
             this.label5 = new AntdUI.Label();
-            this.tabPage3 = new AntdUI.TabPage();
-            this.stackPanel11 = new AntdUI.StackPanel();
-            this.stackPanel13 = new AntdUI.StackPanel();
-            this.inputNumber3 = new AntdUI.InputNumber();
-            this.label10 = new AntdUI.Label();
-            this.stackPanel12 = new AntdUI.StackPanel();
-            this.inputNumber2 = new AntdUI.InputNumber();
-            this.label9 = new AntdUI.Label();
-            this.stackPanel10 = new AntdUI.StackPanel();
-            this.select2 = new AntdUI.Select();
-            this.label8 = new AntdUI.Label();
-            this.stackPanel9 = new AntdUI.StackPanel();
-            this.select1 = new AntdUI.Select();
-            this.label7 = new AntdUI.Label();
             this.tabs.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.stackPanel1.SuspendLayout();
@@ -77,12 +63,6 @@
             this.stackPanel6.SuspendLayout();
             this.stackPanel8.SuspendLayout();
             this.stackPanel7.SuspendLayout();
-            this.tabPage3.SuspendLayout();
-            this.stackPanel11.SuspendLayout();
-            this.stackPanel13.SuspendLayout();
-            this.stackPanel12.SuspendLayout();
-            this.stackPanel10.SuspendLayout();
-            this.stackPanel9.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabs
@@ -96,7 +76,6 @@
             this.tabs.Name = "tabs";
             this.tabs.Pages.Add(this.tabPage1);
             this.tabs.Pages.Add(this.tabPage2);
-            this.tabs.Pages.Add(this.tabPage3);
             this.tabs.Size = new System.Drawing.Size(620, 420);
             this.tabs.Style = styleLine1;
             this.tabs.TabIndex = 0;
@@ -129,7 +108,7 @@
             // 
             // stackPanel5
             // 
-            this.stackPanel5.Controls.Add(this.switch4);
+            this.stackPanel5.Controls.Add(this.switch_scrollbar);
             this.stackPanel5.Controls.Add(this.label4);
             this.stackPanel5.Location = new System.Drawing.Point(3, 117);
             this.stackPanel5.Name = "stackPanel5";
@@ -137,18 +116,18 @@
             this.stackPanel5.TabIndex = 3;
             this.stackPanel5.Text = "stackPanel5";
             // 
-            // switch4
+            // switch_scrollbar
             // 
-            this.switch4.AutoCheck = true;
-            this.switch4.CheckedText = "是";
-            this.switch4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.switch4.Location = new System.Drawing.Point(129, 3);
-            this.switch4.Name = "switch4";
-            this.switch4.Size = new System.Drawing.Size(75, 26);
-            this.switch4.TabIndex = 1;
-            this.switch4.Text = "switch4";
-            this.switch4.UnCheckedText = "否";
-            this.switch4.WaveSize = 0;
+            this.switch_scrollbar.AutoCheck = true;
+            this.switch_scrollbar.CheckedText = "是";
+            this.switch_scrollbar.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.switch_scrollbar.Location = new System.Drawing.Point(129, 3);
+            this.switch_scrollbar.Name = "switch_scrollbar";
+            this.switch_scrollbar.Size = new System.Drawing.Size(75, 26);
+            this.switch_scrollbar.TabIndex = 1;
+            this.switch_scrollbar.Text = "switch4";
+            this.switch_scrollbar.UnCheckedText = "否";
+            this.switch_scrollbar.WaveSize = 0;
             // 
             // label4
             // 
@@ -161,7 +140,7 @@
             // 
             // stackPanel4
             // 
-            this.stackPanel4.Controls.Add(this.switch3);
+            this.stackPanel4.Controls.Add(this.switch_shadow);
             this.stackPanel4.Controls.Add(this.label3);
             this.stackPanel4.Location = new System.Drawing.Point(3, 79);
             this.stackPanel4.Name = "stackPanel4";
@@ -169,19 +148,19 @@
             this.stackPanel4.TabIndex = 2;
             this.stackPanel4.Text = "stackPanel4";
             // 
-            // switch3
+            // switch_shadow
             // 
-            this.switch3.AutoCheck = true;
-            this.switch3.Checked = true;
-            this.switch3.CheckedText = "是";
-            this.switch3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.switch3.Location = new System.Drawing.Point(129, 3);
-            this.switch3.Name = "switch3";
-            this.switch3.Size = new System.Drawing.Size(75, 26);
-            this.switch3.TabIndex = 1;
-            this.switch3.Text = "switch3";
-            this.switch3.UnCheckedText = "否";
-            this.switch3.WaveSize = 0;
+            this.switch_shadow.AutoCheck = true;
+            this.switch_shadow.Checked = true;
+            this.switch_shadow.CheckedText = "是";
+            this.switch_shadow.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.switch_shadow.Location = new System.Drawing.Point(129, 3);
+            this.switch_shadow.Name = "switch_shadow";
+            this.switch_shadow.Size = new System.Drawing.Size(75, 26);
+            this.switch_shadow.TabIndex = 1;
+            this.switch_shadow.Text = "switch3";
+            this.switch_shadow.UnCheckedText = "否";
+            this.switch_shadow.WaveSize = 0;
             // 
             // label3
             // 
@@ -227,7 +206,7 @@
             // 
             // stackPanel2
             // 
-            this.stackPanel2.Controls.Add(this.switch_colormode);
+            this.stackPanel2.Controls.Add(this.select_colormode);
             this.stackPanel2.Controls.Add(this.label1);
             this.stackPanel2.Location = new System.Drawing.Point(3, 3);
             this.stackPanel2.Name = "stackPanel2";
@@ -235,19 +214,21 @@
             this.stackPanel2.TabIndex = 0;
             this.stackPanel2.Text = "stackPanel2";
             // 
-            // switch_colormode
+            // select_colormode
             // 
-            this.switch_colormode.AutoCheck = true;
-            this.switch_colormode.Checked = true;
-            this.switch_colormode.CheckedText = "浅色";
-            this.switch_colormode.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.switch_colormode.Location = new System.Drawing.Point(129, 3);
-            this.switch_colormode.Name = "switch_colormode";
-            this.switch_colormode.Size = new System.Drawing.Size(75, 26);
-            this.switch_colormode.TabIndex = 1;
-            this.switch_colormode.Text = "switch1";
-            this.switch_colormode.UnCheckedText = "深色";
-            this.switch_colormode.WaveSize = 0;
+            this.select_colormode.Items.AddRange(new object[] {
+            "Auto",
+            "Light",
+            "Dark"});
+            this.select_colormode.List = true;
+            this.select_colormode.Location = new System.Drawing.Point(129, 3);
+            this.select_colormode.Name = "select_colormode";
+            this.select_colormode.SelectedIndex = 0;
+            this.select_colormode.SelectedValue = "Auto";
+            this.select_colormode.Size = new System.Drawing.Size(90, 26);
+            this.select_colormode.TabIndex = 2;
+            this.select_colormode.Text = "Auto";
+            this.select_colormode.WaveSize = 0;
             // 
             // label1
             // 
@@ -265,7 +246,7 @@
             this.tabPage2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.tabPage2.Location = new System.Drawing.Point(87, 3);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(482, 387);
+            this.tabPage2.Size = new System.Drawing.Size(530, 414);
             this.tabPage2.TabIndex = 0;
             this.tabPage2.Text = "消息配置";
             // 
@@ -276,29 +257,29 @@
             this.stackPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.stackPanel6.Location = new System.Drawing.Point(0, 0);
             this.stackPanel6.Name = "stackPanel6";
-            this.stackPanel6.Size = new System.Drawing.Size(482, 387);
+            this.stackPanel6.Size = new System.Drawing.Size(530, 414);
             this.stackPanel6.TabIndex = 0;
             this.stackPanel6.Text = "stackPanel6";
             this.stackPanel6.Vertical = true;
             // 
             // stackPanel8
             // 
-            this.stackPanel8.Controls.Add(this.inputNumber1);
+            this.stackPanel8.Controls.Add(this.input_offset);
             this.stackPanel8.Controls.Add(this.label6);
             this.stackPanel8.Location = new System.Drawing.Point(3, 41);
             this.stackPanel8.Name = "stackPanel8";
-            this.stackPanel8.Size = new System.Drawing.Size(476, 32);
+            this.stackPanel8.Size = new System.Drawing.Size(524, 32);
             this.stackPanel8.TabIndex = 5;
             this.stackPanel8.Text = "stackPanel8";
             // 
-            // inputNumber1
+            // input_offset
             // 
-            this.inputNumber1.Location = new System.Drawing.Point(129, 3);
-            this.inputNumber1.Name = "inputNumber1";
-            this.inputNumber1.Size = new System.Drawing.Size(75, 26);
-            this.inputNumber1.TabIndex = 1;
-            this.inputNumber1.Text = "0";
-            this.inputNumber1.WaveSize = 0;
+            this.input_offset.Location = new System.Drawing.Point(129, 3);
+            this.input_offset.Name = "input_offset";
+            this.input_offset.Size = new System.Drawing.Size(75, 26);
+            this.input_offset.TabIndex = 1;
+            this.input_offset.Text = "0";
+            this.input_offset.WaveSize = 0;
             // 
             // label6
             // 
@@ -311,26 +292,26 @@
             // 
             // stackPanel7
             // 
-            this.stackPanel7.Controls.Add(this.switch5);
+            this.stackPanel7.Controls.Add(this.switch_showinwindow);
             this.stackPanel7.Controls.Add(this.label5);
             this.stackPanel7.Location = new System.Drawing.Point(3, 3);
             this.stackPanel7.Name = "stackPanel7";
-            this.stackPanel7.Size = new System.Drawing.Size(476, 32);
+            this.stackPanel7.Size = new System.Drawing.Size(524, 32);
             this.stackPanel7.TabIndex = 4;
             this.stackPanel7.Text = "stackPanel7";
             // 
-            // switch5
+            // switch_showinwindow
             // 
-            this.switch5.AutoCheck = true;
-            this.switch5.CheckedText = "是";
-            this.switch5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.switch5.Location = new System.Drawing.Point(129, 3);
-            this.switch5.Name = "switch5";
-            this.switch5.Size = new System.Drawing.Size(75, 26);
-            this.switch5.TabIndex = 1;
-            this.switch5.Text = "switch5";
-            this.switch5.UnCheckedText = "否";
-            this.switch5.WaveSize = 0;
+            this.switch_showinwindow.AutoCheck = true;
+            this.switch_showinwindow.CheckedText = "是";
+            this.switch_showinwindow.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.switch_showinwindow.Location = new System.Drawing.Point(129, 3);
+            this.switch_showinwindow.Name = "switch_showinwindow";
+            this.switch_showinwindow.Size = new System.Drawing.Size(75, 26);
+            this.switch_showinwindow.TabIndex = 1;
+            this.switch_showinwindow.Text = "switch5";
+            this.switch_showinwindow.UnCheckedText = "否";
+            this.switch_showinwindow.WaveSize = 0;
             // 
             // label5
             // 
@@ -340,154 +321,6 @@
             this.label5.TabIndex = 0;
             this.label5.Text = "窗口内弹出";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.stackPanel11);
-            this.tabPage3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabPage3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
-            this.tabPage3.Location = new System.Drawing.Point(87, 3);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(530, 414);
-            this.tabPage3.TabIndex = 0;
-            this.tabPage3.Text = "文本设置";
-            // 
-            // stackPanel11
-            // 
-            this.stackPanel11.Controls.Add(this.stackPanel13);
-            this.stackPanel11.Controls.Add(this.stackPanel12);
-            this.stackPanel11.Controls.Add(this.stackPanel10);
-            this.stackPanel11.Controls.Add(this.stackPanel9);
-            this.stackPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.stackPanel11.Location = new System.Drawing.Point(0, 0);
-            this.stackPanel11.Name = "stackPanel11";
-            this.stackPanel11.Size = new System.Drawing.Size(530, 414);
-            this.stackPanel11.TabIndex = 0;
-            this.stackPanel11.Text = "stackPanel11";
-            this.stackPanel11.Vertical = true;
-            // 
-            // stackPanel13
-            // 
-            this.stackPanel13.Controls.Add(this.inputNumber3);
-            this.stackPanel13.Controls.Add(this.label10);
-            this.stackPanel13.Location = new System.Drawing.Point(3, 117);
-            this.stackPanel13.Name = "stackPanel13";
-            this.stackPanel13.Size = new System.Drawing.Size(524, 32);
-            this.stackPanel13.TabIndex = 9;
-            this.stackPanel13.Text = "stackPanel13";
-            // 
-            // inputNumber3
-            // 
-            this.inputNumber3.DecimalPlaces = 2;
-            this.inputNumber3.Location = new System.Drawing.Point(129, 3);
-            this.inputNumber3.Name = "inputNumber3";
-            this.inputNumber3.Size = new System.Drawing.Size(100, 26);
-            this.inputNumber3.TabIndex = 1;
-            this.inputNumber3.Text = "1.00";
-            this.inputNumber3.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.inputNumber3.WaveSize = 0;
-            // 
-            // label10
-            // 
-            this.label10.Location = new System.Drawing.Point(3, 3);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(120, 26);
-            this.label10.TabIndex = 0;
-            this.label10.Text = "DPI";
-            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // stackPanel12
-            // 
-            this.stackPanel12.Controls.Add(this.inputNumber2);
-            this.stackPanel12.Controls.Add(this.label9);
-            this.stackPanel12.Location = new System.Drawing.Point(3, 79);
-            this.stackPanel12.Name = "stackPanel12";
-            this.stackPanel12.Size = new System.Drawing.Size(524, 32);
-            this.stackPanel12.TabIndex = 8;
-            this.stackPanel12.Text = "stackPanel12";
-            // 
-            // inputNumber2
-            // 
-            this.inputNumber2.Location = new System.Drawing.Point(129, 3);
-            this.inputNumber2.Name = "inputNumber2";
-            this.inputNumber2.Size = new System.Drawing.Size(100, 26);
-            this.inputNumber2.TabIndex = 1;
-            this.inputNumber2.Text = "9";
-            this.inputNumber2.Value = new decimal(new int[] {
-            9,
-            0,
-            0,
-            0});
-            this.inputNumber2.WaveSize = 0;
-            // 
-            // label9
-            // 
-            this.label9.Location = new System.Drawing.Point(3, 3);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(120, 26);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "字体大小";
-            this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // stackPanel10
-            // 
-            this.stackPanel10.Controls.Add(this.select2);
-            this.stackPanel10.Controls.Add(this.label8);
-            this.stackPanel10.Location = new System.Drawing.Point(3, 41);
-            this.stackPanel10.Name = "stackPanel10";
-            this.stackPanel10.Size = new System.Drawing.Size(524, 32);
-            this.stackPanel10.TabIndex = 7;
-            this.stackPanel10.Text = "stackPanel10";
-            // 
-            // select2
-            // 
-            this.select2.List = true;
-            this.select2.Location = new System.Drawing.Point(129, 3);
-            this.select2.Name = "select2";
-            this.select2.Size = new System.Drawing.Size(100, 26);
-            this.select2.TabIndex = 1;
-            this.select2.WaveSize = 0;
-            // 
-            // label8
-            // 
-            this.label8.Location = new System.Drawing.Point(3, 3);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(120, 26);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "默认字体";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // stackPanel9
-            // 
-            this.stackPanel9.Controls.Add(this.select1);
-            this.stackPanel9.Controls.Add(this.label7);
-            this.stackPanel9.Location = new System.Drawing.Point(3, 3);
-            this.stackPanel9.Name = "stackPanel9";
-            this.stackPanel9.Size = new System.Drawing.Size(524, 32);
-            this.stackPanel9.TabIndex = 6;
-            this.stackPanel9.Text = "stackPanel9";
-            // 
-            // select1
-            // 
-            this.select1.List = true;
-            this.select1.Location = new System.Drawing.Point(129, 3);
-            this.select1.Name = "select1";
-            this.select1.Size = new System.Drawing.Size(100, 26);
-            this.select1.TabIndex = 1;
-            this.select1.WaveSize = 0;
-            // 
-            // label7
-            // 
-            this.label7.Location = new System.Drawing.Point(3, 3);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(120, 26);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "文本质量";
-            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // SystemSet
             // 
@@ -508,12 +341,6 @@
             this.stackPanel6.ResumeLayout(false);
             this.stackPanel8.ResumeLayout(false);
             this.stackPanel7.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
-            this.stackPanel11.ResumeLayout(false);
-            this.stackPanel13.ResumeLayout(false);
-            this.stackPanel12.ResumeLayout(false);
-            this.stackPanel10.ResumeLayout(false);
-            this.stackPanel9.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -525,37 +352,23 @@
         private AntdUI.TabPage tabPage2;
         private AntdUI.StackPanel stackPanel1;
         private AntdUI.StackPanel stackPanel5;
-        private AntdUI.Switch switch4;
+        private AntdUI.Switch switch_scrollbar;
         private AntdUI.Label label4;
         private AntdUI.StackPanel stackPanel4;
-        private AntdUI.Switch switch3;
+        private AntdUI.Switch switch_shadow;
         private AntdUI.Label label3;
         private AntdUI.StackPanel stackPanel3;
         private AntdUI.Switch switch_animation;
         private AntdUI.Label label2;
         private AntdUI.StackPanel stackPanel2;
-        private AntdUI.Switch switch_colormode;
         private AntdUI.Label label1;
         private AntdUI.StackPanel stackPanel6;
         private AntdUI.StackPanel stackPanel7;
-        private AntdUI.Switch switch5;
+        private AntdUI.Switch switch_showinwindow;
         private AntdUI.Label label5;
         private AntdUI.StackPanel stackPanel8;
         private AntdUI.Label label6;
-        private AntdUI.InputNumber inputNumber1;
-        private AntdUI.TabPage tabPage3;
-        private AntdUI.StackPanel stackPanel11;
-        private AntdUI.StackPanel stackPanel10;
-        private AntdUI.Select select2;
-        private AntdUI.Label label8;
-        private AntdUI.StackPanel stackPanel9;
-        private AntdUI.Select select1;
-        private AntdUI.Label label7;
-        private AntdUI.StackPanel stackPanel12;
-        private AntdUI.InputNumber inputNumber2;
-        private AntdUI.Label label9;
-        private AntdUI.StackPanel stackPanel13;
-        private AntdUI.Label label10;
-        private AntdUI.InputNumber inputNumber3;
+        private AntdUI.InputNumber input_offset;
+        private AntdUI.Select select_colormode;
     }
 }

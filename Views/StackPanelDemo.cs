@@ -18,8 +18,8 @@ namespace AntdUIDemo.Views
             InitializeComponent();
             //设置默认值
             InitData();
-            // 绑定按钮事件
-            BindButtonClick();
+            // 绑定事件
+            BindEventHandler();
         }
 
         private void StackPanelDemo_Load(object sender, EventArgs e)
@@ -47,12 +47,44 @@ namespace AntdUIDemo.Views
             }
         }
 
-        private void BindButtonClick()
+        private void BindEventHandler()
         {
-            buttonSZ.Click += ButtonSZ_Click;
             buttonCZ.Click += ButtonCZ_Click;
             buttonADD.Click += ButtonADD_Click;
             buttonDEL.Click += ButtonDEL_Click;
+
+            select_autoscroll.SelectedIndexChanged += select_intvalue_SelectedIndexChanged;
+            select_vertical.SelectedIndexChanged += select_intvalue_SelectedIndexChanged;
+
+            input_gap.ValueChanged += input_gap_ValueChanged;
+
+            input_itemsize.TextChanged += input_itemsize_TextChanged;
+        }
+
+        private void InitData()
+        {
+            select_autoscroll.SelectedIndex = 1;
+            input_gap.Value = 0;
+            input_itemsize.Text = "10%";
+            select_vertical.SelectedIndex = 0;
+        }
+
+        #region 事件
+
+        private void input_itemsize_TextChanged(object sender, EventArgs e)
+        {
+            stackPanel.ItemSize = input_itemsize.Text;
+        }
+
+        private void input_gap_ValueChanged(object sender, decimal value)
+        {
+            stackPanel.Gap = (int)input_gap.Value;
+        }
+
+        private void select_intvalue_SelectedIndexChanged(object sender, int value)
+        {
+            stackPanel.AutoScroll = select_autoscroll.SelectedIndex == 0;
+            stackPanel.Vertical = select_vertical.SelectedIndex == 0;
         }
 
         private void ButtonDEL_Click(object sender, EventArgs e)
@@ -81,22 +113,7 @@ namespace AntdUIDemo.Views
             InitData();
             LoadStackPanel();
         }
-
-        private void ButtonSZ_Click(object sender, EventArgs e)
-        {
-            stackPanel.AutoScroll = select_autoscroll.SelectedIndex == 0;
-            stackPanel.Gap = (int)input_gap.Value;
-            stackPanel.ItemSize = input_itemsize.Text;
-            stackPanel.Vertical = select_vertical.SelectedIndex == 0;
-        }
-
-        private void InitData()
-        {
-            select_autoscroll.SelectedIndex = 1;
-            input_gap.Value = 0;
-            input_itemsize.Text = "10%";
-            select_vertical.SelectedIndex = 0;
-        }
+        #endregion
 
     }
 }

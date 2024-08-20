@@ -3,6 +3,7 @@ using AntdUIDemo.Controls;
 using AntdUIDemo.Models;
 using AntdUIDemo.Utils;
 using AntdUIDemo.Views;
+using Microsoft.Win32;
 using System;
 using System.Configuration;
 using System.Drawing;
@@ -17,60 +18,87 @@ namespace AntdUIDemo
         {
             InitializeComponent();
             AntdUI.Config.ShowInWindow = true;
-            //加载色彩模式
-            LoadColorMode();
+            //加载配置文件
+            LoadAppConfig();
             //加载菜单
             LoadMenu();
-            buttonSZ.Click += ButtonSZ_Click;
-            button_color.Click += Button_color_Click;
-            menu.SelectChanged += Menu_SelectChanged;
+            //绑定事件
+            BindEventHandler();
         }
 
-        private void LoadColorMode()
+        private void BindEventHandler()
+        {
+            buttonSZ.Click += ButtonSZ_Click;
+            button_color.Click += Button_color_Click;
+
+            menu.SelectChanged += Menu_SelectChanged;
+            //监听系统深浅色变化
+            SystemEvents.UserPreferenceChanged += SystemEvents_UserPreferenceChanged;
+        }
+
+        private void SystemEvents_UserPreferenceChanged(object sender, UserPreferenceChangedEventArgs e)
+        {
+            if (e.Category == UserPreferenceCategory.General)
+            {
+                ThemeHelper.SetColorMode(this, ThemeHelper.IsLightMode());
+            }
+        }
+
+        private void LoadAppConfig()
         {
             //加载色彩模式
             var value = ConfigurationManager.AppSettings["ColorMode"];
-            if (value == "Dark")
+            if (value == "Auto")
             {
-                AntdUI.Config.IsDark = true;// 设置为深色模式
-                BackColor = Color.FromArgb(17, 17, 17);
-                ForeColor = Color.White;
+                ThemeHelper.SetColorMode(this, ThemeHelper.IsLightMode());
             }
             else
             {
-                AntdUI.Config.IsLight = true;
-                BackColor = Color.White;
-                ForeColor = Color.FromArgb(17, 17, 17);
+                ThemeHelper.SetColorMode(this, value == "Light");
             }
+            //加载动画
+            var animation = ConfigurationManager.AppSettings["Animation"];
+            AntdUI.Config.Animation = animation == "True";
+            //加载阴影
+            var shadow = ConfigurationManager.AppSettings["ShadowEnabled"];
+            AntdUI.Config.ShadowEnabled = shadow == "True";
+            //滚动条
+            var scrollbar = ConfigurationManager.AppSettings["ScrollBarHide"];
+            AntdUI.Config.ScrollBarHide = scrollbar == "True";
+            //窗口内弹出 Message/Notification
+            var popup = ConfigurationManager.AppSettings["ShowInWindow"];
+            AntdUI.Config.ShowInWindow = popup == "True";
+            //通知消息边界偏移量XY（Message/Notification）
+            var messageOffset = ConfigurationManager.AppSettings["NoticeWindowOffsetXY"];
+            AntdUI.Config.NoticeWindowOffsetXY = Convert.ToInt32(messageOffset);
         }
 
         private void Button_color_Click(object sender, EventArgs e)
         {
             var value = ConfigurationManager.AppSettings["ColorMode"];
-            AppSetting.UpdateAppSetting("ColorMode", value == "Dark" ? "Light" : "Dark");
-            if (value == "Dark")
+            if (value == "Auto")
             {
-                AntdUI.Config.IsLight = true;
-                BackColor = Color.White;
-                ForeColor = Color.FromArgb(17, 17, 17);
+                //反向设置
+                ThemeHelper.SetColorMode(this, !ThemeHelper.IsLightMode());
+                AppSetting.UpdateAppSetting("ColorMode", ThemeHelper.IsLightMode() ? "Dark" : "Light");
             }
             else
             {
-                AntdUI.Config.IsDark = true;// 设置为深色模式
-                BackColor = Color.FromArgb(17, 17, 17);
-                ForeColor = Color.White;
+                ThemeHelper.SetColorMode(this, value == "Dark");
+                AppSetting.UpdateAppSetting("ColorMode", value == "Dark" ? "Light" : "Dark");
             }
         }
 
         private void ButtonSZ_Click(object sender, EventArgs e)
         {
-
             using (var form = new SystemSet(this))
             {
                 AntdUI.Modal.open(new AntdUI.Modal.Config(this, "系统设置", form, TType.Info)
                 {
                     CloseIcon = true,
                     BtnHeight = 0,
+                    Keyboard = false,
+                    MaskClosable = false,
                 });
             }
         }

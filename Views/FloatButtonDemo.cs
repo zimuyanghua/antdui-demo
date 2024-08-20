@@ -17,8 +17,8 @@ namespace AntdUIDemo.Views
             InitSelectItems();
             //设置默认值
             InitData();
-            // 绑定按钮事件
-            BindButtonClick();
+            // 绑定事件
+            BindEventHandler();
         }
 
         private void FloatButtonDemo_Load(object sender, EventArgs e)
@@ -27,11 +27,26 @@ namespace AntdUIDemo.Views
             LoadFloatButton();
         }
 
-        private void BindButtonClick()
+        private void BindEventHandler()
         {
-            buttonOpen.Click += buttonOpen_Click;
             buttonClose.Click += buttonClose_Click;
             buttonCZ.Click += buttonCZ_Click;
+
+            select_align.SelectedIndexChanged += select_intvalue_SelectedIndexChanged;
+            select_round.SelectedIndexChanged += select_intvalue_SelectedIndexChanged;
+            select_topmost.SelectedIndexChanged += select_intvalue_SelectedIndexChanged;
+            select_vertical.SelectedIndexChanged += select_intvalue_SelectedIndexChanged;
+            select_type.SelectedIndexChanged += select_intvalue_SelectedIndexChanged;
+
+            input_size.ValueChanged += input_decimalvalue_ValeChanged;
+            input_mx.ValueChanged += input_decimalvalue_ValeChanged;
+            input_my.ValueChanged += input_decimalvalue_ValeChanged;
+            input_radius.ValueChanged += input_decimalvalue_ValeChanged;
+            input_badgesize.ValueChanged += input_decimalvalue_ValeChanged;
+
+            input_badge.TextChanged += input_badge_TextChanged;
+
+            colorPicker.ValueChanged += colorPicker_ValueChanged;
         }
 
         // 初始化下拉框
@@ -157,17 +172,38 @@ namespace AntdUIDemo.Views
             LoadFloatButton();
         }
 
-        // 设置
-        private void buttonOpen_Click(object sender, EventArgs e)
-        {
-            CloseFloatButtonForm();
-            LoadFloatButton();
-        }
-
         // 关闭
         private void buttonClose_Click(object sender, EventArgs e)
         {
             CloseFloatButtonForm();
         }
+
+        #region EventHandler
+        private void select_intvalue_SelectedIndexChanged(object sender, int value)
+        {
+            CloseFloatButtonForm();
+            LoadFloatButton();
+        }
+
+        private void colorPicker_ValueChanged(object sender, Color value)
+        {
+            CloseFloatButtonForm();
+            LoadFloatButton();
+        }
+
+        private void input_badge_TextChanged(object sender, EventArgs e)
+        {
+            CloseFloatButtonForm();
+            LoadFloatButton();
+        }
+
+        private void input_decimalvalue_ValeChanged(object sender, decimal value)
+        {
+            CloseFloatButtonForm();
+            LoadFloatButton();
+        }
+        #endregion
+
+
     }
 }

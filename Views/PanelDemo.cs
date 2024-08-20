@@ -1,5 +1,6 @@
 ﻿using AntdUI;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace AntdUIDemo.Views
@@ -13,19 +14,30 @@ namespace AntdUIDemo.Views
             InitSelectItems();
             // 设置默认值
             InitData();
-            // 绑定按钮事件
-            BindButtonClick();
+            // 绑定事件
+            BindEventHandler();
         }
 
-        private void BindButtonClick()
+        private void BindEventHandler()
         {
-            buttonSZ.Click += buttonSZ_Click;
             buttonCZ.Click += buttonCZ_Click;
-        }
 
-        private void PanelDemo_Load(object sender, EventArgs e)
-        {
-            LoadPanel();
+            select_arrowalign.SelectedIndexChanged += select_intvalue_SelectedIndexChanged;
+            select_shadowalign.SelectedIndexChanged += select_intvalue_SelectedIndexChanged;
+            select_shadowOA.SelectedIndexChanged += select_intvalue_SelectedIndexChanged;
+
+            input_arrowsize.ValueChanged += input_decimalvalue_ValueChanged;
+            input_radius.ValueChanged += input_decimalvalue_ValueChanged;
+            input_borderwidth.ValueChanged += input_decimalvalue_ValueChanged;
+            input_shadow.ValueChanged += input_decimalvalue_ValueChanged;
+            input_shadowX.ValueChanged += input_decimalvalue_ValueChanged;
+            input_shadowY.ValueChanged += input_decimalvalue_ValueChanged;
+            input_shadowO.ValueChanged += input_decimalvalue_ValueChanged;
+            input_shadowOH.ValueChanged += input_decimalvalue_ValueChanged;
+
+            colorPicker_border.ValueChanged += colorPicker_ValueChanged;
+            colorPicker_shadow.ValueChanged += colorPicker_ValueChanged;
+
         }
 
         private void InitSelectItems()
@@ -57,28 +69,23 @@ namespace AntdUIDemo.Views
             select_arrowalign.SelectedIndex = 0;
             select_shadowalign.SelectedIndex = 0;
             select_shadowOA.SelectedIndex = 0;
+
             input_arrowsize.Value = 8;
             input_radius.Value = 6;
             input_shadow.Value = 12;
-            colorPicker_shadow.Value = Style.Db.TextBase;
-            colorPicker_border.Value = Style.Db.BorderColor;
             input_borderwidth.Value = 0;
             input_shadowX.Value = 0;
             input_shadowY.Value = 0;
             input_shadowO.Value = (decimal)0.2;
             input_shadowOH.Value = (decimal)0.3;
-        }
 
-        // 设置
-        private void buttonSZ_Click(object sender, EventArgs e)
-        {
-            LoadPanel();
+            colorPicker_shadow.Value = Style.Db.TextBase;
+            colorPicker_border.Value = Style.Db.BorderColor;
         }
 
         private void LoadPanel()
         {
             panel.ArrowAlign = (TAlign)select_arrowalign.SelectedValue;
-            // TODO: 1.5.2版本 ArrowSize存在bug无法赋值更新,暂时使用panel.Invalidate();强制刷新，待更新后移除
             panel.ArrowSize = (int)input_arrowsize.Value;
             panel.Radius = (int)input_radius.Value;
             panel.BorderWidth = (float)input_borderwidth.Value;
@@ -91,8 +98,30 @@ namespace AntdUIDemo.Views
             panel.ShadowOpacity = (float)input_shadowO.Value;
             panel.ShadowOpacityAnimation = select_shadowOA.SelectedIndex == 0;
             panel.ShadowOpacityHover = (float)input_shadowOH.Value;
-            panel.Invalidate();
         }
+
+        #region 控件事件
+
+        private void colorPicker_ValueChanged(object sender, Color value)
+        {
+            LoadPanel();
+        }
+
+        private void input_decimalvalue_ValueChanged(object sender, decimal value)
+        {
+            LoadPanel();
+        }
+
+        private void select_intvalue_SelectedIndexChanged(object sender, int value)
+        {
+            LoadPanel();
+        }
+
+        private void PanelDemo_Load(object sender, EventArgs e)
+        {
+            LoadPanel();
+        }
+        #endregion
 
     }
 }

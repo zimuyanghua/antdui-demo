@@ -12,8 +12,8 @@ namespace AntdUIDemo.Views
             InitializeComponent();
             //设置默认值
             InitData();
-            // 绑定按钮事件
-            BindButtonClick();
+            // 绑定事件
+            BindEventHandler();
         }
 
         private void GridPanelDemo_Load(object sender, EventArgs e)
@@ -27,13 +27,20 @@ namespace AntdUIDemo.Views
             input_span.Text = "50% 50%;50% 50%";
         }
 
-        private void BindButtonClick()
+        private void BindEventHandler()
         {
-            buttonSZ.Click += buttonSZ_Click;
             buttonCZ.Click += buttonCZ_Click;
+
+            input_span.TextChanged += input_span_TextChanged;
+            input_gap.ValueChanged += input_gap_ValueChanged;
         }
 
-        private void buttonSZ_Click(object sender, EventArgs e)
+        private void input_gap_ValueChanged(object sender, decimal value)
+        {
+            LoadGridPanel(input_span.Text, input_gap.Value);
+        }
+
+        private void input_span_TextChanged(object sender, EventArgs e)
         {
             LoadGridPanel(input_span.Text, input_gap.Value);
         }

@@ -62,7 +62,6 @@
             this.stackPanel2 = new AntdUI.StackPanel();
             this.buttonCZ = new AntdUI.Button();
             this.buttonClose = new AntdUI.Button();
-            this.buttonOpen = new AntdUI.Button();
             this.divider1 = new AntdUI.Divider();
             this.label3 = new AntdUI.Label();
             this.label2 = new AntdUI.Label();
@@ -438,7 +437,6 @@
             // 
             this.stackPanel2.Controls.Add(this.buttonCZ);
             this.stackPanel2.Controls.Add(this.buttonClose);
-            this.stackPanel2.Controls.Add(this.buttonOpen);
             this.stackPanel2.Location = new System.Drawing.Point(3, 127);
             this.stackPanel2.Name = "stackPanel2";
             this.stackPanel2.Size = new System.Drawing.Size(694, 38);
@@ -448,7 +446,7 @@
             // buttonCZ
             // 
             this.buttonCZ.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.buttonCZ.Location = new System.Drawing.Point(165, 3);
+            this.buttonCZ.Location = new System.Drawing.Point(84, 3);
             this.buttonCZ.Name = "buttonCZ";
             this.buttonCZ.Size = new System.Drawing.Size(75, 32);
             this.buttonCZ.TabIndex = 4;
@@ -459,24 +457,13 @@
             // buttonClose
             // 
             this.buttonClose.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.buttonClose.Location = new System.Drawing.Point(84, 3);
+            this.buttonClose.Location = new System.Drawing.Point(3, 3);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(75, 32);
             this.buttonClose.TabIndex = 3;
             this.buttonClose.Text = "关 闭";
             this.buttonClose.Type = AntdUI.TTypeMini.Error;
             this.buttonClose.WaveSize = 0;
-            // 
-            // buttonOpen
-            // 
-            this.buttonOpen.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.buttonOpen.Location = new System.Drawing.Point(3, 3);
-            this.buttonOpen.Name = "buttonOpen";
-            this.buttonOpen.Size = new System.Drawing.Size(75, 32);
-            this.buttonOpen.TabIndex = 2;
-            this.buttonOpen.Text = "开 启";
-            this.buttonOpen.Type = AntdUI.TTypeMini.Primary;
-            this.buttonOpen.WaveSize = 0;
             // 
             // divider1
             // 
@@ -568,7 +555,6 @@
         private AntdUI.StackPanel stackPanel2;
         private AntdUI.Button buttonCZ;
         private AntdUI.Button buttonClose;
-        private AntdUI.Button buttonOpen;
         private AntdUI.Divider divider1;
     }
 }
