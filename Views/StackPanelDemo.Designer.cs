@@ -32,6 +32,7 @@
             this.stackPanel2 = new AntdUI.StackPanel();
             this.stackPanel = new AntdUI.StackPanel();
             this.stackPanel3 = new AntdUI.StackPanel();
+            this.buttonCZ = new AntdUI.Button();
             this.buttonDEL = new AntdUI.Button();
             this.buttonADD = new AntdUI.Button();
             this.stackPanel8 = new AntdUI.StackPanel();
@@ -49,7 +50,6 @@
             this.divider1 = new AntdUI.Divider();
             this.label2 = new AntdUI.Label();
             this.label1 = new AntdUI.Label();
-            this.buttonCZ = new AntdUI.Button();
             this.stackPanel1.SuspendLayout();
             this.stackPanel2.SuspendLayout();
             this.stackPanel3.SuspendLayout();
@@ -108,6 +108,17 @@
             this.stackPanel3.Text = "stackPanel3";
             this.stackPanel3.Vertical = true;
             // 
+            // buttonCZ
+            // 
+            this.buttonCZ.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonCZ.Location = new System.Drawing.Point(3, 231);
+            this.buttonCZ.Name = "buttonCZ";
+            this.buttonCZ.Size = new System.Drawing.Size(274, 32);
+            this.buttonCZ.TabIndex = 39;
+            this.buttonCZ.Text = "重 置";
+            this.buttonCZ.Type = AntdUI.TTypeMini.Warn;
+            this.buttonCZ.WaveSize = 0;
+            // 
             // buttonDEL
             // 
             this.buttonDEL.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -154,7 +165,7 @@
             this.select_vertical.Size = new System.Drawing.Size(175, 26);
             this.select_vertical.TabIndex = 11;
             this.select_vertical.Text = "True";
-            this.select_vertical.WaveSize = 1;
+            this.select_vertical.WaveSize = 0;
             // 
             // label6
             // 
@@ -212,7 +223,7 @@
             this.input_gap.Size = new System.Drawing.Size(175, 26);
             this.input_gap.TabIndex = 5;
             this.input_gap.Text = "0";
-            this.input_gap.WaveSize = 1;
+            this.input_gap.WaveSize = 0;
             // 
             // label3
             // 
@@ -247,7 +258,7 @@
             this.select_autoscroll.Size = new System.Drawing.Size(175, 26);
             this.select_autoscroll.TabIndex = 11;
             this.select_autoscroll.Text = "False";
-            this.select_autoscroll.WaveSize = 1;
+            this.select_autoscroll.WaveSize = 0;
             // 
             // label4
             // 
@@ -282,17 +293,6 @@
             this.label1.Size = new System.Drawing.Size(694, 40);
             this.label1.TabIndex = 8;
             this.label1.Text = "StackPanel 堆叠布局";
-            // 
-            // buttonCZ
-            // 
-            this.buttonCZ.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.buttonCZ.Location = new System.Drawing.Point(3, 231);
-            this.buttonCZ.Name = "buttonCZ";
-            this.buttonCZ.Size = new System.Drawing.Size(274, 32);
-            this.buttonCZ.TabIndex = 39;
-            this.buttonCZ.Text = "重 置";
-            this.buttonCZ.Type = AntdUI.TTypeMini.Warn;
-            this.buttonCZ.WaveSize = 0;
             // 
             // StackPanelDemo
             // 

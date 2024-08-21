@@ -161,6 +161,9 @@ namespace AntdUIDemo
                 case "Dropdown":
                     control = new DropDownDemo();
                     break;
+                case "Menu":
+                    control = new MenuDemo();
+                    break;
             }
             if (control != null)
             {

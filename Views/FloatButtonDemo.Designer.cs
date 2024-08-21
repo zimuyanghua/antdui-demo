@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             this.stackPanel1 = new AntdUI.StackPanel();
+            this.stackPanel2 = new AntdUI.StackPanel();
+            this.buttonCZ = new AntdUI.Button();
+            this.buttonClose = new AntdUI.Button();
             this.stackPanel6 = new AntdUI.StackPanel();
             this.colorPicker = new AntdUI.ColorPicker();
             this.label16 = new AntdUI.Label();
@@ -63,15 +66,12 @@
             this.label3 = new AntdUI.Label();
             this.label2 = new AntdUI.Label();
             this.label1 = new AntdUI.Label();
-            this.stackPanel2 = new AntdUI.StackPanel();
-            this.buttonCZ = new AntdUI.Button();
-            this.buttonClose = new AntdUI.Button();
             this.stackPanel1.SuspendLayout();
+            this.stackPanel2.SuspendLayout();
             this.stackPanel6.SuspendLayout();
             this.stackPanel5.SuspendLayout();
             this.stackPanel4.SuspendLayout();
             this.stackPanel3.SuspendLayout();
-            this.stackPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // stackPanel1
@@ -94,6 +94,38 @@
             this.stackPanel1.TabIndex = 0;
             this.stackPanel1.Text = "stackPanel1";
             this.stackPanel1.Vertical = true;
+            // 
+            // stackPanel2
+            // 
+            this.stackPanel2.Controls.Add(this.buttonCZ);
+            this.stackPanel2.Controls.Add(this.buttonClose);
+            this.stackPanel2.Location = new System.Drawing.Point(3, 339);
+            this.stackPanel2.Name = "stackPanel2";
+            this.stackPanel2.Size = new System.Drawing.Size(694, 38);
+            this.stackPanel2.TabIndex = 21;
+            this.stackPanel2.Text = "stackPanel2";
+            // 
+            // buttonCZ
+            // 
+            this.buttonCZ.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonCZ.Location = new System.Drawing.Point(84, 3);
+            this.buttonCZ.Name = "buttonCZ";
+            this.buttonCZ.Size = new System.Drawing.Size(75, 32);
+            this.buttonCZ.TabIndex = 4;
+            this.buttonCZ.Text = "重 置";
+            this.buttonCZ.Type = AntdUI.TTypeMini.Warn;
+            this.buttonCZ.WaveSize = 0;
+            // 
+            // buttonClose
+            // 
+            this.buttonClose.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonClose.Location = new System.Drawing.Point(3, 3);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Size = new System.Drawing.Size(75, 32);
+            this.buttonClose.TabIndex = 3;
+            this.buttonClose.Text = "关 闭";
+            this.buttonClose.Type = AntdUI.TTypeMini.Error;
+            this.buttonClose.WaveSize = 0;
             // 
             // stackPanel6
             // 
@@ -141,7 +173,7 @@
             0,
             0,
             0});
-            this.input_badgesize.WaveSize = 1;
+            this.input_badgesize.WaveSize = 0;
             // 
             // label15
             // 
@@ -158,7 +190,7 @@
             this.input_badge.Name = "input_badge";
             this.input_badge.Size = new System.Drawing.Size(90, 26);
             this.input_badge.TabIndex = 5;
-            this.input_badge.WaveSize = 1;
+            this.input_badge.WaveSize = 0;
             // 
             // label17
             // 
@@ -195,7 +227,7 @@
             0,
             0,
             0});
-            this.input_radius.WaveSize = 1;
+            this.input_radius.WaveSize = 0;
             // 
             // label12
             // 
@@ -214,7 +246,7 @@
             this.select_type.Name = "select_type";
             this.select_type.Size = new System.Drawing.Size(90, 26);
             this.select_type.TabIndex = 9;
-            this.select_type.WaveSize = 1;
+            this.select_type.WaveSize = 0;
             // 
             // label13
             // 
@@ -239,7 +271,7 @@
             this.select_round.Size = new System.Drawing.Size(90, 26);
             this.select_round.TabIndex = 5;
             this.select_round.Text = "False";
-            this.select_round.WaveSize = 1;
+            this.select_round.WaveSize = 0;
             // 
             // label14
             // 
@@ -285,7 +317,7 @@
             0,
             0,
             0});
-            this.input_my.WaveSize = 1;
+            this.input_my.WaveSize = 0;
             // 
             // label8
             // 
@@ -308,7 +340,7 @@
             0,
             0,
             0});
-            this.input_mx.WaveSize = 1;
+            this.input_mx.WaveSize = 0;
             // 
             // label7
             // 
@@ -331,7 +363,7 @@
             0,
             0,
             0});
-            this.input_size.WaveSize = 1;
+            this.input_size.WaveSize = 0;
             // 
             // label9
             // 
@@ -370,7 +402,7 @@
             this.select_vertical.Size = new System.Drawing.Size(90, 26);
             this.select_vertical.TabIndex = 11;
             this.select_vertical.Text = "True";
-            this.select_vertical.WaveSize = 1;
+            this.select_vertical.WaveSize = 0;
             // 
             // label5
             // 
@@ -394,7 +426,7 @@
             this.select_topmost.Size = new System.Drawing.Size(90, 26);
             this.select_topmost.TabIndex = 9;
             this.select_topmost.Text = "True";
-            this.select_topmost.WaveSize = 1;
+            this.select_topmost.WaveSize = 0;
             // 
             // label6
             // 
@@ -413,7 +445,7 @@
             this.select_align.Name = "select_align";
             this.select_align.Size = new System.Drawing.Size(90, 26);
             this.select_align.TabIndex = 5;
-            this.select_align.WaveSize = 1;
+            this.select_align.WaveSize = 0;
             // 
             // label10
             // 
@@ -467,38 +499,6 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "FloatButton 悬浮按钮";
             // 
-            // stackPanel2
-            // 
-            this.stackPanel2.Controls.Add(this.buttonCZ);
-            this.stackPanel2.Controls.Add(this.buttonClose);
-            this.stackPanel2.Location = new System.Drawing.Point(3, 339);
-            this.stackPanel2.Name = "stackPanel2";
-            this.stackPanel2.Size = new System.Drawing.Size(694, 38);
-            this.stackPanel2.TabIndex = 21;
-            this.stackPanel2.Text = "stackPanel2";
-            // 
-            // buttonCZ
-            // 
-            this.buttonCZ.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.buttonCZ.Location = new System.Drawing.Point(84, 3);
-            this.buttonCZ.Name = "buttonCZ";
-            this.buttonCZ.Size = new System.Drawing.Size(75, 32);
-            this.buttonCZ.TabIndex = 4;
-            this.buttonCZ.Text = "重 置";
-            this.buttonCZ.Type = AntdUI.TTypeMini.Warn;
-            this.buttonCZ.WaveSize = 0;
-            // 
-            // buttonClose
-            // 
-            this.buttonClose.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.buttonClose.Location = new System.Drawing.Point(3, 3);
-            this.buttonClose.Name = "buttonClose";
-            this.buttonClose.Size = new System.Drawing.Size(75, 32);
-            this.buttonClose.TabIndex = 3;
-            this.buttonClose.Text = "关 闭";
-            this.buttonClose.Type = AntdUI.TTypeMini.Error;
-            this.buttonClose.WaveSize = 0;
-            // 
             // FloatButtonDemo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -507,11 +507,11 @@
             this.Size = new System.Drawing.Size(700, 434);
             this.Load += new System.EventHandler(this.FloatButtonDemo_Load);
             this.stackPanel1.ResumeLayout(false);
+            this.stackPanel2.ResumeLayout(false);
             this.stackPanel6.ResumeLayout(false);
             this.stackPanel5.ResumeLayout(false);
             this.stackPanel4.ResumeLayout(false);
             this.stackPanel3.ResumeLayout(false);
-            this.stackPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

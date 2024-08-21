@@ -127,7 +127,7 @@
             this.stackPanel15.Controls.Add(this.stackPanel14);
             this.stackPanel15.Location = new System.Drawing.Point(289, 3);
             this.stackPanel15.Name = "stackPanel15";
-            this.stackPanel15.Size = new System.Drawing.Size(366, 431);
+            this.stackPanel15.Size = new System.Drawing.Size(373, 431);
             this.stackPanel15.TabIndex = 1;
             this.stackPanel15.Text = "stackPanel15";
             this.stackPanel15.Vertical = true;
@@ -139,7 +139,7 @@
             this.panel.Name = "panel";
             this.panel.Shadow = 12;
             this.panel.ShadowOpacityAnimation = true;
-            this.panel.Size = new System.Drawing.Size(360, 298);
+            this.panel.Size = new System.Drawing.Size(367, 298);
             this.panel.TabIndex = 35;
             this.panel.Text = "panel1";
             // 
@@ -148,7 +148,7 @@
             this.buttonCZ.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.buttonCZ.Location = new System.Drawing.Point(3, 79);
             this.buttonCZ.Name = "buttonCZ";
-            this.buttonCZ.Size = new System.Drawing.Size(360, 32);
+            this.buttonCZ.Size = new System.Drawing.Size(367, 32);
             this.buttonCZ.TabIndex = 33;
             this.buttonCZ.Text = "重 置";
             this.buttonCZ.Type = AntdUI.TTypeMini.Warn;
@@ -160,7 +160,7 @@
             this.stackPanel13.Controls.Add(this.label12);
             this.stackPanel13.Location = new System.Drawing.Point(3, 41);
             this.stackPanel13.Name = "stackPanel13";
-            this.stackPanel13.Size = new System.Drawing.Size(360, 32);
+            this.stackPanel13.Size = new System.Drawing.Size(367, 32);
             this.stackPanel13.TabIndex = 30;
             this.stackPanel13.Text = "stackPanel13";
             // 
@@ -188,7 +188,7 @@
             0,
             0,
             65536});
-            this.input_shadowOH.WaveSize = 1;
+            this.input_shadowOH.WaveSize = 0;
             // 
             // label12
             // 
@@ -205,7 +205,7 @@
             this.stackPanel14.Controls.Add(this.label13);
             this.stackPanel14.Location = new System.Drawing.Point(3, 3);
             this.stackPanel14.Name = "stackPanel14";
-            this.stackPanel14.Size = new System.Drawing.Size(360, 32);
+            this.stackPanel14.Size = new System.Drawing.Size(367, 32);
             this.stackPanel14.TabIndex = 29;
             this.stackPanel14.Text = "stackPanel14";
             // 
@@ -223,7 +223,7 @@
             this.select_shadowOA.Size = new System.Drawing.Size(132, 26);
             this.select_shadowOA.TabIndex = 11;
             this.select_shadowOA.Text = "True";
-            this.select_shadowOA.WaveSize = 1;
+            this.select_shadowOA.WaveSize = 0;
             // 
             // label13
             // 
@@ -288,7 +288,7 @@
             0,
             0,
             65536});
-            this.input_shadowO.WaveSize = 1;
+            this.input_shadowO.WaveSize = 0;
             // 
             // label11
             // 
@@ -317,7 +317,7 @@
             this.input_shadowY.Size = new System.Drawing.Size(120, 26);
             this.input_shadowY.TabIndex = 5;
             this.input_shadowY.Text = "0";
-            this.input_shadowY.WaveSize = 1;
+            this.input_shadowY.WaveSize = 0;
             // 
             // label9
             // 
@@ -346,7 +346,7 @@
             this.input_shadowX.Size = new System.Drawing.Size(120, 26);
             this.input_shadowX.TabIndex = 5;
             this.input_shadowX.Text = "0";
-            this.input_shadowX.WaveSize = 1;
+            this.input_shadowX.WaveSize = 0;
             // 
             // label8
             // 
@@ -374,7 +374,6 @@
             this.colorPicker_shadow.Size = new System.Drawing.Size(120, 26);
             this.colorPicker_shadow.TabIndex = 5;
             this.colorPicker_shadow.Text = "colorPicker1";
-            this.colorPicker_shadow.Value = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(119)))), ((int)(((byte)(255)))));
             this.colorPicker_shadow.WaveSize = 0;
             // 
             // label7
@@ -404,7 +403,7 @@
             this.select_shadowalign.Name = "select_shadowalign";
             this.select_shadowalign.Size = new System.Drawing.Size(120, 26);
             this.select_shadowalign.TabIndex = 11;
-            this.select_shadowalign.WaveSize = 1;
+            this.select_shadowalign.WaveSize = 0;
             // 
             // label6
             // 
@@ -438,7 +437,7 @@
             0,
             0,
             0});
-            this.input_shadow.WaveSize = 1;
+            this.input_shadow.WaveSize = 0;
             // 
             // label5
             // 
@@ -468,7 +467,7 @@
             this.input_borderwidth.Size = new System.Drawing.Size(120, 26);
             this.input_borderwidth.TabIndex = 5;
             this.input_borderwidth.Text = "0.00";
-            this.input_borderwidth.WaveSize = 1;
+            this.input_borderwidth.WaveSize = 0;
             // 
             // label15
             // 
@@ -496,7 +495,6 @@
             this.colorPicker_border.Size = new System.Drawing.Size(120, 26);
             this.colorPicker_border.TabIndex = 5;
             this.colorPicker_border.Text = "colorPicker1";
-            this.colorPicker_border.Value = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(119)))), ((int)(((byte)(255)))));
             this.colorPicker_border.WaveSize = 0;
             // 
             // label14
@@ -531,7 +529,7 @@
             0,
             0,
             0});
-            this.input_radius.WaveSize = 1;
+            this.input_radius.WaveSize = 0;
             // 
             // label4
             // 
@@ -565,7 +563,7 @@
             0,
             0,
             0});
-            this.input_arrowsize.WaveSize = 1;
+            this.input_arrowsize.WaveSize = 0;
             // 
             // label3
             // 
@@ -594,7 +592,7 @@
             this.select_arrowalign.Name = "select_arrowalign";
             this.select_arrowalign.Size = new System.Drawing.Size(120, 26);
             this.select_arrowalign.TabIndex = 11;
-            this.select_arrowalign.WaveSize = 1;
+            this.select_arrowalign.WaveSize = 0;
             // 
             // label10
             // 

@@ -122,7 +122,7 @@
             this.input_gap.Size = new System.Drawing.Size(175, 26);
             this.input_gap.TabIndex = 5;
             this.input_gap.Text = "0";
-            this.input_gap.WaveSize = 1;
+            this.input_gap.WaveSize = 0;
             // 
             // label4
             // 
