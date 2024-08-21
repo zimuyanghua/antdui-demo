@@ -41,6 +41,7 @@
 
 ### 导航
 #### Dropdown 下拉菜单
+![Dropdown](assets/screenshots/Dropdown.png)
 #### Menu 导航菜单
 #### Pagination 分页
 #### Steps 步骤条
