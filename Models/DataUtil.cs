@@ -26,7 +26,7 @@ namespace AntdUIDemo.Models
         },
         { "导航", new List<MenuItems>
             {
-                new MenuItems { Text = "DropDown 下拉菜单", Tag = "DropDown"},
+                new MenuItems { Text = "Dropdown 下拉菜单", Tag = "Dropdown"},
                 new MenuItems { Text = "Menu 导航菜单", Tag = "Menu"},
                 new MenuItems { Text = "Pagination 分页", Tag = "Pagination"},
                 new MenuItems { Text = "Steps 步骤条", Tag = "Steps"}

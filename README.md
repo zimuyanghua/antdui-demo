@@ -40,7 +40,7 @@
 ![StackPanel](assets/screenshots/StackPanel.png)
 
 ### 导航
-#### DropDown 下拉菜单
+#### Dropdown 下拉菜单
 #### Menu 导航菜单
 #### Pagination 分页
 #### Steps 步骤条

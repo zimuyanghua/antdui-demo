@@ -158,6 +158,9 @@ namespace AntdUIDemo
                 case "StackPanel":
                     control = new StackPanelDemo();
                     break;
+                case "Dropdown":
+                    control = new DropDownDemo();
+                    break;
             }
             if (control != null)
             {

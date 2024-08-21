@@ -139,7 +139,7 @@
             this.panel.Name = "panel";
             this.panel.Shadow = 12;
             this.panel.ShadowOpacityAnimation = true;
-            this.panel.Size = new System.Drawing.Size(360, 260);
+            this.panel.Size = new System.Drawing.Size(360, 298);
             this.panel.TabIndex = 35;
             this.panel.Text = "panel1";
             // 

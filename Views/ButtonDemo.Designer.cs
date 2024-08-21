@@ -136,7 +136,7 @@
             // 
             this.button39.BackExtend = "135, #6253E1, #04BEFE";
             this.button39.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button39.ImageSvg = resources.GetString("button39.ImageSvg");
+            this.button39.IconSvg = resources.GetString("button39.IconSvg");
             this.button39.Location = new System.Drawing.Point(3, 3);
             this.button39.Name = "button39";
             this.button39.Size = new System.Drawing.Size(156, 32);
@@ -194,7 +194,7 @@
             this.button37.BorderWidth = 2F;
             this.button37.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button37.Ghost = true;
-            this.button37.ImageSvg = resources.GetString("button37.ImageSvg");
+            this.button37.IconSvg = resources.GetString("button37.IconSvg");
             this.button37.JoinRight = true;
             this.button37.Location = new System.Drawing.Point(3, 3);
             this.button37.Name = "button37";
@@ -231,7 +231,7 @@
             // button34
             // 
             this.button34.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button34.ImageSvg = resources.GetString("button34.ImageSvg");
+            this.button34.IconSvg = resources.GetString("button34.IconSvg");
             this.button34.JoinLeft = true;
             this.button34.JoinRight = true;
             this.button34.Location = new System.Drawing.Point(77, 3);
@@ -280,11 +280,11 @@
             this.button28.BorderWidth = 2F;
             this.button28.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button28.Ghost = true;
-            this.button28.ImageSvg = resources.GetString("button28.ImageSvg");
-            this.button28.Location = new System.Drawing.Point(327, 3);
+            this.button28.IconSvg = resources.GetString("button28.IconSvg");
+            this.button28.Location = new System.Drawing.Point(347, 3);
             this.button28.Name = "button28";
             this.button28.ShowArrow = true;
-            this.button28.Size = new System.Drawing.Size(75, 32);
+            this.button28.Size = new System.Drawing.Size(80, 32);
             this.button28.TabIndex = 11;
             this.button28.Text = "搜索";
             this.button28.Type = AntdUI.TTypeMini.Primary;
@@ -294,11 +294,11 @@
             // 
             this.button27.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button27.Ghost = true;
-            this.button27.ImageSvg = resources.GetString("button27.ImageSvg");
-            this.button27.Location = new System.Drawing.Point(246, 3);
+            this.button27.IconSvg = resources.GetString("button27.IconSvg");
+            this.button27.Location = new System.Drawing.Point(261, 3);
             this.button27.Name = "button27";
             this.button27.ShowArrow = true;
-            this.button27.Size = new System.Drawing.Size(75, 32);
+            this.button27.Size = new System.Drawing.Size(80, 32);
             this.button27.TabIndex = 10;
             this.button27.Text = "搜索";
             this.button27.Type = AntdUI.TTypeMini.Primary;
@@ -309,10 +309,10 @@
             this.button26.BorderWidth = 2F;
             this.button26.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button26.Ghost = true;
-            this.button26.Location = new System.Drawing.Point(165, 3);
+            this.button26.Location = new System.Drawing.Point(175, 3);
             this.button26.Name = "button26";
             this.button26.ShowArrow = true;
-            this.button26.Size = new System.Drawing.Size(75, 32);
+            this.button26.Size = new System.Drawing.Size(80, 32);
             this.button26.TabIndex = 9;
             this.button26.Text = "Primary";
             this.button26.Type = AntdUI.TTypeMini.Primary;
@@ -322,10 +322,10 @@
             // 
             this.button25.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button25.Ghost = true;
-            this.button25.Location = new System.Drawing.Point(84, 3);
+            this.button25.Location = new System.Drawing.Point(89, 3);
             this.button25.Name = "button25";
             this.button25.ShowArrow = true;
-            this.button25.Size = new System.Drawing.Size(75, 32);
+            this.button25.Size = new System.Drawing.Size(80, 32);
             this.button25.TabIndex = 8;
             this.button25.Text = "Primary";
             this.button25.Type = AntdUI.TTypeMini.Primary;
@@ -337,7 +337,7 @@
             this.button29.Location = new System.Drawing.Point(3, 3);
             this.button29.Name = "button29";
             this.button29.ShowArrow = true;
-            this.button29.Size = new System.Drawing.Size(75, 32);
+            this.button29.Size = new System.Drawing.Size(80, 32);
             this.button29.TabIndex = 7;
             this.button29.Text = "Primary";
             this.button29.Type = AntdUI.TTypeMini.Primary;
@@ -371,7 +371,7 @@
             this.button21.BorderWidth = 2F;
             this.button21.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button21.Ghost = true;
-            this.button21.ImageSvg = resources.GetString("button21.ImageSvg");
+            this.button21.IconSvg = resources.GetString("button21.IconSvg");
             this.button21.Location = new System.Drawing.Point(279, 3);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(75, 32);
@@ -385,7 +385,7 @@
             this.button22.BorderWidth = 2F;
             this.button22.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button22.Ghost = true;
-            this.button22.ImageSvg = resources.GetString("button22.ImageSvg");
+            this.button22.IconSvg = resources.GetString("button22.IconSvg");
             this.button22.Location = new System.Drawing.Point(241, 3);
             this.button22.Name = "button22";
             this.button22.Shape = AntdUI.TShape.Circle;
@@ -398,7 +398,7 @@
             // 
             this.button19.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button19.Ghost = true;
-            this.button19.ImageSvg = resources.GetString("button19.ImageSvg");
+            this.button19.IconSvg = resources.GetString("button19.IconSvg");
             this.button19.Location = new System.Drawing.Point(160, 3);
             this.button19.Name = "button19";
             this.button19.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -412,7 +412,7 @@
             // 
             this.button20.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button20.Ghost = true;
-            this.button20.ImageSvg = resources.GetString("button20.ImageSvg");
+            this.button20.IconSvg = resources.GetString("button20.IconSvg");
             this.button20.Location = new System.Drawing.Point(122, 3);
             this.button20.Name = "button20";
             this.button20.Shape = AntdUI.TShape.Circle;
@@ -424,7 +424,7 @@
             // button23
             // 
             this.button23.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button23.ImageSvg = resources.GetString("button23.ImageSvg");
+            this.button23.IconSvg = resources.GetString("button23.IconSvg");
             this.button23.Location = new System.Drawing.Point(41, 3);
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(75, 32);
@@ -435,7 +435,7 @@
             // button24
             // 
             this.button24.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button24.ImageSvg = resources.GetString("button24.ImageSvg");
+            this.button24.IconSvg = resources.GetString("button24.IconSvg");
             this.button24.Location = new System.Drawing.Point(3, 3);
             this.button24.Name = "button24";
             this.button24.Shape = AntdUI.TShape.Circle;

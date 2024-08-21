@@ -56,13 +56,6 @@ namespace AntdUIDemo.Views
             }
         }
 
-        // 重置
-        private void buttonCZ_Click(object sender, EventArgs e)
-        {
-            InitData();
-            LoadPanel();
-        }
-
         // 设置默认值
         private void InitData()
         {
@@ -119,6 +112,13 @@ namespace AntdUIDemo.Views
 
         private void PanelDemo_Load(object sender, EventArgs e)
         {
+            LoadPanel();
+        }
+
+        // 重置
+        private void buttonCZ_Click(object sender, EventArgs e)
+        {
+            InitData();
             LoadPanel();
         }
         #endregion

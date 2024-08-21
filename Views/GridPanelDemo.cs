@@ -35,16 +35,6 @@ namespace AntdUIDemo.Views
             input_gap.ValueChanged += input_gap_ValueChanged;
         }
 
-        private void input_gap_ValueChanged(object sender, decimal value)
-        {
-            LoadGridPanel(input_span.Text, input_gap.Value);
-        }
-
-        private void input_span_TextChanged(object sender, EventArgs e)
-        {
-            LoadGridPanel(input_span.Text, input_gap.Value);
-        }
-
         private void LoadGridPanel(string spantext, decimal gap)
         {
             gridPanel.Controls.Clear();
@@ -63,11 +53,22 @@ namespace AntdUIDemo.Views
             }
         }
 
+        #region 事件
+        private void input_gap_ValueChanged(object sender, decimal value)
+        {
+            LoadGridPanel(input_span.Text, input_gap.Value);
+        }
+
+        private void input_span_TextChanged(object sender, EventArgs e)
+        {
+            LoadGridPanel(input_span.Text, input_gap.Value);
+        }
+
         private void buttonCZ_Click(object sender, EventArgs e)
         {
             InitData();
             LoadGridPanel(input_span.Text, 0);
         }
-
+        #endregion
     }
 }

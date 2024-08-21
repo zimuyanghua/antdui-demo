@@ -72,17 +72,6 @@ namespace AntdUIDemo.Views
             input_gap.ValueChanged += input_gap_ValueChanged;
         }
 
-        private void select_intvalue_SelectedIndexChanged(object sender, int value)
-        {
-            flowPanel.Align = (TAlignFlow)select_align.SelectedValue;
-            flowPanel.AutoScroll = select_autoscroll.SelectedIndex == 0;
-        }
-
-        private void input_gap_ValueChanged(object sender, decimal value)
-        {
-            flowPanel.Gap = (int)input_gap.Value;
-        }
-
         // 初始化下拉框
         private void InitSelectItems()
         {
@@ -93,7 +82,17 @@ namespace AntdUIDemo.Views
                 select_align.Items.Add(align);
             }
         }
+        #region 事件
+        private void select_intvalue_SelectedIndexChanged(object sender, int value)
+        {
+            flowPanel.Align = (TAlignFlow)select_align.SelectedValue;
+            flowPanel.AutoScroll = select_autoscroll.SelectedIndex == 0;
+        }
 
+        private void input_gap_ValueChanged(object sender, decimal value)
+        {
+            flowPanel.Gap = (int)input_gap.Value;
+        }
         // 添加按钮
         private void buttonADD_Click(object sender, EventArgs e)
         {
@@ -126,6 +125,7 @@ namespace AntdUIDemo.Views
             InitData();
             LoadFlowPanel();
         }
+        #endregion
 
     }
 }

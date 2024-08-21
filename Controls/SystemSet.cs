@@ -37,52 +37,20 @@ namespace AntdUIDemo.Controls
 
         }
 
-        private void Input_offset_ValueChanged(object sender, decimal value)
-        {
-            AppSetting.UpdateAppSetting("ShowOffset", input_offset.Value.ToString());
-            AntdUI.Config.NoticeWindowOffsetXY = (int)value;
-        }
-
-        private void switch_showinwindow_CheckedChanged(object sender, bool value)
-        {
-            AppSetting.UpdateAppSetting("ShowInWindow", value ? "True" : "False");
-            AntdUI.Config.ShowInWindow = value;
-            AntdUI.Message.success(Window,"切换成功!",autoClose: 1);
-            AntdUI.Notification.success(Window, "提示","切换成功!", autoClose: 3);
-        }
-
-        private void switch_scrollbar_CheckedChanged(object sender, bool value)
-        {
-            AppSetting.UpdateAppSetting("ScrollBarHide", value ? "True" : "False");
-            AntdUI.Config.ScrollBarHide = value;
-        }
-
-        private void switch_shadow_CheckedChanged(object sender, bool value)
-        {
-            AppSetting.UpdateAppSetting("ShadowEnabled", value ? "True" : "False");
-            AntdUI.Config.ShadowEnabled = value;
-        }
-
         private void InitData()
         {
             tabs.SelectedIndex = 0;
             //色彩模式
             var colormode = ConfigurationManager.AppSettings["ColorMode"];
-            switch (colormode)
-            {
-                case "Dark":
-                    select_colormode.SelectedIndex = 2;
-                    break;
-                case "Light":
-                    select_colormode.SelectedIndex = 1;
-                    break;
-                case "Auto":
-                    select_colormode.SelectedIndex = 0;
-                    break;
-                default:
-                    select_colormode.SelectedIndex = 0;
-                    break;
-            }
+            var modeIndexMapping = new Dictionary<string, int>
+                {
+                   { "Dark", 2 },
+                   { "Light", 1 },
+                   { "Auto", 0 }
+                };
+            select_colormode.SelectedIndex = modeIndexMapping.ContainsKey(colormode)
+                ? modeIndexMapping[colormode]
+                : 0;
             //开启动画
             var animation = ConfigurationManager.AppSettings["Animation"];
             switch_animation.Checked = animation == "True";
@@ -100,6 +68,7 @@ namespace AntdUIDemo.Controls
             input_offset.Value = decimal.Parse(offset);
         }
 
+        #region 事件
         private void Select_colormode_SelectedIndexChanged(object sender, int value)
         {
             AppSetting.UpdateAppSetting("ColorMode", select_colormode.SelectedValue.ToString());
@@ -118,5 +87,34 @@ namespace AntdUIDemo.Controls
             AppSetting.UpdateAppSetting("Animation", switch_animation.Checked.ToString());
             AntdUI.Config.Animation = value;
         }
+
+        private void Input_offset_ValueChanged(object sender, decimal value)
+        {
+            AppSetting.UpdateAppSetting("ShowOffset", input_offset.Value.ToString());
+            AntdUI.Config.NoticeWindowOffsetXY = (int)value;
+        }
+
+        private void switch_showinwindow_CheckedChanged(object sender, bool value)
+        {
+            AppSetting.UpdateAppSetting("ShowInWindow", value ? "True" : "False");
+            AntdUI.Config.ShowInWindow = value;
+            AntdUI.Message.success(Window, "切换成功!", autoClose: 1);
+            AntdUI.Notification.success(Window, "提示", "切换成功!", autoClose: 1);
+        }
+
+        private void switch_scrollbar_CheckedChanged(object sender, bool value)
+        {
+            AppSetting.UpdateAppSetting("ScrollBarHide", value ? "True" : "False");
+            AntdUI.Config.ScrollBarHide = value;
+        }
+
+        private void switch_shadow_CheckedChanged(object sender, bool value)
+        {
+            AppSetting.UpdateAppSetting("ShadowEnabled", value ? "True" : "False");
+            AntdUI.Config.ShadowEnabled = value;
+        }
+        #endregion
+
+
     }
 }
