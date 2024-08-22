@@ -47,6 +47,7 @@
 #### Pagination 分页
 ![Pagination](assets/screenshots/Pagination.png)
 #### Steps 步骤条
+![Steps](assets/screenshots/Steps.png)
 
 ### 数据录入
 #### CheckBox 复选框
