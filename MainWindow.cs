@@ -164,6 +164,9 @@ namespace AntdUIDemo
                 case "Menu":
                     control = new MenuDemo();
                     break;
+                case "Pagination":
+                    control = new PaginationDemo();
+                    break;
             }
             if (control != null)
             {

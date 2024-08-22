@@ -1,4 +1,5 @@
 ﻿using AntdUI;
+using AntdUIDemo.Utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,8 +17,6 @@ namespace AntdUIDemo.Views
         public MenuDemo()
         {
             InitializeComponent();
-            //初始化下拉框
-            InitSelectItems();
             //设置默认值
             InitData();
             // 绑定事件
@@ -26,12 +25,36 @@ namespace AntdUIDemo.Views
 
         private void BindEventHandler()
         {
-            select_autocollapse.SelectedIndexChanged += select_intvalue_SelectedIndexChanged;
             select_collapsed.SelectedIndexChanged += select_intvalue_SelectedIndexChanged;
             select_indent.SelectedIndexChanged += select_intvalue_SelectedIndexChanged;
             select_round.SelectedIndexChanged += select_intvalue_SelectedIndexChanged;
             select_showsubback.SelectedIndexChanged += select_intvalue_SelectedIndexChanged;
             select_unique.SelectedIndexChanged += select_intvalue_SelectedIndexChanged;
+
+            input_radius.ValueChanged += Input_decimal_ValueChanged;
+
+            colorPicker_forecolor.ValueChanged += ColorPicker_ValueChanged;
+            colorPicker_foreactive.ValueChanged += ColorPicker_ValueChanged;
+            colorPicker_backhover.ValueChanged += ColorPicker_ValueChanged;
+            colorPicker_backactive.ValueChanged += ColorPicker_ValueChanged;
+
+            buttonCZ.Click += ButtonCZ_Click;
+        }
+
+        private void ButtonCZ_Click(object sender, EventArgs e)
+        {
+            InitData();
+            LoadMenu();
+        }
+
+        private void ColorPicker_ValueChanged(object sender, Color value)
+        {
+            LoadMenu();
+        }
+
+        private void Input_decimal_ValueChanged(object sender, decimal value)
+        {
+            LoadMenu();
         }
 
         private void select_intvalue_SelectedIndexChanged(object sender, int value)
@@ -41,34 +64,42 @@ namespace AntdUIDemo.Views
 
         private void InitData()
         {
-            select_mode.SelectedIndex = 0;
-        }
+            select_collapsed.SelectedIndex = 1;
+            select_indent.SelectedIndex = 0;
+            select_round.SelectedIndex = 1;
+            select_showsubback.SelectedIndex = 1;
+            select_unique.SelectedIndex = 1;
 
-        private void InitSelectItems()
-        {
-            //初始化菜单类型
-            //select_align.Items.Clear();
-            //foreach (TAlignFlow align in Enum.GetValues(typeof(TAlignFlow)))
-            //{
-            //    select_align.Items.Add(align);
-            //}
+            input_radius.Value = 6;
 
-            select_mode.Items.Clear();
-            foreach(TMenuMode menuMode in Enum.GetValues(typeof(TMenuMode)))
-            {
-                select_mode.Items.Add(menuMode);
-            }
+            colorPicker_forecolor.Value = Color.Transparent;
+            colorPicker_foreactive.Value = Color.Transparent;
+            colorPicker_backhover.Value = Color.Transparent;
+            colorPicker_backactive.Value = Color.Transparent;
         }
 
         private void LoadMenu()
         {
-            menu.AutoCollapse = select_autocollapse.SelectedIndex == 0;
+            ApplyMenuSettings(menu_inline);
+            ApplyMenuSettings(menu_vertical);
+            ApplyMenuSettings(menu_horizontal);
+        }
+
+        private void ApplyMenuSettings(AntdUI.Menu menu)
+        {
             menu.Collapsed = select_collapsed.SelectedIndex == 0;
             menu.Indent = select_indent.SelectedIndex == 0;
             menu.Round = select_round.SelectedIndex == 0;
             menu.ShowSubBack = select_showsubback.SelectedIndex == 0;
             menu.Unique = select_unique.SelectedIndex == 0;
-            menu.Invalidate();
+
+            menu.Radius = (int)input_radius.Value;
+
+            menu.ForeColor = colorPicker_forecolor.Value == Color.Transparent ? null : colorPicker_forecolor.Value;
+            menu.ForeActive = colorPicker_foreactive.Value == Color.Transparent ? null : colorPicker_foreactive.Value;
+            menu.BackHover = colorPicker_backhover.Value == Color.Transparent ? null : colorPicker_backhover.Value;
+            menu.BackActive = colorPicker_backactive.Value == Color.Transparent ? null : colorPicker_backactive.Value;
         }
+
     }
 }

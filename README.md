@@ -43,6 +43,7 @@
 #### Dropdown 下拉菜单
 ![Dropdown](assets/screenshots/Dropdown.png)
 #### Menu 导航菜单
+![Menu](assets/screenshots/Menu.png)
 #### Pagination 分页
 #### Steps 步骤条
 
