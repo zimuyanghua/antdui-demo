@@ -17,7 +17,6 @@ namespace AntdUIDemo
         public MainWindow()
         {
             InitializeComponent();
-            AntdUI.Config.ShowInWindow = true;
             //加载配置文件
             LoadAppConfig();
             //加载菜单
@@ -166,6 +165,9 @@ namespace AntdUIDemo
                     break;
                 case "Pagination":
                     control = new PaginationDemo();
+                    break;
+                case "Steps":
+                    control = new StepsDemo();
                     break;
             }
             if (control != null)
