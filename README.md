@@ -45,6 +45,7 @@
 #### Menu 导航菜单
 ![Menu](assets/screenshots/Menu.png)
 #### Pagination 分页
+![Pagination](assets/screenshots/Pagination.png)
 #### Steps 步骤条
 
 ### 数据录入
