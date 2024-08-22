@@ -199,10 +199,11 @@
             this.stepsv.Items.Add(stepsItem1);
             this.stepsv.Items.Add(stepsItem2);
             this.stepsv.Items.Add(stepsItem3);
-            this.stepsv.Location = new System.Drawing.Point(3, 243);
+            this.stepsv.Location = new System.Drawing.Point(36, 243);
+            this.stepsv.Margin = new System.Windows.Forms.Padding(36, 3, 36, 3);
             this.stepsv.Name = "stepsv";
             this.stepsv.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.stepsv.Size = new System.Drawing.Size(694, 252);
+            this.stepsv.Size = new System.Drawing.Size(628, 244);
             this.stepsv.TabIndex = 48;
             this.stepsv.Text = "steps1";
             this.stepsv.Vertical = true;
