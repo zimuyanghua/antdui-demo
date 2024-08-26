@@ -54,7 +54,8 @@
 ![Steps](assets/screenshots/Steps.png)
 
 ### 数据录入
-#### CheckBox 复选框
+#### Checkbox 复选框
+![Checkbox](assets/screenshots/Checkbox.png)
 #### ColorPicker 颜色选择器
 #### DatePicker 日期选择器
 #### DatePickerRange 日期范围选择器

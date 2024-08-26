@@ -169,7 +169,7 @@ namespace AntdUIDemo
                 case "Steps":
                     control = new StepsDemo();
                     break;
-                case "CheckBox":
+                case "Checkbox":
                     control = new CheckBoxDemo();
                     break;
                 case "ColorPicker":

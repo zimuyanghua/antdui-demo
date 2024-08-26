@@ -34,7 +34,7 @@ namespace AntdUIDemo.Models
         },
         { "数据录入", new List<MenuItems>
             {
-                new MenuItems { Text = "CheckBox 复选框", Tag = "CheckBox"},
+                new MenuItems { Text = "Checkbox 复选框", Tag = "Checkbox"},
                 new MenuItems { Text = "ColorPicker 颜色选择器", Tag = "ColorPicker"},
                 new MenuItems { Text = "DatePicker 日期选择器", Tag = "DatePicker"},
                 new MenuItems { Text = "DatePickerRange 日期范围选择器", Tag = "DatePickerRange"},
