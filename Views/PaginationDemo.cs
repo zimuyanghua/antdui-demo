@@ -12,8 +12,6 @@ namespace AntdUIDemo.Views
 {
     public partial class PaginationDemo : UserControl
     {
-        private int selectMultiple_SelectedIndexChanged;
-
         public PaginationDemo()
         {
             InitializeComponent();

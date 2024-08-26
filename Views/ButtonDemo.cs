@@ -30,7 +30,7 @@ namespace AntdUIDemo.Views
                     bool showarrow = button.ShowArrow;
                     bool joinleft = button.JoinLeft;
                     bool joinright = button.JoinRight;
-                    var imagesvg = button.ImageSvg;
+                    var iconsvg = button.IconSvg;
                     var backentend = button.BackExtend;
                     // 构建SetTip文本
                     var tooltipText = new StringBuilder();
@@ -57,9 +57,9 @@ namespace AntdUIDemo.Views
                     {
                         tooltipText.AppendLine($"JoinRight: {joinright}");
                     }
-                    if (!string.IsNullOrEmpty(imagesvg))
+                    if (!string.IsNullOrEmpty(iconsvg))
                     {
-                        tooltipText.AppendLine($"ImageSvg: 参见ImageSvg属性");
+                        tooltipText.AppendLine($"IconSvg: 参见IconSvg属性");
                     }
                     if (!string.IsNullOrEmpty(backentend))
                     {
