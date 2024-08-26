@@ -35,11 +35,12 @@ namespace AntdUIDemo.Views
             stackPanel.Vertical = select_vertical.SelectedIndex == 0;
 
             stackPanel.Controls.Clear();
-            for (int i= 0; i < 3; i++){
+            for (int i = 1; i < 4; i++)
+            {
                 var control = new AntdUI.Button()
                 {
-                    Margin=new Padding(0),
-                    Padding=new Padding(3),
+                    Margin = new Padding(0),
+                    Padding = new Padding(3),
                     Text = $"Button{i}",
                     Type = TTypeMini.Primary,
                     WaveSize = 0,
@@ -104,7 +105,7 @@ namespace AntdUIDemo.Views
             {
                 Margin = new Padding(0),
                 Padding = new Padding(3),
-                Text = $"Button{stackPanel.Controls.Count}",
+                Text = $"Button{stackPanel.Controls.Count+1}",
                 Type = TTypeMini.Primary,
                 WaveSize = 0,
                 Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(134))),

@@ -59,24 +59,36 @@
             this.button_color.Dock = System.Windows.Forms.DockStyle.Right;
             this.button_color.Ghost = true;
             this.button_color.IconRatio = 0.6F;
-            this.button_color.ImageSvg = resources.GetString("button_color.IconSvg");
+            this.button_color.IconSvg = resources.GetString("button_color.IconSvg");
+            this.button_color.Image = null;
+            this.button_color.ImageHover = null;
+            this.button_color.ImageHoverSvg = null;
+            this.button_color.ImageSize = new System.Drawing.Size(0, 0);
+            this.button_color.ImageSvg = resources.GetString("button_color.ImageSvg");
             this.button_color.Location = new System.Drawing.Point(806, 0);
             this.button_color.Name = "button_color";
             this.button_color.Radius = 0;
             this.button_color.Size = new System.Drawing.Size(50, 40);
             this.button_color.TabIndex = 1;
+            this.button_color.ToggleType = null;
             this.button_color.WaveSize = 0;
             // 
             // buttonSZ
             // 
             this.buttonSZ.Dock = System.Windows.Forms.DockStyle.Right;
             this.buttonSZ.Ghost = true;
-            this.buttonSZ.ImageSvg = resources.GetString("buttonSZ.IconSvg");
+            this.buttonSZ.IconSvg = resources.GetString("buttonSZ.IconSvg");
+            this.buttonSZ.Image = null;
+            this.buttonSZ.ImageHover = null;
+            this.buttonSZ.ImageHoverSvg = null;
+            this.buttonSZ.ImageSize = new System.Drawing.Size(0, 0);
+            this.buttonSZ.ImageSvg = resources.GetString("buttonSZ.ImageSvg");
             this.buttonSZ.Location = new System.Drawing.Point(856, 0);
             this.buttonSZ.Name = "buttonSZ";
             this.buttonSZ.Radius = 0;
             this.buttonSZ.Size = new System.Drawing.Size(50, 40);
             this.buttonSZ.TabIndex = 0;
+            this.buttonSZ.ToggleType = null;
             this.buttonSZ.WaveSize = 0;
             // 
             // divider
@@ -122,6 +134,7 @@
             // 
             // MainWindow
             // 
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1008, 624);
             this.ControlBox = false;
             this.Controls.Add(this.panel_content);

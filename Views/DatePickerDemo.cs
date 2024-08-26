@@ -15,6 +15,21 @@ namespace AntdUIDemo.Views
         public DatePickerDemo()
         {
             InitializeComponent();
+            InitData();
+        }
+
+        private void InitData()
+        {
+            DateTime now = DateTime.Now;
+            datePicker_badge.BadgeAction = dates =>
+            {
+                return new List<AntdUI.DateBadge>
+                {
+                    new AntdUI.DateBadge(now.AddDays(5).ToString("yyyy-MM-dd"),99,Color.Red),
+                    new AntdUI.DateBadge(now.AddDays(1).ToString("yyyy-MM-dd"),2,Color.Red),
+                    new AntdUI.DateBadge(now.AddDays(-3).ToString("yyyy-MM-dd"),8,Color.FromArgb(14, 176, 201)),
+                };
+            };
         }
     }
 }

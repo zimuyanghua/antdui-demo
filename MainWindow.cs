@@ -178,6 +178,9 @@ namespace AntdUIDemo
                 case "DatePicker":
                     control = new DatePickerDemo();
                     break;
+                case "DatePickerRange":
+                    control = new DatePickerRangeDemo();
+                    break;
             }
             if (control != null)
             {

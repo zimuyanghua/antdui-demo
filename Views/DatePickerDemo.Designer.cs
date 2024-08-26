@@ -30,34 +30,40 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DatePickerDemo));
             this.stackPanel1 = new AntdUI.StackPanel();
+            this.flowPanel3 = new AntdUI.FlowPanel();
+            this.datePicker7 = new AntdUI.DatePicker();
+            this.datePicker11 = new AntdUI.DatePicker();
+            this.label5 = new AntdUI.Label();
+            this.flowPanel2 = new AntdUI.FlowPanel();
+            this.datePicker8 = new AntdUI.DatePicker();
+            this.datePicker9 = new AntdUI.DatePicker();
+            this.datePicker12 = new AntdUI.DatePicker();
+            this.label4 = new AntdUI.Label();
             this.flowPanel1 = new AntdUI.FlowPanel();
+            this.datePicker6 = new AntdUI.DatePicker();
+            this.datePicker5 = new AntdUI.DatePicker();
+            this.datePicker4 = new AntdUI.DatePicker();
+            this.datePicker3 = new AntdUI.DatePicker();
+            this.datePicker2 = new AntdUI.DatePicker();
+            this.datePicker1 = new AntdUI.DatePicker();
             this.label3 = new AntdUI.Label();
             this.divider1 = new AntdUI.Divider();
             this.label2 = new AntdUI.Label();
             this.label1 = new AntdUI.Label();
-            this.datePicker1 = new AntdUI.DatePicker();
-            this.datePicker2 = new AntdUI.DatePicker();
-            this.datePicker3 = new AntdUI.DatePicker();
-            this.datePicker4 = new AntdUI.DatePicker();
-            this.datePicker5 = new AntdUI.DatePicker();
-            this.datePicker6 = new AntdUI.DatePicker();
-            this.label4 = new AntdUI.Label();
-            this.flowPanel2 = new AntdUI.FlowPanel();
-            this.datePicker12 = new AntdUI.DatePicker();
-            this.datePicker9 = new AntdUI.DatePicker();
-            this.datePicker8 = new AntdUI.DatePicker();
-            this.label5 = new AntdUI.Label();
-            this.flowPanel3 = new AntdUI.FlowPanel();
-            this.datePicker11 = new AntdUI.DatePicker();
-            this.datePicker7 = new AntdUI.DatePicker();
+            this.label6 = new AntdUI.Label();
+            this.flowPanel4 = new AntdUI.FlowPanel();
+            this.datePicker_badge = new AntdUI.DatePicker();
             this.stackPanel1.SuspendLayout();
-            this.flowPanel1.SuspendLayout();
-            this.flowPanel2.SuspendLayout();
             this.flowPanel3.SuspendLayout();
+            this.flowPanel2.SuspendLayout();
+            this.flowPanel1.SuspendLayout();
+            this.flowPanel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // stackPanel1
             // 
+            this.stackPanel1.Controls.Add(this.flowPanel4);
+            this.stackPanel1.Controls.Add(this.label6);
             this.stackPanel1.Controls.Add(this.flowPanel3);
             this.stackPanel1.Controls.Add(this.label5);
             this.stackPanel1.Controls.Add(this.flowPanel2);
@@ -75,6 +81,100 @@
             this.stackPanel1.Text = "stackPanel1";
             this.stackPanel1.Vertical = true;
             // 
+            // flowPanel3
+            // 
+            this.flowPanel3.Controls.Add(this.datePicker7);
+            this.flowPanel3.Controls.Add(this.datePicker11);
+            this.flowPanel3.Location = new System.Drawing.Point(3, 275);
+            this.flowPanel3.Name = "flowPanel3";
+            this.flowPanel3.Size = new System.Drawing.Size(694, 38);
+            this.flowPanel3.TabIndex = 16;
+            this.flowPanel3.Text = "flowPanel3";
+            // 
+            // datePicker7
+            // 
+            this.datePicker7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.datePicker7.Format = "yyyy/MM/dd";
+            this.datePicker7.Location = new System.Drawing.Point(116, 3);
+            this.datePicker7.Name = "datePicker7";
+            this.datePicker7.PlaceholderText = "yyyy/MM/dd";
+            this.datePicker7.Size = new System.Drawing.Size(107, 32);
+            this.datePicker7.TabIndex = 1;
+            this.datePicker7.WaveSize = 0;
+            // 
+            // datePicker11
+            // 
+            this.datePicker11.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.datePicker11.Location = new System.Drawing.Point(3, 3);
+            this.datePicker11.Name = "datePicker11";
+            this.datePicker11.PlaceholderText = "yyyy-MM-dd";
+            this.datePicker11.Size = new System.Drawing.Size(107, 32);
+            this.datePicker11.TabIndex = 0;
+            this.datePicker11.WaveSize = 0;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.Location = new System.Drawing.Point(3, 245);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(694, 24);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "日期格式化";
+            // 
+            // flowPanel2
+            // 
+            this.flowPanel2.Controls.Add(this.datePicker8);
+            this.flowPanel2.Controls.Add(this.datePicker9);
+            this.flowPanel2.Controls.Add(this.datePicker12);
+            this.flowPanel2.Location = new System.Drawing.Point(3, 201);
+            this.flowPanel2.Name = "flowPanel2";
+            this.flowPanel2.Size = new System.Drawing.Size(694, 38);
+            this.flowPanel2.TabIndex = 14;
+            this.flowPanel2.Text = "flowPanel2";
+            // 
+            // datePicker8
+            // 
+            this.datePicker8.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.datePicker8.Location = new System.Drawing.Point(229, 3);
+            this.datePicker8.Name = "datePicker8";
+            this.datePicker8.PlaceholderText = "图标在左";
+            this.datePicker8.PrefixSvg = resources.GetString("datePicker8.PrefixSvg");
+            this.datePicker8.ShowIcon = false;
+            this.datePicker8.Size = new System.Drawing.Size(107, 32);
+            this.datePicker8.TabIndex = 3;
+            this.datePicker8.WaveSize = 0;
+            // 
+            // datePicker9
+            // 
+            this.datePicker9.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.datePicker9.Location = new System.Drawing.Point(116, 3);
+            this.datePicker9.Name = "datePicker9";
+            this.datePicker9.PlaceholderText = "图标在右";
+            this.datePicker9.Size = new System.Drawing.Size(107, 32);
+            this.datePicker9.SuffixSvg = resources.GetString("datePicker9.SuffixSvg");
+            this.datePicker9.TabIndex = 2;
+            this.datePicker9.WaveSize = 0;
+            // 
+            // datePicker12
+            // 
+            this.datePicker12.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.datePicker12.Location = new System.Drawing.Point(3, 3);
+            this.datePicker12.Name = "datePicker12";
+            this.datePicker12.PlaceholderText = "无图标";
+            this.datePicker12.ShowIcon = false;
+            this.datePicker12.Size = new System.Drawing.Size(107, 32);
+            this.datePicker12.TabIndex = 0;
+            this.datePicker12.WaveSize = 0;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.Location = new System.Drawing.Point(3, 171);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(694, 24);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "图标显示";
+            // 
             // flowPanel1
             // 
             this.flowPanel1.Controls.Add(this.datePicker6);
@@ -88,6 +188,71 @@
             this.flowPanel1.Size = new System.Drawing.Size(694, 38);
             this.flowPanel1.TabIndex = 12;
             this.flowPanel1.Text = "flowPanel1";
+            // 
+            // datePicker6
+            // 
+            this.datePicker6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.datePicker6.Location = new System.Drawing.Point(568, 3);
+            this.datePicker6.Name = "datePicker6";
+            this.datePicker6.PlaceholderText = "TR";
+            this.datePicker6.Placement = AntdUI.TAlignFrom.TR;
+            this.datePicker6.Size = new System.Drawing.Size(107, 32);
+            this.datePicker6.TabIndex = 5;
+            this.datePicker6.WaveSize = 0;
+            // 
+            // datePicker5
+            // 
+            this.datePicker5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.datePicker5.Location = new System.Drawing.Point(455, 3);
+            this.datePicker5.Name = "datePicker5";
+            this.datePicker5.PlaceholderText = "Top";
+            this.datePicker5.Placement = AntdUI.TAlignFrom.Top;
+            this.datePicker5.Size = new System.Drawing.Size(107, 32);
+            this.datePicker5.TabIndex = 4;
+            this.datePicker5.WaveSize = 0;
+            // 
+            // datePicker4
+            // 
+            this.datePicker4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.datePicker4.Location = new System.Drawing.Point(342, 3);
+            this.datePicker4.Name = "datePicker4";
+            this.datePicker4.PlaceholderText = "TL";
+            this.datePicker4.Placement = AntdUI.TAlignFrom.TL;
+            this.datePicker4.Size = new System.Drawing.Size(107, 32);
+            this.datePicker4.TabIndex = 3;
+            this.datePicker4.WaveSize = 0;
+            // 
+            // datePicker3
+            // 
+            this.datePicker3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.datePicker3.Location = new System.Drawing.Point(229, 3);
+            this.datePicker3.Name = "datePicker3";
+            this.datePicker3.PlaceholderText = "BR";
+            this.datePicker3.Placement = AntdUI.TAlignFrom.BR;
+            this.datePicker3.Size = new System.Drawing.Size(107, 32);
+            this.datePicker3.TabIndex = 2;
+            this.datePicker3.WaveSize = 0;
+            // 
+            // datePicker2
+            // 
+            this.datePicker2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.datePicker2.Location = new System.Drawing.Point(116, 3);
+            this.datePicker2.Name = "datePicker2";
+            this.datePicker2.PlaceholderText = "Bottom";
+            this.datePicker2.Placement = AntdUI.TAlignFrom.Bottom;
+            this.datePicker2.Size = new System.Drawing.Size(107, 32);
+            this.datePicker2.TabIndex = 1;
+            this.datePicker2.WaveSize = 0;
+            // 
+            // datePicker1
+            // 
+            this.datePicker1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.datePicker1.Location = new System.Drawing.Point(3, 3);
+            this.datePicker1.Name = "datePicker1";
+            this.datePicker1.PlaceholderText = "BL";
+            this.datePicker1.Size = new System.Drawing.Size(107, 32);
+            this.datePicker1.TabIndex = 0;
+            this.datePicker1.WaveSize = 0;
             // 
             // label3
             // 
@@ -123,164 +288,33 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "DatePicker 日期选择器";
             // 
-            // datePicker1
+            // label6
             // 
-            this.datePicker1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.datePicker1.Location = new System.Drawing.Point(3, 3);
-            this.datePicker1.Name = "datePicker1";
-            this.datePicker1.PlaceholderText = "BL";
-            this.datePicker1.Size = new System.Drawing.Size(107, 32);
-            this.datePicker1.TabIndex = 0;
-            this.datePicker1.WaveSize = 0;
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.Location = new System.Drawing.Point(3, 319);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(694, 24);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "日期徽标";
             // 
-            // datePicker2
+            // flowPanel4
             // 
-            this.datePicker2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.datePicker2.Location = new System.Drawing.Point(116, 3);
-            this.datePicker2.Name = "datePicker2";
-            this.datePicker2.PlaceholderText = "Bottom";
-            this.datePicker2.Placement = AntdUI.TAlignFrom.Bottom;
-            this.datePicker2.Size = new System.Drawing.Size(107, 32);
-            this.datePicker2.TabIndex = 1;
-            this.datePicker2.WaveSize = 0;
+            this.flowPanel4.Controls.Add(this.datePicker_badge);
+            this.flowPanel4.Location = new System.Drawing.Point(3, 349);
+            this.flowPanel4.Name = "flowPanel4";
+            this.flowPanel4.Size = new System.Drawing.Size(694, 38);
+            this.flowPanel4.TabIndex = 18;
+            this.flowPanel4.Text = "flowPanel4";
             // 
-            // datePicker3
+            // datePicker_badge
             // 
-            this.datePicker3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.datePicker3.Location = new System.Drawing.Point(229, 3);
-            this.datePicker3.Name = "datePicker3";
-            this.datePicker3.PlaceholderText = "BR";
-            this.datePicker3.Placement = AntdUI.TAlignFrom.BR;
-            this.datePicker3.Size = new System.Drawing.Size(107, 32);
-            this.datePicker3.TabIndex = 2;
-            this.datePicker3.WaveSize = 0;
-            // 
-            // datePicker4
-            // 
-            this.datePicker4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.datePicker4.Location = new System.Drawing.Point(342, 3);
-            this.datePicker4.Name = "datePicker4";
-            this.datePicker4.PlaceholderText = "TL";
-            this.datePicker4.Placement = AntdUI.TAlignFrom.TL;
-            this.datePicker4.Size = new System.Drawing.Size(107, 32);
-            this.datePicker4.TabIndex = 3;
-            this.datePicker4.WaveSize = 0;
-            // 
-            // datePicker5
-            // 
-            this.datePicker5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.datePicker5.Location = new System.Drawing.Point(455, 3);
-            this.datePicker5.Name = "datePicker5";
-            this.datePicker5.PlaceholderText = "Top";
-            this.datePicker5.Placement = AntdUI.TAlignFrom.Top;
-            this.datePicker5.Size = new System.Drawing.Size(107, 32);
-            this.datePicker5.TabIndex = 4;
-            this.datePicker5.WaveSize = 0;
-            // 
-            // datePicker6
-            // 
-            this.datePicker6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.datePicker6.Location = new System.Drawing.Point(568, 3);
-            this.datePicker6.Name = "datePicker6";
-            this.datePicker6.PlaceholderText = "TR";
-            this.datePicker6.Placement = AntdUI.TAlignFrom.TR;
-            this.datePicker6.Size = new System.Drawing.Size(107, 32);
-            this.datePicker6.TabIndex = 5;
-            this.datePicker6.WaveSize = 0;
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(3, 171);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(694, 24);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "图标显示";
-            // 
-            // flowPanel2
-            // 
-            this.flowPanel2.Controls.Add(this.datePicker8);
-            this.flowPanel2.Controls.Add(this.datePicker9);
-            this.flowPanel2.Controls.Add(this.datePicker12);
-            this.flowPanel2.Location = new System.Drawing.Point(3, 201);
-            this.flowPanel2.Name = "flowPanel2";
-            this.flowPanel2.Size = new System.Drawing.Size(694, 38);
-            this.flowPanel2.TabIndex = 14;
-            this.flowPanel2.Text = "flowPanel2";
-            // 
-            // datePicker12
-            // 
-            this.datePicker12.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.datePicker12.Location = new System.Drawing.Point(3, 3);
-            this.datePicker12.Name = "datePicker12";
-            this.datePicker12.PlaceholderText = "无图标";
-            this.datePicker12.ShowIcon = false;
-            this.datePicker12.Size = new System.Drawing.Size(107, 32);
-            this.datePicker12.TabIndex = 0;
-            this.datePicker12.WaveSize = 0;
-            // 
-            // datePicker9
-            // 
-            this.datePicker9.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.datePicker9.Location = new System.Drawing.Point(116, 3);
-            this.datePicker9.Name = "datePicker9";
-            this.datePicker9.PlaceholderText = "图标在右";
-            this.datePicker9.Size = new System.Drawing.Size(107, 32);
-            this.datePicker9.SuffixSvg = resources.GetString("datePicker9.SuffixSvg");
-            this.datePicker9.TabIndex = 2;
-            this.datePicker9.WaveSize = 0;
-            // 
-            // datePicker8
-            // 
-            this.datePicker8.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.datePicker8.Location = new System.Drawing.Point(229, 3);
-            this.datePicker8.Name = "datePicker8";
-            this.datePicker8.PlaceholderText = "图标在左";
-            this.datePicker8.PrefixSvg = resources.GetString("datePicker8.PrefixSvg");
-            this.datePicker8.ShowIcon = false;
-            this.datePicker8.Size = new System.Drawing.Size(107, 32);
-            this.datePicker8.TabIndex = 3;
-            this.datePicker8.WaveSize = 0;
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(3, 245);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(694, 24);
-            this.label5.TabIndex = 15;
-            this.label5.Text = "日期格式化";
-            // 
-            // flowPanel3
-            // 
-            this.flowPanel3.Controls.Add(this.datePicker7);
-            this.flowPanel3.Controls.Add(this.datePicker11);
-            this.flowPanel3.Location = new System.Drawing.Point(3, 275);
-            this.flowPanel3.Name = "flowPanel3";
-            this.flowPanel3.Size = new System.Drawing.Size(694, 38);
-            this.flowPanel3.TabIndex = 16;
-            this.flowPanel3.Text = "flowPanel3";
-            // 
-            // datePicker11
-            // 
-            this.datePicker11.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.datePicker11.Location = new System.Drawing.Point(3, 3);
-            this.datePicker11.Name = "datePicker11";
-            this.datePicker11.PlaceholderText = "yyyy-MM-dd";
-            this.datePicker11.Size = new System.Drawing.Size(107, 32);
-            this.datePicker11.TabIndex = 0;
-            this.datePicker11.WaveSize = 0;
-            // 
-            // datePicker7
-            // 
-            this.datePicker7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.datePicker7.Format = "yyyy/MM/dd";
-            this.datePicker7.Location = new System.Drawing.Point(116, 3);
-            this.datePicker7.Name = "datePicker7";
-            this.datePicker7.PlaceholderText = "yyyy/MM/dd";
-            this.datePicker7.Size = new System.Drawing.Size(107, 32);
-            this.datePicker7.TabIndex = 1;
-            this.datePicker7.WaveSize = 0;
+            this.datePicker_badge.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.datePicker_badge.Location = new System.Drawing.Point(3, 3);
+            this.datePicker_badge.Name = "datePicker_badge";
+            this.datePicker_badge.PlaceholderText = "";
+            this.datePicker_badge.Size = new System.Drawing.Size(107, 32);
+            this.datePicker_badge.TabIndex = 0;
+            this.datePicker_badge.WaveSize = 0;
             // 
             // DatePickerDemo
             // 
@@ -289,9 +323,10 @@
             this.Name = "DatePickerDemo";
             this.Size = new System.Drawing.Size(700, 471);
             this.stackPanel1.ResumeLayout(false);
-            this.flowPanel1.ResumeLayout(false);
-            this.flowPanel2.ResumeLayout(false);
             this.flowPanel3.ResumeLayout(false);
+            this.flowPanel2.ResumeLayout(false);
+            this.flowPanel1.ResumeLayout(false);
+            this.flowPanel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -319,5 +354,8 @@
         private AntdUI.DatePicker datePicker7;
         private AntdUI.DatePicker datePicker11;
         private AntdUI.Label label5;
+        private AntdUI.FlowPanel flowPanel4;
+        private AntdUI.DatePicker datePicker_badge;
+        private AntdUI.Label label6;
     }
 }

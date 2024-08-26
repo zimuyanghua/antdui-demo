@@ -6,14 +6,14 @@
 ```
 1. git clone 或者直接下载本项目
 
-2. 若电脑分辨率不是 1920×1080(1080P) 或者缩放不是 100%，使用 Visual Studio 在 100% 缩放模式下(命令行使用 devenv /noScale 命令启动 Visual Studio)打开项目
+2. 若电脑分辨率不是 1920×1080(1080P) 或者缩放不是 100%，使用 Visual Studio 在 100% 缩放模式下(使用 devenv /noScale 命令启动 Visual Studio)打开项目
 
 3. 若电脑没有安装 .NET Framework 4.8,编辑项目文件设置 TargetFramework 属性为自己安装的目标框架，兼容框架参照 AntdUI 项目
 
 4. 编译运行
 ```
 ## ⚠️ 注意事项
-- 电脑屏幕分辨率低于 1920×1080(1080P) 请使用大于等于 1080P 分辨率的屏幕进行开发
+- 电脑屏幕分辨率低于 1920×1080(1080P) 请使用大于等于 1080P 分辨率的屏幕开发
 - 电脑屏幕大于等于 1080P 分辨率或者缩放不是 100% 请务必按照上述 **快速开始** 的第二条步骤打开项目,详细原因见 [解决 Visual Studio 中 Windows 窗体设计器的 HDPI/缩放问题](https://learn.microsoft.com/zh-cn/visualstudio/designers/disable-dpi-awareness?view=vs-2022) ，具体启动方式如下图
 ![vsstart](assets/screenshots/vsstart.png)
 
