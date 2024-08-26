@@ -7,10 +7,10 @@ namespace AntdUIDemo.Views
 {
     public partial class FlowPanelDemo : UserControl
     {
-        private Window form;
-        public FlowPanelDemo(Window _form)
+        private Window window;
+        public FlowPanelDemo(Window _window)
         {
-            form = _form;
+            window = _window;
             InitializeComponent();
             //初始化下拉框
             InitSelectItems();
@@ -46,7 +46,7 @@ namespace AntdUIDemo.Views
 
                 };
                 // 通过主窗口设置DPI控制添加控件保持缩放比例
-                form.AutoDpi(control);
+                window.AutoDpi(control);
                 flowPanel.Controls.Add(control);
             }
         }
@@ -105,7 +105,7 @@ namespace AntdUIDemo.Views
                 Size = new Size(90, 42),
 
             };
-            form.AutoDpi(control);
+            window.AutoDpi(control);
             flowPanel.Controls.Add(control);
         }
 

@@ -19,9 +19,8 @@ namespace AntdUIDemo.Views
         {
             foreach (Control control in parent.Controls)
             {
-                if (control is AntdUI.Button antduibutton)
+                if (control is AntdUI.Button button)
                 {
-                    var button = (AntdUI.Button)control;
                     var type = button.Type;
                     float borderwidth = button.BorderWidth;
                     int radius = button.Radius;

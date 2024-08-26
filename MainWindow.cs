@@ -169,10 +169,15 @@ namespace AntdUIDemo
                 case "Steps":
                     control = new StepsDemo();
                     break;
+                case "CheckBox":
+                    control = new CheckBoxDemo(this);
+                    break;
             }
             if (control != null)
             {
                 AutoDpi(control);
+                //测试日志归档
+                LoggerHelper.Logger.Error(new Exception("测试点击了Menu"), "点击了" + name);
                 panel_content.Controls.Add(control);
             }
         }

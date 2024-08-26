@@ -1,4 +1,5 @@
-﻿ using System;
+﻿using AntdUIDemo.Utils;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -14,9 +15,25 @@ namespace AntdUIDemo
         [STAThread]
         static void Main()
         {
+            Application.ThreadException += new System.Threading.ThreadExceptionEventHandler(Application_ThreadException);
+            AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(CurrentDomain_UnhandledException);
+
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainWindow());
+        }
+
+        // 捕获UI线程中的未处理异常
+        static void Application_ThreadException(object sender, System.Threading.ThreadExceptionEventArgs e)
+        {
+            LoggerHelper.Logger.Fatal(e.Exception, "未处理的UI线程异常");
+        }
+
+        // 捕获非UI线程中的未处理异常
+        static void CurrentDomain_UnhandledException(object sender, UnhandledExceptionEventArgs e)
+        {
+            LoggerHelper.Logger.Fatal(e.ExceptionObject as Exception, "未处理的非UI线程异常");
         }
     }
 }

@@ -30,12 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.titlebar = new AntdUI.WindowBar();
+            this.button_color = new AntdUI.Button();
             this.buttonSZ = new AntdUI.Button();
             this.divider = new AntdUI.Divider();
             this.menu = new AntdUI.Menu();
             this.panel_content = new AntdUI.StackPanel();
-            this.button_color = new AntdUI.Button();
+            this.label1 = new AntdUI.Label();
             this.titlebar.SuspendLayout();
+            this.panel_content.SuspendLayout();
             this.SuspendLayout();
             // 
             // titlebar
@@ -52,11 +54,24 @@
             this.titlebar.TabIndex = 0;
             this.titlebar.Text = "AntdUI";
             // 
+            // button_color
+            // 
+            this.button_color.Dock = System.Windows.Forms.DockStyle.Right;
+            this.button_color.Ghost = true;
+            this.button_color.IconRatio = 0.6F;
+            this.button_color.IconSvg = resources.GetString("button_color.IconSvg");
+            this.button_color.Location = new System.Drawing.Point(806, 0);
+            this.button_color.Name = "button_color";
+            this.button_color.Radius = 0;
+            this.button_color.Size = new System.Drawing.Size(50, 40);
+            this.button_color.TabIndex = 1;
+            this.button_color.WaveSize = 0;
+            // 
             // buttonSZ
             // 
             this.buttonSZ.Dock = System.Windows.Forms.DockStyle.Right;
             this.buttonSZ.Ghost = true;
-            this.buttonSZ.ImageSvg = resources.GetString("buttonSZ.ImageSvg");
+            this.buttonSZ.IconSvg = resources.GetString("buttonSZ.IconSvg");
             this.buttonSZ.Location = new System.Drawing.Point(856, 0);
             this.buttonSZ.Name = "buttonSZ";
             this.buttonSZ.Radius = 0;
@@ -87,6 +102,7 @@
             // panel_content
             // 
             this.panel_content.AutoScroll = true;
+            this.panel_content.Controls.Add(this.label1);
             this.panel_content.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_content.Location = new System.Drawing.Point(283, 52);
             this.panel_content.Name = "panel_content";
@@ -94,18 +110,15 @@
             this.panel_content.TabIndex = 10;
             this.panel_content.Vertical = true;
             // 
-            // button_color
+            // label1
             // 
-            this.button_color.Dock = System.Windows.Forms.DockStyle.Right;
-            this.button_color.Ghost = true;
-            this.button_color.IconRatio = 0.6F;
-            this.button_color.ImageSvg = resources.GetString("button_color.ImageSvg");
-            this.button_color.Location = new System.Drawing.Point(806, 0);
-            this.button_color.Name = "button_color";
-            this.button_color.Radius = 0;
-            this.button_color.Size = new System.Drawing.Size(50, 40);
-            this.button_color.TabIndex = 1;
-            this.button_color.WaveSize = 0;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(3, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(719, 563);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "欢迎使用AntdUI Demo";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MainWindow
             // 
@@ -123,6 +136,7 @@
             this.Resizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.titlebar.ResumeLayout(false);
+            this.panel_content.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -135,5 +149,6 @@
         private AntdUI.StackPanel panel_content;
         private AntdUI.Button buttonSZ;
         private AntdUI.Button button_color;
+        private AntdUI.Label label1;
     }
 }

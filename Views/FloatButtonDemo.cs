@@ -7,11 +7,11 @@ namespace AntdUIDemo.Views
 {
     public partial class FloatButtonDemo : UserControl
     {
-        private Form form;
+        private Window window;
         private Form floatButtonForm = null;
-        public FloatButtonDemo(Form _form)
+        public FloatButtonDemo(Window _window)
         {
-            form = _form;
+            window = _window;
             InitializeComponent();
             //初始化下拉框
             InitSelectItems();
@@ -89,7 +89,7 @@ namespace AntdUIDemo.Views
         {
             if (floatButtonForm == null || floatButtonForm.IsDisposed)
             {
-                floatButtonForm = FloatButton.open(new FloatButton.Config(form, new FloatButton.ConfigBtn[]
+                floatButtonForm = FloatButton.open(new FloatButton.Config(window, new FloatButton.ConfigBtn[]
                 {
                    // 使用 svg 图片
                    new FloatButton.ConfigBtn("按钮1","",true)
@@ -129,7 +129,7 @@ namespace AntdUIDemo.Views
                 }, btn =>
                 {
                     //回调事件
-                    AntdUI.Message.info(form, btn.Tooltip, autoClose: 1);
+                    AntdUI.Message.info(window, btn.Tooltip, autoClose: 1);
                 })
                 // 浮动全局配置
                 {
