@@ -87,6 +87,11 @@ namespace AntdUIDemo.Views
 
         private void LoadPagination()
         {
+            if (this.InvokeRequired)
+            {
+                this.Invoke(new Action(LoadPagination));
+                return;
+            }
             pagination.Current = (int)input_current.Value;
             pagination.Total = (int)input_total.Value;
             pagination.PageSize = (int)input_pagesize.Value;
