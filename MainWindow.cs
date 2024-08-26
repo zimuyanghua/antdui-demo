@@ -133,10 +133,10 @@ namespace AntdUIDemo
                 {
                     floatButtonDemo.CloseFloatButtonForm(); // 清理浮动按钮窗体
                 }
-                panel_content.Controls.Clear();
-                control.Dispose();
+                control?.Dispose();
                 control = null;
             }
+            panel_content.Controls.Clear();
             switch (name)
             {
                 case "Button":
@@ -170,7 +170,13 @@ namespace AntdUIDemo
                     control = new StepsDemo();
                     break;
                 case "CheckBox":
-                    control = new CheckBoxDemo(this);
+                    control = new CheckBoxDemo();
+                    break;
+                case "ColorPicker":
+                    control = new ColorPickerDemo();
+                    break;
+                case "DatePicker":
+                    control = new DatePickerDemo();
                     break;
             }
             if (control != null)

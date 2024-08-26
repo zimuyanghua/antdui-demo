@@ -696,6 +696,11 @@
             // 
             this.input_radius.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.input_radius.Location = new System.Drawing.Point(129, 3);
+            this.input_radius.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.input_radius.Name = "input_radius";
             this.input_radius.Size = new System.Drawing.Size(120, 26);
             this.input_radius.TabIndex = 5;

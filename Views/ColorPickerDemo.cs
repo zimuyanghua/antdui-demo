@@ -1,5 +1,4 @@
-﻿using AntdUI;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -11,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AntdUIDemo.Views
 {
-    public partial class CheckBoxDemo : UserControl
+    public partial class ColorPickerDemo : UserControl
     {
-        public CheckBoxDemo()
+        public ColorPickerDemo()
         {
             InitializeComponent();
         }

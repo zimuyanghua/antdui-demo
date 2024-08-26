@@ -164,6 +164,11 @@
             // 
             this.input_badgesize.DecimalPlaces = 2;
             this.input_badgesize.Location = new System.Drawing.Point(280, 3);
+            this.input_badgesize.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.input_badgesize.Name = "input_badgesize";
             this.input_badgesize.Size = new System.Drawing.Size(75, 26);
             this.input_badgesize.TabIndex = 13;
@@ -218,6 +223,11 @@
             // input_radius
             // 
             this.input_radius.Location = new System.Drawing.Point(459, 3);
+            this.input_radius.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.input_radius.Name = "input_radius";
             this.input_radius.Size = new System.Drawing.Size(75, 26);
             this.input_radius.TabIndex = 11;
@@ -308,6 +318,11 @@
             // input_my
             // 
             this.input_my.Location = new System.Drawing.Point(459, 3);
+            this.input_my.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.input_my.Name = "input_my";
             this.input_my.Size = new System.Drawing.Size(75, 26);
             this.input_my.TabIndex = 9;
@@ -331,6 +346,11 @@
             // input_mx
             // 
             this.input_mx.Location = new System.Drawing.Point(280, 3);
+            this.input_mx.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.input_mx.Name = "input_mx";
             this.input_mx.Size = new System.Drawing.Size(75, 26);
             this.input_mx.TabIndex = 7;
@@ -354,6 +374,11 @@
             // input_size
             // 
             this.input_size.Location = new System.Drawing.Point(101, 3);
+            this.input_size.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.input_size.Name = "input_size";
             this.input_size.Size = new System.Drawing.Size(75, 26);
             this.input_size.TabIndex = 5;

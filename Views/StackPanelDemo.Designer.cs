@@ -219,6 +219,11 @@
             // 
             this.input_gap.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.input_gap.Location = new System.Drawing.Point(97, 3);
+            this.input_gap.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.input_gap.Name = "input_gap";
             this.input_gap.Size = new System.Drawing.Size(175, 26);
             this.input_gap.TabIndex = 5;

@@ -59,7 +59,7 @@
             this.button_color.Dock = System.Windows.Forms.DockStyle.Right;
             this.button_color.Ghost = true;
             this.button_color.IconRatio = 0.6F;
-            this.button_color.IconSvg = resources.GetString("button_color.IconSvg");
+            this.button_color.ImageSvg = resources.GetString("button_color.IconSvg");
             this.button_color.Location = new System.Drawing.Point(806, 0);
             this.button_color.Name = "button_color";
             this.button_color.Radius = 0;
@@ -71,7 +71,7 @@
             // 
             this.buttonSZ.Dock = System.Windows.Forms.DockStyle.Right;
             this.buttonSZ.Ghost = true;
-            this.buttonSZ.IconSvg = resources.GetString("buttonSZ.IconSvg");
+            this.buttonSZ.ImageSvg = resources.GetString("buttonSZ.IconSvg");
             this.buttonSZ.Location = new System.Drawing.Point(856, 0);
             this.buttonSZ.Name = "buttonSZ";
             this.buttonSZ.Radius = 0;

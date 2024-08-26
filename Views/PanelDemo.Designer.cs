@@ -179,6 +179,11 @@
             0,
             0,
             0});
+            this.input_shadowOH.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.input_shadowOH.Name = "input_shadowOH";
             this.input_shadowOH.Size = new System.Drawing.Size(132, 26);
             this.input_shadowOH.TabIndex = 5;
@@ -279,6 +284,11 @@
             0,
             0,
             0});
+            this.input_shadowO.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.input_shadowO.Name = "input_shadowO";
             this.input_shadowO.Size = new System.Drawing.Size(120, 26);
             this.input_shadowO.TabIndex = 5;
@@ -313,6 +323,11 @@
             // 
             this.input_shadowY.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.input_shadowY.Location = new System.Drawing.Point(139, 3);
+            this.input_shadowY.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.input_shadowY.Name = "input_shadowY";
             this.input_shadowY.Size = new System.Drawing.Size(120, 26);
             this.input_shadowY.TabIndex = 5;
@@ -342,6 +357,11 @@
             // 
             this.input_shadowX.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.input_shadowX.Location = new System.Drawing.Point(139, 3);
+            this.input_shadowX.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.input_shadowX.Name = "input_shadowX";
             this.input_shadowX.Size = new System.Drawing.Size(120, 26);
             this.input_shadowX.TabIndex = 5;
@@ -374,6 +394,7 @@
             this.colorPicker_shadow.Size = new System.Drawing.Size(120, 26);
             this.colorPicker_shadow.TabIndex = 5;
             this.colorPicker_shadow.Text = "colorPicker1";
+            this.colorPicker_shadow.Value = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(119)))), ((int)(((byte)(255)))));
             this.colorPicker_shadow.WaveSize = 0;
             // 
             // label7
@@ -428,6 +449,11 @@
             // 
             this.input_shadow.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.input_shadow.Location = new System.Drawing.Point(139, 3);
+            this.input_shadow.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.input_shadow.Name = "input_shadow";
             this.input_shadow.Size = new System.Drawing.Size(120, 26);
             this.input_shadow.TabIndex = 5;
@@ -463,6 +489,11 @@
             this.input_borderwidth.DecimalPlaces = 2;
             this.input_borderwidth.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.input_borderwidth.Location = new System.Drawing.Point(139, 3);
+            this.input_borderwidth.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.input_borderwidth.Name = "input_borderwidth";
             this.input_borderwidth.Size = new System.Drawing.Size(120, 26);
             this.input_borderwidth.TabIndex = 5;
@@ -495,6 +526,7 @@
             this.colorPicker_border.Size = new System.Drawing.Size(120, 26);
             this.colorPicker_border.TabIndex = 5;
             this.colorPicker_border.Text = "colorPicker1";
+            this.colorPicker_border.Value = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(119)))), ((int)(((byte)(255)))));
             this.colorPicker_border.WaveSize = 0;
             // 
             // label14
@@ -520,6 +552,11 @@
             // 
             this.input_radius.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.input_radius.Location = new System.Drawing.Point(139, 3);
+            this.input_radius.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.input_radius.Name = "input_radius";
             this.input_radius.Size = new System.Drawing.Size(120, 26);
             this.input_radius.TabIndex = 5;
@@ -554,6 +591,11 @@
             // 
             this.input_arrowsize.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.input_arrowsize.Location = new System.Drawing.Point(139, 3);
+            this.input_arrowsize.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
             this.input_arrowsize.Name = "input_arrowsize";
             this.input_arrowsize.Size = new System.Drawing.Size(120, 26);
             this.input_arrowsize.TabIndex = 5;

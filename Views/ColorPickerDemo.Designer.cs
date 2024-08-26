@@ -1,6 +1,6 @@
 ﻿namespace AntdUIDemo.Views
 {
-    partial class CheckBoxDemo
+    partial class ColorPickerDemo
     {
         /// <summary> 
         /// 必需的设计器变量。
@@ -30,25 +30,18 @@
         {
             this.stackPanel1 = new AntdUI.StackPanel();
             this.flowPanel1 = new AntdUI.FlowPanel();
-            this.checkbox1 = new AntdUI.Checkbox();
+            this.colorPicker2 = new AntdUI.ColorPicker();
+            this.colorPicker1 = new AntdUI.ColorPicker();
             this.label3 = new AntdUI.Label();
             this.divider1 = new AntdUI.Divider();
             this.label2 = new AntdUI.Label();
             this.label1 = new AntdUI.Label();
-            this.checkbox2 = new AntdUI.Checkbox();
-            this.flowPanel2 = new AntdUI.FlowPanel();
-            this.checkbox3 = new AntdUI.Checkbox();
-            this.checkbox4 = new AntdUI.Checkbox();
-            this.label4 = new AntdUI.Label();
             this.stackPanel1.SuspendLayout();
             this.flowPanel1.SuspendLayout();
-            this.flowPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // stackPanel1
             // 
-            this.stackPanel1.Controls.Add(this.flowPanel2);
-            this.stackPanel1.Controls.Add(this.label4);
             this.stackPanel1.Controls.Add(this.flowPanel1);
             this.stackPanel1.Controls.Add(this.label3);
             this.stackPanel1.Controls.Add(this.divider1);
@@ -57,30 +50,42 @@
             this.stackPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.stackPanel1.Location = new System.Drawing.Point(0, 0);
             this.stackPanel1.Name = "stackPanel1";
-            this.stackPanel1.Size = new System.Drawing.Size(700, 451);
+            this.stackPanel1.Size = new System.Drawing.Size(700, 386);
             this.stackPanel1.TabIndex = 0;
             this.stackPanel1.Text = "stackPanel1";
             this.stackPanel1.Vertical = true;
             // 
             // flowPanel1
             // 
-            this.flowPanel1.Controls.Add(this.checkbox2);
-            this.flowPanel1.Controls.Add(this.checkbox1);
+            this.flowPanel1.Controls.Add(this.colorPicker2);
+            this.flowPanel1.Controls.Add(this.colorPicker1);
             this.flowPanel1.Location = new System.Drawing.Point(3, 127);
             this.flowPanel1.Name = "flowPanel1";
             this.flowPanel1.Size = new System.Drawing.Size(694, 38);
             this.flowPanel1.TabIndex = 9;
             this.flowPanel1.Text = "flowPanel1";
             // 
-            // checkbox1
+            // colorPicker2
             // 
-            this.checkbox1.AutoCheck = true;
-            this.checkbox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.checkbox1.Location = new System.Drawing.Point(3, 3);
-            this.checkbox1.Name = "checkbox1";
-            this.checkbox1.Size = new System.Drawing.Size(90, 32);
-            this.checkbox1.TabIndex = 0;
-            this.checkbox1.Text = "Checkbox";
+            this.colorPicker2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.colorPicker2.Location = new System.Drawing.Point(41, 3);
+            this.colorPicker2.Name = "colorPicker2";
+            this.colorPicker2.ShowText = true;
+            this.colorPicker2.Size = new System.Drawing.Size(105, 32);
+            this.colorPicker2.TabIndex = 1;
+            this.colorPicker2.Text = "colorPicker2";
+            this.colorPicker2.Value = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(119)))), ((int)(((byte)(255)))));
+            this.colorPicker2.WaveSize = 0;
+            // 
+            // colorPicker1
+            // 
+            this.colorPicker1.Location = new System.Drawing.Point(3, 3);
+            this.colorPicker1.Name = "colorPicker1";
+            this.colorPicker1.Size = new System.Drawing.Size(32, 32);
+            this.colorPicker1.TabIndex = 0;
+            this.colorPicker1.Text = "colorPicker1";
+            this.colorPicker1.Value = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(119)))), ((int)(((byte)(255)))));
+            this.colorPicker1.WaveSize = 0;
             // 
             // label3
             // 
@@ -89,7 +94,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(694, 24);
             this.label3.TabIndex = 8;
-            this.label3.Text = "基本用法";
+            this.label3.Text = "文字显示";
             // 
             // divider1
             // 
@@ -105,7 +110,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(694, 24);
             this.label2.TabIndex = 6;
-            this.label2.Text = "收集用户的多项选择。";
+            this.label2.Text = "用于选择颜色。";
             // 
             // label1
             // 
@@ -114,70 +119,16 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(694, 40);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Checkbox 多选框";
+            this.label1.Text = "ColorPicker 颜色选择器";
             // 
-            // checkbox2
-            // 
-            this.checkbox2.AutoCheck = true;
-            this.checkbox2.Checked = true;
-            this.checkbox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.checkbox2.Location = new System.Drawing.Point(99, 3);
-            this.checkbox2.Name = "checkbox2";
-            this.checkbox2.Size = new System.Drawing.Size(90, 32);
-            this.checkbox2.TabIndex = 1;
-            this.checkbox2.Text = "Checkbox";
-            // 
-            // flowPanel2
-            // 
-            this.flowPanel2.Controls.Add(this.checkbox3);
-            this.flowPanel2.Controls.Add(this.checkbox4);
-            this.flowPanel2.Location = new System.Drawing.Point(3, 201);
-            this.flowPanel2.Name = "flowPanel2";
-            this.flowPanel2.Size = new System.Drawing.Size(694, 38);
-            this.flowPanel2.TabIndex = 11;
-            this.flowPanel2.Text = "flowPanel2";
-            // 
-            // checkbox3
-            // 
-            this.checkbox3.AutoCheck = true;
-            this.checkbox3.Checked = true;
-            this.checkbox3.Enabled = false;
-            this.checkbox3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.checkbox3.Location = new System.Drawing.Point(99, 3);
-            this.checkbox3.Name = "checkbox3";
-            this.checkbox3.Size = new System.Drawing.Size(90, 32);
-            this.checkbox3.TabIndex = 1;
-            this.checkbox3.Text = "Checkbox";
-            // 
-            // checkbox4
-            // 
-            this.checkbox4.AutoCheck = true;
-            this.checkbox4.Enabled = false;
-            this.checkbox4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.checkbox4.Location = new System.Drawing.Point(3, 3);
-            this.checkbox4.Name = "checkbox4";
-            this.checkbox4.Size = new System.Drawing.Size(90, 32);
-            this.checkbox4.TabIndex = 0;
-            this.checkbox4.Text = "Checkbox";
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(3, 171);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(694, 24);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "禁用状态";
-            // 
-            // CheckBoxDemo
+            // ColorPickerDemo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.Controls.Add(this.stackPanel1);
-            this.Name = "CheckBoxDemo";
-            this.Size = new System.Drawing.Size(700, 451);
+            this.Name = "ColorPickerDemo";
+            this.Size = new System.Drawing.Size(700, 386);
             this.stackPanel1.ResumeLayout(false);
             this.flowPanel1.ResumeLayout(false);
-            this.flowPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -190,11 +141,7 @@
         private AntdUI.Label label1;
         private AntdUI.Label label3;
         private AntdUI.FlowPanel flowPanel1;
-        private AntdUI.Checkbox checkbox1;
-        private AntdUI.Checkbox checkbox2;
-        private AntdUI.FlowPanel flowPanel2;
-        private AntdUI.Checkbox checkbox3;
-        private AntdUI.Checkbox checkbox4;
-        private AntdUI.Label label4;
+        private AntdUI.ColorPicker colorPicker1;
+        private AntdUI.ColorPicker colorPicker2;
     }
 }
