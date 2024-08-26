@@ -54,12 +54,12 @@ namespace AntdUIDemo.Views
             steph.Status = (TStepState)select_Status.SelectedValue;
             stepsv.Status = steph.Status;
         }
-        private void Input_decimalvalue_ValeChanged(object sender, decimal value)
+        private void Input_decimalvalue_ValeChanged(object sender, DecimalEventArgs e)
         {
             LoadSteps();
         }
 
-        private void select_intvalue_SelectedIndexChanged(object sender, int value)
+        private void select_intvalue_SelectedIndexChanged(object sender, IntEventArgs e)
         {
             LoadSteps();
         }

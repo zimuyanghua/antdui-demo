@@ -124,9 +124,9 @@ namespace AntdUIDemo
 
         }
 
-        private void Menu_SelectChanged(object sender, AntdUI.MenuItem item)
+        private void Menu_SelectChanged(object sender, MenuSelectEventArgs e)
         {
-            var name = item.Tag;
+            var name = e.Value.Tag;
             if (control != null)
             {
                 if (control is FloatButtonDemo floatButtonDemo)

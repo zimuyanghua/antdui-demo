@@ -79,12 +79,12 @@ namespace AntdUIDemo.Views
             stackPanel.ItemSize = input_itemsize.Text;
         }
 
-        private void input_gap_ValueChanged(object sender, decimal value)
+        private void input_gap_ValueChanged(object sender, DecimalEventArgs e)
         {
             stackPanel.Gap = (int)input_gap.Value;
         }
 
-        private void select_intvalue_SelectedIndexChanged(object sender, int value)
+        private void select_intvalue_SelectedIndexChanged(object sender, IntEventArgs e)
         {
             stackPanel.AutoScroll = select_autoscroll.SelectedIndex == 0;
             stackPanel.Vertical = select_vertical.SelectedIndex == 0;
@@ -105,7 +105,7 @@ namespace AntdUIDemo.Views
             {
                 Margin = new Padding(0),
                 Padding = new Padding(3),
-                Text = $"Button{stackPanel.Controls.Count+1}",
+                Text = $"Button{stackPanel.Controls.Count + 1}",
                 Type = TTypeMini.Primary,
                 WaveSize = 0,
                 Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(134))),

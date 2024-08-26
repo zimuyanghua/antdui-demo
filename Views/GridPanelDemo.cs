@@ -54,7 +54,7 @@ namespace AntdUIDemo.Views
         }
 
         #region 事件
-        private void input_gap_ValueChanged(object sender, decimal value)
+        private void input_gap_ValueChanged(object sender, DecimalEventArgs e)
         {
             LoadGridPanel(input_span.Text, input_gap.Value);
         }

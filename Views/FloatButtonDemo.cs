@@ -165,13 +165,13 @@ namespace AntdUIDemo.Views
         }
 
         #region EventHandler
-        private void select_intvalue_SelectedIndexChanged(object sender, int value)
+        private void select_intvalue_SelectedIndexChanged(object sender, IntEventArgs e)
         {
             CloseFloatButtonForm();
             LoadFloatButton();
         }
 
-        private void colorPicker_ValueChanged(object sender, Color value)
+        private void colorPicker_ValueChanged(object sender, ColorEventArgs e)
         {
             CloseFloatButtonForm();
             LoadFloatButton();
@@ -183,7 +183,7 @@ namespace AntdUIDemo.Views
             LoadFloatButton();
         }
 
-        private void input_decimalvalue_ValeChanged(object sender, decimal value)
+        private void input_decimalvalue_ValeChanged(object sender, DecimalEventArgs e)
         {
             CloseFloatButtonForm();
             LoadFloatButton();

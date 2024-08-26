@@ -30,7 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="AntdUI" Version="1.5.6" />
+    <PackageReference Include="AntdUI" Version="1.5.7-beta" />
     <PackageReference Include="NLog" Version="5.3.3" />
   </ItemGroup>
 

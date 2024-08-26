@@ -47,17 +47,17 @@ namespace AntdUIDemo.Views
             LoadMenu();
         }
 
-        private void ColorPicker_ValueChanged(object sender, Color value)
+        private void ColorPicker_ValueChanged(object sender, ColorEventArgs e)
         {
             LoadMenu();
         }
 
-        private void Input_decimal_ValueChanged(object sender, decimal value)
+        private void Input_decimal_ValueChanged(object sender, DecimalEventArgs e)
         {
             LoadMenu();
         }
 
-        private void select_intvalue_SelectedIndexChanged(object sender, int value)
+        private void select_intvalue_SelectedIndexChanged(object sender, IntEventArgs e)
         {
             LoadMenu();
         }

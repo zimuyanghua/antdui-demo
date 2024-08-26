@@ -69,49 +69,49 @@ namespace AntdUIDemo.Controls
         }
 
         #region 事件
-        private void Select_colormode_SelectedIndexChanged(object sender, int value)
+        private void Select_colormode_SelectedIndexChanged(object sender, IntEventArgs e)
         {
             AppSetting.UpdateAppSetting("ColorMode", select_colormode.SelectedValue.ToString());
-            if (value == 0)
+            if (e.Value == 0)
             {
                 ThemeHelper.SetColorMode(Window, ThemeHelper.IsLightMode());
             }
             else
             {
-                ThemeHelper.SetColorMode(Window, value == 1);
+                ThemeHelper.SetColorMode(Window, e.Value == 1);
             }
         }
 
-        private void switch_animation_CheckedChanged(object sender, bool value)
+        private void switch_animation_CheckedChanged(object sender, BoolEventArgs e)
         {
             AppSetting.UpdateAppSetting("Animation", switch_animation.Checked.ToString());
-            AntdUI.Config.Animation = value;
+            AntdUI.Config.Animation = e.Value;
         }
 
-        private void Input_offset_ValueChanged(object sender, decimal value)
+        private void Input_offset_ValueChanged(object sender, DecimalEventArgs e)
         {
             AppSetting.UpdateAppSetting("ShowOffset", input_offset.Value.ToString());
-            AntdUI.Config.NoticeWindowOffsetXY = (int)value;
+            AntdUI.Config.NoticeWindowOffsetXY = (int)e.Value;
         }
 
-        private void switch_showinwindow_CheckedChanged(object sender, bool value)
+        private void switch_showinwindow_CheckedChanged(object sender, BoolEventArgs e)
         {
-            AppSetting.UpdateAppSetting("ShowInWindow", value ? "True" : "False");
-            AntdUI.Config.ShowInWindow = value;
+            AppSetting.UpdateAppSetting("ShowInWindow", e.Value ? "True" : "False");
+            AntdUI.Config.ShowInWindow = e.Value;
             AntdUI.Message.success(Window, "切换成功!", autoClose: 1);
             AntdUI.Notification.success(Window, "提示", "切换成功!", autoClose: 1);
         }
 
-        private void switch_scrollbar_CheckedChanged(object sender, bool value)
+        private void switch_scrollbar_CheckedChanged(object sender, BoolEventArgs e)
         {
-            AppSetting.UpdateAppSetting("ScrollBarHide", value ? "True" : "False");
-            AntdUI.Config.ScrollBarHide = value;
+            AppSetting.UpdateAppSetting("ScrollBarHide", e.Value ? "True" : "False");
+            AntdUI.Config.ScrollBarHide = e.Value;
         }
 
-        private void switch_shadow_CheckedChanged(object sender, bool value)
+        private void switch_shadow_CheckedChanged(object sender, BoolEventArgs e)
         {
-            AppSetting.UpdateAppSetting("ShadowEnabled", value ? "True" : "False");
-            AntdUI.Config.ShadowEnabled = value;
+            AppSetting.UpdateAppSetting("ShadowEnabled", e.Value ? "True" : "False");
+            AntdUI.Config.ShadowEnabled = e.Value;
         }
         #endregion
 

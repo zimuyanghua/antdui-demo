@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AntdUI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace AntdUIDemo.Views
 {
     public partial class PaginationDemo : UserControl
     {
+        private int selectMultiple_SelectedIndexChanged;
+
         public PaginationDemo()
         {
             InitializeComponent();
@@ -44,12 +47,12 @@ namespace AntdUIDemo.Views
             pagination.ValueChanged += Pagination_ValueChanged;
         }
 
-        private void Pagination_ValueChanged(int current, int total, int pageSize, int pageTotal)
+        private void Pagination_ValueChanged(object sender, PagePageEventArgs e)
         {
             //与分页交互修改输入值
-            input_current.Value = current;
-            input_total.Value = total;
-            input_pagesize.Value = pageSize;
+            input_current.Value = e.Current;
+            input_total.Value = e.Total;
+            input_pagesize.Value = e.PageSize;
         }
 
         private void ButtonCZ_Click(object sender, EventArgs e)
@@ -58,17 +61,17 @@ namespace AntdUIDemo.Views
             LoadPagination();
         }
 
-        private void SelectMultiple_SelectedValueChanged(object sender, object[] value)
+        private void SelectMultiple_SelectedValueChanged(object sender, ObjectsEventArgs e)
         {
             LoadPagination();
         }
 
-        private void switch_CheckedChanged(object sender, bool value)
+        private void switch_CheckedChanged(object sender, BoolEventArgs value)
         {
             LoadPagination();
         }
 
-        private void colorPicker_ValueChanged(object sender, Color value)
+        private void colorPicker_ValueChanged(object sender, ColorEventArgs e)
         {
             LoadPagination();
         }
@@ -78,7 +81,7 @@ namespace AntdUIDemo.Views
             LoadPagination();
         }
 
-        private void input_decimal_ValueChanged(object sender, decimal value)
+        private void input_decimal_ValueChanged(object sender, DecimalEventArgs e)
         {
             LoadPagination();
         }

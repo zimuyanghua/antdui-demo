@@ -83,13 +83,13 @@ namespace AntdUIDemo.Views
             }
         }
         #region 事件
-        private void select_intvalue_SelectedIndexChanged(object sender, int value)
+        private void select_intvalue_SelectedIndexChanged(object sender, IntEventArgs e)
         {
             flowPanel.Align = (TAlignFlow)select_align.SelectedValue;
             flowPanel.AutoScroll = select_autoscroll.SelectedIndex == 0;
         }
 
-        private void input_gap_ValueChanged(object sender, decimal value)
+        private void input_gap_ValueChanged(object sender, DecimalEventArgs e)
         {
             flowPanel.Gap = (int)input_gap.Value;
         }

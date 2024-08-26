@@ -95,17 +95,17 @@ namespace AntdUIDemo.Views
 
         #region 控件事件
 
-        private void colorPicker_ValueChanged(object sender, Color value)
+        private void colorPicker_ValueChanged(object sender, ColorEventArgs e)
         {
             LoadPanel();
         }
 
-        private void input_decimalvalue_ValueChanged(object sender, decimal value)
+        private void input_decimalvalue_ValueChanged(object sender, DecimalEventArgs e)
         {
             LoadPanel();
         }
 
-        private void select_intvalue_SelectedIndexChanged(object sender, int value)
+        private void select_intvalue_SelectedIndexChanged(object sender, IntEventArgs e)
         {
             LoadPanel();
         }
