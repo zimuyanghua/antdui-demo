@@ -57,7 +57,9 @@
 #### Checkbox 复选框
 ![Checkbox](assets/screenshots/Checkbox.png)
 #### ColorPicker 颜色选择器
+![ColorPicker](assets/screenshots/ColorPicker.png)
 #### DatePicker 日期选择器
+![DatePicker](assets/screenshots/DatePicker.png)
 #### DatePickerRange 日期范围选择器
 #### Input 输入框
 #### InputNumber 数字输入框
