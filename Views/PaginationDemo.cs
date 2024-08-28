@@ -101,7 +101,7 @@ namespace AntdUIDemo.Views
 
             pagination.TextDesc = input_textdesc.Text;
 
-            pagination.Fill = colorPicker.Value == Color.Transparent ? null : colorPicker.Value;
+            pagination.Fill = colorPicker.Value;
             int[] intarr = new int[selectMultiple.SelectedValue.Length];
             for (int i = 0; i < intarr.Length; i++)
             {
@@ -125,7 +125,7 @@ namespace AntdUIDemo.Views
 
             input_textdesc.Text = null;
 
-            colorPicker.Value = Color.Transparent;
+            colorPicker.Value = Style.Db.Primary;
 
             switch_show.Checked = true;
             switch_right.Checked = true;

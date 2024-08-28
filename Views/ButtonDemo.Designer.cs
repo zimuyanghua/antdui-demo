@@ -137,6 +137,11 @@
             this.button39.BackExtend = "135, #6253E1, #04BEFE";
             this.button39.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button39.IconSvg = resources.GetString("button39.IconSvg");
+            this.button39.Image = null;
+            this.button39.ImageHover = null;
+            this.button39.ImageHoverSvg = null;
+            this.button39.ImageSize = new System.Drawing.Size(0, 0);
+            this.button39.ImageSvg = resources.GetString("button39.ImageSvg");
             this.button39.Location = new System.Drawing.Point(3, 3);
             this.button39.Name = "button39";
             this.button39.Size = new System.Drawing.Size(156, 32);
@@ -169,7 +174,8 @@
             this.panel3.Back = System.Drawing.Color.Transparent;
             this.panel3.Controls.Add(this.button36);
             this.panel3.Controls.Add(this.button37);
-            this.panel3.Location = new System.Drawing.Point(241, 3);
+            this.panel3.Location = new System.Drawing.Point(232, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(156, 35);
             this.panel3.TabIndex = 2;
@@ -180,6 +186,11 @@
             this.button36.BorderWidth = 2F;
             this.button36.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button36.Ghost = true;
+            this.button36.Image = null;
+            this.button36.ImageHover = null;
+            this.button36.ImageHoverSvg = null;
+            this.button36.ImageSize = new System.Drawing.Size(0, 0);
+            this.button36.ImageSvg = null;
             this.button36.JoinLeft = true;
             this.button36.Location = new System.Drawing.Point(77, 3);
             this.button36.Name = "button36";
@@ -195,6 +206,11 @@
             this.button37.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button37.Ghost = true;
             this.button37.IconSvg = resources.GetString("button37.IconSvg");
+            this.button37.Image = null;
+            this.button37.ImageHover = null;
+            this.button37.ImageHoverSvg = null;
+            this.button37.ImageSize = new System.Drawing.Size(0, 0);
+            this.button37.ImageSvg = resources.GetString("button37.ImageSvg");
             this.button37.JoinRight = true;
             this.button37.Location = new System.Drawing.Point(3, 3);
             this.button37.Name = "button37";
@@ -210,7 +226,8 @@
             this.panel2.Controls.Add(this.button33);
             this.panel2.Controls.Add(this.button34);
             this.panel2.Controls.Add(this.button35);
-            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(0);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(232, 35);
             this.panel2.TabIndex = 1;
@@ -219,6 +236,11 @@
             // button33
             // 
             this.button33.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button33.Image = null;
+            this.button33.ImageHover = null;
+            this.button33.ImageHoverSvg = null;
+            this.button33.ImageSize = new System.Drawing.Size(0, 0);
+            this.button33.ImageSvg = null;
             this.button33.JoinLeft = true;
             this.button33.Location = new System.Drawing.Point(151, 3);
             this.button33.Name = "button33";
@@ -232,6 +254,11 @@
             // 
             this.button34.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button34.IconSvg = resources.GetString("button34.IconSvg");
+            this.button34.Image = null;
+            this.button34.ImageHover = null;
+            this.button34.ImageHoverSvg = null;
+            this.button34.ImageSize = new System.Drawing.Size(0, 0);
+            this.button34.ImageSvg = resources.GetString("button34.ImageSvg");
             this.button34.JoinLeft = true;
             this.button34.JoinRight = true;
             this.button34.Location = new System.Drawing.Point(77, 3);
@@ -244,6 +271,11 @@
             // button35
             // 
             this.button35.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button35.Image = null;
+            this.button35.ImageHover = null;
+            this.button35.ImageHoverSvg = null;
+            this.button35.ImageSize = new System.Drawing.Size(0, 0);
+            this.button35.ImageSvg = null;
             this.button35.JoinRight = true;
             this.button35.Location = new System.Drawing.Point(3, 3);
             this.button35.Name = "button35";
@@ -281,6 +313,11 @@
             this.button28.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button28.Ghost = true;
             this.button28.IconSvg = resources.GetString("button28.IconSvg");
+            this.button28.Image = null;
+            this.button28.ImageHover = null;
+            this.button28.ImageHoverSvg = null;
+            this.button28.ImageSize = new System.Drawing.Size(0, 0);
+            this.button28.ImageSvg = resources.GetString("button28.ImageSvg");
             this.button28.Location = new System.Drawing.Point(347, 3);
             this.button28.Name = "button28";
             this.button28.ShowArrow = true;
@@ -295,6 +332,11 @@
             this.button27.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button27.Ghost = true;
             this.button27.IconSvg = resources.GetString("button27.IconSvg");
+            this.button27.Image = null;
+            this.button27.ImageHover = null;
+            this.button27.ImageHoverSvg = null;
+            this.button27.ImageSize = new System.Drawing.Size(0, 0);
+            this.button27.ImageSvg = resources.GetString("button27.ImageSvg");
             this.button27.Location = new System.Drawing.Point(261, 3);
             this.button27.Name = "button27";
             this.button27.ShowArrow = true;
@@ -309,6 +351,11 @@
             this.button26.BorderWidth = 2F;
             this.button26.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button26.Ghost = true;
+            this.button26.Image = null;
+            this.button26.ImageHover = null;
+            this.button26.ImageHoverSvg = null;
+            this.button26.ImageSize = new System.Drawing.Size(0, 0);
+            this.button26.ImageSvg = null;
             this.button26.Location = new System.Drawing.Point(175, 3);
             this.button26.Name = "button26";
             this.button26.ShowArrow = true;
@@ -322,6 +369,11 @@
             // 
             this.button25.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button25.Ghost = true;
+            this.button25.Image = null;
+            this.button25.ImageHover = null;
+            this.button25.ImageHoverSvg = null;
+            this.button25.ImageSize = new System.Drawing.Size(0, 0);
+            this.button25.ImageSvg = null;
             this.button25.Location = new System.Drawing.Point(89, 3);
             this.button25.Name = "button25";
             this.button25.ShowArrow = true;
@@ -334,6 +386,11 @@
             // button29
             // 
             this.button29.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button29.Image = null;
+            this.button29.ImageHover = null;
+            this.button29.ImageHoverSvg = null;
+            this.button29.ImageSize = new System.Drawing.Size(0, 0);
+            this.button29.ImageSvg = null;
             this.button29.Location = new System.Drawing.Point(3, 3);
             this.button29.Name = "button29";
             this.button29.ShowArrow = true;
@@ -372,6 +429,11 @@
             this.button21.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button21.Ghost = true;
             this.button21.IconSvg = resources.GetString("button21.IconSvg");
+            this.button21.Image = null;
+            this.button21.ImageHover = null;
+            this.button21.ImageHoverSvg = null;
+            this.button21.ImageSize = new System.Drawing.Size(0, 0);
+            this.button21.ImageSvg = resources.GetString("button21.ImageSvg");
             this.button21.Location = new System.Drawing.Point(279, 3);
             this.button21.Name = "button21";
             this.button21.Size = new System.Drawing.Size(75, 32);
@@ -386,6 +448,11 @@
             this.button22.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button22.Ghost = true;
             this.button22.IconSvg = resources.GetString("button22.IconSvg");
+            this.button22.Image = null;
+            this.button22.ImageHover = null;
+            this.button22.ImageHoverSvg = null;
+            this.button22.ImageSize = new System.Drawing.Size(0, 0);
+            this.button22.ImageSvg = resources.GetString("button22.ImageSvg");
             this.button22.Location = new System.Drawing.Point(241, 3);
             this.button22.Name = "button22";
             this.button22.Shape = AntdUI.TShape.Circle;
@@ -399,6 +466,11 @@
             this.button19.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button19.Ghost = true;
             this.button19.IconSvg = resources.GetString("button19.IconSvg");
+            this.button19.Image = null;
+            this.button19.ImageHover = null;
+            this.button19.ImageHoverSvg = null;
+            this.button19.ImageSize = new System.Drawing.Size(0, 0);
+            this.button19.ImageSvg = resources.GetString("button19.ImageSvg");
             this.button19.Location = new System.Drawing.Point(160, 3);
             this.button19.Name = "button19";
             this.button19.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -413,6 +485,11 @@
             this.button20.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button20.Ghost = true;
             this.button20.IconSvg = resources.GetString("button20.IconSvg");
+            this.button20.Image = null;
+            this.button20.ImageHover = null;
+            this.button20.ImageHoverSvg = null;
+            this.button20.ImageSize = new System.Drawing.Size(0, 0);
+            this.button20.ImageSvg = resources.GetString("button20.ImageSvg");
             this.button20.Location = new System.Drawing.Point(122, 3);
             this.button20.Name = "button20";
             this.button20.Shape = AntdUI.TShape.Circle;
@@ -425,6 +502,11 @@
             // 
             this.button23.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button23.IconSvg = resources.GetString("button23.IconSvg");
+            this.button23.Image = null;
+            this.button23.ImageHover = null;
+            this.button23.ImageHoverSvg = null;
+            this.button23.ImageSize = new System.Drawing.Size(0, 0);
+            this.button23.ImageSvg = resources.GetString("button23.ImageSvg");
             this.button23.Location = new System.Drawing.Point(41, 3);
             this.button23.Name = "button23";
             this.button23.Size = new System.Drawing.Size(75, 32);
@@ -436,6 +518,11 @@
             // 
             this.button24.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button24.IconSvg = resources.GetString("button24.IconSvg");
+            this.button24.Image = null;
+            this.button24.ImageHover = null;
+            this.button24.ImageHoverSvg = null;
+            this.button24.ImageSize = new System.Drawing.Size(0, 0);
+            this.button24.ImageSvg = resources.GetString("button24.ImageSvg");
             this.button24.Location = new System.Drawing.Point(3, 3);
             this.button24.Name = "button24";
             this.button24.Shape = AntdUI.TShape.Circle;
@@ -471,6 +558,11 @@
             this.button13.BorderWidth = 2F;
             this.button13.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button13.Ghost = true;
+            this.button13.Image = null;
+            this.button13.ImageHover = null;
+            this.button13.ImageHoverSvg = null;
+            this.button13.ImageSize = new System.Drawing.Size(0, 0);
+            this.button13.ImageSvg = null;
             this.button13.Location = new System.Drawing.Point(408, 3);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(75, 32);
@@ -484,6 +576,11 @@
             this.button14.BorderWidth = 2F;
             this.button14.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button14.Ghost = true;
+            this.button14.Image = null;
+            this.button14.ImageHover = null;
+            this.button14.ImageHoverSvg = null;
+            this.button14.ImageSize = new System.Drawing.Size(0, 0);
+            this.button14.ImageSvg = null;
             this.button14.Location = new System.Drawing.Point(327, 3);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(75, 32);
@@ -497,6 +594,11 @@
             this.button15.BorderWidth = 2F;
             this.button15.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button15.Ghost = true;
+            this.button15.Image = null;
+            this.button15.ImageHover = null;
+            this.button15.ImageHoverSvg = null;
+            this.button15.ImageSize = new System.Drawing.Size(0, 0);
+            this.button15.ImageSvg = null;
             this.button15.Location = new System.Drawing.Point(246, 3);
             this.button15.Name = "button15";
             this.button15.Size = new System.Drawing.Size(75, 32);
@@ -510,6 +612,11 @@
             this.button16.BorderWidth = 2F;
             this.button16.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button16.Ghost = true;
+            this.button16.Image = null;
+            this.button16.ImageHover = null;
+            this.button16.ImageHoverSvg = null;
+            this.button16.ImageSize = new System.Drawing.Size(0, 0);
+            this.button16.ImageSvg = null;
             this.button16.Location = new System.Drawing.Point(165, 3);
             this.button16.Name = "button16";
             this.button16.Size = new System.Drawing.Size(75, 32);
@@ -523,6 +630,11 @@
             this.button17.BorderWidth = 2F;
             this.button17.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button17.Ghost = true;
+            this.button17.Image = null;
+            this.button17.ImageHover = null;
+            this.button17.ImageHoverSvg = null;
+            this.button17.ImageSize = new System.Drawing.Size(0, 0);
+            this.button17.ImageSvg = null;
             this.button17.Location = new System.Drawing.Point(84, 3);
             this.button17.Name = "button17";
             this.button17.Size = new System.Drawing.Size(75, 32);
@@ -536,6 +648,11 @@
             this.button18.BorderWidth = 2F;
             this.button18.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button18.Ghost = true;
+            this.button18.Image = null;
+            this.button18.ImageHover = null;
+            this.button18.ImageHoverSvg = null;
+            this.button18.ImageSize = new System.Drawing.Size(0, 0);
+            this.button18.ImageSvg = null;
             this.button18.Location = new System.Drawing.Point(3, 3);
             this.button18.Name = "button18";
             this.button18.Size = new System.Drawing.Size(75, 32);
@@ -570,6 +687,11 @@
             // 
             this.button7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button7.Ghost = true;
+            this.button7.Image = null;
+            this.button7.ImageHover = null;
+            this.button7.ImageHoverSvg = null;
+            this.button7.ImageSize = new System.Drawing.Size(0, 0);
+            this.button7.ImageSvg = null;
             this.button7.Location = new System.Drawing.Point(408, 3);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 32);
@@ -582,6 +704,11 @@
             // 
             this.button8.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button8.Ghost = true;
+            this.button8.Image = null;
+            this.button8.ImageHover = null;
+            this.button8.ImageHoverSvg = null;
+            this.button8.ImageSize = new System.Drawing.Size(0, 0);
+            this.button8.ImageSvg = null;
             this.button8.Location = new System.Drawing.Point(327, 3);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(75, 32);
@@ -594,6 +721,11 @@
             // 
             this.button9.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button9.Ghost = true;
+            this.button9.Image = null;
+            this.button9.ImageHover = null;
+            this.button9.ImageHoverSvg = null;
+            this.button9.ImageSize = new System.Drawing.Size(0, 0);
+            this.button9.ImageSvg = null;
             this.button9.Location = new System.Drawing.Point(246, 3);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(75, 32);
@@ -606,6 +738,11 @@
             // 
             this.button10.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button10.Ghost = true;
+            this.button10.Image = null;
+            this.button10.ImageHover = null;
+            this.button10.ImageHoverSvg = null;
+            this.button10.ImageSize = new System.Drawing.Size(0, 0);
+            this.button10.ImageSvg = null;
             this.button10.Location = new System.Drawing.Point(165, 3);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(75, 32);
@@ -618,6 +755,11 @@
             // 
             this.button11.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button11.Ghost = true;
+            this.button11.Image = null;
+            this.button11.ImageHover = null;
+            this.button11.ImageHoverSvg = null;
+            this.button11.ImageSize = new System.Drawing.Size(0, 0);
+            this.button11.ImageSvg = null;
             this.button11.Location = new System.Drawing.Point(84, 3);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(75, 32);
@@ -630,6 +772,11 @@
             // 
             this.button12.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button12.Ghost = true;
+            this.button12.Image = null;
+            this.button12.ImageHover = null;
+            this.button12.ImageHoverSvg = null;
+            this.button12.ImageSize = new System.Drawing.Size(0, 0);
+            this.button12.ImageSvg = null;
             this.button12.Location = new System.Drawing.Point(3, 3);
             this.button12.Name = "button12";
             this.button12.Size = new System.Drawing.Size(75, 32);
@@ -663,6 +810,11 @@
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button6.Image = null;
+            this.button6.ImageHover = null;
+            this.button6.ImageHoverSvg = null;
+            this.button6.ImageSize = new System.Drawing.Size(0, 0);
+            this.button6.ImageSvg = null;
             this.button6.Location = new System.Drawing.Point(408, 3);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 32);
@@ -674,6 +826,11 @@
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button5.Image = null;
+            this.button5.ImageHover = null;
+            this.button5.ImageHoverSvg = null;
+            this.button5.ImageSize = new System.Drawing.Size(0, 0);
+            this.button5.ImageSvg = null;
             this.button5.Location = new System.Drawing.Point(327, 3);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 32);
@@ -685,6 +842,11 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button4.Image = null;
+            this.button4.ImageHover = null;
+            this.button4.ImageHoverSvg = null;
+            this.button4.ImageSize = new System.Drawing.Size(0, 0);
+            this.button4.ImageSvg = null;
             this.button4.Location = new System.Drawing.Point(246, 3);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 32);
@@ -696,6 +858,11 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button3.Image = null;
+            this.button3.ImageHover = null;
+            this.button3.ImageHoverSvg = null;
+            this.button3.ImageSize = new System.Drawing.Size(0, 0);
+            this.button3.ImageSvg = null;
             this.button3.Location = new System.Drawing.Point(165, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(75, 32);
@@ -707,6 +874,11 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button2.Image = null;
+            this.button2.ImageHover = null;
+            this.button2.ImageHoverSvg = null;
+            this.button2.ImageSize = new System.Drawing.Size(0, 0);
+            this.button2.ImageSvg = null;
             this.button2.Location = new System.Drawing.Point(84, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 32);
@@ -719,6 +891,11 @@
             // 
             this.button1.Cursor = System.Windows.Forms.Cursors.Default;
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button1.Image = null;
+            this.button1.ImageHover = null;
+            this.button1.ImageHoverSvg = null;
+            this.button1.ImageSize = new System.Drawing.Size(0, 0);
+            this.button1.ImageSvg = null;
             this.button1.Location = new System.Drawing.Point(3, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 32);

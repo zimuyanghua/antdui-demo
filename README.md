@@ -17,9 +17,9 @@
 ## ⚠️ 注意事项
 - 电脑屏幕分辨率低于 1920×1080(1080P) 请使用大于等于 1080P 分辨率的屏幕开发
 - 电脑屏幕分辨率大于 1080P 或者缩放不是 100% 的，可选择以下任一方式运行项目
-	- 按照上述 **快速开始** 的第二条打开项目，详细原因见 [解决 Visual Studio 中 Windows 窗体设计器的 HDPI/缩放问题](https://learn.microsoft.com/zh-cn/visualstudio/designers/disable-dpi-awareness?view=vs-2022) ，如下所示	
+	1. 按照上述 **快速开始** 的第二条打开项目，详细原因见 [解决 Visual Studio 中 Windows 窗体设计器的 HDPI/缩放问题](https://learn.microsoft.com/zh-cn/visualstudio/designers/disable-dpi-awareness?view=vs-2022) ，如下所示	
 ![vsstart](assets/screenshots/vsstart.png)
-	- 直接打开项目，在窗口页面提示点击 **使用 100% 缩放比例重新启动 Visual Studio**，如下所示
+	2. 直接打开项目，在窗口页面提示点击 **使用 100% 缩放比例重新启动 Visual Studio**，如下所示
 ![design](assets/screenshots/design.png)
 
 ## 系统设置
@@ -69,6 +69,7 @@
 #### DatePickerRange 日期范围选择器
 ![DatePickerRange](assets/screenshots/DatePickerRange.png)
 #### Input 输入框
+![Input](assets/screenshots/Input.png)
 #### InputNumber 数字输入框
 #### Radio 单选框
 #### Rate 评分
