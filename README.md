@@ -6,11 +6,11 @@
 ```
 1. git clone 或者直接下载本项目
 
-2. 若电脑分辨率不是 1920×1080(1080P) 或者缩放不是 100%，
-   使用 Visual Studio 在 100% 缩放模式下(使用 devenv /noScale 命令启动 Visual Studio)打开项目,
+2. 若电脑分辨率不是 1920×1080(1080P) 或者缩放不是 100%
+   使用 Visual Studio 在 100% 缩放模式下(使用 devenv /noScale 命令启动 Visual Studio)打开项目，
    或者在项目窗口选择使用 100% 缩放比例重新启动 Visual Studio
 
-3. 若电脑没有安装 .NET Framework 4.8,编辑项目文件设置 TargetFramework 属性为自己安装的目标框架，兼容框架参照 AntdUI 项目
+3. 若电脑没有安装 .NET Framework 4.8，编辑项目文件设置 TargetFramework 属性为自己安装的目标框架，兼容框架参照 AntdUI 项目
 
 4. 编译运行
 ```
