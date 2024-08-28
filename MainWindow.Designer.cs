@@ -60,11 +60,6 @@
             this.button_color.Ghost = true;
             this.button_color.IconRatio = 0.6F;
             this.button_color.IconSvg = resources.GetString("button_color.IconSvg");
-            this.button_color.Icon = null;
-            this.button_color.IconHover = null;
-            this.button_color.IconHoverSvg = null;
-            this.button_color.IconSize = new System.Drawing.Size(0, 0);
-            this.button_color.IconSvg = resources.GetString("button_color.IconSvg");
             this.button_color.Location = new System.Drawing.Point(806, 0);
             this.button_color.Name = "button_color";
             this.button_color.Radius = 0;
@@ -76,11 +71,6 @@
             // 
             this.buttonSZ.Dock = System.Windows.Forms.DockStyle.Right;
             this.buttonSZ.Ghost = true;
-            this.buttonSZ.IconSvg = resources.GetString("buttonSZ.IconSvg");
-            this.buttonSZ.Icon = null;
-            this.buttonSZ.IconHover = null;
-            this.buttonSZ.IconHoverSvg = null;
-            this.buttonSZ.IconSize = new System.Drawing.Size(0, 0);
             this.buttonSZ.IconSvg = resources.GetString("buttonSZ.IconSvg");
             this.buttonSZ.Location = new System.Drawing.Point(856, 0);
             this.buttonSZ.Name = "buttonSZ";
@@ -146,6 +136,7 @@
             this.Padding = new System.Windows.Forms.Padding(6, 0, 0, 6);
             this.Resizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "AntdUI Demo";
             this.titlebar.ResumeLayout(false);
             this.panel_content.ResumeLayout(false);
             this.ResumeLayout(false);

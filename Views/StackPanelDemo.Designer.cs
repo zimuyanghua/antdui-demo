@@ -32,30 +32,30 @@
             this.stackPanel2 = new AntdUI.StackPanel();
             this.stackPanel = new AntdUI.StackPanel();
             this.stackPanel3 = new AntdUI.StackPanel();
-            this.buttonCZ = new AntdUI.Button();
-            this.buttonDEL = new AntdUI.Button();
-            this.buttonADD = new AntdUI.Button();
-            this.stackPanel8 = new AntdUI.StackPanel();
-            this.label6 = new AntdUI.Label();
             this.stackPanel7 = new AntdUI.StackPanel();
             this.input_itemsize = new AntdUI.Input();
             this.label5 = new AntdUI.Label();
             this.stackPanel5 = new AntdUI.StackPanel();
             this.input_gap = new AntdUI.InputNumber();
             this.label3 = new AntdUI.Label();
-            this.stackPanel6 = new AntdUI.StackPanel();
-            this.label4 = new AntdUI.Label();
             this.divider1 = new AntdUI.Divider();
             this.label2 = new AntdUI.Label();
             this.label1 = new AntdUI.Label();
-            this.switch_autoscroll = new AntdUI.Switch();
+            this.buttonCZ = new AntdUI.Button();
+            this.buttonDEL = new AntdUI.Button();
+            this.buttonADD = new AntdUI.Button();
+            this.stackPanel8 = new AntdUI.StackPanel();
             this.switch_vertical = new AntdUI.Switch();
+            this.label6 = new AntdUI.Label();
+            this.stackPanel6 = new AntdUI.StackPanel();
+            this.switch_autoscroll = new AntdUI.Switch();
+            this.label4 = new AntdUI.Label();
             this.stackPanel1.SuspendLayout();
             this.stackPanel2.SuspendLayout();
             this.stackPanel3.SuspendLayout();
-            this.stackPanel8.SuspendLayout();
             this.stackPanel7.SuspendLayout();
             this.stackPanel5.SuspendLayout();
+            this.stackPanel8.SuspendLayout();
             this.stackPanel6.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -98,9 +98,9 @@
             this.stackPanel3.Controls.Add(this.buttonDEL);
             this.stackPanel3.Controls.Add(this.buttonADD);
             this.stackPanel3.Controls.Add(this.stackPanel8);
+            this.stackPanel3.Controls.Add(this.stackPanel6);
             this.stackPanel3.Controls.Add(this.stackPanel7);
             this.stackPanel3.Controls.Add(this.stackPanel5);
-            this.stackPanel3.Controls.Add(this.stackPanel6);
             this.stackPanel3.Location = new System.Drawing.Point(3, 3);
             this.stackPanel3.Name = "stackPanel3";
             this.stackPanel3.Size = new System.Drawing.Size(220, 400);
@@ -108,78 +108,11 @@
             this.stackPanel3.Text = "stackPanel3";
             this.stackPanel3.Vertical = true;
             // 
-            // buttonCZ
-            // 
-            this.buttonCZ.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.buttonCZ.Image = null;
-            this.buttonCZ.ImageHover = null;
-            this.buttonCZ.ImageHoverSvg = null;
-            this.buttonCZ.ImageSize = new System.Drawing.Size(0, 0);
-            this.buttonCZ.ImageSvg = null;
-            this.buttonCZ.Location = new System.Drawing.Point(3, 231);
-            this.buttonCZ.Name = "buttonCZ";
-            this.buttonCZ.Size = new System.Drawing.Size(214, 32);
-            this.buttonCZ.TabIndex = 39;
-            this.buttonCZ.Text = "重 置";
-            this.buttonCZ.Type = AntdUI.TTypeMini.Warn;
-            this.buttonCZ.WaveSize = 0;
-            // 
-            // buttonDEL
-            // 
-            this.buttonDEL.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.buttonDEL.Image = null;
-            this.buttonDEL.ImageHover = null;
-            this.buttonDEL.ImageHoverSvg = null;
-            this.buttonDEL.ImageSize = new System.Drawing.Size(0, 0);
-            this.buttonDEL.ImageSvg = null;
-            this.buttonDEL.Location = new System.Drawing.Point(3, 193);
-            this.buttonDEL.Name = "buttonDEL";
-            this.buttonDEL.Size = new System.Drawing.Size(214, 32);
-            this.buttonDEL.TabIndex = 38;
-            this.buttonDEL.Text = "删除 Button";
-            this.buttonDEL.Type = AntdUI.TTypeMini.Error;
-            this.buttonDEL.WaveSize = 0;
-            // 
-            // buttonADD
-            // 
-            this.buttonADD.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.buttonADD.Image = null;
-            this.buttonADD.ImageHover = null;
-            this.buttonADD.ImageHoverSvg = null;
-            this.buttonADD.ImageSize = new System.Drawing.Size(0, 0);
-            this.buttonADD.ImageSvg = null;
-            this.buttonADD.Location = new System.Drawing.Point(3, 155);
-            this.buttonADD.Name = "buttonADD";
-            this.buttonADD.Size = new System.Drawing.Size(214, 32);
-            this.buttonADD.TabIndex = 37;
-            this.buttonADD.Text = "添加 Button";
-            this.buttonADD.Type = AntdUI.TTypeMini.Info;
-            this.buttonADD.WaveSize = 0;
-            // 
-            // stackPanel8
-            // 
-            this.stackPanel8.Controls.Add(this.switch_vertical);
-            this.stackPanel8.Controls.Add(this.label6);
-            this.stackPanel8.Location = new System.Drawing.Point(3, 117);
-            this.stackPanel8.Name = "stackPanel8";
-            this.stackPanel8.Size = new System.Drawing.Size(214, 32);
-            this.stackPanel8.TabIndex = 21;
-            this.stackPanel8.Text = "stackPanel8";
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.Location = new System.Drawing.Point(3, 3);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(88, 26);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Vertical";
-            // 
             // stackPanel7
             // 
             this.stackPanel7.Controls.Add(this.input_itemsize);
             this.stackPanel7.Controls.Add(this.label5);
-            this.stackPanel7.Location = new System.Drawing.Point(3, 79);
+            this.stackPanel7.Location = new System.Drawing.Point(3, 41);
             this.stackPanel7.Name = "stackPanel7";
             this.stackPanel7.Size = new System.Drawing.Size(214, 32);
             this.stackPanel7.TabIndex = 20;
@@ -208,7 +141,7 @@
             // 
             this.stackPanel5.Controls.Add(this.input_gap);
             this.stackPanel5.Controls.Add(this.label3);
-            this.stackPanel5.Location = new System.Drawing.Point(3, 41);
+            this.stackPanel5.Location = new System.Drawing.Point(3, 3);
             this.stackPanel5.Name = "stackPanel5";
             this.stackPanel5.Size = new System.Drawing.Size(214, 32);
             this.stackPanel5.TabIndex = 19;
@@ -238,25 +171,6 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Gap";
             // 
-            // stackPanel6
-            // 
-            this.stackPanel6.Controls.Add(this.switch_autoscroll);
-            this.stackPanel6.Controls.Add(this.label4);
-            this.stackPanel6.Location = new System.Drawing.Point(3, 3);
-            this.stackPanel6.Name = "stackPanel6";
-            this.stackPanel6.Size = new System.Drawing.Size(214, 32);
-            this.stackPanel6.TabIndex = 12;
-            this.stackPanel6.Text = "stackPanel6";
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(3, 3);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 26);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "AutoScroll";
-            // 
             // divider1
             // 
             this.divider1.Location = new System.Drawing.Point(3, 79);
@@ -282,15 +196,48 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "StackPanel 堆叠布局";
             // 
-            // switch_autoscroll
+            // buttonCZ
             // 
-            this.switch_autoscroll.AutoCheck = true;
-            this.switch_autoscroll.Location = new System.Drawing.Point(97, 3);
-            this.switch_autoscroll.Name = "switch_autoscroll";
-            this.switch_autoscroll.Size = new System.Drawing.Size(60, 26);
-            this.switch_autoscroll.TabIndex = 5;
-            this.switch_autoscroll.Text = "switch1";
-            this.switch_autoscroll.WaveSize = 0;
+            this.buttonCZ.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonCZ.Location = new System.Drawing.Point(3, 231);
+            this.buttonCZ.Name = "buttonCZ";
+            this.buttonCZ.Size = new System.Drawing.Size(214, 32);
+            this.buttonCZ.TabIndex = 44;
+            this.buttonCZ.Text = "重 置";
+            this.buttonCZ.Type = AntdUI.TTypeMini.Warn;
+            this.buttonCZ.WaveSize = 0;
+            // 
+            // buttonDEL
+            // 
+            this.buttonDEL.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonDEL.Location = new System.Drawing.Point(3, 193);
+            this.buttonDEL.Name = "buttonDEL";
+            this.buttonDEL.Size = new System.Drawing.Size(214, 32);
+            this.buttonDEL.TabIndex = 43;
+            this.buttonDEL.Text = "删除 Button";
+            this.buttonDEL.Type = AntdUI.TTypeMini.Error;
+            this.buttonDEL.WaveSize = 0;
+            // 
+            // buttonADD
+            // 
+            this.buttonADD.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonADD.Location = new System.Drawing.Point(3, 155);
+            this.buttonADD.Name = "buttonADD";
+            this.buttonADD.Size = new System.Drawing.Size(214, 32);
+            this.buttonADD.TabIndex = 42;
+            this.buttonADD.Text = "添加 Button";
+            this.buttonADD.Type = AntdUI.TTypeMini.Info;
+            this.buttonADD.WaveSize = 0;
+            // 
+            // stackPanel8
+            // 
+            this.stackPanel8.Controls.Add(this.switch_vertical);
+            this.stackPanel8.Controls.Add(this.label6);
+            this.stackPanel8.Location = new System.Drawing.Point(3, 117);
+            this.stackPanel8.Name = "stackPanel8";
+            this.stackPanel8.Size = new System.Drawing.Size(214, 32);
+            this.stackPanel8.TabIndex = 41;
+            this.stackPanel8.Text = "stackPanel8";
             // 
             // switch_vertical
             // 
@@ -303,6 +250,44 @@
             this.switch_vertical.Text = "switch1";
             this.switch_vertical.WaveSize = 0;
             // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.Location = new System.Drawing.Point(3, 3);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(88, 26);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Vertical";
+            // 
+            // stackPanel6
+            // 
+            this.stackPanel6.Controls.Add(this.switch_autoscroll);
+            this.stackPanel6.Controls.Add(this.label4);
+            this.stackPanel6.Location = new System.Drawing.Point(3, 79);
+            this.stackPanel6.Name = "stackPanel6";
+            this.stackPanel6.Size = new System.Drawing.Size(214, 32);
+            this.stackPanel6.TabIndex = 40;
+            this.stackPanel6.Text = "stackPanel6";
+            // 
+            // switch_autoscroll
+            // 
+            this.switch_autoscroll.AutoCheck = true;
+            this.switch_autoscroll.Location = new System.Drawing.Point(97, 3);
+            this.switch_autoscroll.Name = "switch_autoscroll";
+            this.switch_autoscroll.Size = new System.Drawing.Size(60, 26);
+            this.switch_autoscroll.TabIndex = 5;
+            this.switch_autoscroll.Text = "switch1";
+            this.switch_autoscroll.WaveSize = 0;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.Location = new System.Drawing.Point(3, 3);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(88, 26);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "AutoScroll";
+            // 
             // StackPanelDemo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -313,9 +298,9 @@
             this.stackPanel1.ResumeLayout(false);
             this.stackPanel2.ResumeLayout(false);
             this.stackPanel3.ResumeLayout(false);
-            this.stackPanel8.ResumeLayout(false);
             this.stackPanel7.ResumeLayout(false);
             this.stackPanel5.ResumeLayout(false);
+            this.stackPanel8.ResumeLayout(false);
             this.stackPanel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -330,20 +315,20 @@
         private AntdUI.StackPanel stackPanel2;
         private AntdUI.StackPanel stackPanel;
         private AntdUI.StackPanel stackPanel3;
-        private AntdUI.StackPanel stackPanel6;
-        private AntdUI.Label label4;
         private AntdUI.StackPanel stackPanel5;
         private AntdUI.InputNumber input_gap;
         private AntdUI.Label label3;
-        private AntdUI.StackPanel stackPanel8;
-        private AntdUI.Label label6;
         private AntdUI.StackPanel stackPanel7;
         private AntdUI.Label label5;
-        private AntdUI.Button buttonDEL;
-        private AntdUI.Button buttonADD;
         private AntdUI.Input input_itemsize;
         private AntdUI.Button buttonCZ;
+        private AntdUI.Button buttonDEL;
+        private AntdUI.Button buttonADD;
+        private AntdUI.StackPanel stackPanel8;
         private AntdUI.Switch switch_vertical;
+        private AntdUI.Label label6;
+        private AntdUI.StackPanel stackPanel6;
         private AntdUI.Switch switch_autoscroll;
+        private AntdUI.Label label4;
     }
 }

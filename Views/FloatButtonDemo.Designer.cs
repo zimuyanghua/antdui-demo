@@ -108,11 +108,6 @@
             // buttonCZ
             // 
             this.buttonCZ.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.buttonCZ.Image = null;
-            this.buttonCZ.ImageHover = null;
-            this.buttonCZ.ImageHoverSvg = null;
-            this.buttonCZ.ImageSize = new System.Drawing.Size(0, 0);
-            this.buttonCZ.ImageSvg = null;
             this.buttonCZ.Location = new System.Drawing.Point(84, 3);
             this.buttonCZ.Name = "buttonCZ";
             this.buttonCZ.Size = new System.Drawing.Size(75, 32);
@@ -124,11 +119,6 @@
             // buttonClose
             // 
             this.buttonClose.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.buttonClose.Image = null;
-            this.buttonClose.ImageHover = null;
-            this.buttonClose.ImageHoverSvg = null;
-            this.buttonClose.ImageSize = new System.Drawing.Size(0, 0);
-            this.buttonClose.ImageSvg = null;
             this.buttonClose.Location = new System.Drawing.Point(3, 3);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(75, 32);
