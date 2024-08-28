@@ -49,7 +49,7 @@
             this.titlebar.Location = new System.Drawing.Point(6, 0);
             this.titlebar.MaximizeBox = false;
             this.titlebar.Name = "titlebar";
-            this.titlebar.Size = new System.Drawing.Size(1002, 40);
+            this.titlebar.Size = new System.Drawing.Size(992, 40);
             this.titlebar.SubText = "Demo";
             this.titlebar.TabIndex = 0;
             this.titlebar.Text = "AntdUI";
@@ -60,7 +60,6 @@
             this.button_color.Ghost = true;
             this.button_color.IconRatio = 0.6F;
             this.button_color.IconSvg = resources.GetString("button_color.IconSvg");
-            this.button_color.Location = new System.Drawing.Point(806, 0);
             this.button_color.Name = "button_color";
             this.button_color.Radius = 0;
             this.button_color.Size = new System.Drawing.Size(50, 40);
@@ -72,7 +71,6 @@
             this.buttonSZ.Dock = System.Windows.Forms.DockStyle.Right;
             this.buttonSZ.Ghost = true;
             this.buttonSZ.IconSvg = resources.GetString("buttonSZ.IconSvg");
-            this.buttonSZ.Location = new System.Drawing.Point(856, 0);
             this.buttonSZ.Name = "buttonSZ";
             this.buttonSZ.Radius = 0;
             this.buttonSZ.Size = new System.Drawing.Size(50, 40);
@@ -84,7 +82,7 @@
             this.divider.Dock = System.Windows.Forms.DockStyle.Top;
             this.divider.Location = new System.Drawing.Point(6, 40);
             this.divider.Name = "divider";
-            this.divider.Size = new System.Drawing.Size(1002, 12);
+            this.divider.Size = new System.Drawing.Size(992, 12);
             this.divider.TabIndex = 8;
             // 
             // menu
@@ -95,7 +93,7 @@
             this.menu.Indent = true;
             this.menu.Location = new System.Drawing.Point(6, 52);
             this.menu.Name = "menu";
-            this.menu.Size = new System.Drawing.Size(277, 566);
+            this.menu.Size = new System.Drawing.Size(277, 511);
             this.menu.TabIndex = 9;
             this.menu.Unique = true;
             // 
@@ -106,7 +104,7 @@
             this.panel_content.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_content.Location = new System.Drawing.Point(283, 52);
             this.panel_content.Name = "panel_content";
-            this.panel_content.Size = new System.Drawing.Size(725, 566);
+            this.panel_content.Size = new System.Drawing.Size(715, 511);
             this.panel_content.TabIndex = 10;
             this.panel_content.Vertical = true;
             // 
@@ -115,7 +113,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.Location = new System.Drawing.Point(3, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(719, 563);
+            this.label1.Size = new System.Drawing.Size(693, 563);
             this.label1.TabIndex = 0;
             this.label1.Text = "欢迎使用 AntdUI Demo\r\n\r\n当前版本 AntdUI 1.5.7-beta";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -123,7 +121,7 @@
             // MainWindow
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1008, 624);
+            this.ClientSize = new System.Drawing.Size(998, 569);
             this.ControlBox = false;
             this.Controls.Add(this.panel_content);
             this.Controls.Add(this.menu);
