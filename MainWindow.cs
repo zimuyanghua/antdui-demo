@@ -184,6 +184,9 @@ namespace AntdUIDemo
                 case "Input":
                     control = new InputDemo();
                     break;
+                case "InputNumber":
+                    control = new InputNumberDemo();
+                    break;
             }
             if (control != null)
             {
