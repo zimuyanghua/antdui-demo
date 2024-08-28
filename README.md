@@ -71,6 +71,7 @@
 #### Input 输入框
 ![Input](assets/screenshots/Input.png)
 #### InputNumber 数字输入框
+![InputNumber](assets/screenshots/InputNumber.png)
 #### Radio 单选框
 #### Rate 评分
 #### Select 选择器
