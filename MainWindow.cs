@@ -186,7 +186,7 @@ namespace AntdUIDemo
             {
                 AutoDpi(control);
                 //测试日志归档
-                LoggerHelper.Logger.Error(new Exception("测试点击了Menu"), "点击了" + name);
+                LoggerHelper.Logger.Error(new Exception($"{name} Clicked."),"Menu");
                 panel_content.Controls.Add(control);
             }
         }

@@ -122,6 +122,5 @@ namespace AntdUIDemo.Views
             LoadPanel();
         }
         #endregion
-
     }
 }

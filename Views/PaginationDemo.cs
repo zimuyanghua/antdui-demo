@@ -13,8 +13,6 @@ namespace AntdUIDemo.Views
 {
     public partial class PaginationDemo : UserControl
     {
-        private int selectMultiple_SelectedIndexChanged;
-
         public PaginationDemo()
         {
             InitializeComponent();
@@ -123,7 +121,7 @@ namespace AntdUIDemo.Views
             input_max.Value = 0;
             input_gap.Value = 8;
             input_radius.Value = 6;
-            input_size.Value = 60;
+            input_size.Value = 85;
 
             input_textdesc.Text = null;
 

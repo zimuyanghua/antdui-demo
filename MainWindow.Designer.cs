@@ -64,13 +64,12 @@
             this.button_color.IconHover = null;
             this.button_color.IconHoverSvg = null;
             this.button_color.IconSize = new System.Drawing.Size(0, 0);
-            this.button_color.IconSvg = resources.GetString("button_color.ImageSvg");
+            this.button_color.IconSvg = resources.GetString("button_color.IconSvg");
             this.button_color.Location = new System.Drawing.Point(806, 0);
             this.button_color.Name = "button_color";
             this.button_color.Radius = 0;
             this.button_color.Size = new System.Drawing.Size(50, 40);
             this.button_color.TabIndex = 1;
-            this.button_color.ToggleType = null;
             this.button_color.WaveSize = 0;
             // 
             // buttonSZ
@@ -82,13 +81,12 @@
             this.buttonSZ.IconHover = null;
             this.buttonSZ.IconHoverSvg = null;
             this.buttonSZ.IconSize = new System.Drawing.Size(0, 0);
-            this.buttonSZ.IconSvg = resources.GetString("buttonSZ.ImageSvg");
+            this.buttonSZ.IconSvg = resources.GetString("buttonSZ.IconSvg");
             this.buttonSZ.Location = new System.Drawing.Point(856, 0);
             this.buttonSZ.Name = "buttonSZ";
             this.buttonSZ.Radius = 0;
             this.buttonSZ.Size = new System.Drawing.Size(50, 40);
             this.buttonSZ.TabIndex = 0;
-            this.buttonSZ.ToggleType = null;
             this.buttonSZ.WaveSize = 0;
             // 
             // divider
@@ -129,7 +127,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(719, 563);
             this.label1.TabIndex = 0;
-            this.label1.Text = "欢迎使用AntdUI Demo";
+            this.label1.Text = "欢迎使用 AntdUI Demo\r\n\r\n当前版本 AntdUI 1.5.7-beta";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MainWindow

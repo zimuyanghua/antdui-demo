@@ -29,20 +29,22 @@
         private void InitializeComponent()
         {
             this.stackPanel1 = new AntdUI.StackPanel();
+            this.flowPanel2 = new AntdUI.FlowPanel();
+            this.checkbox3 = new AntdUI.Checkbox();
+            this.checkbox4 = new AntdUI.Checkbox();
+            this.label4 = new AntdUI.Label();
             this.flowPanel1 = new AntdUI.FlowPanel();
+            this.checkbox2 = new AntdUI.Checkbox();
             this.checkbox1 = new AntdUI.Checkbox();
             this.label3 = new AntdUI.Label();
             this.divider1 = new AntdUI.Divider();
             this.label2 = new AntdUI.Label();
             this.label1 = new AntdUI.Label();
-            this.checkbox2 = new AntdUI.Checkbox();
-            this.flowPanel2 = new AntdUI.FlowPanel();
-            this.checkbox3 = new AntdUI.Checkbox();
-            this.checkbox4 = new AntdUI.Checkbox();
-            this.label4 = new AntdUI.Label();
+            this.checkbox5 = new AntdUI.Checkbox();
+            this.checkbox6 = new AntdUI.Checkbox();
             this.stackPanel1.SuspendLayout();
-            this.flowPanel1.SuspendLayout();
             this.flowPanel2.SuspendLayout();
+            this.flowPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // stackPanel1
@@ -62,8 +64,52 @@
             this.stackPanel1.Text = "stackPanel1";
             this.stackPanel1.Vertical = true;
             // 
+            // flowPanel2
+            // 
+            this.flowPanel2.Controls.Add(this.checkbox3);
+            this.flowPanel2.Controls.Add(this.checkbox4);
+            this.flowPanel2.Location = new System.Drawing.Point(3, 201);
+            this.flowPanel2.Name = "flowPanel2";
+            this.flowPanel2.Size = new System.Drawing.Size(694, 38);
+            this.flowPanel2.TabIndex = 11;
+            this.flowPanel2.Text = "flowPanel2";
+            // 
+            // checkbox3
+            // 
+            this.checkbox3.AutoCheck = true;
+            this.checkbox3.Checked = true;
+            this.checkbox3.Enabled = false;
+            this.checkbox3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.checkbox3.Location = new System.Drawing.Point(99, 3);
+            this.checkbox3.Name = "checkbox3";
+            this.checkbox3.Size = new System.Drawing.Size(90, 32);
+            this.checkbox3.TabIndex = 1;
+            this.checkbox3.Text = "Checkbox";
+            // 
+            // checkbox4
+            // 
+            this.checkbox4.AutoCheck = true;
+            this.checkbox4.Enabled = false;
+            this.checkbox4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.checkbox4.Location = new System.Drawing.Point(3, 3);
+            this.checkbox4.Name = "checkbox4";
+            this.checkbox4.Size = new System.Drawing.Size(90, 32);
+            this.checkbox4.TabIndex = 0;
+            this.checkbox4.Text = "Checkbox";
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.Location = new System.Drawing.Point(3, 171);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(694, 24);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "禁用状态";
+            // 
             // flowPanel1
             // 
+            this.flowPanel1.Controls.Add(this.checkbox5);
+            this.flowPanel1.Controls.Add(this.checkbox6);
             this.flowPanel1.Controls.Add(this.checkbox2);
             this.flowPanel1.Controls.Add(this.checkbox1);
             this.flowPanel1.Location = new System.Drawing.Point(3, 127);
@@ -71,6 +117,17 @@
             this.flowPanel1.Size = new System.Drawing.Size(694, 38);
             this.flowPanel1.TabIndex = 9;
             this.flowPanel1.Text = "flowPanel1";
+            // 
+            // checkbox2
+            // 
+            this.checkbox2.AutoCheck = true;
+            this.checkbox2.Checked = true;
+            this.checkbox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.checkbox2.Location = new System.Drawing.Point(99, 3);
+            this.checkbox2.Name = "checkbox2";
+            this.checkbox2.Size = new System.Drawing.Size(90, 32);
+            this.checkbox2.TabIndex = 1;
+            this.checkbox2.Text = "Checkbox";
             // 
             // checkbox1
             // 
@@ -116,58 +173,28 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Checkbox 多选框";
             // 
-            // checkbox2
+            // checkbox5
             // 
-            this.checkbox2.AutoCheck = true;
-            this.checkbox2.Checked = true;
-            this.checkbox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.checkbox2.Location = new System.Drawing.Point(99, 3);
-            this.checkbox2.Name = "checkbox2";
-            this.checkbox2.Size = new System.Drawing.Size(90, 32);
-            this.checkbox2.TabIndex = 1;
-            this.checkbox2.Text = "Checkbox";
+            this.checkbox5.AutoCheck = true;
+            this.checkbox5.Checked = true;
+            this.checkbox5.Fill = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.checkbox5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.checkbox5.Location = new System.Drawing.Point(291, 3);
+            this.checkbox5.Name = "checkbox5";
+            this.checkbox5.Size = new System.Drawing.Size(90, 32);
+            this.checkbox5.TabIndex = 3;
+            this.checkbox5.Text = "Checkbox";
             // 
-            // flowPanel2
+            // checkbox6
             // 
-            this.flowPanel2.Controls.Add(this.checkbox3);
-            this.flowPanel2.Controls.Add(this.checkbox4);
-            this.flowPanel2.Location = new System.Drawing.Point(3, 201);
-            this.flowPanel2.Name = "flowPanel2";
-            this.flowPanel2.Size = new System.Drawing.Size(694, 38);
-            this.flowPanel2.TabIndex = 11;
-            this.flowPanel2.Text = "flowPanel2";
-            // 
-            // checkbox3
-            // 
-            this.checkbox3.AutoCheck = true;
-            this.checkbox3.Checked = true;
-            this.checkbox3.Enabled = false;
-            this.checkbox3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.checkbox3.Location = new System.Drawing.Point(99, 3);
-            this.checkbox3.Name = "checkbox3";
-            this.checkbox3.Size = new System.Drawing.Size(90, 32);
-            this.checkbox3.TabIndex = 1;
-            this.checkbox3.Text = "Checkbox";
-            // 
-            // checkbox4
-            // 
-            this.checkbox4.AutoCheck = true;
-            this.checkbox4.Enabled = false;
-            this.checkbox4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.checkbox4.Location = new System.Drawing.Point(3, 3);
-            this.checkbox4.Name = "checkbox4";
-            this.checkbox4.Size = new System.Drawing.Size(90, 32);
-            this.checkbox4.TabIndex = 0;
-            this.checkbox4.Text = "Checkbox";
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(3, 171);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(694, 24);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "禁用状态";
+            this.checkbox6.AutoCheck = true;
+            this.checkbox6.Fill = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.checkbox6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.checkbox6.Location = new System.Drawing.Point(195, 3);
+            this.checkbox6.Name = "checkbox6";
+            this.checkbox6.Size = new System.Drawing.Size(90, 32);
+            this.checkbox6.TabIndex = 2;
+            this.checkbox6.Text = "Checkbox";
             // 
             // CheckBoxDemo
             // 
@@ -176,8 +203,8 @@
             this.Name = "CheckBoxDemo";
             this.Size = new System.Drawing.Size(700, 451);
             this.stackPanel1.ResumeLayout(false);
-            this.flowPanel1.ResumeLayout(false);
             this.flowPanel2.ResumeLayout(false);
+            this.flowPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -196,5 +223,7 @@
         private AntdUI.Checkbox checkbox3;
         private AntdUI.Checkbox checkbox4;
         private AntdUI.Label label4;
+        private AntdUI.Checkbox checkbox5;
+        private AntdUI.Checkbox checkbox6;
     }
 }

@@ -108,6 +108,11 @@
             // buttonCZ
             // 
             this.buttonCZ.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonCZ.Image = null;
+            this.buttonCZ.ImageHover = null;
+            this.buttonCZ.ImageHoverSvg = null;
+            this.buttonCZ.ImageSize = new System.Drawing.Size(0, 0);
+            this.buttonCZ.ImageSvg = null;
             this.buttonCZ.Location = new System.Drawing.Point(84, 3);
             this.buttonCZ.Name = "buttonCZ";
             this.buttonCZ.Size = new System.Drawing.Size(75, 32);
@@ -119,6 +124,11 @@
             // buttonClose
             // 
             this.buttonClose.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonClose.Image = null;
+            this.buttonClose.ImageHover = null;
+            this.buttonClose.ImageHoverSvg = null;
+            this.buttonClose.ImageSize = new System.Drawing.Size(0, 0);
+            this.buttonClose.ImageSvg = null;
             this.buttonClose.Location = new System.Drawing.Point(3, 3);
             this.buttonClose.Name = "buttonClose";
             this.buttonClose.Size = new System.Drawing.Size(75, 32);
@@ -143,9 +153,11 @@
             // 
             // colorPicker
             // 
+            this.colorPicker.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.colorPicker.Location = new System.Drawing.Point(459, 3);
             this.colorPicker.Name = "colorPicker";
-            this.colorPicker.Size = new System.Drawing.Size(75, 26);
+            this.colorPicker.ShowText = true;
+            this.colorPicker.Size = new System.Drawing.Size(100, 26);
             this.colorPicker.TabIndex = 15;
             this.colorPicker.Text = "colorPicker1";
             this.colorPicker.Value = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(119)))), ((int)(((byte)(255)))));
@@ -163,6 +175,7 @@
             // input_badgesize
             // 
             this.input_badgesize.DecimalPlaces = 2;
+            this.input_badgesize.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.input_badgesize.Location = new System.Drawing.Point(280, 3);
             this.input_badgesize.Minimum = new decimal(new int[] {
             0,
@@ -191,6 +204,7 @@
             // 
             // input_badge
             // 
+            this.input_badge.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.input_badge.Location = new System.Drawing.Point(101, 3);
             this.input_badge.Name = "input_badge";
             this.input_badge.Size = new System.Drawing.Size(75, 26);
@@ -222,6 +236,7 @@
             // 
             // input_radius
             // 
+            this.input_radius.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.input_radius.Location = new System.Drawing.Point(459, 3);
             this.input_radius.Minimum = new decimal(new int[] {
             0,
@@ -229,7 +244,7 @@
             0,
             0});
             this.input_radius.Name = "input_radius";
-            this.input_radius.Size = new System.Drawing.Size(75, 26);
+            this.input_radius.Size = new System.Drawing.Size(100, 26);
             this.input_radius.TabIndex = 11;
             this.input_radius.Text = "6";
             this.input_radius.Value = new decimal(new int[] {
@@ -317,6 +332,7 @@
             // 
             // input_my
             // 
+            this.input_my.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.input_my.Location = new System.Drawing.Point(459, 3);
             this.input_my.Minimum = new decimal(new int[] {
             0,
@@ -324,7 +340,7 @@
             0,
             0});
             this.input_my.Name = "input_my";
-            this.input_my.Size = new System.Drawing.Size(75, 26);
+            this.input_my.Size = new System.Drawing.Size(100, 26);
             this.input_my.TabIndex = 9;
             this.input_my.Text = "24";
             this.input_my.Value = new decimal(new int[] {
@@ -345,6 +361,7 @@
             // 
             // input_mx
             // 
+            this.input_mx.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.input_mx.Location = new System.Drawing.Point(280, 3);
             this.input_mx.Minimum = new decimal(new int[] {
             0,
@@ -373,6 +390,7 @@
             // 
             // input_size
             // 
+            this.input_size.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.input_size.Location = new System.Drawing.Point(101, 3);
             this.input_size.Minimum = new decimal(new int[] {
             0,
@@ -424,7 +442,7 @@
             this.select_vertical.Name = "select_vertical";
             this.select_vertical.SelectedIndex = 0;
             this.select_vertical.SelectedValue = "True";
-            this.select_vertical.Size = new System.Drawing.Size(75, 26);
+            this.select_vertical.Size = new System.Drawing.Size(100, 26);
             this.select_vertical.TabIndex = 11;
             this.select_vertical.Text = "True";
             this.select_vertical.WaveSize = 0;

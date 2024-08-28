@@ -36,7 +36,6 @@
             this.buttonDEL = new AntdUI.Button();
             this.buttonADD = new AntdUI.Button();
             this.stackPanel8 = new AntdUI.StackPanel();
-            this.select_vertical = new AntdUI.Select();
             this.label6 = new AntdUI.Label();
             this.stackPanel7 = new AntdUI.StackPanel();
             this.input_itemsize = new AntdUI.Input();
@@ -45,11 +44,12 @@
             this.input_gap = new AntdUI.InputNumber();
             this.label3 = new AntdUI.Label();
             this.stackPanel6 = new AntdUI.StackPanel();
-            this.select_autoscroll = new AntdUI.Select();
             this.label4 = new AntdUI.Label();
             this.divider1 = new AntdUI.Divider();
             this.label2 = new AntdUI.Label();
             this.label1 = new AntdUI.Label();
+            this.switch_autoscroll = new AntdUI.Switch();
+            this.switch_vertical = new AntdUI.Switch();
             this.stackPanel1.SuspendLayout();
             this.stackPanel2.SuspendLayout();
             this.stackPanel3.SuspendLayout();
@@ -86,7 +86,7 @@
             // stackPanel
             // 
             this.stackPanel.ItemSize = "";
-            this.stackPanel.Location = new System.Drawing.Point(289, 3);
+            this.stackPanel.Location = new System.Drawing.Point(229, 3);
             this.stackPanel.Name = "stackPanel";
             this.stackPanel.Size = new System.Drawing.Size(400, 400);
             this.stackPanel.TabIndex = 1;
@@ -103,7 +103,7 @@
             this.stackPanel3.Controls.Add(this.stackPanel6);
             this.stackPanel3.Location = new System.Drawing.Point(3, 3);
             this.stackPanel3.Name = "stackPanel3";
-            this.stackPanel3.Size = new System.Drawing.Size(280, 400);
+            this.stackPanel3.Size = new System.Drawing.Size(220, 400);
             this.stackPanel3.TabIndex = 0;
             this.stackPanel3.Text = "stackPanel3";
             this.stackPanel3.Vertical = true;
@@ -111,9 +111,14 @@
             // buttonCZ
             // 
             this.buttonCZ.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonCZ.Image = null;
+            this.buttonCZ.ImageHover = null;
+            this.buttonCZ.ImageHoverSvg = null;
+            this.buttonCZ.ImageSize = new System.Drawing.Size(0, 0);
+            this.buttonCZ.ImageSvg = null;
             this.buttonCZ.Location = new System.Drawing.Point(3, 231);
             this.buttonCZ.Name = "buttonCZ";
-            this.buttonCZ.Size = new System.Drawing.Size(274, 32);
+            this.buttonCZ.Size = new System.Drawing.Size(214, 32);
             this.buttonCZ.TabIndex = 39;
             this.buttonCZ.Text = "重 置";
             this.buttonCZ.Type = AntdUI.TTypeMini.Warn;
@@ -122,9 +127,14 @@
             // buttonDEL
             // 
             this.buttonDEL.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonDEL.Image = null;
+            this.buttonDEL.ImageHover = null;
+            this.buttonDEL.ImageHoverSvg = null;
+            this.buttonDEL.ImageSize = new System.Drawing.Size(0, 0);
+            this.buttonDEL.ImageSvg = null;
             this.buttonDEL.Location = new System.Drawing.Point(3, 193);
             this.buttonDEL.Name = "buttonDEL";
-            this.buttonDEL.Size = new System.Drawing.Size(274, 32);
+            this.buttonDEL.Size = new System.Drawing.Size(214, 32);
             this.buttonDEL.TabIndex = 38;
             this.buttonDEL.Text = "删除 Button";
             this.buttonDEL.Type = AntdUI.TTypeMini.Error;
@@ -133,9 +143,14 @@
             // buttonADD
             // 
             this.buttonADD.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonADD.Image = null;
+            this.buttonADD.ImageHover = null;
+            this.buttonADD.ImageHoverSvg = null;
+            this.buttonADD.ImageSize = new System.Drawing.Size(0, 0);
+            this.buttonADD.ImageSvg = null;
             this.buttonADD.Location = new System.Drawing.Point(3, 155);
             this.buttonADD.Name = "buttonADD";
-            this.buttonADD.Size = new System.Drawing.Size(274, 32);
+            this.buttonADD.Size = new System.Drawing.Size(214, 32);
             this.buttonADD.TabIndex = 37;
             this.buttonADD.Text = "添加 Button";
             this.buttonADD.Type = AntdUI.TTypeMini.Info;
@@ -143,29 +158,13 @@
             // 
             // stackPanel8
             // 
-            this.stackPanel8.Controls.Add(this.select_vertical);
+            this.stackPanel8.Controls.Add(this.switch_vertical);
             this.stackPanel8.Controls.Add(this.label6);
             this.stackPanel8.Location = new System.Drawing.Point(3, 117);
             this.stackPanel8.Name = "stackPanel8";
-            this.stackPanel8.Size = new System.Drawing.Size(274, 32);
+            this.stackPanel8.Size = new System.Drawing.Size(214, 32);
             this.stackPanel8.TabIndex = 21;
             this.stackPanel8.Text = "stackPanel8";
-            // 
-            // select_vertical
-            // 
-            this.select_vertical.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.select_vertical.Items.AddRange(new object[] {
-            "True",
-            "False"});
-            this.select_vertical.List = true;
-            this.select_vertical.Location = new System.Drawing.Point(97, 3);
-            this.select_vertical.Name = "select_vertical";
-            this.select_vertical.SelectedIndex = 0;
-            this.select_vertical.SelectedValue = "True";
-            this.select_vertical.Size = new System.Drawing.Size(175, 26);
-            this.select_vertical.TabIndex = 11;
-            this.select_vertical.Text = "True";
-            this.select_vertical.WaveSize = 0;
             // 
             // label6
             // 
@@ -182,7 +181,7 @@
             this.stackPanel7.Controls.Add(this.label5);
             this.stackPanel7.Location = new System.Drawing.Point(3, 79);
             this.stackPanel7.Name = "stackPanel7";
-            this.stackPanel7.Size = new System.Drawing.Size(274, 32);
+            this.stackPanel7.Size = new System.Drawing.Size(214, 32);
             this.stackPanel7.TabIndex = 20;
             this.stackPanel7.Text = "stackPanel7";
             // 
@@ -192,7 +191,7 @@
             this.input_itemsize.Location = new System.Drawing.Point(97, 3);
             this.input_itemsize.Name = "input_itemsize";
             this.input_itemsize.PlaceholderText = "数值或百分比";
-            this.input_itemsize.Size = new System.Drawing.Size(174, 26);
+            this.input_itemsize.Size = new System.Drawing.Size(115, 26);
             this.input_itemsize.TabIndex = 5;
             this.input_itemsize.WaveSize = 0;
             // 
@@ -211,7 +210,7 @@
             this.stackPanel5.Controls.Add(this.label3);
             this.stackPanel5.Location = new System.Drawing.Point(3, 41);
             this.stackPanel5.Name = "stackPanel5";
-            this.stackPanel5.Size = new System.Drawing.Size(274, 32);
+            this.stackPanel5.Size = new System.Drawing.Size(214, 32);
             this.stackPanel5.TabIndex = 19;
             this.stackPanel5.Text = "stackPanel5";
             // 
@@ -225,7 +224,7 @@
             0,
             0});
             this.input_gap.Name = "input_gap";
-            this.input_gap.Size = new System.Drawing.Size(175, 26);
+            this.input_gap.Size = new System.Drawing.Size(115, 26);
             this.input_gap.TabIndex = 5;
             this.input_gap.Text = "0";
             this.input_gap.WaveSize = 0;
@@ -241,29 +240,13 @@
             // 
             // stackPanel6
             // 
-            this.stackPanel6.Controls.Add(this.select_autoscroll);
+            this.stackPanel6.Controls.Add(this.switch_autoscroll);
             this.stackPanel6.Controls.Add(this.label4);
             this.stackPanel6.Location = new System.Drawing.Point(3, 3);
             this.stackPanel6.Name = "stackPanel6";
-            this.stackPanel6.Size = new System.Drawing.Size(274, 32);
+            this.stackPanel6.Size = new System.Drawing.Size(214, 32);
             this.stackPanel6.TabIndex = 12;
             this.stackPanel6.Text = "stackPanel6";
-            // 
-            // select_autoscroll
-            // 
-            this.select_autoscroll.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.select_autoscroll.Items.AddRange(new object[] {
-            "True",
-            "False"});
-            this.select_autoscroll.List = true;
-            this.select_autoscroll.Location = new System.Drawing.Point(97, 3);
-            this.select_autoscroll.Name = "select_autoscroll";
-            this.select_autoscroll.SelectedIndex = 1;
-            this.select_autoscroll.SelectedValue = "False";
-            this.select_autoscroll.Size = new System.Drawing.Size(175, 26);
-            this.select_autoscroll.TabIndex = 11;
-            this.select_autoscroll.Text = "False";
-            this.select_autoscroll.WaveSize = 0;
             // 
             // label4
             // 
@@ -299,6 +282,27 @@
             this.label1.TabIndex = 8;
             this.label1.Text = "StackPanel 堆叠布局";
             // 
+            // switch_autoscroll
+            // 
+            this.switch_autoscroll.AutoCheck = true;
+            this.switch_autoscroll.Location = new System.Drawing.Point(97, 3);
+            this.switch_autoscroll.Name = "switch_autoscroll";
+            this.switch_autoscroll.Size = new System.Drawing.Size(60, 26);
+            this.switch_autoscroll.TabIndex = 5;
+            this.switch_autoscroll.Text = "switch1";
+            this.switch_autoscroll.WaveSize = 0;
+            // 
+            // switch_vertical
+            // 
+            this.switch_vertical.AutoCheck = true;
+            this.switch_vertical.Checked = true;
+            this.switch_vertical.Location = new System.Drawing.Point(97, 3);
+            this.switch_vertical.Name = "switch_vertical";
+            this.switch_vertical.Size = new System.Drawing.Size(60, 26);
+            this.switch_vertical.TabIndex = 6;
+            this.switch_vertical.Text = "switch1";
+            this.switch_vertical.WaveSize = 0;
+            // 
             // StackPanelDemo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -327,13 +331,11 @@
         private AntdUI.StackPanel stackPanel;
         private AntdUI.StackPanel stackPanel3;
         private AntdUI.StackPanel stackPanel6;
-        private AntdUI.Select select_autoscroll;
         private AntdUI.Label label4;
         private AntdUI.StackPanel stackPanel5;
         private AntdUI.InputNumber input_gap;
         private AntdUI.Label label3;
         private AntdUI.StackPanel stackPanel8;
-        private AntdUI.Select select_vertical;
         private AntdUI.Label label6;
         private AntdUI.StackPanel stackPanel7;
         private AntdUI.Label label5;
@@ -341,5 +343,7 @@
         private AntdUI.Button buttonADD;
         private AntdUI.Input input_itemsize;
         private AntdUI.Button buttonCZ;
+        private AntdUI.Switch switch_vertical;
+        private AntdUI.Switch switch_autoscroll;
     }
 }

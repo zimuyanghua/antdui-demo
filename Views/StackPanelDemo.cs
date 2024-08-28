@@ -29,10 +29,10 @@ namespace AntdUIDemo.Views
 
         private void LoadStackPanel()
         {
-            stackPanel.AutoScroll = select_autoscroll.SelectedIndex == 0;
+            stackPanel.AutoScroll = switch_autoscroll.Checked;
             stackPanel.Gap = (int)input_gap.Value;
             stackPanel.ItemSize = input_itemsize.Text;
-            stackPanel.Vertical = select_vertical.SelectedIndex == 0;
+            stackPanel.Vertical = switch_vertical.Checked;
 
             stackPanel.Controls.Clear();
             for (int i = 1; i < 4; i++)
@@ -56,20 +56,26 @@ namespace AntdUIDemo.Views
             buttonADD.Click += ButtonADD_Click;
             buttonDEL.Click += ButtonDEL_Click;
 
-            select_autoscroll.SelectedIndexChanged += select_intvalue_SelectedIndexChanged;
-            select_vertical.SelectedIndexChanged += select_intvalue_SelectedIndexChanged;
+            switch_autoscroll.CheckedChanged += switch_CheckedChanged;
+            switch_vertical.CheckedChanged += switch_CheckedChanged;
 
             input_gap.ValueChanged += input_gap_ValueChanged;
 
             input_itemsize.TextChanged += input_itemsize_TextChanged;
         }
 
+        private void switch_CheckedChanged(object sender, BoolEventArgs e)
+        {
+            stackPanel.AutoScroll = switch_autoscroll.Checked;
+            stackPanel.Vertical = switch_vertical.Checked;
+        }
+
         private void InitData()
         {
-            select_autoscroll.SelectedIndex = 1;
             input_gap.Value = 0;
+            switch_autoscroll.Checked = false;
+            switch_vertical.Checked = true;
             input_itemsize.Text = "10%";
-            select_vertical.SelectedIndex = 0;
         }
 
         #region 事件
@@ -82,12 +88,6 @@ namespace AntdUIDemo.Views
         private void input_gap_ValueChanged(object sender, DecimalEventArgs e)
         {
             stackPanel.Gap = (int)input_gap.Value;
-        }
-
-        private void select_intvalue_SelectedIndexChanged(object sender, IntEventArgs e)
-        {
-            stackPanel.AutoScroll = select_autoscroll.SelectedIndex == 0;
-            stackPanel.Vertical = select_vertical.SelectedIndex == 0;
         }
 
         private void ButtonDEL_Click(object sender, EventArgs e)

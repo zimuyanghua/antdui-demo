@@ -28,24 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            AntdUI.StepsItem stepsItem4 = new AntdUI.StepsItem();
-            AntdUI.StepsItem stepsItem5 = new AntdUI.StepsItem();
-            AntdUI.StepsItem stepsItem6 = new AntdUI.StepsItem();
             AntdUI.StepsItem stepsItem1 = new AntdUI.StepsItem();
             AntdUI.StepsItem stepsItem2 = new AntdUI.StepsItem();
             AntdUI.StepsItem stepsItem3 = new AntdUI.StepsItem();
+            AntdUI.StepsItem stepsItem4 = new AntdUI.StepsItem();
+            AntdUI.StepsItem stepsItem5 = new AntdUI.StepsItem();
+            AntdUI.StepsItem stepsItem6 = new AntdUI.StepsItem();
             this.stackPanel1 = new AntdUI.StackPanel();
+            this.stepsv = new AntdUI.Steps();
+            this.steph = new AntdUI.Steps();
+            this.stackPanel2 = new AntdUI.StackPanel();
+            this.select_Status = new AntdUI.Select();
+            this.label3 = new AntdUI.Label();
+            this.input_current = new AntdUI.InputNumber();
+            this.label8 = new AntdUI.Label();
+            this.label12 = new AntdUI.Label();
             this.divider1 = new AntdUI.Divider();
             this.label2 = new AntdUI.Label();
             this.label1 = new AntdUI.Label();
-            this.label12 = new AntdUI.Label();
-            this.stackPanel2 = new AntdUI.StackPanel();
-            this.input_current = new AntdUI.InputNumber();
-            this.label8 = new AntdUI.Label();
-            this.label3 = new AntdUI.Label();
-            this.select_Status = new AntdUI.Select();
-            this.steph = new AntdUI.Steps();
-            this.stepsv = new AntdUI.Steps();
             this.stackPanel1.SuspendLayout();
             this.stackPanel2.SuspendLayout();
             this.SuspendLayout();
@@ -67,39 +67,49 @@
             this.stackPanel1.Text = "stackPanel1";
             this.stackPanel1.Vertical = true;
             // 
-            // divider1
+            // stepsv
             // 
-            this.divider1.Location = new System.Drawing.Point(3, 79);
-            this.divider1.Name = "divider1";
-            this.divider1.Size = new System.Drawing.Size(694, 12);
-            this.divider1.TabIndex = 7;
+            this.stepsv.Current = 1;
+            this.stepsv.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            stepsItem1.Description = "This is a description.";
+            stepsItem1.Title = "Finished";
+            stepsItem2.Description = "This is a description.";
+            stepsItem2.SubTitle = "Left 00:00:08";
+            stepsItem2.Title = "In Progress";
+            stepsItem3.Description = "This is a description.";
+            stepsItem3.Title = "Waiting";
+            this.stepsv.Items.Add(stepsItem1);
+            this.stepsv.Items.Add(stepsItem2);
+            this.stepsv.Items.Add(stepsItem3);
+            this.stepsv.Location = new System.Drawing.Point(36, 243);
+            this.stepsv.Margin = new System.Windows.Forms.Padding(36, 3, 36, 3);
+            this.stepsv.Name = "stepsv";
+            this.stepsv.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.stepsv.Size = new System.Drawing.Size(628, 244);
+            this.stepsv.TabIndex = 48;
+            this.stepsv.Text = "steps1";
+            this.stepsv.Vertical = true;
             // 
-            // label2
+            // steph
             // 
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(3, 49);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(694, 24);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "引导用户按照流程完成任务的导航条。";
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(3, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(694, 40);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Steps 步骤条";
-            // 
-            // label12
-            // 
-            this.label12.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
-            this.label12.Location = new System.Drawing.Point(3, 97);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(694, 24);
-            this.label12.TabIndex = 42;
-            this.label12.Text = "控件配置";
+            this.steph.Current = 1;
+            this.steph.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            stepsItem4.Description = "This is a description.";
+            stepsItem4.Title = "Finished";
+            stepsItem5.Description = "This is a description.";
+            stepsItem5.SubTitle = "Left 00:00:08";
+            stepsItem5.Title = "In Progress";
+            stepsItem6.Description = "This is a description.";
+            stepsItem6.Title = "Waiting";
+            this.steph.Items.Add(stepsItem4);
+            this.steph.Items.Add(stepsItem5);
+            this.steph.Items.Add(stepsItem6);
+            this.steph.Location = new System.Drawing.Point(3, 165);
+            this.steph.Name = "steph";
+            this.steph.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.steph.Size = new System.Drawing.Size(694, 72);
+            this.steph.TabIndex = 47;
+            this.steph.Text = "steps1";
             // 
             // stackPanel2
             // 
@@ -113,8 +123,28 @@
             this.stackPanel2.TabIndex = 44;
             this.stackPanel2.Text = "stackPanel2";
             // 
+            // select_Status
+            // 
+            this.select_Status.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.select_Status.List = true;
+            this.select_Status.Location = new System.Drawing.Point(280, 3);
+            this.select_Status.Name = "select_Status";
+            this.select_Status.Size = new System.Drawing.Size(75, 26);
+            this.select_Status.TabIndex = 13;
+            this.select_Status.WaveSize = 0;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.Location = new System.Drawing.Point(182, 3);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(92, 26);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Status";
+            // 
             // input_current
             // 
+            this.input_current.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.input_current.Location = new System.Drawing.Point(101, 3);
             this.input_current.Maximum = new decimal(new int[] {
             2,
@@ -146,67 +176,39 @@
             this.label8.TabIndex = 10;
             this.label8.Text = "Current";
             // 
-            // label3
+            // label12
             // 
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(182, 3);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 26);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Status";
+            this.label12.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
+            this.label12.Location = new System.Drawing.Point(3, 97);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(694, 24);
+            this.label12.TabIndex = 42;
+            this.label12.Text = "控件配置";
             // 
-            // select_Status
+            // divider1
             // 
-            this.select_Status.List = true;
-            this.select_Status.Location = new System.Drawing.Point(280, 3);
-            this.select_Status.Name = "select_Status";
-            this.select_Status.Size = new System.Drawing.Size(75, 26);
-            this.select_Status.TabIndex = 13;
-            this.select_Status.WaveSize = 0;
+            this.divider1.Location = new System.Drawing.Point(3, 79);
+            this.divider1.Name = "divider1";
+            this.divider1.Size = new System.Drawing.Size(694, 12);
+            this.divider1.TabIndex = 7;
             // 
-            // steph
+            // label2
             // 
-            this.steph.Current = 1;
-            this.steph.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            stepsItem4.Description = "This is a description.";
-            stepsItem4.Title = "Finished";
-            stepsItem5.Description = "This is a description.";
-            stepsItem5.SubTitle = "Left 00:00:08";
-            stepsItem5.Title = "In Progress";
-            stepsItem6.Description = "This is a description.";
-            stepsItem6.Title = "Waiting";
-            this.steph.Items.Add(stepsItem4);
-            this.steph.Items.Add(stepsItem5);
-            this.steph.Items.Add(stepsItem6);
-            this.steph.Location = new System.Drawing.Point(3, 165);
-            this.steph.Name = "steph";
-            this.steph.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.steph.Size = new System.Drawing.Size(694, 72);
-            this.steph.TabIndex = 47;
-            this.steph.Text = "steps1";
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.Location = new System.Drawing.Point(3, 49);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(694, 24);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "引导用户按照流程完成任务的导航条。";
             // 
-            // stepsv
+            // label1
             // 
-            this.stepsv.Current = 1;
-            this.stepsv.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            stepsItem1.Description = "This is a description.";
-            stepsItem1.Title = "Finished";
-            stepsItem2.Description = "This is a description.";
-            stepsItem2.SubTitle = "Left 00:00:08";
-            stepsItem2.Title = "In Progress";
-            stepsItem3.Description = "This is a description.";
-            stepsItem3.Title = "Waiting";
-            this.stepsv.Items.Add(stepsItem1);
-            this.stepsv.Items.Add(stepsItem2);
-            this.stepsv.Items.Add(stepsItem3);
-            this.stepsv.Location = new System.Drawing.Point(36, 243);
-            this.stepsv.Margin = new System.Windows.Forms.Padding(36, 3, 36, 3);
-            this.stepsv.Name = "stepsv";
-            this.stepsv.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.stepsv.Size = new System.Drawing.Size(628, 244);
-            this.stepsv.TabIndex = 48;
-            this.stepsv.Text = "steps1";
-            this.stepsv.Vertical = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(3, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(694, 40);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Steps 步骤条";
             // 
             // StepsDemo
             // 

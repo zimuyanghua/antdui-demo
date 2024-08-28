@@ -31,7 +31,7 @@ namespace AntdUIDemo.Views
         {
             flowPanel.Align = (TAlignFlow)select_align.SelectedValue;
             flowPanel.Gap = (int)input_gap.Value;
-            flowPanel.AutoScroll = select_autoscroll.SelectedIndex == 0;
+            flowPanel.AutoScroll = switch_autoscroll.Checked;
 
             flowPanel.Controls.Clear();
             for (int i = 0; i < 14; i++)
@@ -55,8 +55,8 @@ namespace AntdUIDemo.Views
         private void InitData()
         {
             select_align.SelectedIndex = 0;
+            switch_autoscroll.Checked = false;
             input_gap.Value = 0;
-            select_autoscroll.SelectedIndex = 1;
         }
 
         // 绑定按钮事件
@@ -67,9 +67,15 @@ namespace AntdUIDemo.Views
             buttonDEL.Click += buttonDEL_Click;
 
             select_align.SelectedIndexChanged += select_intvalue_SelectedIndexChanged;
-            select_autoscroll.SelectedIndexChanged += select_intvalue_SelectedIndexChanged;
+
+            switch_autoscroll.CheckedChanged += switch_autoscroll_CheckedChanged;
 
             input_gap.ValueChanged += input_gap_ValueChanged;
+        }
+
+        private void switch_autoscroll_CheckedChanged(object sender, BoolEventArgs e)
+        {
+            flowPanel.AutoScroll = switch_autoscroll.Checked;
         }
 
         // 初始化下拉框
@@ -86,7 +92,6 @@ namespace AntdUIDemo.Views
         private void select_intvalue_SelectedIndexChanged(object sender, IntEventArgs e)
         {
             flowPanel.Align = (TAlignFlow)select_align.SelectedValue;
-            flowPanel.AutoScroll = select_autoscroll.SelectedIndex == 0;
         }
 
         private void input_gap_ValueChanged(object sender, DecimalEventArgs e)

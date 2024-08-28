@@ -75,9 +75,9 @@
             // 
             // gridPanel
             // 
-            this.gridPanel.Location = new System.Drawing.Point(289, 3);
+            this.gridPanel.Location = new System.Drawing.Point(259, 3);
             this.gridPanel.Name = "gridPanel";
-            this.gridPanel.Size = new System.Drawing.Size(400, 293);
+            this.gridPanel.Size = new System.Drawing.Size(462, 293);
             this.gridPanel.TabIndex = 1;
             this.gridPanel.Text = "gridPanel1";
             // 
@@ -88,7 +88,7 @@
             this.stackPanel3.Controls.Add(this.stackPanel5);
             this.stackPanel3.Location = new System.Drawing.Point(3, 3);
             this.stackPanel3.Name = "stackPanel3";
-            this.stackPanel3.Size = new System.Drawing.Size(280, 293);
+            this.stackPanel3.Size = new System.Drawing.Size(250, 293);
             this.stackPanel3.TabIndex = 0;
             this.stackPanel3.Text = "stackPanel3";
             this.stackPanel3.Vertical = true;
@@ -96,9 +96,14 @@
             // buttonCZ
             // 
             this.buttonCZ.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonCZ.Image = null;
+            this.buttonCZ.ImageHover = null;
+            this.buttonCZ.ImageHoverSvg = null;
+            this.buttonCZ.ImageSize = new System.Drawing.Size(0, 0);
+            this.buttonCZ.ImageSvg = null;
             this.buttonCZ.Location = new System.Drawing.Point(3, 98);
             this.buttonCZ.Name = "buttonCZ";
-            this.buttonCZ.Size = new System.Drawing.Size(274, 32);
+            this.buttonCZ.Size = new System.Drawing.Size(244, 32);
             this.buttonCZ.TabIndex = 20;
             this.buttonCZ.Text = "重 置";
             this.buttonCZ.Type = AntdUI.TTypeMini.Warn;
@@ -110,21 +115,21 @@
             this.stackPanel4.Controls.Add(this.label4);
             this.stackPanel4.Location = new System.Drawing.Point(3, 60);
             this.stackPanel4.Name = "stackPanel4";
-            this.stackPanel4.Size = new System.Drawing.Size(274, 32);
+            this.stackPanel4.Size = new System.Drawing.Size(244, 32);
             this.stackPanel4.TabIndex = 18;
             this.stackPanel4.Text = "stackPanel4";
             // 
             // input_gap
             // 
             this.input_gap.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.input_gap.Location = new System.Drawing.Point(97, 3);
+            this.input_gap.Location = new System.Drawing.Point(79, 3);
             this.input_gap.Minimum = new decimal(new int[] {
             0,
             0,
             0,
             0});
             this.input_gap.Name = "input_gap";
-            this.input_gap.Size = new System.Drawing.Size(175, 26);
+            this.input_gap.Size = new System.Drawing.Size(165, 26);
             this.input_gap.TabIndex = 5;
             this.input_gap.Text = "0";
             this.input_gap.WaveSize = 0;
@@ -134,7 +139,7 @@
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label4.Location = new System.Drawing.Point(3, 3);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(88, 26);
+            this.label4.Size = new System.Drawing.Size(70, 26);
             this.label4.TabIndex = 4;
             this.label4.Text = "Gap";
             // 
@@ -144,18 +149,18 @@
             this.stackPanel5.Controls.Add(this.label3);
             this.stackPanel5.Location = new System.Drawing.Point(3, 3);
             this.stackPanel5.Name = "stackPanel5";
-            this.stackPanel5.Size = new System.Drawing.Size(274, 51);
+            this.stackPanel5.Size = new System.Drawing.Size(244, 51);
             this.stackPanel5.TabIndex = 15;
             this.stackPanel5.Text = "stackPanel5";
             // 
             // input_span
             // 
             this.input_span.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.input_span.Location = new System.Drawing.Point(97, 3);
+            this.input_span.Location = new System.Drawing.Point(79, 3);
             this.input_span.Multiline = true;
             this.input_span.Name = "input_span";
             this.input_span.PlaceholderText = "分号隔开为行,空格隔开为列(可设置固定值或百分号)";
-            this.input_span.Size = new System.Drawing.Size(175, 45);
+            this.input_span.Size = new System.Drawing.Size(165, 45);
             this.input_span.TabIndex = 5;
             this.input_span.Text = "50% 50%;50% 50%";
             this.input_span.WaveSize = 0;
@@ -165,7 +170,7 @@
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label3.Location = new System.Drawing.Point(3, 3);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 45);
+            this.label3.Size = new System.Drawing.Size(70, 45);
             this.label3.TabIndex = 4;
             this.label3.Text = "Span";
             // 
