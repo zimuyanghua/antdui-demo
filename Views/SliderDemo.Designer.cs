@@ -133,6 +133,8 @@
             // slider2
             // 
             this.slider2.Fill = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(87)))), ((int)(((byte)(34)))));
+            this.slider2.FillActive = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(87)))), ((int)(((byte)(34)))));
+            this.slider2.FillHover = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(133)))), ((int)(((byte)(34)))));
             this.slider2.Location = new System.Drawing.Point(215, 3);
             this.slider2.Name = "slider2";
             this.slider2.ShowValue = true;
