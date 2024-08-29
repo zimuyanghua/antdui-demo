@@ -60,7 +60,7 @@
 ![Steps](assets/screenshots/Steps.png)
 
 ### 数据录入
-#### Checkbox 复选框
+#### Checkbox 多选框
 ![Checkbox](assets/screenshots/Checkbox.png)
 #### ColorPicker 颜色选择器
 ![ColorPicker](assets/screenshots/ColorPicker.png)
@@ -73,16 +73,25 @@
 #### InputNumber 数字输入框
 ![InputNumber](assets/screenshots/InputNumber.png)
 #### Radio 单选框
+![Radio](assets/screenshots/Radio.png)
 #### Rate 评分
+![Rate](assets/screenshots/Rate.png)
 #### Select 选择器
+![Select](assets/screenshots/Select.png)
 #### SelectMultiple 多选选择器
+![SelectMultiple](assets/screenshots/SelectMultiple.png)
 #### Slider 滑动输入条
+![Slider](assets/screenshots/Slider.png)
 #### Switch 开关
+![Switch](assets/screenshots/Switch.png)
 #### TimePicker 时间选择框
+![TimePicker](assets/screenshots/TimePicker.png)
 
 ### 数据展示
 #### Avatar 头像
+![Avatar](assets/screenshots/Avatar.png)
 #### Badge 徽标数
+![Badge](assets/screenshots/Badge.png)
 #### Calendar 日历
 #### Carousel 走马灯
 #### Label 标签
