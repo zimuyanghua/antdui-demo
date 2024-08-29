@@ -187,6 +187,33 @@ namespace AntdUIDemo
                 case "InputNumber":
                     control = new InputNumberDemo();
                     break;
+                case "Radio":
+                    control = new RadioDemo();
+                    break;
+                case "Rate":
+                    control = new RateDemo();
+                    break;
+                case "Select":
+                    control = new SelectDemo();
+                    break;
+                case "SelectMultiple":
+                    control = new SelectMultipleDemo();
+                    break;
+                case "Slider":
+                    control = new SliderDemo();
+                    break;
+                case "Switch":
+                    control = new SwitchDemo();
+                    break;
+                case "TimePicker":
+                    control = new TimePickerDemo();
+                    break;
+                case "Avatar":
+                    control = new AvatarDemo();
+                    break;
+                case "Badge":
+                    control = new BadgeDemo();
+                    break;
             }
             if (control != null)
             {

@@ -476,7 +476,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(694, 24);
             this.label4.TabIndex = 10;
-            this.label4.Text = "前置/后置标签";
+            this.label4.Text = "前/后标签";
             // 
             // flowPanel1
             // 
