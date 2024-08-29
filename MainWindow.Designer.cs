@@ -115,7 +115,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(693, 563);
             this.label1.TabIndex = 0;
-            this.label1.Text = "欢迎使用 AntdUI Demo\r\n\r\n当前版本 AntdUI 1.5.7-beta";
+            this.label1.Text = "欢迎使用 AntdUI Demo\r\n\r\n当前版本 AntdUI 1.5.7";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MainWindow

@@ -14,7 +14,7 @@
     <Copyright>Copyright © 2024 czz_y</Copyright>
     <FileVersion>$(Version)</FileVersion>
     <AssemblyVersion>$(Version)</AssemblyVersion>
-    <Version>1.5.7-beta</Version>
+    <Version>1.5.7</Version>
     <Authors>czz_y</Authors>
     <Description>基于 Winform UI框架 AntdUI 设计的Demo</Description>
     <PackageProjectUrl>https://gitee.com/mubaiyanghua/antd-uidemo</PackageProjectUrl>
@@ -31,7 +31,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="AntdUI" Version="1.5.7-beta" />
+    <PackageReference Include="AntdUI" Version="1.5.7" />
     <PackageReference Include="NLog" Version="5.3.3" />
   </ItemGroup>
 
