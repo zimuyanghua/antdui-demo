@@ -93,11 +93,17 @@
 #### Badge 徽标数
 ![Badge](assets/screenshots/Badge.png)
 #### Calendar 日历
+![Calendar](assets/screenshots/Calendar.png)
 #### Carousel 走马灯
+![Carousel](assets/screenshots/Carousel.png)
 #### Label 标签
+![Label](assets/screenshots/Label.png)
 #### Popover 气泡卡片
+![Popover](assets/screenshots/Popover.png)
 #### Preview 图片预览
+![Preview](assets/screenshots/Preview.png)
 #### Segmented 分段控制器
+![Segmented](assets/screenshots/Segmented.png)
 #### Table 表格
 #### Tabs 标签页
 #### Tag 标签

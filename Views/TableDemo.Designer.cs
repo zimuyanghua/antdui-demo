@@ -38,13 +38,14 @@
             this.checkbox6 = new AntdUI.Checkbox();
             this.checkbox1 = new AntdUI.Checkbox();
             this.flowPanel3 = new AntdUI.FlowPanel();
-            this.button5 = new AntdUI.Button();
-            this.button2 = new AntdUI.Button();
+            this.buttonDEL = new AntdUI.Button();
+            this.buttonADD = new AntdUI.Button();
             this.label3 = new AntdUI.Label();
             this.divider1 = new AntdUI.Divider();
             this.label2 = new AntdUI.Label();
             this.label1 = new AntdUI.Label();
             this.label4 = new AntdUI.Label();
+            this.buttonCZ = new AntdUI.Button();
             this.stackPanel1.SuspendLayout();
             this.flowPanel1.SuspendLayout();
             this.flowPanel3.SuspendLayout();
@@ -161,35 +162,36 @@
             // 
             // flowPanel3
             // 
-            this.flowPanel3.Controls.Add(this.button5);
-            this.flowPanel3.Controls.Add(this.button2);
+            this.flowPanel3.Controls.Add(this.buttonCZ);
+            this.flowPanel3.Controls.Add(this.buttonDEL);
+            this.flowPanel3.Controls.Add(this.buttonADD);
             this.flowPanel3.Location = new System.Drawing.Point(3, 127);
             this.flowPanel3.Name = "flowPanel3";
             this.flowPanel3.Size = new System.Drawing.Size(694, 38);
             this.flowPanel3.TabIndex = 27;
             this.flowPanel3.Text = "flowPanel3";
             // 
-            // button5
+            // buttonDEL
             // 
-            this.button5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button5.Location = new System.Drawing.Point(89, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(80, 32);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "删除";
-            this.button5.Type = AntdUI.TTypeMini.Error;
-            this.button5.WaveSize = 0;
+            this.buttonDEL.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonDEL.Location = new System.Drawing.Point(89, 3);
+            this.buttonDEL.Name = "buttonDEL";
+            this.buttonDEL.Size = new System.Drawing.Size(80, 32);
+            this.buttonDEL.TabIndex = 5;
+            this.buttonDEL.Text = "删除";
+            this.buttonDEL.Type = AntdUI.TTypeMini.Error;
+            this.buttonDEL.WaveSize = 0;
             // 
-            // button2
+            // buttonADD
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(3, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(80, 32);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "新增";
-            this.button2.Type = AntdUI.TTypeMini.Primary;
-            this.button2.WaveSize = 0;
+            this.buttonADD.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonADD.Location = new System.Drawing.Point(3, 3);
+            this.buttonADD.Name = "buttonADD";
+            this.buttonADD.Size = new System.Drawing.Size(80, 32);
+            this.buttonADD.TabIndex = 2;
+            this.buttonADD.Text = "新增";
+            this.buttonADD.Type = AntdUI.TTypeMini.Primary;
+            this.buttonADD.WaveSize = 0;
             // 
             // label3
             // 
@@ -234,6 +236,17 @@
             this.label4.TabIndex = 31;
             this.label4.Text = "分页";
             // 
+            // buttonCZ
+            // 
+            this.buttonCZ.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonCZ.Location = new System.Drawing.Point(175, 3);
+            this.buttonCZ.Name = "buttonCZ";
+            this.buttonCZ.Size = new System.Drawing.Size(80, 32);
+            this.buttonCZ.TabIndex = 6;
+            this.buttonCZ.Text = "重置";
+            this.buttonCZ.Type = AntdUI.TTypeMini.Warn;
+            this.buttonCZ.WaveSize = 0;
+            // 
             // TableDemo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -255,8 +268,8 @@
         private AntdUI.Label label1;
         private AntdUI.Label label3;
         private AntdUI.FlowPanel flowPanel3;
-        private AntdUI.Button button2;
-        private AntdUI.Button button5;
+        private AntdUI.Button buttonADD;
+        private AntdUI.Button buttonDEL;
         private AntdUI.Table table_base;
         private AntdUI.FlowPanel flowPanel1;
         private AntdUI.Checkbox checkbox6;
@@ -266,5 +279,6 @@
         private AntdUI.Checkbox checkbox3;
         private AntdUI.Checkbox checkbox2;
         private AntdUI.Label label4;
+        private AntdUI.Button buttonCZ;
     }
 }
