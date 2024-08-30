@@ -34,6 +34,27 @@
             this.label4 = new AntdUI.Label();
             this.label5 = new AntdUI.Label();
             this.stackPanel1 = new AntdUI.StackPanel();
+            this.flowPanel7 = new AntdUI.FlowPanel();
+            this.dropdown_custom = new AntdUI.Dropdown();
+            this.dropdown_enable = new AntdUI.Dropdown();
+            this.dropdown_online = new AntdUI.Dropdown();
+            this.label12 = new AntdUI.Label();
+            this.flowPanel4 = new AntdUI.FlowPanel();
+            this.dropdown_icon = new AntdUI.Dropdown();
+            this.label11 = new AntdUI.Label();
+            this.flowPanel3 = new AntdUI.FlowPanel();
+            this.dropdown_multi = new AntdUI.Dropdown();
+            this.label10 = new AntdUI.Label();
+            this.flowPanel2 = new AntdUI.FlowPanel();
+            this.dropdown4 = new AntdUI.Dropdown();
+            this.dropdown5 = new AntdUI.Dropdown();
+            this.dropdown6 = new AntdUI.Dropdown();
+            this.label9 = new AntdUI.Label();
+            this.flowPanel1 = new AntdUI.FlowPanel();
+            this.dropdown3 = new AntdUI.Dropdown();
+            this.dropdown1 = new AntdUI.Dropdown();
+            this.dropdown2 = new AntdUI.Dropdown();
+            this.label6 = new AntdUI.Label();
             this.flowPanel6 = new AntdUI.FlowPanel();
             this.dropdown33 = new AntdUI.Dropdown();
             this.dropdown32 = new AntdUI.Dropdown();
@@ -47,35 +68,14 @@
             this.dropdown25 = new AntdUI.Dropdown();
             this.label7 = new AntdUI.Label();
             this.divider1 = new AntdUI.Divider();
-            this.label6 = new AntdUI.Label();
-            this.flowPanel1 = new AntdUI.FlowPanel();
-            this.dropdown1 = new AntdUI.Dropdown();
-            this.dropdown2 = new AntdUI.Dropdown();
-            this.dropdown3 = new AntdUI.Dropdown();
-            this.label9 = new AntdUI.Label();
-            this.flowPanel2 = new AntdUI.FlowPanel();
-            this.dropdown4 = new AntdUI.Dropdown();
-            this.dropdown5 = new AntdUI.Dropdown();
-            this.dropdown6 = new AntdUI.Dropdown();
-            this.label10 = new AntdUI.Label();
-            this.flowPanel3 = new AntdUI.FlowPanel();
-            this.dropdown_multi = new AntdUI.Dropdown();
-            this.label11 = new AntdUI.Label();
-            this.flowPanel4 = new AntdUI.FlowPanel();
-            this.dropdown_icon = new AntdUI.Dropdown();
-            this.label12 = new AntdUI.Label();
-            this.flowPanel7 = new AntdUI.FlowPanel();
-            this.dropdown_online = new AntdUI.Dropdown();
-            this.dropdown_enable = new AntdUI.Dropdown();
-            this.dropdown_custom = new AntdUI.Dropdown();
             this.stackPanel1.SuspendLayout();
+            this.flowPanel7.SuspendLayout();
+            this.flowPanel4.SuspendLayout();
+            this.flowPanel3.SuspendLayout();
+            this.flowPanel2.SuspendLayout();
+            this.flowPanel1.SuspendLayout();
             this.flowPanel6.SuspendLayout();
             this.flowPanel5.SuspendLayout();
-            this.flowPanel1.SuspendLayout();
-            this.flowPanel2.SuspendLayout();
-            this.flowPanel3.SuspendLayout();
-            this.flowPanel4.SuspendLayout();
-            this.flowPanel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -153,6 +153,283 @@
             this.stackPanel1.Text = "stackPanel1";
             this.stackPanel1.Vertical = true;
             // 
+            // flowPanel7
+            // 
+            this.flowPanel7.Controls.Add(this.dropdown_custom);
+            this.flowPanel7.Controls.Add(this.dropdown_enable);
+            this.flowPanel7.Controls.Add(this.dropdown_online);
+            this.flowPanel7.Location = new System.Drawing.Point(3, 676);
+            this.flowPanel7.Name = "flowPanel7";
+            this.flowPanel7.Size = new System.Drawing.Size(694, 38);
+            this.flowPanel7.TabIndex = 45;
+            this.flowPanel7.Text = "flowPanel7";
+            // 
+            // dropdown_custom
+            // 
+            this.dropdown_custom.BorderWidth = 2F;
+            this.dropdown_custom.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.dropdown_custom.Location = new System.Drawing.Point(185, 3);
+            this.dropdown_custom.Name = "dropdown_custom";
+            this.dropdown_custom.ShowArrow = true;
+            this.dropdown_custom.Size = new System.Drawing.Size(85, 32);
+            this.dropdown_custom.TabIndex = 6;
+            this.dropdown_custom.Text = "自定义";
+            this.dropdown_custom.Trigger = AntdUI.Trigger.Hover;
+            this.dropdown_custom.WaveSize = 0;
+            // 
+            // dropdown_enable
+            // 
+            this.dropdown_enable.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.dropdown_enable.Location = new System.Drawing.Point(94, 3);
+            this.dropdown_enable.Name = "dropdown_enable";
+            this.dropdown_enable.ShowArrow = true;
+            this.dropdown_enable.Size = new System.Drawing.Size(85, 32);
+            this.dropdown_enable.TabIndex = 5;
+            this.dropdown_enable.Text = "启用状态";
+            this.dropdown_enable.Trigger = AntdUI.Trigger.Hover;
+            this.dropdown_enable.Type = AntdUI.TTypeMini.Primary;
+            this.dropdown_enable.WaveSize = 0;
+            // 
+            // dropdown_online
+            // 
+            this.dropdown_online.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.dropdown_online.Location = new System.Drawing.Point(3, 3);
+            this.dropdown_online.Name = "dropdown_online";
+            this.dropdown_online.ShowArrow = true;
+            this.dropdown_online.Size = new System.Drawing.Size(85, 32);
+            this.dropdown_online.TabIndex = 2;
+            this.dropdown_online.Text = "在线状态";
+            this.dropdown_online.Trigger = AntdUI.Trigger.Hover;
+            this.dropdown_online.Type = AntdUI.TTypeMini.Primary;
+            this.dropdown_online.WaveSize = 0;
+            // 
+            // label12
+            // 
+            this.label12.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label12.Location = new System.Drawing.Point(3, 646);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(694, 24);
+            this.label12.TabIndex = 44;
+            this.label12.Text = "菜单状态";
+            // 
+            // flowPanel4
+            // 
+            this.flowPanel4.Controls.Add(this.dropdown_icon);
+            this.flowPanel4.Location = new System.Drawing.Point(3, 602);
+            this.flowPanel4.Name = "flowPanel4";
+            this.flowPanel4.Size = new System.Drawing.Size(694, 38);
+            this.flowPanel4.TabIndex = 43;
+            this.flowPanel4.Text = "flowPanel4";
+            // 
+            // dropdown_icon
+            // 
+            this.dropdown_icon.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.dropdown_icon.Location = new System.Drawing.Point(3, 3);
+            this.dropdown_icon.Name = "dropdown_icon";
+            this.dropdown_icon.ShowArrow = true;
+            this.dropdown_icon.Size = new System.Drawing.Size(85, 32);
+            this.dropdown_icon.TabIndex = 2;
+            this.dropdown_icon.Text = "Icon";
+            this.dropdown_icon.Trigger = AntdUI.Trigger.Hover;
+            this.dropdown_icon.Type = AntdUI.TTypeMini.Primary;
+            this.dropdown_icon.WaveSize = 0;
+            // 
+            // label11
+            // 
+            this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label11.Location = new System.Drawing.Point(3, 572);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(694, 24);
+            this.label11.TabIndex = 42;
+            this.label11.Text = "图标菜单";
+            // 
+            // flowPanel3
+            // 
+            this.flowPanel3.Controls.Add(this.dropdown_multi);
+            this.flowPanel3.Location = new System.Drawing.Point(3, 528);
+            this.flowPanel3.Name = "flowPanel3";
+            this.flowPanel3.Size = new System.Drawing.Size(694, 38);
+            this.flowPanel3.TabIndex = 41;
+            this.flowPanel3.Text = "flowPanel3";
+            // 
+            // dropdown_multi
+            // 
+            this.dropdown_multi.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.dropdown_multi.Location = new System.Drawing.Point(3, 3);
+            this.dropdown_multi.Name = "dropdown_multi";
+            this.dropdown_multi.ShowArrow = true;
+            this.dropdown_multi.Size = new System.Drawing.Size(85, 32);
+            this.dropdown_multi.TabIndex = 2;
+            this.dropdown_multi.Text = "Items";
+            this.dropdown_multi.Trigger = AntdUI.Trigger.Hover;
+            this.dropdown_multi.Type = AntdUI.TTypeMini.Primary;
+            this.dropdown_multi.WaveSize = 0;
+            // 
+            // label10
+            // 
+            this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label10.Location = new System.Drawing.Point(3, 498);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(694, 24);
+            this.label10.TabIndex = 40;
+            this.label10.Text = "多级菜单";
+            // 
+            // flowPanel2
+            // 
+            this.flowPanel2.Controls.Add(this.dropdown4);
+            this.flowPanel2.Controls.Add(this.dropdown5);
+            this.flowPanel2.Controls.Add(this.dropdown6);
+            this.flowPanel2.Location = new System.Drawing.Point(3, 454);
+            this.flowPanel2.Name = "flowPanel2";
+            this.flowPanel2.Size = new System.Drawing.Size(694, 38);
+            this.flowPanel2.TabIndex = 39;
+            this.flowPanel2.Text = "flowPanel2";
+            // 
+            // dropdown4
+            // 
+            this.dropdown4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.dropdown4.Items.AddRange(new object[] {
+            "first menu item",
+            "second menu item",
+            "third menu item",
+            "fourth menu item",
+            "fifth menu item"});
+            this.dropdown4.Location = new System.Drawing.Point(185, 3);
+            this.dropdown4.MaxCount = 5;
+            this.dropdown4.Name = "dropdown4";
+            this.dropdown4.ShowArrow = true;
+            this.dropdown4.Size = new System.Drawing.Size(85, 32);
+            this.dropdown4.TabIndex = 4;
+            this.dropdown4.Text = "5";
+            this.dropdown4.Trigger = AntdUI.Trigger.Hover;
+            this.dropdown4.Type = AntdUI.TTypeMini.Primary;
+            this.dropdown4.WaveSize = 0;
+            // 
+            // dropdown5
+            // 
+            this.dropdown5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.dropdown5.Items.AddRange(new object[] {
+            "first menu item",
+            "second menu item",
+            "third menu item",
+            "fourth menu item",
+            "fifth menu item"});
+            this.dropdown5.Location = new System.Drawing.Point(94, 3);
+            this.dropdown5.Name = "dropdown5";
+            this.dropdown5.ShowArrow = true;
+            this.dropdown5.Size = new System.Drawing.Size(85, 32);
+            this.dropdown5.TabIndex = 3;
+            this.dropdown5.Text = "4";
+            this.dropdown5.Trigger = AntdUI.Trigger.Hover;
+            this.dropdown5.Type = AntdUI.TTypeMini.Primary;
+            this.dropdown5.WaveSize = 0;
+            // 
+            // dropdown6
+            // 
+            this.dropdown6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.dropdown6.Items.AddRange(new object[] {
+            "first menu item",
+            "second menu item",
+            "third menu item",
+            "fourth menu item",
+            "fifth menu item"});
+            this.dropdown6.Location = new System.Drawing.Point(3, 3);
+            this.dropdown6.MaxCount = 3;
+            this.dropdown6.Name = "dropdown6";
+            this.dropdown6.ShowArrow = true;
+            this.dropdown6.Size = new System.Drawing.Size(85, 32);
+            this.dropdown6.TabIndex = 2;
+            this.dropdown6.Text = "3";
+            this.dropdown6.Trigger = AntdUI.Trigger.Hover;
+            this.dropdown6.Type = AntdUI.TTypeMini.Primary;
+            this.dropdown6.WaveSize = 0;
+            // 
+            // label9
+            // 
+            this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label9.Location = new System.Drawing.Point(3, 424);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(694, 24);
+            this.label9.TabIndex = 38;
+            this.label9.Text = "显示数量";
+            // 
+            // flowPanel1
+            // 
+            this.flowPanel1.Controls.Add(this.dropdown3);
+            this.flowPanel1.Controls.Add(this.dropdown1);
+            this.flowPanel1.Controls.Add(this.dropdown2);
+            this.flowPanel1.Location = new System.Drawing.Point(3, 380);
+            this.flowPanel1.Name = "flowPanel1";
+            this.flowPanel1.Size = new System.Drawing.Size(694, 38);
+            this.flowPanel1.TabIndex = 37;
+            this.flowPanel1.Text = "flowPanel1";
+            // 
+            // dropdown3
+            // 
+            this.dropdown3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.dropdown3.IsLink = true;
+            this.dropdown3.Items.AddRange(new object[] {
+            "first menu item",
+            "second menu item",
+            "third menu item",
+            "fourth menu item",
+            "fifth menu item"});
+            this.dropdown3.Location = new System.Drawing.Point(185, 3);
+            this.dropdown3.Name = "dropdown3";
+            this.dropdown3.ShowArrow = true;
+            this.dropdown3.Size = new System.Drawing.Size(85, 32);
+            this.dropdown3.TabIndex = 4;
+            this.dropdown3.Text = "link Arrow";
+            this.dropdown3.Trigger = AntdUI.Trigger.Hover;
+            this.dropdown3.Type = AntdUI.TTypeMini.Primary;
+            this.dropdown3.WaveSize = 0;
+            // 
+            // dropdown1
+            // 
+            this.dropdown1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.dropdown1.Items.AddRange(new object[] {
+            "first menu item",
+            "second menu item",
+            "third menu item",
+            "fourth menu item",
+            "fifth menu item"});
+            this.dropdown1.Location = new System.Drawing.Point(94, 3);
+            this.dropdown1.Name = "dropdown1";
+            this.dropdown1.ShowArrow = true;
+            this.dropdown1.Size = new System.Drawing.Size(85, 32);
+            this.dropdown1.TabIndex = 3;
+            this.dropdown1.Text = "Arrow";
+            this.dropdown1.Trigger = AntdUI.Trigger.Hover;
+            this.dropdown1.Type = AntdUI.TTypeMini.Primary;
+            this.dropdown1.WaveSize = 0;
+            // 
+            // dropdown2
+            // 
+            this.dropdown2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.dropdown2.Items.AddRange(new object[] {
+            "first menu item",
+            "second menu item",
+            "third menu item",
+            "fourth menu item",
+            "fifth menu item"});
+            this.dropdown2.Location = new System.Drawing.Point(3, 3);
+            this.dropdown2.Name = "dropdown2";
+            this.dropdown2.Size = new System.Drawing.Size(85, 32);
+            this.dropdown2.TabIndex = 2;
+            this.dropdown2.Text = "无";
+            this.dropdown2.Trigger = AntdUI.Trigger.Hover;
+            this.dropdown2.Type = AntdUI.TTypeMini.Primary;
+            this.dropdown2.WaveSize = 0;
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.Location = new System.Drawing.Point(3, 350);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(694, 24);
+            this.label6.TabIndex = 36;
+            this.label6.Text = "显示箭头";
+            // 
             // flowPanel6
             // 
             this.flowPanel6.Controls.Add(this.dropdown33);
@@ -183,7 +460,7 @@
             this.dropdown33.Placement = AntdUI.TAlignFrom.TR;
             this.dropdown33.Size = new System.Drawing.Size(85, 32);
             this.dropdown33.TabIndex = 7;
-            this.dropdown33.Text = "TopRight";
+            this.dropdown33.Text = "TR";
             this.dropdown33.Trigger = AntdUI.Trigger.Hover;
             this.dropdown33.Type = AntdUI.TTypeMini.Primary;
             this.dropdown33.WaveSize = 0;
@@ -225,7 +502,7 @@
             this.dropdown31.Placement = AntdUI.TAlignFrom.TL;
             this.dropdown31.Size = new System.Drawing.Size(85, 32);
             this.dropdown31.TabIndex = 5;
-            this.dropdown31.Text = "TopLeft";
+            this.dropdown31.Text = "TL";
             this.dropdown31.Trigger = AntdUI.Trigger.Hover;
             this.dropdown31.Type = AntdUI.TTypeMini.Primary;
             this.dropdown31.WaveSize = 0;
@@ -244,7 +521,7 @@
             this.dropdown30.Placement = AntdUI.TAlignFrom.BR;
             this.dropdown30.Size = new System.Drawing.Size(85, 32);
             this.dropdown30.TabIndex = 4;
-            this.dropdown30.Text = "BottomRight";
+            this.dropdown30.Text = "BR";
             this.dropdown30.Trigger = AntdUI.Trigger.Hover;
             this.dropdown30.Type = AntdUI.TTypeMini.Primary;
             this.dropdown30.WaveSize = 0;
@@ -281,7 +558,7 @@
             this.dropdown34.Name = "dropdown34";
             this.dropdown34.Size = new System.Drawing.Size(85, 32);
             this.dropdown34.TabIndex = 2;
-            this.dropdown34.Text = "BottomLeft";
+            this.dropdown34.Text = "BL";
             this.dropdown34.Trigger = AntdUI.Trigger.Hover;
             this.dropdown34.Type = AntdUI.TTypeMini.Primary;
             this.dropdown34.WaveSize = 0;
@@ -358,283 +635,6 @@
             this.divider1.Size = new System.Drawing.Size(694, 12);
             this.divider1.TabIndex = 31;
             // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.Location = new System.Drawing.Point(3, 350);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(694, 24);
-            this.label6.TabIndex = 36;
-            this.label6.Text = "显示箭头";
-            // 
-            // flowPanel1
-            // 
-            this.flowPanel1.Controls.Add(this.dropdown3);
-            this.flowPanel1.Controls.Add(this.dropdown1);
-            this.flowPanel1.Controls.Add(this.dropdown2);
-            this.flowPanel1.Location = new System.Drawing.Point(3, 380);
-            this.flowPanel1.Name = "flowPanel1";
-            this.flowPanel1.Size = new System.Drawing.Size(694, 38);
-            this.flowPanel1.TabIndex = 37;
-            this.flowPanel1.Text = "flowPanel1";
-            // 
-            // dropdown1
-            // 
-            this.dropdown1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.dropdown1.Items.AddRange(new object[] {
-            "first menu item",
-            "second menu item",
-            "third menu item",
-            "fourth menu item",
-            "fifth menu item"});
-            this.dropdown1.Location = new System.Drawing.Point(94, 3);
-            this.dropdown1.Name = "dropdown1";
-            this.dropdown1.ShowArrow = true;
-            this.dropdown1.Size = new System.Drawing.Size(85, 32);
-            this.dropdown1.TabIndex = 3;
-            this.dropdown1.Text = "Arrow";
-            this.dropdown1.Trigger = AntdUI.Trigger.Hover;
-            this.dropdown1.Type = AntdUI.TTypeMini.Primary;
-            this.dropdown1.WaveSize = 0;
-            // 
-            // dropdown2
-            // 
-            this.dropdown2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.dropdown2.Items.AddRange(new object[] {
-            "first menu item",
-            "second menu item",
-            "third menu item",
-            "fourth menu item",
-            "fifth menu item"});
-            this.dropdown2.Location = new System.Drawing.Point(3, 3);
-            this.dropdown2.Name = "dropdown2";
-            this.dropdown2.Size = new System.Drawing.Size(85, 32);
-            this.dropdown2.TabIndex = 2;
-            this.dropdown2.Text = "无";
-            this.dropdown2.Trigger = AntdUI.Trigger.Hover;
-            this.dropdown2.Type = AntdUI.TTypeMini.Primary;
-            this.dropdown2.WaveSize = 0;
-            // 
-            // dropdown3
-            // 
-            this.dropdown3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.dropdown3.IsLink = true;
-            this.dropdown3.Items.AddRange(new object[] {
-            "first menu item",
-            "second menu item",
-            "third menu item",
-            "fourth menu item",
-            "fifth menu item"});
-            this.dropdown3.Location = new System.Drawing.Point(185, 3);
-            this.dropdown3.Name = "dropdown3";
-            this.dropdown3.ShowArrow = true;
-            this.dropdown3.Size = new System.Drawing.Size(85, 32);
-            this.dropdown3.TabIndex = 4;
-            this.dropdown3.Text = "link Arrow";
-            this.dropdown3.Trigger = AntdUI.Trigger.Hover;
-            this.dropdown3.Type = AntdUI.TTypeMini.Primary;
-            this.dropdown3.WaveSize = 0;
-            // 
-            // label9
-            // 
-            this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label9.Location = new System.Drawing.Point(3, 424);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(694, 24);
-            this.label9.TabIndex = 38;
-            this.label9.Text = "显示数量";
-            // 
-            // flowPanel2
-            // 
-            this.flowPanel2.Controls.Add(this.dropdown4);
-            this.flowPanel2.Controls.Add(this.dropdown5);
-            this.flowPanel2.Controls.Add(this.dropdown6);
-            this.flowPanel2.Location = new System.Drawing.Point(3, 454);
-            this.flowPanel2.Name = "flowPanel2";
-            this.flowPanel2.Size = new System.Drawing.Size(694, 38);
-            this.flowPanel2.TabIndex = 39;
-            this.flowPanel2.Text = "flowPanel2";
-            // 
-            // dropdown4
-            // 
-            this.dropdown4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.dropdown4.Items.AddRange(new object[] {
-            "first menu item",
-            "second menu item",
-            "third menu item",
-            "fourth menu item",
-            "fifth menu item"});
-            this.dropdown4.Location = new System.Drawing.Point(185, 3);
-            this.dropdown4.MaxCount = 5;
-            this.dropdown4.Name = "dropdown4";
-            this.dropdown4.ShowArrow = true;
-            this.dropdown4.Size = new System.Drawing.Size(85, 32);
-            this.dropdown4.TabIndex = 4;
-            this.dropdown4.Text = "5";
-            this.dropdown4.Trigger = AntdUI.Trigger.Hover;
-            this.dropdown4.Type = AntdUI.TTypeMini.Primary;
-            this.dropdown4.WaveSize = 0;
-            // 
-            // dropdown5
-            // 
-            this.dropdown5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.dropdown5.Items.AddRange(new object[] {
-            "first menu item",
-            "second menu item",
-            "third menu item",
-            "fourth menu item",
-            "fifth menu item"});
-            this.dropdown5.Location = new System.Drawing.Point(94, 3);
-            this.dropdown5.Name = "dropdown5";
-            this.dropdown5.ShowArrow = true;
-            this.dropdown5.Size = new System.Drawing.Size(85, 32);
-            this.dropdown5.TabIndex = 3;
-            this.dropdown5.Text = "4";
-            this.dropdown5.Trigger = AntdUI.Trigger.Hover;
-            this.dropdown5.Type = AntdUI.TTypeMini.Primary;
-            this.dropdown5.WaveSize = 0;
-            // 
-            // dropdown6
-            // 
-            this.dropdown6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.dropdown6.Items.AddRange(new object[] {
-            "first menu item",
-            "second menu item",
-            "third menu item",
-            "fourth menu item",
-            "fifth menu item"});
-            this.dropdown6.Location = new System.Drawing.Point(3, 3);
-            this.dropdown6.MaxCount = 3;
-            this.dropdown6.Name = "dropdown6";
-            this.dropdown6.ShowArrow = true;
-            this.dropdown6.Size = new System.Drawing.Size(85, 32);
-            this.dropdown6.TabIndex = 2;
-            this.dropdown6.Text = "3";
-            this.dropdown6.Trigger = AntdUI.Trigger.Hover;
-            this.dropdown6.Type = AntdUI.TTypeMini.Primary;
-            this.dropdown6.WaveSize = 0;
-            // 
-            // label10
-            // 
-            this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label10.Location = new System.Drawing.Point(3, 498);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(694, 24);
-            this.label10.TabIndex = 40;
-            this.label10.Text = "多级菜单";
-            // 
-            // flowPanel3
-            // 
-            this.flowPanel3.Controls.Add(this.dropdown_multi);
-            this.flowPanel3.Location = new System.Drawing.Point(3, 528);
-            this.flowPanel3.Name = "flowPanel3";
-            this.flowPanel3.Size = new System.Drawing.Size(694, 38);
-            this.flowPanel3.TabIndex = 41;
-            this.flowPanel3.Text = "flowPanel3";
-            // 
-            // dropdown_multi
-            // 
-            this.dropdown_multi.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.dropdown_multi.Location = new System.Drawing.Point(3, 3);
-            this.dropdown_multi.Name = "dropdown_multi";
-            this.dropdown_multi.ShowArrow = true;
-            this.dropdown_multi.Size = new System.Drawing.Size(85, 32);
-            this.dropdown_multi.TabIndex = 2;
-            this.dropdown_multi.Text = "Items";
-            this.dropdown_multi.Trigger = AntdUI.Trigger.Hover;
-            this.dropdown_multi.Type = AntdUI.TTypeMini.Primary;
-            this.dropdown_multi.WaveSize = 0;
-            // 
-            // label11
-            // 
-            this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label11.Location = new System.Drawing.Point(3, 572);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(694, 24);
-            this.label11.TabIndex = 42;
-            this.label11.Text = "图标菜单";
-            // 
-            // flowPanel4
-            // 
-            this.flowPanel4.Controls.Add(this.dropdown_icon);
-            this.flowPanel4.Location = new System.Drawing.Point(3, 602);
-            this.flowPanel4.Name = "flowPanel4";
-            this.flowPanel4.Size = new System.Drawing.Size(694, 38);
-            this.flowPanel4.TabIndex = 43;
-            this.flowPanel4.Text = "flowPanel4";
-            // 
-            // dropdown_icon
-            // 
-            this.dropdown_icon.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.dropdown_icon.Location = new System.Drawing.Point(3, 3);
-            this.dropdown_icon.Name = "dropdown_icon";
-            this.dropdown_icon.ShowArrow = true;
-            this.dropdown_icon.Size = new System.Drawing.Size(85, 32);
-            this.dropdown_icon.TabIndex = 2;
-            this.dropdown_icon.Text = "Icon";
-            this.dropdown_icon.Trigger = AntdUI.Trigger.Hover;
-            this.dropdown_icon.Type = AntdUI.TTypeMini.Primary;
-            this.dropdown_icon.WaveSize = 0;
-            // 
-            // label12
-            // 
-            this.label12.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label12.Location = new System.Drawing.Point(3, 646);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(694, 24);
-            this.label12.TabIndex = 44;
-            this.label12.Text = "菜单状态";
-            // 
-            // flowPanel7
-            // 
-            this.flowPanel7.Controls.Add(this.dropdown_custom);
-            this.flowPanel7.Controls.Add(this.dropdown_enable);
-            this.flowPanel7.Controls.Add(this.dropdown_online);
-            this.flowPanel7.Location = new System.Drawing.Point(3, 676);
-            this.flowPanel7.Name = "flowPanel7";
-            this.flowPanel7.Size = new System.Drawing.Size(694, 38);
-            this.flowPanel7.TabIndex = 45;
-            this.flowPanel7.Text = "flowPanel7";
-            // 
-            // dropdown_online
-            // 
-            this.dropdown_online.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.dropdown_online.Location = new System.Drawing.Point(3, 3);
-            this.dropdown_online.Name = "dropdown_online";
-            this.dropdown_online.ShowArrow = true;
-            this.dropdown_online.Size = new System.Drawing.Size(85, 32);
-            this.dropdown_online.TabIndex = 2;
-            this.dropdown_online.Text = "在线状态";
-            this.dropdown_online.Trigger = AntdUI.Trigger.Hover;
-            this.dropdown_online.Type = AntdUI.TTypeMini.Primary;
-            this.dropdown_online.WaveSize = 0;
-            // 
-            // dropdown_enable
-            // 
-            this.dropdown_enable.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.dropdown_enable.Location = new System.Drawing.Point(94, 3);
-            this.dropdown_enable.Name = "dropdown_enable";
-            this.dropdown_enable.ShowArrow = true;
-            this.dropdown_enable.Size = new System.Drawing.Size(85, 32);
-            this.dropdown_enable.TabIndex = 5;
-            this.dropdown_enable.Text = "启用状态";
-            this.dropdown_enable.Trigger = AntdUI.Trigger.Hover;
-            this.dropdown_enable.Type = AntdUI.TTypeMini.Primary;
-            this.dropdown_enable.WaveSize = 0;
-            // 
-            // dropdown_custom
-            // 
-            this.dropdown_custom.BorderWidth = 2F;
-            this.dropdown_custom.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.dropdown_custom.Location = new System.Drawing.Point(185, 3);
-            this.dropdown_custom.Name = "dropdown_custom";
-            this.dropdown_custom.ShowArrow = true;
-            this.dropdown_custom.Size = new System.Drawing.Size(85, 32);
-            this.dropdown_custom.TabIndex = 6;
-            this.dropdown_custom.Text = "自定义";
-            this.dropdown_custom.Trigger = AntdUI.Trigger.Hover;
-            this.dropdown_custom.WaveSize = 0;
-            // 
             // DropDownDemo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -642,13 +642,13 @@
             this.Name = "DropDownDemo";
             this.Size = new System.Drawing.Size(700, 730);
             this.stackPanel1.ResumeLayout(false);
+            this.flowPanel7.ResumeLayout(false);
+            this.flowPanel4.ResumeLayout(false);
+            this.flowPanel3.ResumeLayout(false);
+            this.flowPanel2.ResumeLayout(false);
+            this.flowPanel1.ResumeLayout(false);
             this.flowPanel6.ResumeLayout(false);
             this.flowPanel5.ResumeLayout(false);
-            this.flowPanel1.ResumeLayout(false);
-            this.flowPanel2.ResumeLayout(false);
-            this.flowPanel3.ResumeLayout(false);
-            this.flowPanel4.ResumeLayout(false);
-            this.flowPanel7.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

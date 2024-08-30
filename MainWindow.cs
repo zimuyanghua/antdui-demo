@@ -214,6 +214,24 @@ namespace AntdUIDemo
                 case "Badge":
                     control = new BadgeDemo();
                     break;
+                case "Calendar":
+                    control = new CalendarDemo(this);
+                    break;
+                case "Carousel":
+                    control = new CarouselDemo();
+                    break;
+                case "Label":
+                    control = new LabelDemo();
+                    break;
+                case "Popover":
+                    control = new PopoverDemo(this);
+                    break;
+                case "Preview":
+                    control = new PreviewDemo(this);
+                    break;
+                case "Segmented":
+                    control = new SegmentedDemo();
+                    break;
             }
             if (control != null)
             {

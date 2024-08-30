@@ -56,7 +56,7 @@ namespace AntdUIDemo.Models
                 new MenuItems { Text = "Calendar 日历", Tag = "Calendar"},
                 new MenuItems { Text = "Carousel 走马灯", Tag = "Carousel"},
                 new MenuItems { Text = "Label 标签", Tag = "Label"},
-                new MenuItems { Text = "Popver 气泡卡片", Tag = "Popver"},
+                new MenuItems { Text = "Popover 气泡卡片", Tag = "Popover"},
                 new MenuItems { Text = "Preview 图片预览", Tag = "Preview"},
                 new MenuItems { Text = "Segmented 分段控制器", Tag = "Segmented"},
                 new MenuItems { Text = "Table 表格", Tag = "Table"},

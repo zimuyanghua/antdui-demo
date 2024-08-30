@@ -7,11 +7,28 @@ namespace AntdUIDemo.Views
 {
     public partial class ButtonDemo : UserControl
     {
-        private AntdUI.TooltipComponent tooltipComponent = new AntdUI.TooltipComponent();
+        private AntdUI.TooltipComponent tooltipComponent = new AntdUI.TooltipComponent()
+        {
+            Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point, ((byte)(134))),
+        };
         public ButtonDemo()
         {
             InitializeComponent();
             // 遍历窗体中的所有控件并绑定 tooltip
+            BindButtonWithToolTip(this);
+            BindEventHandler();
+        }
+
+        private void BindEventHandler()
+        {
+            button_toggle.Click += Button_toggle_Click;
+            button_toggle2.Click += Button_toggle_Click;
+        }
+
+        private void Button_toggle_Click(object sender, EventArgs e)
+        {
+            var button = (AntdUI.Button)sender;
+            button.Toggle = !button.Toggle;
             BindButtonWithToolTip(this);
         }
 
@@ -32,9 +49,11 @@ namespace AntdUIDemo.Views
                     bool joinright = button.JoinRight;
                     var iconsvg = button.IconSvg;
                     var backentend = button.BackExtend;
+                    var toggle = button.Toggle;
+                    var toggletype = button.ToggleType;
+                    var toggleiconsvg = button.ToggleIconSvg;
                     // 构建SetTip文本
                     var tooltipText = new StringBuilder();
-                    tooltipComponent.Font = new Font("Microsoft YaHei UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
                     tooltipText.AppendLine($"Type: {type}");
                     tooltipText.AppendLine($"BorderWidth: {borderwidth}");
                     tooltipText.AppendLine($"Radius: {radius}");
@@ -64,6 +83,16 @@ namespace AntdUIDemo.Views
                     if (!string.IsNullOrEmpty(backentend))
                     {
                         tooltipText.AppendLine($"BackExtend: {backentend}");
+                    }
+                    if (toggle)
+                    {
+                        tooltipText.AppendLine($"Toggle: {toggle}");
+                        if (toggletype is not null)
+                            tooltipText.AppendLine($"ToggleType: {toggletype}");
+                        if (!string.IsNullOrEmpty(toggleiconsvg))
+                        {
+                            tooltipText.AppendLine($"ToggleIconSvg: 参见ToggleIconSvg属性");
+                        }
                     }
                     tooltipComponent.SetTip(control, tooltipText.ToString());
                 }

@@ -95,7 +95,7 @@
 #### Calendar 日历
 #### Carousel 走马灯
 #### Label 标签
-#### Popver 气泡卡片
+#### Popover 气泡卡片
 #### Preview 图片预览
 #### Segmented 分段控制器
 #### Table 表格
