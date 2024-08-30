@@ -232,6 +232,9 @@ namespace AntdUIDemo
                 case "Segmented":
                     control = new SegmentedDemo();
                     break;
+                case "Table":
+                    control = new TableDemo(this);
+                    break;
             }
             if (control != null)
             {
