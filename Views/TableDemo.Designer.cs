@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.stackPanel1 = new AntdUI.StackPanel();
+            this.label4 = new AntdUI.Label();
             this.table_base = new AntdUI.Table();
             this.flowPanel1 = new AntdUI.FlowPanel();
             this.checkbox5 = new AntdUI.Checkbox();
@@ -38,14 +39,13 @@
             this.checkbox6 = new AntdUI.Checkbox();
             this.checkbox1 = new AntdUI.Checkbox();
             this.flowPanel3 = new AntdUI.FlowPanel();
+            this.buttonCZ = new AntdUI.Button();
             this.buttonDEL = new AntdUI.Button();
             this.buttonADD = new AntdUI.Button();
             this.label3 = new AntdUI.Label();
             this.divider1 = new AntdUI.Divider();
             this.label2 = new AntdUI.Label();
             this.label1 = new AntdUI.Label();
-            this.label4 = new AntdUI.Label();
-            this.buttonCZ = new AntdUI.Button();
             this.stackPanel1.SuspendLayout();
             this.flowPanel1.SuspendLayout();
             this.flowPanel3.SuspendLayout();
@@ -69,11 +69,22 @@
             this.stackPanel1.Text = "stackPanel1";
             this.stackPanel1.Vertical = true;
             // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.Location = new System.Drawing.Point(3, 509);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(694, 24);
+            this.label4.TabIndex = 31;
+            this.label4.Text = "分页";
+            // 
             // table_base
             // 
+            this.table_base.EmptyHeader = true;
             this.table_base.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.table_base.Location = new System.Drawing.Point(3, 199);
             this.table_base.Name = "table_base";
+            this.table_base.ShowTip = false;
             this.table_base.Size = new System.Drawing.Size(694, 304);
             this.table_base.TabIndex = 30;
             this.table_base.Text = "table1";
@@ -171,6 +182,17 @@
             this.flowPanel3.TabIndex = 27;
             this.flowPanel3.Text = "flowPanel3";
             // 
+            // buttonCZ
+            // 
+            this.buttonCZ.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.buttonCZ.Location = new System.Drawing.Point(175, 3);
+            this.buttonCZ.Name = "buttonCZ";
+            this.buttonCZ.Size = new System.Drawing.Size(80, 32);
+            this.buttonCZ.TabIndex = 6;
+            this.buttonCZ.Text = "重置";
+            this.buttonCZ.Type = AntdUI.TTypeMini.Warn;
+            this.buttonCZ.WaveSize = 0;
+            // 
             // buttonDEL
             // 
             this.buttonDEL.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -226,26 +248,6 @@
             this.label1.Size = new System.Drawing.Size(694, 40);
             this.label1.TabIndex = 21;
             this.label1.Text = "Table 表格";
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(3, 509);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(694, 24);
-            this.label4.TabIndex = 31;
-            this.label4.Text = "分页";
-            // 
-            // buttonCZ
-            // 
-            this.buttonCZ.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.buttonCZ.Location = new System.Drawing.Point(175, 3);
-            this.buttonCZ.Name = "buttonCZ";
-            this.buttonCZ.Size = new System.Drawing.Size(80, 32);
-            this.buttonCZ.TabIndex = 6;
-            this.buttonCZ.Text = "重置";
-            this.buttonCZ.Type = AntdUI.TTypeMini.Warn;
-            this.buttonCZ.WaveSize = 0;
             // 
             // TableDemo
             // 

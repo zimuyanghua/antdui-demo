@@ -235,6 +235,9 @@ namespace AntdUIDemo
                 case "Table":
                     control = new TableDemo(this);
                     break;
+                case "Drawer":
+                    control = new DrawerDemo(this);
+                    break;
             }
             if (control != null)
             {

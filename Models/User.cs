@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace AntdUIDemo.Models
 {
-    internal class User : NotifyProperty
+    public class User : NotifyProperty
     {
         private int id { get; set; }
         private bool selected;

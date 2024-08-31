@@ -150,10 +150,9 @@
             this.switch_autoscroll.AutoCheck = true;
             this.switch_autoscroll.Location = new System.Drawing.Point(97, 3);
             this.switch_autoscroll.Name = "switch_autoscroll";
-            this.switch_autoscroll.Size = new System.Drawing.Size(60, 26);
+            this.switch_autoscroll.Size = new System.Drawing.Size(50, 26);
             this.switch_autoscroll.TabIndex = 5;
             this.switch_autoscroll.Text = "switch1";
-            this.switch_autoscroll.WaveSize = 0;
             // 
             // label4
             // 
