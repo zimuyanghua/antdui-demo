@@ -2,14 +2,9 @@
 using AntdUIDemo.Models;
 using AntdUIDemo.Views.Table;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace AntdUIDemo.Views
@@ -50,7 +45,7 @@ namespace AntdUIDemo.Views
                 new Column("CellImages", "图片",ColumnAlign.Center),
                 new Column("CellTags", "标签",ColumnAlign.Center),
                 new Column("CellBadge", "徽标",ColumnAlign.Center),
-                new Column("CellText", "富文本",ColumnAlign.Center),
+                new Column("CellText", "富文本"),
                 new Column("CellProgress", "进度条",ColumnAlign.Center),
                 new Column("CellDivider", "分割线",ColumnAlign.Center),
                 new Column("CellLinks", "链接",ColumnAlign.Center),
@@ -59,10 +54,85 @@ namespace AntdUIDemo.Views
 
         private void BindEventHandler()
         {
+            buttonADD.Click += ButtonADD_Click;
             buttonDEL.Click += ButtonDEL_Click;
+
+            checkbox_border.CheckedChanged += Checkbox_CheckedChanged;
+            checkbox_columndragsort.CheckedChanged += Checkbox_CheckedChanged;
+            checkbox_fixheader.CheckedChanged += Checkbox_CheckedChanged;
+            checkbox_rowstyle.CheckedChanged += Checkbox_rowstyle_CheckedChanged;
+            checkbox_sort.CheckedChanged += Checkbox_CheckedChanged;
+            checkbox_visibleheader.CheckedChanged += Checkbox_CheckedChanged;
 
             table_base.CellClick += Table_base_CellClick;
             table_base.CellButtonClick += Table_base_CellButtonClick;
+        }
+
+        private void Checkbox_rowstyle_CheckedChanged(object sender, BoolEventArgs e)
+        {
+            if (e.Value)
+            {
+                table_base.SetRowStyle += Table_base_SetRowStyle;
+                table_base.Invalidate();
+            }
+            else
+            {
+                table_base.SetRowStyle -= Table_base_SetRowStyle;
+                table_base.Invalidate();
+            }
+        }
+
+        private void Checkbox_CheckedChanged(object sender, BoolEventArgs e)
+        {
+            table_base.Bordered = checkbox_border.Checked;
+            table_base.ColumnDragSort = checkbox_columndragsort.Checked;
+            table_base.FixedHeader = checkbox_fixheader.Checked;
+            table_base.VisibleHeader = checkbox_visibleheader.Checked;
+
+            foreach (var item in table_base.Columns)
+            {
+                item.SortOrder = checkbox_sort.Checked;
+            }
+        }
+
+        private AntdUI.Table.CellStyleInfo Table_base_SetRowStyle(object sender, TableSetRowStyleEventArgs e)
+        {
+            if (e.RowIndex % 2 == 0)
+            {
+                return new AntdUI.Table.CellStyleInfo
+                {
+                    BackColor = AntdUI.Style.Db.ErrorBg,
+                };
+            }
+            return null;
+        }
+
+        private void ButtonADD_Click(object sender, EventArgs e)
+        {
+            User useradd = new User()
+            {
+                CellBadge = new CellBadge(TState.Processing, "测试中"),
+                CellImages = [new CellImage(Properties.Resources.head)],
+                CellDivider = new CellDivider(),
+                CellTags = [new CellTag("测试", TTypeMini.Primary), new CellTag("测试", TTypeMini.Success), new CellTag("测试", TTypeMini.Warn)],
+                CellText = new CellText("这是一个无图标的文本"),
+                CellProgress = new CellProgress(0.5f),
+                CellLinks = [new CellLink("https://gitee.com/antdui/AntdUI", "AntdUI"),
+                    new CellButton(Guid.NewGuid().ToString(),"编辑",TTypeMini.Primary),
+                    new CellButton(Guid.NewGuid().ToString(),"删除",TTypeMini.Error)],
+            };
+            var form = new UserEdit(window, useradd) { Size = new Size(700, 400) };
+            AntdUI.Modal.open(new AntdUI.Modal.Config(window, "", form, TType.None)
+            {
+                BtnHeight = 0,
+                Keyboard = false,
+                MaskClosable = false,
+            });
+            if (form.submit)
+            {
+                antList.Add(useradd);
+            }
+
         }
 
         private void Table_base_CellClick(object sender, TableClickEventArgs e)
@@ -78,10 +148,9 @@ namespace AntdUIDemo.Views
                         {
                             if (item.Text == "编辑")
                             {
-                                var form = new UserEdit(user) { Size = new Size(500, 300) };
+                                var form = new UserEdit(window, user) { Size = new Size(500, 300) };
                                 AntdUI.Drawer.open(new AntdUI.Drawer.Config(window, form)
                                 {
-                                    MaskClosable = true,
                                     OnLoad = () =>
                                     {
                                         AntdUI.Message.info(window, "进入编辑", autoClose: 1);
@@ -96,7 +165,16 @@ namespace AntdUIDemo.Views
                             {
                                 var result = Modal.open(window, "删除警告！", "确认要删除选择的数据吗？", TType.Warn);
                                 if (result == DialogResult.OK)
-                                    antList.Remove(user);
+                                {
+                                    //使用反转for循环删除
+                                    for (int i = antList.Count - 1; i >= 0; i--)
+                                    {
+                                        if (antList[i].Selected)
+                                        {
+                                            antList.Remove(antList[i]);
+                                        }
+                                    }
+                                }
                             }
                             else
                                 AntdUI.Message.info(window, item.Text, autoClose: 1);
@@ -130,10 +208,9 @@ namespace AntdUIDemo.Views
                 {
                     //暂不支持进入整行编辑，只支持指定单元格编辑，推荐使用弹窗或抽屉编辑整行数据
                     case "编辑":
-                        var form = new UserEdit(user) { Size = new Size(500, 300) };
+                        var form = new UserEdit(window, user) { Size = new Size(500, 300) };
                         AntdUI.Drawer.open(new AntdUI.Drawer.Config(window, form)
                         {
-                            MaskClosable = true,
                             OnLoad = () =>
                             {
                                 AntdUI.Message.info(window, "进入编辑", autoClose: 1);
@@ -158,7 +235,23 @@ namespace AntdUIDemo.Views
 
         private void ButtonDEL_Click(object sender, EventArgs e)
         {
-
+            if (antList.Count == 0 || !antList.Any(x => x.Selected))
+            {
+                AntdUI.Message.warn(window, "请选择要删除的行！", autoClose: 3);
+                return;
+            }
+            var result = Modal.open(window, "删除警告！", "确认要删除选择的数据吗？", TType.Warn);
+            if (result == DialogResult.OK)
+            {
+                //使用反转for循环删除
+                for (int i = antList.Count - 1; i >= 0; i--)
+                {
+                    if (antList[i].Selected)
+                    {
+                        antList.Remove(antList[i]);
+                    }
+                }
+            }
         }
 
         private void InitData()
@@ -169,13 +262,11 @@ namespace AntdUIDemo.Views
             {
                 antList.Add(new User
                 {
-                    Id = i,
-                    Selected = false,
                     Name = "张三",
-                    Age = 30,
+                    Age = 30 + i,
                     Address = $"浙江省杭州市西湖区湖底公园{i + 1}号",
                     Enabled = i % 2 == 0,
-                    //CellImages = [new CellImage(Properties.Resources.bg1)],
+                    CellImages = [new CellImage(Properties.Resources.head)],
                     CellTags = [new CellTag("测试", TTypeMini.Primary), new CellTag("测试", TTypeMini.Success), new CellTag("测试", TTypeMini.Warn)],
                     CellBadge = new CellBadge(TState.Processing, "测试中"),
                     CellText = new CellText("这是一个带图标的文本")
@@ -184,8 +275,8 @@ namespace AntdUIDemo.Views
                         PrefixSvg = "<svg viewBox=\"64 64 896 896\" focusable=\"false\" data-icon=\"search\" width=\"1em\" height=\"1em\" fill=\"currentColor\" aria-hidden=\"true\"><path d=\"M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0011.6 0l43.6-43.5a8.2 8.2 0 000-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z\"></path></svg>"
                     },
                     CellLinks = [new CellLink("https://gitee.com/antdui/AntdUI", "AntdUI"),
-                    new CellButton(i.ToString(),"编辑",TTypeMini.Primary),
-                    new CellButton(i.ToString(),"删除",TTypeMini.Error)],
+                    new CellButton(Guid.NewGuid().ToString(),"编辑",TTypeMini.Primary),
+                    new CellButton(Guid.NewGuid().ToString(),"删除",TTypeMini.Error)],
                     //value:0-1
                     CellProgress = new CellProgress(0.5f),
                     CellDivider = new CellDivider(),

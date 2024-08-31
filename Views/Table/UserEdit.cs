@@ -13,9 +13,12 @@ namespace AntdUIDemo.Views.Table
 {
     public partial class UserEdit : UserControl
     {
+        private AntdUI.Window window;
         private User user;
-        public UserEdit(User _user)
+        public bool submit;
+        public UserEdit(AntdUI.Window _window, User _user)
         {
+            this.window = _window;
             user = _user;
             InitializeComponent();
             //设置默认值
@@ -32,6 +35,7 @@ namespace AntdUIDemo.Views.Table
 
         private void Button_cancel_Click(object sender, EventArgs e)
         {
+            submit = false;
             this.Dispose();
         }
 
@@ -42,10 +46,13 @@ namespace AntdUIDemo.Views.Table
             if (String.IsNullOrEmpty(input_name.Text))
             {
                 input_name.Status = AntdUI.TType.Error;
+                AntdUI.Message.warn(window, "姓名不能为空！", autoClose: 3);
+                return;
             }
             user.Name = input_name.Text;
             user.Address = input_addr.Text;
             user.Age = (int)input_age.Value;
+            submit = true;
             this.Dispose();
         }
 

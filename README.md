@@ -16,7 +16,7 @@
 ```
 ## ⚠️ 注意事项
 - 电脑屏幕分辨率低于 1920×1080(1080P) 请使用大于等于 1080P 分辨率的屏幕开发
-- 电脑屏幕分辨率大于 1080P 或者缩放不是 100% 的，可选择以下 **任一方式** 运行项目
+- 电脑屏幕分辨率大于 1080P 或者缩放不是 100% 的，务必选择以下 **任一方式** 运行项目
 	1. 按照上述 **快速开始** 的第二条打开项目，详细原因见 [解决 Visual Studio 中 Windows 窗体设计器的 HDPI/缩放问题](https://learn.microsoft.com/zh-cn/visualstudio/designers/disable-dpi-awareness?view=vs-2022) ，如下所示	
 ![vsstart](assets/screenshots/vsstart.png)
 	2. 直接打开项目，在窗口页面提示点击 **使用 100% 缩放比例重新启动 Visual Studio**，如下所示
@@ -48,6 +48,7 @@
 ![Panel](assets/screenshots/Panel.png)
 #### StackPanel 堆叠布局
 ![StackPanel](assets/screenshots/StackPanel.png)
+#### VirtualPanel 虚拟布局
 
 ### 导航
 #### Dropdown 下拉菜单

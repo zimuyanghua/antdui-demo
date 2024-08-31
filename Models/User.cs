@@ -10,12 +10,11 @@ namespace AntdUIDemo.Models
 {
     public class User : NotifyProperty
     {
-        private int id { get; set; }
-        private bool selected;
+        private bool selected = false;
         private string name;
-        private int age;
+        private int age = 0;
         private string address;
-        private bool enabled;
+        private bool enabled = false;
         private CellImage[] cellImages;
         private CellTag[] cellTags;
         private CellBadge cellBadge;
@@ -23,17 +22,6 @@ namespace AntdUIDemo.Models
         private CellLink[] cellLinks;
         private CellProgress cellProgress;
         private CellDivider cellDivider;
-
-        public int Id
-        {
-            get { return id; }
-            set
-            {
-                if (id == value) return;
-                id = value;
-                OnPropertyChanged(nameof(Id));
-            }
-        }
 
         public bool Selected
         {

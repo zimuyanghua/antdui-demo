@@ -21,7 +21,8 @@ namespace AntdUIDemo.Models
                 new MenuItems { Text = "FlowPanel 流动布局", Tag = "FlowPanel"},
                 new MenuItems { Text = "GridPanel 网格布局", Tag = "GridPanel"},
                 new MenuItems { Text = "Panel 面板", Tag = "Panel"},
-                new MenuItems { Text = "StackPanel 堆叠布局", Tag = "StackPanel"}
+                new MenuItems { Text = "StackPanel 堆叠布局", Tag = "StackPanel"},
+                new MenuItems { Text = "VirtualPanel 虚拟布局", Tag = "VirtualPanel"}
             }
         },
         { "导航", new List<MenuItems>

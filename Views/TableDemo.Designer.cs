@@ -29,17 +29,15 @@
         private void InitializeComponent()
         {
             this.stackPanel1 = new AntdUI.StackPanel();
-            this.label4 = new AntdUI.Label();
             this.table_base = new AntdUI.Table();
             this.flowPanel1 = new AntdUI.FlowPanel();
-            this.checkbox5 = new AntdUI.Checkbox();
-            this.checkbox4 = new AntdUI.Checkbox();
-            this.checkbox3 = new AntdUI.Checkbox();
-            this.checkbox2 = new AntdUI.Checkbox();
-            this.checkbox6 = new AntdUI.Checkbox();
-            this.checkbox1 = new AntdUI.Checkbox();
+            this.checkbox_sort = new AntdUI.Checkbox();
+            this.checkbox_rowstyle = new AntdUI.Checkbox();
+            this.checkbox_border = new AntdUI.Checkbox();
+            this.checkbox_columndragsort = new AntdUI.Checkbox();
+            this.checkbox_visibleheader = new AntdUI.Checkbox();
+            this.checkbox_fixheader = new AntdUI.Checkbox();
             this.flowPanel3 = new AntdUI.FlowPanel();
-            this.buttonCZ = new AntdUI.Button();
             this.buttonDEL = new AntdUI.Button();
             this.buttonADD = new AntdUI.Button();
             this.label3 = new AntdUI.Label();
@@ -53,7 +51,6 @@
             // 
             // stackPanel1
             // 
-            this.stackPanel1.Controls.Add(this.label4);
             this.stackPanel1.Controls.Add(this.table_base);
             this.stackPanel1.Controls.Add(this.flowPanel1);
             this.stackPanel1.Controls.Add(this.flowPanel3);
@@ -64,116 +61,112 @@
             this.stackPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.stackPanel1.Location = new System.Drawing.Point(0, 0);
             this.stackPanel1.Name = "stackPanel1";
-            this.stackPanel1.Size = new System.Drawing.Size(700, 770);
+            this.stackPanel1.Size = new System.Drawing.Size(700, 560);
             this.stackPanel1.TabIndex = 0;
             this.stackPanel1.Text = "stackPanel1";
             this.stackPanel1.Vertical = true;
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(3, 509);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(694, 24);
-            this.label4.TabIndex = 31;
-            this.label4.Text = "分页";
             // 
             // table_base
             // 
             this.table_base.EmptyHeader = true;
             this.table_base.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.table_base.Location = new System.Drawing.Point(3, 199);
+            this.table_base.Location = new System.Drawing.Point(3, 215);
             this.table_base.Name = "table_base";
             this.table_base.ShowTip = false;
-            this.table_base.Size = new System.Drawing.Size(694, 304);
+            this.table_base.Size = new System.Drawing.Size(694, 342);
             this.table_base.TabIndex = 30;
             this.table_base.Text = "table1";
             // 
             // flowPanel1
             // 
-            this.flowPanel1.Controls.Add(this.checkbox5);
-            this.flowPanel1.Controls.Add(this.checkbox4);
-            this.flowPanel1.Controls.Add(this.checkbox3);
-            this.flowPanel1.Controls.Add(this.checkbox2);
-            this.flowPanel1.Controls.Add(this.checkbox6);
-            this.flowPanel1.Controls.Add(this.checkbox1);
+            this.flowPanel1.Controls.Add(this.checkbox_sort);
+            this.flowPanel1.Controls.Add(this.checkbox_rowstyle);
+            this.flowPanel1.Controls.Add(this.checkbox_border);
+            this.flowPanel1.Controls.Add(this.checkbox_columndragsort);
+            this.flowPanel1.Controls.Add(this.checkbox_visibleheader);
+            this.flowPanel1.Controls.Add(this.checkbox_fixheader);
             this.flowPanel1.Location = new System.Drawing.Point(3, 171);
             this.flowPanel1.Name = "flowPanel1";
-            this.flowPanel1.Size = new System.Drawing.Size(694, 22);
+            this.flowPanel1.Size = new System.Drawing.Size(694, 38);
             this.flowPanel1.TabIndex = 29;
             this.flowPanel1.Text = "flowPanel1";
             // 
-            // checkbox5
+            // checkbox_sort
             // 
-            this.checkbox5.AutoCheck = true;
-            this.checkbox5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.checkbox5.Location = new System.Drawing.Point(466, 0);
-            this.checkbox5.Margin = new System.Windows.Forms.Padding(0);
-            this.checkbox5.Name = "checkbox5";
-            this.checkbox5.Size = new System.Drawing.Size(66, 20);
-            this.checkbox5.TabIndex = 21;
-            this.checkbox5.Text = "排序";
+            this.checkbox_sort.AutoCheck = true;
+            this.checkbox_sort.AutoSizeMode = AntdUI.TAutoSize.Auto;
+            this.checkbox_sort.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.checkbox_sort.Location = new System.Drawing.Point(466, 0);
+            this.checkbox_sort.Margin = new System.Windows.Forms.Padding(0);
+            this.checkbox_sort.Name = "checkbox_sort";
+            this.checkbox_sort.Size = new System.Drawing.Size(66, 37);
+            this.checkbox_sort.TabIndex = 21;
+            this.checkbox_sort.Text = "排序";
             // 
-            // checkbox4
+            // checkbox_rowstyle
             // 
-            this.checkbox4.AutoCheck = true;
-            this.checkbox4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.checkbox4.Location = new System.Drawing.Point(388, 0);
-            this.checkbox4.Margin = new System.Windows.Forms.Padding(0);
-            this.checkbox4.Name = "checkbox4";
-            this.checkbox4.Size = new System.Drawing.Size(78, 20);
-            this.checkbox4.TabIndex = 20;
-            this.checkbox4.Text = "奇偶列";
+            this.checkbox_rowstyle.AutoCheck = true;
+            this.checkbox_rowstyle.AutoSizeMode = AntdUI.TAutoSize.Auto;
+            this.checkbox_rowstyle.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.checkbox_rowstyle.Location = new System.Drawing.Point(388, 0);
+            this.checkbox_rowstyle.Margin = new System.Windows.Forms.Padding(0);
+            this.checkbox_rowstyle.Name = "checkbox_rowstyle";
+            this.checkbox_rowstyle.Size = new System.Drawing.Size(78, 37);
+            this.checkbox_rowstyle.TabIndex = 20;
+            this.checkbox_rowstyle.Text = "奇偶列";
             // 
-            // checkbox3
+            // checkbox_border
             // 
-            this.checkbox3.AutoCheck = true;
-            this.checkbox3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.checkbox3.Location = new System.Drawing.Point(285, 0);
-            this.checkbox3.Margin = new System.Windows.Forms.Padding(0);
-            this.checkbox3.Name = "checkbox3";
-            this.checkbox3.Size = new System.Drawing.Size(103, 20);
-            this.checkbox3.TabIndex = 19;
-            this.checkbox3.Text = "显示列边框";
+            this.checkbox_border.AutoCheck = true;
+            this.checkbox_border.AutoSizeMode = AntdUI.TAutoSize.Auto;
+            this.checkbox_border.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.checkbox_border.Location = new System.Drawing.Point(285, 0);
+            this.checkbox_border.Margin = new System.Windows.Forms.Padding(0);
+            this.checkbox_border.Name = "checkbox_border";
+            this.checkbox_border.Size = new System.Drawing.Size(103, 37);
+            this.checkbox_border.TabIndex = 19;
+            this.checkbox_border.Text = "显示列边框";
             // 
-            // checkbox2
+            // checkbox_columndragsort
             // 
-            this.checkbox2.AutoCheck = true;
-            this.checkbox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.checkbox2.Location = new System.Drawing.Point(182, 0);
-            this.checkbox2.Margin = new System.Windows.Forms.Padding(0);
-            this.checkbox2.Name = "checkbox2";
-            this.checkbox2.Size = new System.Drawing.Size(103, 20);
-            this.checkbox2.TabIndex = 18;
-            this.checkbox2.Text = "列拖拽排序";
+            this.checkbox_columndragsort.AutoCheck = true;
+            this.checkbox_columndragsort.AutoSizeMode = AntdUI.TAutoSize.Auto;
+            this.checkbox_columndragsort.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.checkbox_columndragsort.Location = new System.Drawing.Point(182, 0);
+            this.checkbox_columndragsort.Margin = new System.Windows.Forms.Padding(0);
+            this.checkbox_columndragsort.Name = "checkbox_columndragsort";
+            this.checkbox_columndragsort.Size = new System.Drawing.Size(103, 37);
+            this.checkbox_columndragsort.TabIndex = 18;
+            this.checkbox_columndragsort.Text = "列拖拽排序";
             // 
-            // checkbox6
+            // checkbox_visibleheader
             // 
-            this.checkbox6.AutoCheck = true;
-            this.checkbox6.Checked = true;
-            this.checkbox6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.checkbox6.Location = new System.Drawing.Point(91, 0);
-            this.checkbox6.Margin = new System.Windows.Forms.Padding(0);
-            this.checkbox6.Name = "checkbox6";
-            this.checkbox6.Size = new System.Drawing.Size(91, 20);
-            this.checkbox6.TabIndex = 17;
-            this.checkbox6.Text = "显示表头";
+            this.checkbox_visibleheader.AutoCheck = true;
+            this.checkbox_visibleheader.AutoSizeMode = AntdUI.TAutoSize.Auto;
+            this.checkbox_visibleheader.Checked = true;
+            this.checkbox_visibleheader.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.checkbox_visibleheader.Location = new System.Drawing.Point(91, 0);
+            this.checkbox_visibleheader.Margin = new System.Windows.Forms.Padding(0);
+            this.checkbox_visibleheader.Name = "checkbox_visibleheader";
+            this.checkbox_visibleheader.Size = new System.Drawing.Size(91, 37);
+            this.checkbox_visibleheader.TabIndex = 17;
+            this.checkbox_visibleheader.Text = "显示表头";
             // 
-            // checkbox1
+            // checkbox_fixheader
             // 
-            this.checkbox1.AutoCheck = true;
-            this.checkbox1.Checked = true;
-            this.checkbox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.checkbox1.Location = new System.Drawing.Point(0, 0);
-            this.checkbox1.Margin = new System.Windows.Forms.Padding(0);
-            this.checkbox1.Name = "checkbox1";
-            this.checkbox1.Size = new System.Drawing.Size(91, 20);
-            this.checkbox1.TabIndex = 12;
-            this.checkbox1.Text = "固定表头";
+            this.checkbox_fixheader.AutoCheck = true;
+            this.checkbox_fixheader.AutoSizeMode = AntdUI.TAutoSize.Auto;
+            this.checkbox_fixheader.Checked = true;
+            this.checkbox_fixheader.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.checkbox_fixheader.Location = new System.Drawing.Point(0, 0);
+            this.checkbox_fixheader.Margin = new System.Windows.Forms.Padding(0);
+            this.checkbox_fixheader.Name = "checkbox_fixheader";
+            this.checkbox_fixheader.Size = new System.Drawing.Size(91, 37);
+            this.checkbox_fixheader.TabIndex = 12;
+            this.checkbox_fixheader.Text = "固定表头";
             // 
             // flowPanel3
             // 
-            this.flowPanel3.Controls.Add(this.buttonCZ);
             this.flowPanel3.Controls.Add(this.buttonDEL);
             this.flowPanel3.Controls.Add(this.buttonADD);
             this.flowPanel3.Location = new System.Drawing.Point(3, 127);
@@ -181,17 +174,6 @@
             this.flowPanel3.Size = new System.Drawing.Size(694, 38);
             this.flowPanel3.TabIndex = 27;
             this.flowPanel3.Text = "flowPanel3";
-            // 
-            // buttonCZ
-            // 
-            this.buttonCZ.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.buttonCZ.Location = new System.Drawing.Point(175, 3);
-            this.buttonCZ.Name = "buttonCZ";
-            this.buttonCZ.Size = new System.Drawing.Size(80, 32);
-            this.buttonCZ.TabIndex = 6;
-            this.buttonCZ.Text = "重置";
-            this.buttonCZ.Type = AntdUI.TTypeMini.Warn;
-            this.buttonCZ.WaveSize = 0;
             // 
             // buttonDEL
             // 
@@ -254,9 +236,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.Controls.Add(this.stackPanel1);
             this.Name = "TableDemo";
-            this.Size = new System.Drawing.Size(700, 770);
+            this.Size = new System.Drawing.Size(700, 560);
             this.stackPanel1.ResumeLayout(false);
             this.flowPanel1.ResumeLayout(false);
+            this.flowPanel1.PerformLayout();
             this.flowPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -274,13 +257,11 @@
         private AntdUI.Button buttonDEL;
         private AntdUI.Table table_base;
         private AntdUI.FlowPanel flowPanel1;
-        private AntdUI.Checkbox checkbox6;
-        private AntdUI.Checkbox checkbox1;
-        private AntdUI.Checkbox checkbox5;
-        private AntdUI.Checkbox checkbox4;
-        private AntdUI.Checkbox checkbox3;
-        private AntdUI.Checkbox checkbox2;
-        private AntdUI.Label label4;
-        private AntdUI.Button buttonCZ;
+        private AntdUI.Checkbox checkbox_visibleheader;
+        private AntdUI.Checkbox checkbox_fixheader;
+        private AntdUI.Checkbox checkbox_sort;
+        private AntdUI.Checkbox checkbox_rowstyle;
+        private AntdUI.Checkbox checkbox_border;
+        private AntdUI.Checkbox checkbox_columndragsort;
     }
 }
