@@ -106,9 +106,13 @@
 #### Segmented 分段控制器
 ![Segmented](assets/screenshots/Segmented.png)
 #### Table 表格
+![Table](assets/screenshots/Table.png)
 #### Tabs 标签页
+![Tabs](assets/screenshots/Tabs.png)
 #### Tag 标签
+![Tag](assets/screenshots/Tag.png)
 #### Timeline 时间轴
+![Timeline](assets/screenshots/Timeline.png)
 #### Tooltip 文字提示
 #### Tree 树形控件
 

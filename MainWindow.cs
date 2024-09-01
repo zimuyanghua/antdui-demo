@@ -238,7 +238,12 @@ namespace AntdUIDemo
                 case "Tabs":
                     control = new TabsDemo(this);
                     break;
-
+                case "Tag":
+                    control = new TagDemo();
+                    break;
+                case "Timeline":
+                    control = new TimelineDemo();
+                    break;
                 case "Drawer":
                     control = new DrawerDemo(this);
                     break;
