@@ -125,8 +125,6 @@ namespace AntdUIDemo.Views
             AntdUI.Modal.open(new AntdUI.Modal.Config(window, "", form, TType.None)
             {
                 BtnHeight = 0,
-                Keyboard = false,
-                MaskClosable = false,
             });
             if (form.submit)
             {
@@ -256,9 +254,9 @@ namespace AntdUIDemo.Views
 
         private void InitData()
         {
-            antList = new AntList<User>(3);
+            antList = new AntList<User>(10);
 
-            for (int i = 0; i < 3; i++)
+            for (int i = 0; i < 10; i++)
             {
                 antList.Add(new User
                 {

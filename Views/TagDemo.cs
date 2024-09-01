@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AntdUIDemo.Views.Test
+namespace AntdUIDemo.Views
 {
-    public partial class TestDemo : UserControl
+    public partial class TagDemo : UserControl
     {
-        public TestDemo()
+        public TagDemo()
         {
             InitializeComponent();
         }

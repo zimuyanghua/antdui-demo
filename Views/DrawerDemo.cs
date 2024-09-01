@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AntdUI;
-using AntdUIDemo.Views.Test;
 
 namespace AntdUIDemo.Views
 {

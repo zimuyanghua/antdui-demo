@@ -235,6 +235,10 @@ namespace AntdUIDemo
                 case "Table":
                     control = new TableDemo(this);
                     break;
+                case "Tabs":
+                    control = new TabsDemo(this);
+                    break;
+
                 case "Drawer":
                     control = new DrawerDemo(this);
                     break;
@@ -242,8 +246,6 @@ namespace AntdUIDemo
             if (control != null)
             {
                 AutoDpi(control);
-                //测试日志归档
-                LoggerHelper.Logger.Error(new Exception($"{name} Clicked."),"Menu");
                 panel_content.Controls.Add(control);
             }
         }
