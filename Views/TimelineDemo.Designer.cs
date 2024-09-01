@@ -35,11 +35,11 @@
             AntdUI.TimelineItem timelineItem5 = new AntdUI.TimelineItem();
             AntdUI.TimelineItem timelineItem6 = new AntdUI.TimelineItem();
             this.stackPanel1 = new AntdUI.StackPanel();
+            this.timeline1 = new AntdUI.Timeline();
+            this.label3 = new AntdUI.Label();
             this.divider1 = new AntdUI.Divider();
             this.label2 = new AntdUI.Label();
             this.label1 = new AntdUI.Label();
-            this.label3 = new AntdUI.Label();
-            this.timeline1 = new AntdUI.Timeline();
             this.stackPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,44 +53,10 @@
             this.stackPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.stackPanel1.Location = new System.Drawing.Point(0, 0);
             this.stackPanel1.Name = "stackPanel1";
-            this.stackPanel1.Size = new System.Drawing.Size(700, 642);
+            this.stackPanel1.Size = new System.Drawing.Size(700, 509);
             this.stackPanel1.TabIndex = 0;
             this.stackPanel1.Text = "stackPanel1";
             this.stackPanel1.Vertical = true;
-            // 
-            // divider1
-            // 
-            this.divider1.Location = new System.Drawing.Point(3, 79);
-            this.divider1.Name = "divider1";
-            this.divider1.Size = new System.Drawing.Size(694, 12);
-            this.divider1.TabIndex = 30;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(3, 49);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(694, 24);
-            this.label2.TabIndex = 29;
-            this.label2.Text = "垂直展示的时间流信息。";
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(3, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(694, 40);
-            this.label1.TabIndex = 28;
-            this.label1.Text = "Timeline 时间轴";
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(3, 97);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(694, 24);
-            this.label3.TabIndex = 31;
-            this.label3.Text = "基本用法";
             // 
             // timeline1
             // 
@@ -120,16 +86,50 @@
             this.timeline1.Items.Add(timelineItem6);
             this.timeline1.Location = new System.Drawing.Point(3, 127);
             this.timeline1.Name = "timeline1";
-            this.timeline1.Size = new System.Drawing.Size(694, 432);
+            this.timeline1.Size = new System.Drawing.Size(694, 379);
             this.timeline1.TabIndex = 32;
             this.timeline1.Text = "timeline1";
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.Location = new System.Drawing.Point(3, 97);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(694, 24);
+            this.label3.TabIndex = 31;
+            this.label3.Text = "基本用法";
+            // 
+            // divider1
+            // 
+            this.divider1.Location = new System.Drawing.Point(3, 79);
+            this.divider1.Name = "divider1";
+            this.divider1.Size = new System.Drawing.Size(694, 12);
+            this.divider1.TabIndex = 30;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.Location = new System.Drawing.Point(3, 49);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(694, 24);
+            this.label2.TabIndex = 29;
+            this.label2.Text = "垂直展示的时间流信息。";
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(3, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(694, 40);
+            this.label1.TabIndex = 28;
+            this.label1.Text = "Timeline 时间轴";
             // 
             // TimelineDemo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.Controls.Add(this.stackPanel1);
             this.Name = "TimelineDemo";
-            this.Size = new System.Drawing.Size(700, 642);
+            this.Size = new System.Drawing.Size(700, 509);
             this.stackPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
