@@ -87,7 +87,12 @@ namespace AntdUIDemo
 
         private void Button_color_Click(object sender, EventArgs e)
         {
-            var value = ConfigurationManager.AppSettings["ColorMode"];
+            // 读取 appsettings.json 文件
+            var configFilePath = "appsettings.json";
+            var json = File.ReadAllText(configFilePath);
+            var jsonObj = JObject.Parse(json);
+            var appSettings = jsonObj["AppSettings"];
+            var value = appSettings["ColorMode"]?.ToString();
             if (value == "Auto")
             {
                 //反向设置
