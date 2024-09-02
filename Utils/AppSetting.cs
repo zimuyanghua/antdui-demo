@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.IO;
@@ -10,53 +11,57 @@ namespace AntdUIDemo.Utils
 {
     public static class AppSetting
     {
+        private static readonly string configFilePath = "appsettings.json";
+
         public static void UpdateAppSetting(string key, string value)
         {
-            // 获取配置文件路径
-            string configFilePath = AppDomain.CurrentDomain.SetupInformation.ConfigurationFile;
-
             // 检查配置文件是否存在
             if (!File.Exists(configFilePath))
             {
-                // 如果文件不存在，可以选择创建默认的配置文件
+                // 如果文件不存在，创建默认的配置文件
                 CreateDefaultConfigFile(configFilePath);
             }
-            // 获取当前配置文件
-            Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
 
-            // 检查key是否存在，存在则更新，不存在则添加
-            if (config.AppSettings.Settings[key] != null)
+            // 读取并解析现有的 appsettings.json 文件
+            var json = File.ReadAllText(configFilePath);
+            var jsonObj = JObject.Parse(json);
+
+            // 获取或创建 "AppSettings" 节点
+            var appSettings = jsonObj["AppSettings"] as JObject;
+            if (appSettings == null)
             {
-                config.AppSettings.Settings[key].Value = value;
+                appSettings = new JObject();
+                jsonObj["AppSettings"] = appSettings;
+            }
+
+            // 检查 key 是否存在，存在则更新，不存在则添加
+            if (appSettings[key] != null)
+            {
+                appSettings[key] = value;
             }
             else
             {
-                config.AppSettings.Settings.Add(key, value);
+                appSettings.Add(key, value);
             }
 
-            // 保存更改
-            config.Save(ConfigurationSaveMode.Modified);
-
-            // 刷新配置节，确保更新被应用
-            ConfigurationManager.RefreshSection("appSettings");
+            // 保存更改回 appsettings.json 文件
+            File.WriteAllText(configFilePath, jsonObj.ToString());
         }
 
         private static void CreateDefaultConfigFile(string configFilePath)
         {
-            // 创建一个新的配置文件，并写入默认的appSettings
-            var configXml = @"<?xml version='1.0' encoding='utf-8' ?>
-<configuration>
-  <appSettings>
-    <add key='ColorMode' value='Auto' />
-    <add key='Animation' value='True' />
-    <add key='ShadowEnabled' value='True' />
-    <add key='ScrollBarHide' value='False' />
-    <add key='ShowInWindow' value='True' />
-    <add key='ShowOffset' value='0' />
-  </appSettings>
-</configuration>";
-
-            File.WriteAllText(configFilePath, configXml);
+            // 创建一个新的 appsettings.json 文件，并写入默认的 AppSettings
+            var configJson = @"{
+  ""AppSettings"": {
+    ""ColorMode"": ""Auto"",
+    ""Animation"": ""True"",
+    ""ShadowEnabled"": ""True"",
+    ""ScrollBarHide"": ""False"",
+    ""ShowInWindow"": ""True"",
+    ""ShowOffset"": ""0""
+  }
+}";
+            File.WriteAllText(configFilePath, configJson);
         }
     }
 }

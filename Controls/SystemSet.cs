@@ -1,4 +1,5 @@
 ﻿using AntdUI;
+using Newtonsoft.Json.Linq;
 using AntdUIDemo.Utils;
 using System;
 using System.Collections.Generic;
@@ -10,6 +11,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace AntdUIDemo.Controls
 {
@@ -40,32 +42,44 @@ namespace AntdUIDemo.Controls
         private void InitData()
         {
             tabs.SelectedIndex = 0;
-            //色彩模式
-            var colormode = ConfigurationManager.AppSettings["ColorMode"];
+
+            // 读取 appsettings.json 文件
+            var configFilePath = "appsettings.json";
+            var json = File.ReadAllText(configFilePath);
+            var jsonObj = JObject.Parse(json);
+            var appSettings = jsonObj["AppSettings"];
+
+            // 色彩模式
+            var colormode = appSettings["ColorMode"]?.ToString();
             var modeIndexMapping = new Dictionary<string, int>
-                {
-                   { "Dark", 2 },
-                   { "Light", 1 },
-                   { "Auto", 0 }
-                };
+    {
+        { "Dark", 2 },
+        { "Light", 1 },
+        { "Auto", 0 }
+    };
             select_colormode.SelectedIndex = modeIndexMapping.ContainsKey(colormode)
                 ? modeIndexMapping[colormode]
                 : 0;
-            //开启动画
-            var animation = ConfigurationManager.AppSettings["Animation"];
+
+            // 开启动画
+            var animation = appSettings["Animation"]?.ToString();
             switch_animation.Checked = animation == "True";
-            //启用阴影
-            var shadow = ConfigurationManager.AppSettings["ShadowEnabled"];
+
+            // 启用阴影
+            var shadow = appSettings["ShadowEnabled"]?.ToString();
             switch_shadow.Checked = shadow == "True";
-            //隐藏滚动条
-            var scrollbar = ConfigurationManager.AppSettings["ScrollBarHide"];
+
+            // 隐藏滚动条
+            var scrollbar = appSettings["ScrollBarHide"]?.ToString();
             switch_scrollbar.Checked = scrollbar == "True";
-            //消息窗口弹出
-            var showinwindow = ConfigurationManager.AppSettings["ShowInWindow"];
+
+            // 消息窗口弹出
+            var showinwindow = appSettings["ShowInWindow"]?.ToString();
             switch_showinwindow.Checked = showinwindow == "True";
-            //消息偏移
-            var offset = ConfigurationManager.AppSettings["ShowOffset"];
-            input_offset.Value = decimal.Parse(offset);
+
+            // 消息偏移
+            var offset = appSettings["ShowOffset"]?.ToString();
+            input_offset.Value = decimal.Parse(offset ?? "0");
         }
 
         #region 事件

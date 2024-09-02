@@ -1,4 +1,5 @@
 ﻿using AntdUI;
+using Newtonsoft.Json.Linq;
 using AntdUIDemo.Controls;
 using AntdUIDemo.Models;
 using AntdUIDemo.Utils;
@@ -8,6 +9,7 @@ using System;
 using System.Configuration;
 using System.Drawing;
 using System.Windows.Forms;
+using System.IO;
 
 namespace AntdUIDemo
 {
@@ -45,8 +47,14 @@ namespace AntdUIDemo
 
         private void LoadAppConfig()
         {
-            //加载色彩模式
-            var value = ConfigurationManager.AppSettings["ColorMode"];
+            // 读取 appsettings.json 文件
+            var configFilePath = "appsettings.json";
+            var json = File.ReadAllText(configFilePath);
+            var jsonObj = JObject.Parse(json);
+            var appSettings = jsonObj["AppSettings"];
+
+            // 加载色彩模式
+            var value = appSettings["ColorMode"]?.ToString();
             if (value == "Auto")
             {
                 ThemeHelper.SetColorMode(this, ThemeHelper.IsLightMode());
@@ -55,20 +63,25 @@ namespace AntdUIDemo
             {
                 ThemeHelper.SetColorMode(this, value == "Light");
             }
-            //加载动画
-            var animation = ConfigurationManager.AppSettings["Animation"];
+
+            // 加载动画
+            var animation = appSettings["Animation"]?.ToString();
             AntdUI.Config.Animation = animation == "True";
-            //加载阴影
-            var shadow = ConfigurationManager.AppSettings["ShadowEnabled"];
+
+            // 加载阴影
+            var shadow = appSettings["ShadowEnabled"]?.ToString();
             AntdUI.Config.ShadowEnabled = shadow == "True";
-            //滚动条
-            var scrollbar = ConfigurationManager.AppSettings["ScrollBarHide"];
+
+            // 滚动条
+            var scrollbar = appSettings["ScrollBarHide"]?.ToString();
             AntdUI.Config.ScrollBarHide = scrollbar == "True";
-            //窗口内弹出 Message/Notification
-            var popup = ConfigurationManager.AppSettings["ShowInWindow"];
+
+            // 窗口内弹出 Message/Notification
+            var popup = appSettings["ShowInWindow"]?.ToString();
             AntdUI.Config.ShowInWindow = popup == "True";
-            //通知消息边界偏移量XY（Message/Notification）
-            var messageOffset = ConfigurationManager.AppSettings["NoticeWindowOffsetXY"];
+
+            // 通知消息边界偏移量XY（Message/Notification）
+            var messageOffset = appSettings["NoticeWindowOffsetXY"]?.ToString();
             AntdUI.Config.NoticeWindowOffsetXY = Convert.ToInt32(messageOffset);
         }
 
