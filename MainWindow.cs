@@ -244,6 +244,12 @@ namespace AntdUIDemo
                 case "Timeline":
                     control = new TimelineDemo();
                     break;
+                case "Tooltip":
+                    control = new TooltipDemo();
+                    break;
+                case "Tree":
+                    control = new TreeDemo();
+                    break;
                 case "Drawer":
                     control = new DrawerDemo(this);
                     break;
