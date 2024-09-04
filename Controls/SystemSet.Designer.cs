@@ -227,7 +227,7 @@
             this.select_colormode.Name = "select_colormode";
             this.select_colormode.SelectedIndex = 0;
             this.select_colormode.SelectedValue = "Auto";
-            this.select_colormode.Size = new System.Drawing.Size(60, 26);
+            this.select_colormode.Size = new System.Drawing.Size(65, 26);
             this.select_colormode.TabIndex = 2;
             this.select_colormode.Text = "Auto";
             this.select_colormode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;

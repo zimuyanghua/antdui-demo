@@ -268,8 +268,17 @@ namespace AntdUIDemo
                 case "Tree":
                     control = new TreeDemo();
                     break;
+                case "Alert":
+                    control = new AlertDemo();
+                    break;
                 case "Drawer":
                     control = new DrawerDemo(this);
+                    break;
+                case "Message":
+                    control = new MessageDemo(this);
+                    break;
+                case "Modal":
+                    control = new ModalDemo(this);
                     break;
             }
             if (control != null)

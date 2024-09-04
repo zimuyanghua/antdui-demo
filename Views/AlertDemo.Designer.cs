@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.stackPanel1 = new AntdUI.StackPanel();
+            this.alert9 = new AntdUI.Alert();
+            this.label6 = new AntdUI.Label();
             this.flowPanel3 = new AntdUI.FlowPanel();
             this.alert12 = new AntdUI.Alert();
             this.label5 = new AntdUI.Label();
@@ -47,8 +49,6 @@
             this.divider1 = new AntdUI.Divider();
             this.label2 = new AntdUI.Label();
             this.label1 = new AntdUI.Label();
-            this.label6 = new AntdUI.Label();
-            this.alert9 = new AntdUI.Alert();
             this.stackPanel1.SuspendLayout();
             this.flowPanel3.SuspendLayout();
             this.flowPanel1.SuspendLayout();
@@ -76,12 +76,32 @@
             this.stackPanel1.Text = "stackPanel1";
             this.stackPanel1.Vertical = true;
             // 
+            // alert9
+            // 
+            this.alert9.BackColor = System.Drawing.Color.Pink;
+            this.alert9.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.alert9.Location = new System.Drawing.Point(3, 381);
+            this.alert9.Loop = true;
+            this.alert9.Name = "alert9";
+            this.alert9.Size = new System.Drawing.Size(694, 32);
+            this.alert9.TabIndex = 45;
+            this.alert9.Text = "I can be a React component, multiple React components, or just some text.";
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.Location = new System.Drawing.Point(3, 351);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(694, 24);
+            this.label6.TabIndex = 44;
+            this.label6.Text = "轮播";
+            // 
             // flowPanel3
             // 
             this.flowPanel3.Controls.Add(this.alert12);
             this.flowPanel3.Location = new System.Drawing.Point(3, 275);
             this.flowPanel3.Name = "flowPanel3";
-            this.flowPanel3.Size = new System.Drawing.Size(694, 76);
+            this.flowPanel3.Size = new System.Drawing.Size(694, 70);
             this.flowPanel3.TabIndex = 43;
             this.flowPanel3.Text = "flowPanel3";
             // 
@@ -92,7 +112,7 @@
             this.alert12.Icon = AntdUI.TType.Success;
             this.alert12.Location = new System.Drawing.Point(3, 3);
             this.alert12.Name = "alert12";
-            this.alert12.Size = new System.Drawing.Size(498, 70);
+            this.alert12.Size = new System.Drawing.Size(498, 59);
             this.alert12.TabIndex = 0;
             this.alert12.Text = "Success Description Success Description Success Description";
             this.alert12.TextTitle = "Success Text";
@@ -256,25 +276,6 @@
             this.label1.Size = new System.Drawing.Size(694, 40);
             this.label1.TabIndex = 18;
             this.label1.Text = "Alert 警告提示";
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.Location = new System.Drawing.Point(3, 357);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(694, 24);
-            this.label6.TabIndex = 44;
-            this.label6.Text = "轮播";
-            // 
-            // alert9
-            // 
-            this.alert9.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.alert9.Location = new System.Drawing.Point(3, 387);
-            this.alert9.Loop = true;
-            this.alert9.Name = "alert9";
-            this.alert9.Size = new System.Drawing.Size(694, 32);
-            this.alert9.TabIndex = 45;
-            this.alert9.Text = "I can be a React component, multiple React components, or just some text.";
             // 
             // AlertDemo
             // 
