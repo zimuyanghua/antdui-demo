@@ -82,12 +82,24 @@ namespace AntdUIDemo.Views
 
         private void input_itemsize_TextChanged(object sender, EventArgs e)
         {
-            stackPanel.ItemSize = input_itemsize.Text;
+            if (stackPanel.InvokeRequired)
+            {
+                stackPanel.Invoke(new Action(() =>
+                {
+                    stackPanel.ItemSize = input_itemsize.Text;
+                }));
+            }
         }
 
         private void input_gap_ValueChanged(object sender, DecimalEventArgs e)
         {
-            stackPanel.Gap = (int)input_gap.Value;
+            if (stackPanel.InvokeRequired)
+            {
+                stackPanel.Invoke(new Action(() =>
+                {
+                    stackPanel.Gap = (int)input_gap.Value;
+                }));
+            }
         }
 
         private void ButtonDEL_Click(object sender, EventArgs e)

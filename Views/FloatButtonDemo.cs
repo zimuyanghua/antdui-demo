@@ -156,13 +156,20 @@ namespace AntdUIDemo.Views
         // 添加清理逻辑
         public void CloseFloatButtonForm()
         {
+            if (InvokeRequired)
+            {
+                Invoke(new Action(CloseFloatButtonForm));
+                return;
+            }
+
             if (floatButtonForm != null)
             {
-                floatButtonForm?.Close();
-                floatButtonForm?.Dispose();
+                floatButtonForm.Close();
+                floatButtonForm.Dispose();
                 floatButtonForm = null;
             }
         }
+
 
         #region EventHandler
         private void select_intvalue_SelectedIndexChanged(object sender, IntEventArgs e)

@@ -37,6 +37,11 @@ namespace AntdUIDemo.Views
 
         private void LoadGridPanel(string spantext, decimal gap)
         {
+            if (gridPanel.InvokeRequired)
+            {
+                gridPanel.Invoke(new Action(() => LoadGridPanel(spantext, gap)));
+                return;
+            }
             gridPanel.Controls.Clear();
             gridPanel.Span = spantext;
             gridPanel.Gap = (int)gap;

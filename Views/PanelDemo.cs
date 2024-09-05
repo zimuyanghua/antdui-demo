@@ -78,6 +78,11 @@ namespace AntdUIDemo.Views
 
         private void LoadPanel()
         {
+            if (panel.InvokeRequired)
+            {
+                panel.Invoke(new Action(() => LoadPanel()));
+                return;
+            }
             panel.ArrowAlign = (TAlign)select_arrowalign.SelectedValue;
             panel.ArrowSize = (int)input_arrowsize.Value;
             panel.Radius = (int)input_radius.Value;
