@@ -81,7 +81,7 @@ namespace AntdUIDemo.Views
             });
         }
 
-        private async void button_control_Click(object sender, EventArgs e)
+        private void button_control_Click(object sender, EventArgs e)
         {
             var button = sender as AntdUI.Button;
             var popoverbutton = new AntdUI.Button()
