@@ -110,7 +110,6 @@ namespace AntdUIDemo
         {
             using (var form = new SystemSet(this))
             {
-                //AutoDpi(form);
                 AntdUI.Modal.open(new AntdUI.Modal.Config(this, "系统设置", form, TType.Info)
                 {
                     CloseIcon = true,
@@ -285,6 +284,21 @@ namespace AntdUIDemo
                     break;
                 case "Progress":
                     control = new ProgressDemo();
+                    break;
+                case "Spin":
+                    control = new SpinDemo(this);
+                    break;
+                case "ChatList":
+                    control = new ChatListDemo();
+                    break;
+                case "MsgList":
+                    control = new MsgListDemo();
+                    break;
+                case "Battery":
+                    control = new BatteryDemo();
+                    break;
+                case "ContextMenuStrip":
+                    control = new ContextMenuStripDemo(this);
                     break;
                 default:
                     break;

@@ -18,6 +18,7 @@ namespace AntdUIDemo.Models
         },
         { "布局", new List<MenuItems>
             {
+                new MenuItems { Text = "Divider 分割线", Tag = "Divider" },
                 new MenuItems { Text = "FlowPanel 流动布局", Tag = "FlowPanel"},
                 new MenuItems { Text = "GridPanel 网格布局", Tag = "GridPanel"},
                 new MenuItems { Text = "Panel 面板", Tag = "Panel"},
@@ -89,7 +90,6 @@ namespace AntdUIDemo.Models
             {
                 new MenuItems { Text = "Battery 电池", Tag = "Battery" },
                 new MenuItems { Text = "ContextMenuStrip 右键菜单", Tag = "ContextMenuStrip" },
-                new MenuItems { Text = "Divider 分割线", Tag = "Divider" },
                 new MenuItems { Text = "Image3D 图片3D", Tag = "Image3D" },
                 new MenuItems { Text = "WindowBar 窗口栏", Tag = "WindowBar" }
             }

@@ -29,18 +29,25 @@
         private void InitializeComponent()
         {
             this.stackPanel1 = new AntdUI.StackPanel();
+            this.flowPanel = new AntdUI.FlowPanel();
+            this.label4 = new AntdUI.Label();
             this.divider1 = new AntdUI.Divider();
             this.label2 = new AntdUI.Label();
             this.label1 = new AntdUI.Label();
-            this.label4 = new AntdUI.Label();
-            this.flowPanel = new AntdUI.FlowPanel();
-            this.button2 = new AntdUI.Button();
+            this.flowPanel1 = new AntdUI.FlowPanel();
+            this.label_spin = new AntdUI.Label();
+            this.button_control = new AntdUI.Button();
+            this.button_window = new AntdUI.Button();
+            this.button_custom = new AntdUI.Button();
+            this.button_base = new AntdUI.Button();
             this.stackPanel1.SuspendLayout();
             this.flowPanel.SuspendLayout();
+            this.flowPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // stackPanel1
             // 
+            this.stackPanel1.Controls.Add(this.flowPanel1);
             this.stackPanel1.Controls.Add(this.flowPanel);
             this.stackPanel1.Controls.Add(this.label4);
             this.stackPanel1.Controls.Add(this.divider1);
@@ -53,6 +60,27 @@
             this.stackPanel1.TabIndex = 0;
             this.stackPanel1.Text = "stackPanel1";
             this.stackPanel1.Vertical = true;
+            // 
+            // flowPanel
+            // 
+            this.flowPanel.Controls.Add(this.button_window);
+            this.flowPanel.Controls.Add(this.button_custom);
+            this.flowPanel.Controls.Add(this.button_base);
+            this.flowPanel.Controls.Add(this.button_control);
+            this.flowPanel.Location = new System.Drawing.Point(3, 127);
+            this.flowPanel.Name = "flowPanel";
+            this.flowPanel.Size = new System.Drawing.Size(694, 38);
+            this.flowPanel.TabIndex = 50;
+            this.flowPanel.Text = "flowPanel1";
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.Location = new System.Drawing.Point(3, 97);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(694, 24);
+            this.label4.TabIndex = 49;
+            this.label4.Text = "基本用法";
             // 
             // divider1
             // 
@@ -79,34 +107,68 @@
             this.label1.TabIndex = 46;
             this.label1.Text = "Spin 加载中";
             // 
-            // label4
+            // flowPanel1
             // 
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(3, 97);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(694, 24);
-            this.label4.TabIndex = 49;
-            this.label4.Text = "基本用法";
+            this.flowPanel1.Controls.Add(this.label_spin);
+            this.flowPanel1.Location = new System.Drawing.Point(3, 171);
+            this.flowPanel1.Name = "flowPanel1";
+            this.flowPanel1.Size = new System.Drawing.Size(694, 38);
+            this.flowPanel1.TabIndex = 51;
+            this.flowPanel1.Text = "flowPanel1";
             // 
-            // flowPanel
+            // label_spin
             // 
-            this.flowPanel.Controls.Add(this.button2);
-            this.flowPanel.Location = new System.Drawing.Point(3, 127);
-            this.flowPanel.Name = "flowPanel";
-            this.flowPanel.Size = new System.Drawing.Size(694, 38);
-            this.flowPanel.TabIndex = 50;
-            this.flowPanel.Text = "flowPanel1";
+            this.label_spin.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label_spin.Location = new System.Drawing.Point(3, 3);
+            this.label_spin.Name = "label_spin";
+            this.label_spin.Size = new System.Drawing.Size(166, 32);
+            this.label_spin.TabIndex = 1;
+            this.label_spin.Text = "这是一个Label控件";
+            this.label_spin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button2
+            // button_control
             // 
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(3, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(80, 32);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Primary";
-            this.button2.Type = AntdUI.TTypeMini.Primary;
-            this.button2.WaveSize = 0;
+            this.button_control.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button_control.Location = new System.Drawing.Point(3, 3);
+            this.button_control.Name = "button_control";
+            this.button_control.Size = new System.Drawing.Size(80, 32);
+            this.button_control.TabIndex = 5;
+            this.button_control.Text = "控件";
+            this.button_control.Type = AntdUI.TTypeMini.Primary;
+            this.button_control.WaveSize = 0;
+            // 
+            // button_window
+            // 
+            this.button_window.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button_window.Location = new System.Drawing.Point(261, 3);
+            this.button_window.Name = "button_window";
+            this.button_window.Size = new System.Drawing.Size(80, 32);
+            this.button_window.TabIndex = 8;
+            this.button_window.Text = "整个窗口";
+            this.button_window.Type = AntdUI.TTypeMini.Primary;
+            this.button_window.WaveSize = 0;
+            // 
+            // button_custom
+            // 
+            this.button_custom.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button_custom.Location = new System.Drawing.Point(175, 3);
+            this.button_custom.Name = "button_custom";
+            this.button_custom.Size = new System.Drawing.Size(80, 32);
+            this.button_custom.TabIndex = 7;
+            this.button_custom.Text = "当前窗口";
+            this.button_custom.Type = AntdUI.TTypeMini.Primary;
+            this.button_custom.WaveSize = 0;
+            // 
+            // button_base
+            // 
+            this.button_base.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button_base.Location = new System.Drawing.Point(89, 3);
+            this.button_base.Name = "button_base";
+            this.button_base.Size = new System.Drawing.Size(80, 32);
+            this.button_base.TabIndex = 6;
+            this.button_base.Text = "容器";
+            this.button_base.Type = AntdUI.TTypeMini.Primary;
+            this.button_base.WaveSize = 0;
             // 
             // SpinDemo
             // 
@@ -116,6 +178,7 @@
             this.Size = new System.Drawing.Size(700, 469);
             this.stackPanel1.ResumeLayout(false);
             this.flowPanel.ResumeLayout(false);
+            this.flowPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -128,6 +191,11 @@
         private AntdUI.Label label1;
         private AntdUI.Label label4;
         private AntdUI.FlowPanel flowPanel;
-        private AntdUI.Button button2;
+        private AntdUI.FlowPanel flowPanel1;
+        private AntdUI.Label label_spin;
+        private AntdUI.Button button_control;
+        private AntdUI.Button button_window;
+        private AntdUI.Button button_custom;
+        private AntdUI.Button button_base;
     }
 }
