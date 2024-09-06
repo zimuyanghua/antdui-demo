@@ -41,6 +41,7 @@ namespace AntdUIDemo.Views
             input_size.ValueChanged += input_decimalvalue_ValeChanged;
             input_mx.ValueChanged += input_decimalvalue_ValeChanged;
             input_my.ValueChanged += input_decimalvalue_ValeChanged;
+            input_gap.ValueChanged += input_decimalvalue_ValeChanged;
             input_radius.ValueChanged += input_decimalvalue_ValeChanged;
             input_badgesize.ValueChanged += input_decimalvalue_ValeChanged;
 
@@ -78,6 +79,7 @@ namespace AntdUIDemo.Views
             input_size.Value = 40;
             input_mx.Value = 24;
             input_my.Value = 24;
+            input_gap.Value = 40;
             input_radius.Value = 6;
             input_badge.Text = "";
             input_badgesize.Value = 6;
@@ -149,6 +151,8 @@ namespace AntdUIDemo.Views
                     MarginX = (int)input_mx.Value,
                     //相对于Align位置Y轴偏移
                     MarginY = (int)input_my.Value,
+                    //按钮间距
+                    Gap = (int)input_gap.Value,
                 });
             }
         }
