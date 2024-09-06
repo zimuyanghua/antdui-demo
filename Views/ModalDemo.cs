@@ -77,8 +77,8 @@ namespace AntdUIDemo.Views
         {
             AntdUI.Modal.open(new AntdUI.Modal.Config(window, "Basic Modal", "Some contents...\r\nSome contents...\r\nSome contents...")
             {
-                Btns = [new AntdUI.Modal.Btn("return", "Return", AntdUI.TTypeMini.Default),
-                    new AntdUI.Modal.Btn("submit", "Submit", AntdUI.TTypeMini.Warn)],
+                Btns = new Modal.Btn[]{ new AntdUI.Modal.Btn("return", "Return", AntdUI.TTypeMini.Default),
+                    new AntdUI.Modal.Btn("submit", "Submit", AntdUI.TTypeMini.Warn) },
                 CancelText = null,
                 OkText = "Search On Google",
                 OnOk = config =>

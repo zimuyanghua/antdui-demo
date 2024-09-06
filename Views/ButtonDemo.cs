@@ -87,7 +87,7 @@ namespace AntdUIDemo.Views
                     if (toggle)
                     {
                         tooltipText.AppendLine($"Toggle: {toggle}");
-                        if (toggletype is not null)
+                        if (toggletype != null)
                             tooltipText.AppendLine($"ToggleType: {toggletype}");
                         if (!string.IsNullOrEmpty(toggleiconsvg))
                         {

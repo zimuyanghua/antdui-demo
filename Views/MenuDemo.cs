@@ -95,10 +95,38 @@ namespace AntdUIDemo.Views
 
             menu.Radius = (int)input_radius.Value;
 
-            menu.ForeColor = colorPicker_forecolor.Value == Color.Transparent ? null : colorPicker_forecolor.Value;
-            menu.ForeActive = colorPicker_foreactive.Value == Color.Transparent ? null : colorPicker_foreactive.Value;
-            menu.BackHover = colorPicker_backhover.Value == Color.Transparent ? null : colorPicker_backhover.Value;
-            menu.BackActive = colorPicker_backactive.Value == Color.Transparent ? null : colorPicker_backactive.Value;
+            if (colorPicker_forecolor.Value == Color.Transparent)
+            {
+                menu.ForeColor = null;
+            }
+            else
+            {
+                menu.ForeColor = colorPicker_forecolor.Value;
+            }
+            if (colorPicker_foreactive.Value == Color.Transparent)
+            {
+                menu.ForeActive = null;
+            }
+            else
+            {
+                menu.ForeActive = colorPicker_foreactive.Value;
+            }
+            if (colorPicker_backhover.Value == Color.Transparent)
+            {
+                menu.BackHover = null;
+            }
+            else
+            {
+                menu.BackHover = colorPicker_backhover.Value;
+            }
+            if (colorPicker_backactive.Value == Color.Transparent)
+            {
+                menu.BackActive = null;
+            }
+            else
+            {
+                menu.BackActive = colorPicker_backactive.Value;
+            }
         }
 
     }

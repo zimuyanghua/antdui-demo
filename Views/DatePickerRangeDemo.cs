@@ -39,7 +39,7 @@ namespace AntdUIDemo.Views
                         daysToMonday += 7;
                     start = today.AddDays(-daysToMonday);
                     end = start.AddDays(6);
-                    datePickerRange.Value = [start, end];
+                    datePickerRange.Value = new DateTime[] { start, end };
                     break;
                 case "上周":
                     daysToMonday = (int)today.DayOfWeek - (int)DayOfWeek.Monday;
@@ -47,27 +47,27 @@ namespace AntdUIDemo.Views
                         daysToMonday += 7;
                     start = today.AddDays(-daysToMonday - 7);
                     end = start.AddDays(6);
-                    datePickerRange.Value = [start, end];
+                    datePickerRange.Value = new DateTime[] { start, end };
                     break;
                 case "本月":
                     start = new DateTime(today.Year, today.Month, 1);
                     end = start.AddMonths(1).AddDays(-1);
-                    datePickerRange.Value = [start, end];
+                    datePickerRange.Value = new DateTime[] { start, end };
                     break;
                 case "上月":
                     start = new DateTime(today.Year, today.Month, 1).AddMonths(-1);
                     end = start.AddMonths(1).AddDays(-1);
-                    datePickerRange.Value = [start, end];
+                    datePickerRange.Value = new DateTime[] { start, end };
                     break;
                 case "本年":
                     start = new DateTime(today.Year, 1, 1);
                     end = start.AddYears(1).AddDays(-1);
-                    datePickerRange.Value = [start, end];
+                    datePickerRange.Value = new DateTime[] { start, end };
                     break;
                 case "去年":
                     start = new DateTime(today.Year - 1, 1, 1);
                     end = start.AddYears(1).AddDays(-1);
-                    datePickerRange.Value = [start, end];
+                    datePickerRange.Value = new DateTime[] { start, end };
                     break;
             }
         }

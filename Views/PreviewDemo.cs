@@ -29,8 +29,8 @@ namespace AntdUIDemo.Views
 
         private void Button_views_Click(object sender, EventArgs e)
         {
-            Preview.open(new Preview.Config(window,
-                [Properties.Resources.bg1, Properties.Resources.bg2, Properties.Resources.bg3]));
+            Preview.open(new Preview.Config(window, new List<Image>() { 
+                Properties.Resources.bg1, Properties.Resources.bg2, Properties.Resources.bg3 }));
         }
 
         private void Button_view_Click(object sender, EventArgs e)

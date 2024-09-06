@@ -59,10 +59,14 @@ namespace AntdUIDemo.Views
                 ArrowAlign = TAlign.TL,
                 OnControlLoad = () =>
                 {
-                    popovercalendar.DateChanged += (sender, e) =>
-                    AntdUI.Message.info(window, e.Value.ToString("yyyy-MM-dd"), autoClose: 1);
+                    popovercalendar.DateChanged += Popovercalendar_DateChanged;
                 }
             });
+        }
+
+        private void Popovercalendar_DateChanged(object sender, DateTimeEventArgs e)
+        {
+            AntdUI.Message.info(window, e.Value.ToString("yyyy-MM-dd"), autoClose: 1);
         }
 
         private void button_form_Click(object sender, EventArgs e)
@@ -93,10 +97,14 @@ namespace AntdUIDemo.Views
             {
                 OnControlLoad = () =>
                 {
-                    popoverbutton.Click += (sender, e) =>
-                    AntdUI.Message.info(window, "点击了PopoverButton", autoClose: 1);
+                    popoverbutton.Click += Popoverbutton_Click;
                 }
             });
+        }
+
+        private void Popoverbutton_Click(object sender, EventArgs e)
+        {
+            AntdUI.Message.info(window, "点击了PopoverButton", autoClose: 1);
         }
 
         private void button_close_Click(object sender, EventArgs e)

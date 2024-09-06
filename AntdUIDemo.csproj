@@ -10,7 +10,6 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ApplicationIcon>assets\icon.ico</ApplicationIcon>
     <PlatformTarget>AnyCPU</PlatformTarget>
-    <LangVersion>12</LangVersion>
     <Copyright>Copyright © 2024 czz_y</Copyright>
     <FileVersion>$(Version)</FileVersion>
     <AssemblyVersion>$(Version)</AssemblyVersion>

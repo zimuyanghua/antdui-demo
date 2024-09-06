@@ -22,7 +22,7 @@ namespace AntdUIDemo.Views
         private void InitData()
         {
             select_custom.Items.Clear();
-            select_custom.Items.AddRange([
+            select_custom.Items.AddRange(new object[] {
 
                 new SelectItem("在线状态"){
                     Online = 1,
@@ -48,7 +48,7 @@ namespace AntdUIDemo.Views
                 {
                     SubText = "子文本"
                 }
-            ]);
+            });
 
             select_custom.SelectedIndex = 0;
         }

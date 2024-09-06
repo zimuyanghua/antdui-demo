@@ -129,7 +129,7 @@ namespace AntdUIDemo.Views
 
             switch_show.Checked = true;
             switch_right.Checked = true;
-            selectMultiple.SelectedValue = ["1", "2", "5", "10"];
+            selectMultiple.SelectedValue =  new object[] { "1", "2", "5", "10" };
         }
     }
 }
