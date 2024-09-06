@@ -162,6 +162,9 @@ namespace AntdUIDemo
                 case "FloatButton":
                     control = new FloatButtonDemo(this);
                     break;
+                case "Divider":
+                    control = new DividerDemo();
+                    break;
                 case "FlowPanel":
                     control = new FlowPanelDemo(this);
                     break;

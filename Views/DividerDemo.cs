@@ -15,6 +15,13 @@ namespace AntdUIDemo.Views
         public DividerDemo()
         {
             InitializeComponent();
+            InitData();
+        }
+
+        private void InitData()
+        {
+            //或者设计器右键重置Text
+            divider_null.Text = null;
         }
     }
 }
