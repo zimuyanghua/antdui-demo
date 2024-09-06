@@ -89,7 +89,7 @@ namespace AntdUIDemo.Models
         { "其它", new List<MenuItems>
             {
                 new MenuItems { Text = "Battery 电池", Tag = "Battery" },
-                new MenuItems { Text = "ContextMenuStrip 右键菜单", Tag = "ContextMenuStrip" },
+                new MenuItems { Text = "ContextMenuStrip 快捷菜单", Tag = "ContextMenuStrip" },
                 new MenuItems { Text = "Image3D 图片3D", Tag = "Image3D" },
                 new MenuItems { Text = "WindowBar 窗口栏", Tag = "WindowBar" }
             }
