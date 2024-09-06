@@ -30,10 +30,10 @@
         {
             this.stackPanel1 = new AntdUI.StackPanel();
             this.panel1 = new AntdUI.Panel();
+            this.msgList = new AntdUI.Chat.MsgList();
             this.divider1 = new AntdUI.Divider();
             this.label2 = new AntdUI.Label();
             this.label1 = new AntdUI.Label();
-            this.msgList = new AntdUI.Chat.MsgList();
             this.stackPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -62,6 +62,15 @@
             this.panel1.TabIndex = 32;
             this.panel1.Text = "panel1";
             // 
+            // msgList
+            // 
+            this.msgList.Dock = System.Windows.Forms.DockStyle.Left;
+            this.msgList.Location = new System.Drawing.Point(12, 12);
+            this.msgList.Name = "msgList";
+            this.msgList.Size = new System.Drawing.Size(220, 347);
+            this.msgList.TabIndex = 0;
+            this.msgList.Text = "msgList1";
+            // 
             // divider1
             // 
             this.divider1.Location = new System.Drawing.Point(3, 79);
@@ -76,7 +85,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(694, 24);
             this.label2.TabIndex = 30;
-            this.label2.Text = "气泡聊天列表。";
+            this.label2.Text = "好友消息列表。";
             // 
             // label1
             // 
@@ -85,16 +94,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(694, 40);
             this.label1.TabIndex = 29;
-            this.label1.Text = "ChatList 气泡聊天列表";
-            // 
-            // msgList
-            // 
-            this.msgList.Dock = System.Windows.Forms.DockStyle.Left;
-            this.msgList.Location = new System.Drawing.Point(12, 12);
-            this.msgList.Name = "msgList";
-            this.msgList.Size = new System.Drawing.Size(220, 347);
-            this.msgList.TabIndex = 0;
-            this.msgList.Text = "msgList1";
+            this.label1.Text = "MsgList 好友消息列表";
             // 
             // MsgListDemo
             // 

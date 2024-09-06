@@ -303,6 +303,12 @@ namespace AntdUIDemo
                 case "ContextMenuStrip":
                     control = new ContextMenuStripDemo(this);
                     break;
+                case "Image3D":
+                    control = new Image3DDemo();
+                    break;
+                case "WindowBar":
+                    control = new WindowBarDemo();
+                    break;
                 default:
                     break;
             }

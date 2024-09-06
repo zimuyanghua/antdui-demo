@@ -46,6 +46,7 @@
             this.titlebar.Controls.Add(this.buttonSZ);
             this.titlebar.Dock = System.Windows.Forms.DockStyle.Top;
             this.titlebar.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.titlebar.IsMax = false;
             this.titlebar.Location = new System.Drawing.Point(6, 0);
             this.titlebar.MaximizeBox = false;
             this.titlebar.Name = "titlebar";
@@ -60,6 +61,7 @@
             this.button_color.Ghost = true;
             this.button_color.IconRatio = 0.6F;
             this.button_color.IconSvg = resources.GetString("button_color.IconSvg");
+            this.button_color.Location = new System.Drawing.Point(796, 0);
             this.button_color.Name = "button_color";
             this.button_color.Radius = 0;
             this.button_color.Size = new System.Drawing.Size(50, 40);
@@ -71,6 +73,7 @@
             this.buttonSZ.Dock = System.Windows.Forms.DockStyle.Right;
             this.buttonSZ.Ghost = true;
             this.buttonSZ.IconSvg = resources.GetString("buttonSZ.IconSvg");
+            this.buttonSZ.Location = new System.Drawing.Point(846, 0);
             this.buttonSZ.Name = "buttonSZ";
             this.buttonSZ.Radius = 0;
             this.buttonSZ.Size = new System.Drawing.Size(50, 40);
@@ -130,7 +133,7 @@
             this.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainWindow";
-            this.Opacity = 0.96D;
+            this.Opacity = 0.99D;
             this.Padding = new System.Windows.Forms.Padding(6, 0, 0, 6);
             this.Resizable = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

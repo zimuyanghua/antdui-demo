@@ -89,27 +89,27 @@ namespace AntdUIDemo.Views
             {
                 case "TL":
                     align = TAlignFrom.TL;
-                    AntdUI.Notification.open(window, $"Notification {align}", "Hello AntdUI Demo!", autoClose: 3, align: align);
+                    AntdUI.Notification.info(window, $"Notification {align}", "Hello AntdUI Demo!", autoClose: 3, align: align);
                     break;
                 case "TR":
                     align = TAlignFrom.TR;
-                    AntdUI.Notification.open(window, $"Notification {align}", "Hello AntdUI Demo!", autoClose: 3, align: align);
+                    AntdUI.Notification.info(window, $"Notification {align}", "Hello AntdUI Demo!", autoClose: 3, align: align);
                     break;
                 case "Top":
                     align = TAlignFrom.Top;
-                    AntdUI.Notification.open(window, $"Notification {align}", "Hello AntdUI Demo!", autoClose: 3, align: align);
+                    AntdUI.Notification.info(window, $"Notification {align}", "Hello AntdUI Demo!", autoClose: 3, align: align);
                     break;
                 case "BR":
                     align = TAlignFrom.BR;
-                    AntdUI.Notification.open(window, $"Notification {align}", "Hello AntdUI Demo!", autoClose: 3, align: align);
+                    AntdUI.Notification.info(window, $"Notification {align}", "Hello AntdUI Demo!", autoClose: 3, align: align);
                     break;
                 case "BL":
                     align = TAlignFrom.BL;
-                    AntdUI.Notification.open(window, $"Notification {align}", "Hello AntdUI Demo!", autoClose: 3, align: align);
+                    AntdUI.Notification.info(window, $"Notification {align}", "Hello AntdUI Demo!", autoClose: 3, align: align);
                     break;
                 case "Bottom":
                     align = TAlignFrom.Bottom;
-                    AntdUI.Notification.open(window, $"Notification {align}", "Hello AntdUI Demo!", autoClose: 3, align: align);
+                    AntdUI.Notification.info(window, $"Notification {align}", "Hello AntdUI Demo!", autoClose: 3, align: align);
                     break;
             }
         }
