@@ -34,6 +34,7 @@
             AntdUI.TimelineItem timelineItem4 = new AntdUI.TimelineItem();
             AntdUI.TimelineItem timelineItem5 = new AntdUI.TimelineItem();
             AntdUI.TimelineItem timelineItem6 = new AntdUI.TimelineItem();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TimelineDemo));
             this.stackPanel1 = new AntdUI.StackPanel();
             this.timeline1 = new AntdUI.Timeline();
             this.label3 = new AntdUI.Label();
@@ -76,7 +77,8 @@
             timelineItem5.Description = "";
             timelineItem5.Text = "Solve initial network problems 1";
             timelineItem5.Type = AntdUI.TTypeMini.Default;
-            timelineItem6.Text = "Solve initial network problems 1\r\nSolve initial network problems 2";
+            timelineItem6.IconSvg = resources.GetString("timelineItem6.IconSvg");
+            timelineItem6.Text = "自定义图标\r\n自定义图标";
             timelineItem6.Type = AntdUI.TTypeMini.Info;
             this.timeline1.Items.Add(timelineItem1);
             this.timeline1.Items.Add(timelineItem2);

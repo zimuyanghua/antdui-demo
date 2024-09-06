@@ -30,7 +30,6 @@
         {
             this.stackPanel1 = new AntdUI.StackPanel();
             this.flowPanel1 = new AntdUI.FlowPanel();
-            this.colorPicker2 = new AntdUI.ColorPicker();
             this.colorPicker1 = new AntdUI.ColorPicker();
             this.label3 = new AntdUI.Label();
             this.divider1 = new AntdUI.Divider();
@@ -42,7 +41,6 @@
             this.colorPicker4 = new AntdUI.ColorPicker();
             this.label5 = new AntdUI.Label();
             this.flowPanel3 = new AntdUI.FlowPanel();
-            this.colorPicker5 = new AntdUI.ColorPicker();
             this.label6 = new AntdUI.Label();
             this.flowPanel4 = new AntdUI.FlowPanel();
             this.colorPicker6 = new AntdUI.ColorPicker();
@@ -51,6 +49,10 @@
             this.colorPicker9 = new AntdUI.ColorPicker();
             this.colorPicker10 = new AntdUI.ColorPicker();
             this.colorPicker11 = new AntdUI.ColorPicker();
+            this.colorPicker12 = new AntdUI.ColorPicker();
+            this.colorPicker2 = new AntdUI.ColorPicker();
+            this.colorPicker13 = new AntdUI.ColorPicker();
+            this.colorPicker5 = new AntdUI.ColorPicker();
             this.stackPanel1.SuspendLayout();
             this.flowPanel1.SuspendLayout();
             this.flowPanel2.SuspendLayout();
@@ -82,24 +84,13 @@
             // flowPanel1
             // 
             this.flowPanel1.Controls.Add(this.colorPicker2);
+            this.flowPanel1.Controls.Add(this.colorPicker12);
             this.flowPanel1.Controls.Add(this.colorPicker1);
             this.flowPanel1.Location = new System.Drawing.Point(3, 127);
             this.flowPanel1.Name = "flowPanel1";
             this.flowPanel1.Size = new System.Drawing.Size(694, 38);
             this.flowPanel1.TabIndex = 9;
             this.flowPanel1.Text = "flowPanel1";
-            // 
-            // colorPicker2
-            // 
-            this.colorPicker2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.colorPicker2.Location = new System.Drawing.Point(41, 3);
-            this.colorPicker2.Name = "colorPicker2";
-            this.colorPicker2.ShowText = true;
-            this.colorPicker2.Size = new System.Drawing.Size(105, 32);
-            this.colorPicker2.TabIndex = 1;
-            this.colorPicker2.Text = "colorPicker2";
-            this.colorPicker2.Value = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(119)))), ((int)(((byte)(255)))));
-            this.colorPicker2.WaveSize = 0;
             // 
             // colorPicker1
             // 
@@ -201,24 +192,12 @@
             // flowPanel3
             // 
             this.flowPanel3.Controls.Add(this.colorPicker5);
+            this.flowPanel3.Controls.Add(this.colorPicker13);
             this.flowPanel3.Location = new System.Drawing.Point(3, 275);
             this.flowPanel3.Name = "flowPanel3";
             this.flowPanel3.Size = new System.Drawing.Size(694, 38);
             this.flowPanel3.TabIndex = 13;
             this.flowPanel3.Text = "flowPanel3";
-            // 
-            // colorPicker5
-            // 
-            this.colorPicker5.DisabledAlpha = true;
-            this.colorPicker5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.colorPicker5.Location = new System.Drawing.Point(3, 3);
-            this.colorPicker5.Name = "colorPicker5";
-            this.colorPicker5.ShowText = true;
-            this.colorPicker5.Size = new System.Drawing.Size(105, 32);
-            this.colorPicker5.TabIndex = 2;
-            this.colorPicker5.Text = "colorPicker5";
-            this.colorPicker5.Value = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(119)))), ((int)(((byte)(255)))));
-            this.colorPicker5.WaveSize = 0;
             // 
             // label6
             // 
@@ -326,6 +305,54 @@
             this.colorPicker11.Value = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(119)))), ((int)(((byte)(255)))));
             this.colorPicker11.WaveSize = 0;
             // 
+            // colorPicker12
+            // 
+            this.colorPicker12.Location = new System.Drawing.Point(41, 3);
+            this.colorPicker12.Mode = AntdUI.TColorMode.Rgb;
+            this.colorPicker12.Name = "colorPicker12";
+            this.colorPicker12.Size = new System.Drawing.Size(32, 32);
+            this.colorPicker12.TabIndex = 2;
+            this.colorPicker12.Text = "colorPicker12";
+            this.colorPicker12.Value = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.colorPicker12.WaveSize = 0;
+            // 
+            // colorPicker2
+            // 
+            this.colorPicker2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.colorPicker2.Location = new System.Drawing.Point(79, 3);
+            this.colorPicker2.Name = "colorPicker2";
+            this.colorPicker2.ShowText = true;
+            this.colorPicker2.Size = new System.Drawing.Size(105, 32);
+            this.colorPicker2.TabIndex = 3;
+            this.colorPicker2.Text = "colorPicker2";
+            this.colorPicker2.Value = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.colorPicker2.WaveSize = 0;
+            // 
+            // colorPicker13
+            // 
+            this.colorPicker13.DisabledAlpha = true;
+            this.colorPicker13.Location = new System.Drawing.Point(3, 3);
+            this.colorPicker13.Mode = AntdUI.TColorMode.Rgb;
+            this.colorPicker13.Name = "colorPicker13";
+            this.colorPicker13.Size = new System.Drawing.Size(32, 32);
+            this.colorPicker13.TabIndex = 3;
+            this.colorPicker13.Text = "colorPicker13";
+            this.colorPicker13.Value = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.colorPicker13.WaveSize = 0;
+            // 
+            // colorPicker5
+            // 
+            this.colorPicker5.DisabledAlpha = true;
+            this.colorPicker5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.colorPicker5.Location = new System.Drawing.Point(41, 3);
+            this.colorPicker5.Name = "colorPicker5";
+            this.colorPicker5.ShowText = true;
+            this.colorPicker5.Size = new System.Drawing.Size(105, 32);
+            this.colorPicker5.TabIndex = 4;
+            this.colorPicker5.Text = "colorPicker5";
+            this.colorPicker5.Value = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(119)))), ((int)(((byte)(255)))));
+            this.colorPicker5.WaveSize = 0;
+            // 
             // ColorPickerDemo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -350,13 +377,11 @@
         private AntdUI.Label label3;
         private AntdUI.FlowPanel flowPanel1;
         private AntdUI.ColorPicker colorPicker1;
-        private AntdUI.ColorPicker colorPicker2;
         private AntdUI.FlowPanel flowPanel2;
         private AntdUI.ColorPicker colorPicker4;
         private AntdUI.ColorPicker colorPicker3;
         private AntdUI.Label label4;
         private AntdUI.FlowPanel flowPanel3;
-        private AntdUI.ColorPicker colorPicker5;
         private AntdUI.Label label5;
         private AntdUI.FlowPanel flowPanel4;
         private AntdUI.ColorPicker colorPicker11;
@@ -366,5 +391,9 @@
         private AntdUI.ColorPicker colorPicker7;
         private AntdUI.ColorPicker colorPicker6;
         private AntdUI.Label label6;
+        private AntdUI.ColorPicker colorPicker2;
+        private AntdUI.ColorPicker colorPicker12;
+        private AntdUI.ColorPicker colorPicker5;
+        private AntdUI.ColorPicker colorPicker13;
     }
 }
