@@ -280,6 +280,14 @@ namespace AntdUIDemo
                 case "Modal":
                     control = new ModalDemo(this);
                     break;
+                case "Notification":
+                    control = new NotificationDemo(this);
+                    break;
+                case "Progress":
+                    control = new ProgressDemo();
+                    break;
+                default:
+                    break;
             }
             if (control != null)
             {

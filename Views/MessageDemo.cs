@@ -104,16 +104,16 @@ namespace AntdUIDemo.Views
             {
                 //autoClose: 0 不自动关闭, 单位为秒
                 case "Success":
-                    AntdUI.Message.success(window, "This is a success message", autoClose: 1);
+                    AntdUI.Message.success(window, "This is a success message", autoClose: 3);
                     break;
                 case "Error":
-                    AntdUI.Message.error(window, "This is an error message", autoClose: 1);
+                    AntdUI.Message.error(window, "This is an error message", autoClose: 3);
                     break;
                 case "Info":
-                    AntdUI.Message.info(window, "This is an info message", autoClose: 1);
+                    AntdUI.Message.info(window, "This is an info message", autoClose: 3);
                     break;
                 case "Warn":
-                    AntdUI.Message.warn(window, "This is a warn message", autoClose: 1);
+                    AntdUI.Message.warn(window, "This is a warn message", autoClose: 3);
                     break;
             }
         }
