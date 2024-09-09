@@ -49,8 +49,6 @@ namespace AntdUIDemo.Views
                     SubText = "子文本"
                 }
             });
-
-            select_custom.SelectedIndex = 0;
         }
     }
 }

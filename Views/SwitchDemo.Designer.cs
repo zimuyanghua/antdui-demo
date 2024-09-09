@@ -46,13 +46,20 @@
             this.divider1 = new AntdUI.Divider();
             this.label2 = new AntdUI.Label();
             this.label1 = new AntdUI.Label();
+            this.label5 = new AntdUI.Label();
+            this.flowPanel3 = new AntdUI.FlowPanel();
+            this.switch13 = new AntdUI.Switch();
+            this.switch14 = new AntdUI.Switch();
             this.stackPanel1.SuspendLayout();
             this.flowPanel2.SuspendLayout();
             this.flowPanel1.SuspendLayout();
+            this.flowPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // stackPanel1
             // 
+            this.stackPanel1.Controls.Add(this.flowPanel3);
+            this.stackPanel1.Controls.Add(this.label5);
             this.stackPanel1.Controls.Add(this.flowPanel2);
             this.stackPanel1.Controls.Add(this.label4);
             this.stackPanel1.Controls.Add(this.flowPanel1);
@@ -84,6 +91,7 @@
             // switch6
             // 
             this.switch6.AutoCheck = true;
+            this.switch6.Checked = true;
             this.switch6.CheckedText = "True";
             this.switch6.Fill = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(87)))), ((int)(((byte)(34)))));
             this.switch6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
@@ -99,7 +107,6 @@
             // switch5
             // 
             this.switch5.AutoCheck = true;
-            this.switch5.Checked = true;
             this.switch5.CheckedText = "是";
             this.switch5.Fill = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(87)))), ((int)(((byte)(34)))));
             this.switch5.FillHover = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(133)))), ((int)(((byte)(34)))));
@@ -165,6 +172,7 @@
             // switch9
             // 
             this.switch9.AutoCheck = true;
+            this.switch9.Checked = true;
             this.switch9.CheckedText = "";
             this.switch9.Fill = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(87)))), ((int)(((byte)(34)))));
             this.switch9.FillHover = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(133)))), ((int)(((byte)(34)))));
@@ -181,7 +189,6 @@
             // switch10
             // 
             this.switch10.AutoCheck = true;
-            this.switch10.Checked = true;
             this.switch10.CheckedText = "";
             this.switch10.Fill = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(87)))), ((int)(((byte)(34)))));
             this.switch10.FillHover = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(133)))), ((int)(((byte)(34)))));
@@ -269,6 +276,47 @@
             this.label1.TabIndex = 17;
             this.label1.Text = "Switch 开关";
             // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.Location = new System.Drawing.Point(3, 245);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(694, 24);
+            this.label5.TabIndex = 24;
+            this.label5.Text = "禁用";
+            // 
+            // flowPanel3
+            // 
+            this.flowPanel3.Controls.Add(this.switch13);
+            this.flowPanel3.Controls.Add(this.switch14);
+            this.flowPanel3.Gap = 6;
+            this.flowPanel3.Location = new System.Drawing.Point(3, 275);
+            this.flowPanel3.Name = "flowPanel3";
+            this.flowPanel3.Size = new System.Drawing.Size(694, 38);
+            this.flowPanel3.TabIndex = 25;
+            this.flowPanel3.Text = "flowPanel3";
+            // 
+            // switch13
+            // 
+            this.switch13.AutoCheck = true;
+            this.switch13.Checked = true;
+            this.switch13.Enabled = false;
+            this.switch13.Location = new System.Drawing.Point(75, 3);
+            this.switch13.Name = "switch13";
+            this.switch13.Size = new System.Drawing.Size(60, 32);
+            this.switch13.TabIndex = 4;
+            this.switch13.Text = "switch13";
+            // 
+            // switch14
+            // 
+            this.switch14.AutoCheck = true;
+            this.switch14.Enabled = false;
+            this.switch14.Location = new System.Drawing.Point(3, 3);
+            this.switch14.Name = "switch14";
+            this.switch14.Size = new System.Drawing.Size(60, 32);
+            this.switch14.TabIndex = 3;
+            this.switch14.Text = "switch14";
+            // 
             // SwitchDemo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -278,6 +326,7 @@
             this.stackPanel1.ResumeLayout(false);
             this.flowPanel2.ResumeLayout(false);
             this.flowPanel1.ResumeLayout(false);
+            this.flowPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -302,5 +351,9 @@
         private AntdUI.Switch switch5;
         private AntdUI.Switch switch9;
         private AntdUI.Switch switch10;
+        private AntdUI.FlowPanel flowPanel3;
+        private AntdUI.Switch switch13;
+        private AntdUI.Switch switch14;
+        private AntdUI.Label label5;
     }
 }

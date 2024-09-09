@@ -3,19 +3,16 @@
 本项目基于 `Winform .NET Framework 4.8` 开发，是 [AntdUI](https://gitee.com/antdui/AntdUI) 的 Demo 项目，当前版本 `1.5.8`
 
 ## ✅ 快速开始
-```
-1. git clone 或者直接下载本项目
 
-2. 使用 Visual Studio 打开本项目
+>1. git clone 或者直接下载本项目
+>2. 使用 Visual Studio 打开本项目
+>3. 若电脑没有安装 .NET Framework 4.8，编辑项目文件设置 TargetFramework 属性为自己安装的目标框架，参照 [AntdUI兼容框架](https://www.nuget.org/packages/AntdUI#supportedframeworks-body-tab)
+>4. 编译运行
 
-3. 若电脑没有安装 .NET Framework 4.8，编辑项目文件设置 TargetFramework 属性为自己安装的目标框架，兼容框架参照 AntdUI 项目
-
-4. 编译运行
-```
 ## ⚠️ 注意事项
 - 电脑屏幕分辨率低于 1920×1080(1080P) 请使用大于等于 1080P 分辨率的屏幕开发
 - 电脑屏幕分辨率大于 1080P 或者缩放不是 100% 的，务必选择以下任一方式打开项目：
-	1. 使用 `devenv /noScale` 命令启动 Visual Studio并点击`文件-打开-项目/解决方案`，详细原因见 [解决 Visual Studio 中 Windows 窗体设计器的 HDPI/缩放问题](https://learn.microsoft.com/zh-cn/visualstudio/designers/disable-dpi-awareness?view=vs-2022) ，如下所示	
+	1. 使用 `devenv /noScale` 命令启动 Visual Studio 并点击`文件-打开-项目/解决方案`，详细原因见 [解决 Visual Studio 中 Windows 窗体设计器的 HDPI/缩放问题](https://learn.microsoft.com/zh-cn/visualstudio/designers/disable-dpi-awareness?view=vs-2022) ，如下所示	
 ![vsstart](assets/screenshots/vsstart.png)
 ![vsopen](assets/screenshots/vsopen.png)
 	2. 直接打开项目，在窗口页面提示点击 **使用 100% 缩放比例重新启动 Visual Studio**，如下所示
