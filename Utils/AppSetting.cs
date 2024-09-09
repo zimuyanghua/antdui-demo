@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace AntdUIDemo.Utils
 {
-    public static class AppSetting
+    public class AppSetting
     {
         private static readonly string configFilePath = "appsettings.json";
 

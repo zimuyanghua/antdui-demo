@@ -9,7 +9,7 @@ using Microsoft.Win32;
 
 namespace AntdUIDemo.Utils
 {
-    public static class ThemeHelper
+    public class ThemeHelper
     {
         public static bool IsLightMode()
         {

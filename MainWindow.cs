@@ -48,10 +48,7 @@ namespace AntdUIDemo
         private void LoadAppConfig()
         {
             // 读取 appsettings.json 文件
-            var configFilePath = "appsettings.json";
-            var json = File.ReadAllText(configFilePath);
-            var jsonObj = JObject.Parse(json);
-            var appSettings = jsonObj["AppSettings"];
+            var appSettings = ConfigurationHelper.GetAppSettings();
 
             // 加载色彩模式
             var value = appSettings["ColorMode"]?.ToString();
@@ -88,10 +85,7 @@ namespace AntdUIDemo
         private void Button_color_Click(object sender, EventArgs e)
         {
             // 读取 appsettings.json 文件
-            var configFilePath = "appsettings.json";
-            var json = File.ReadAllText(configFilePath);
-            var jsonObj = JObject.Parse(json);
-            var appSettings = jsonObj["AppSettings"];
+            var appSettings = ConfigurationHelper.GetAppSettings();
             var value = appSettings["ColorMode"]?.ToString();
             if (value == "Auto")
             {
@@ -314,6 +308,7 @@ namespace AntdUIDemo
             }
             if (control != null)
             {
+                //容器添加控件，需要调整dpi
                 AutoDpi(control);
                 panel_content.Controls.Add(control);
             }

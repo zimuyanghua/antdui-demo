@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace AntdUIDemo.Utils
 {
-    public static class LoggerHelper
+    public class LoggerHelper
     {
         public static readonly Logger Logger = LogManager.GetCurrentClassLogger();
     }
