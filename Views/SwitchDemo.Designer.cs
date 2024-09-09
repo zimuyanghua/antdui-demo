@@ -38,8 +38,6 @@
             this.flowPanel1 = new AntdUI.FlowPanel();
             this.switch9 = new AntdUI.Switch();
             this.switch10 = new AntdUI.Switch();
-            this.switch3 = new AntdUI.Switch();
-            this.switch4 = new AntdUI.Switch();
             this.switch2 = new AntdUI.Switch();
             this.switch1 = new AntdUI.Switch();
             this.label3 = new AntdUI.Label();
@@ -158,8 +156,6 @@
             // 
             this.flowPanel1.Controls.Add(this.switch9);
             this.flowPanel1.Controls.Add(this.switch10);
-            this.flowPanel1.Controls.Add(this.switch3);
-            this.flowPanel1.Controls.Add(this.switch4);
             this.flowPanel1.Controls.Add(this.switch2);
             this.flowPanel1.Controls.Add(this.switch1);
             this.flowPanel1.Gap = 6;
@@ -178,7 +174,7 @@
             this.switch9.FillHover = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(133)))), ((int)(((byte)(34)))));
             this.switch9.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.switch9.Gap = 6;
-            this.switch9.Location = new System.Drawing.Point(363, 3);
+            this.switch9.Location = new System.Drawing.Point(219, 3);
             this.switch9.Name = "switch9";
             this.switch9.Size = new System.Drawing.Size(60, 32);
             this.switch9.TabIndex = 9;
@@ -194,34 +190,13 @@
             this.switch10.FillHover = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(133)))), ((int)(((byte)(34)))));
             this.switch10.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.switch10.Gap = 6;
-            this.switch10.Location = new System.Drawing.Point(291, 3);
+            this.switch10.Location = new System.Drawing.Point(147, 3);
             this.switch10.Name = "switch10";
             this.switch10.Size = new System.Drawing.Size(60, 32);
             this.switch10.TabIndex = 8;
             this.switch10.Text = "switch10";
             this.switch10.UnCheckedText = "";
             this.switch10.WaveSize = 0;
-            // 
-            // switch3
-            // 
-            this.switch3.AutoCheck = true;
-            this.switch3.Checked = true;
-            this.switch3.Enabled = false;
-            this.switch3.Location = new System.Drawing.Point(219, 3);
-            this.switch3.Name = "switch3";
-            this.switch3.Size = new System.Drawing.Size(60, 32);
-            this.switch3.TabIndex = 4;
-            this.switch3.Text = "switch3";
-            // 
-            // switch4
-            // 
-            this.switch4.AutoCheck = true;
-            this.switch4.Enabled = false;
-            this.switch4.Location = new System.Drawing.Point(147, 3);
-            this.switch4.Name = "switch4";
-            this.switch4.Size = new System.Drawing.Size(60, 32);
-            this.switch4.TabIndex = 3;
-            this.switch4.Text = "switch4";
             // 
             // switch2
             // 
@@ -341,8 +316,6 @@
         private AntdUI.FlowPanel flowPanel1;
         private AntdUI.Switch switch1;
         private AntdUI.Switch switch2;
-        private AntdUI.Switch switch3;
-        private AntdUI.Switch switch4;
         private AntdUI.FlowPanel flowPanel2;
         private AntdUI.Switch switch7;
         private AntdUI.Switch switch8;

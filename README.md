@@ -36,6 +36,8 @@
 ![FloatButton](assets/screenshots/FloatButton.png)
 
 ### 布局
+#### Divider 分割线
+![Divider](assets/screenshots/Divider.png)
 #### FlowPanel 流动布局
 ![FlowPanel](assets/screenshots/FlowPanel.png)
 #### GridPanel 网格布局
@@ -128,14 +130,20 @@
 #### Progress 进度条
 ![Progress](assets/screenshots/Progress.png)
 #### Spin 加载中
+![Spin](assets/screenshots/Spin.png)
 
 ### 聊天
 #### ChatList 气泡聊天列表
+![ChatList](assets/screenshots/ChatList.png)
 #### MsgList 好友消息列表
+![MsgList](assets/screenshots/MsgList.png)
 
 ### 其它
 #### Battery 电池
-#### ContextMenuStrip 右键菜单
-#### Divider 分割线
+![Battery](assets/screenshots/Battery.png)
+#### ContextMenuStrip 快捷菜单
+![ContextMenuStrip](assets/screenshots/ContextMenuStrip.png)
 #### Image3D 图片3D
+![Image3D](assets/screenshots/Image3D.png)
 #### WindowBar 窗口栏
+![WindowBar](assets/screenshots/WindowBar.png)
