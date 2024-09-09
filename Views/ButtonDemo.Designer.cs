@@ -30,25 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ButtonDemo));
             this.stackPanel1 = new AntdUI.StackPanel();
-            this.flowPanel1 = new AntdUI.FlowPanel();
-            this.button6 = new AntdUI.Button();
-            this.button5 = new AntdUI.Button();
-            this.button4 = new AntdUI.Button();
-            this.button3 = new AntdUI.Button();
-            this.button2 = new AntdUI.Button();
-            this.button1 = new AntdUI.Button();
-            this.label3 = new AntdUI.Label();
-            this.divider1 = new AntdUI.Divider();
-            this.label2 = new AntdUI.Label();
-            this.label1 = new AntdUI.Label();
-            this.label11 = new AntdUI.Label();
-            this.flowPanel9 = new AntdUI.FlowPanel();
-            this.button30 = new AntdUI.Button();
-            this.button31 = new AntdUI.Button();
-            this.button32 = new AntdUI.Button();
-            this.button38 = new AntdUI.Button();
-            this.button40 = new AntdUI.Button();
-            this.button41 = new AntdUI.Button();
             this.flowPanel8 = new AntdUI.FlowPanel();
             this.button_toggle2 = new AntdUI.Button();
             this.button_toggle = new AntdUI.Button();
@@ -96,9 +77,26 @@
             this.button11 = new AntdUI.Button();
             this.button12 = new AntdUI.Button();
             this.label4 = new AntdUI.Label();
+            this.flowPanel9 = new AntdUI.FlowPanel();
+            this.button30 = new AntdUI.Button();
+            this.button31 = new AntdUI.Button();
+            this.button32 = new AntdUI.Button();
+            this.button38 = new AntdUI.Button();
+            this.button40 = new AntdUI.Button();
+            this.button41 = new AntdUI.Button();
+            this.label11 = new AntdUI.Label();
+            this.flowPanel1 = new AntdUI.FlowPanel();
+            this.button6 = new AntdUI.Button();
+            this.button5 = new AntdUI.Button();
+            this.button4 = new AntdUI.Button();
+            this.button3 = new AntdUI.Button();
+            this.button2 = new AntdUI.Button();
+            this.button1 = new AntdUI.Button();
+            this.label3 = new AntdUI.Label();
+            this.divider1 = new AntdUI.Divider();
+            this.label2 = new AntdUI.Label();
+            this.label1 = new AntdUI.Label();
             this.stackPanel1.SuspendLayout();
-            this.flowPanel1.SuspendLayout();
-            this.flowPanel9.SuspendLayout();
             this.flowPanel8.SuspendLayout();
             this.flowPanel7.SuspendLayout();
             this.flowPanel6.SuspendLayout();
@@ -108,6 +106,8 @@
             this.flowPanel4.SuspendLayout();
             this.flowPanel3.SuspendLayout();
             this.flowPanel2.SuspendLayout();
+            this.flowPanel9.SuspendLayout();
+            this.flowPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // stackPanel1
@@ -140,203 +140,6 @@
             this.stackPanel1.TabIndex = 1;
             this.stackPanel1.Text = "stackPanel1";
             this.stackPanel1.Vertical = true;
-            // 
-            // flowPanel1
-            // 
-            this.flowPanel1.Controls.Add(this.button6);
-            this.flowPanel1.Controls.Add(this.button5);
-            this.flowPanel1.Controls.Add(this.button4);
-            this.flowPanel1.Controls.Add(this.button3);
-            this.flowPanel1.Controls.Add(this.button2);
-            this.flowPanel1.Controls.Add(this.button1);
-            this.flowPanel1.Location = new System.Drawing.Point(3, 127);
-            this.flowPanel1.Name = "flowPanel1";
-            this.flowPanel1.Size = new System.Drawing.Size(694, 38);
-            this.flowPanel1.TabIndex = 6;
-            this.flowPanel1.Text = "flowPanel1";
-            // 
-            // button6
-            // 
-            this.button6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button6.Location = new System.Drawing.Point(433, 3);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(80, 32);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Info";
-            this.button6.Type = AntdUI.TTypeMini.Info;
-            this.button6.WaveSize = 0;
-            // 
-            // button5
-            // 
-            this.button5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button5.Location = new System.Drawing.Point(347, 3);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(80, 32);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Error";
-            this.button5.Type = AntdUI.TTypeMini.Error;
-            this.button5.WaveSize = 0;
-            // 
-            // button4
-            // 
-            this.button4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button4.Location = new System.Drawing.Point(261, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(80, 32);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Warn";
-            this.button4.Type = AntdUI.TTypeMini.Warn;
-            this.button4.WaveSize = 0;
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button3.Location = new System.Drawing.Point(175, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(80, 32);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Success";
-            this.button3.Type = AntdUI.TTypeMini.Success;
-            this.button3.WaveSize = 0;
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button2.Location = new System.Drawing.Point(89, 3);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(80, 32);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Primary";
-            this.button2.Type = AntdUI.TTypeMini.Primary;
-            this.button2.WaveSize = 0;
-            // 
-            // button1
-            // 
-            this.button1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button1.Location = new System.Drawing.Point(3, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 32);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Default";
-            this.button1.WaveSize = 0;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(3, 97);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(694, 24);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "按钮类型";
-            // 
-            // divider1
-            // 
-            this.divider1.Location = new System.Drawing.Point(3, 79);
-            this.divider1.Name = "divider1";
-            this.divider1.Size = new System.Drawing.Size(694, 12);
-            this.divider1.TabIndex = 4;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(3, 49);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(694, 24);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "按钮用于开始一个即时操作。";
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(3, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(694, 40);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Button 按钮";
-            // 
-            // label11
-            // 
-            this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label11.Location = new System.Drawing.Point(3, 171);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(694, 24);
-            this.label11.TabIndex = 21;
-            this.label11.Text = "水波效果";
-            // 
-            // flowPanel9
-            // 
-            this.flowPanel9.Controls.Add(this.button30);
-            this.flowPanel9.Controls.Add(this.button31);
-            this.flowPanel9.Controls.Add(this.button32);
-            this.flowPanel9.Controls.Add(this.button38);
-            this.flowPanel9.Controls.Add(this.button40);
-            this.flowPanel9.Controls.Add(this.button41);
-            this.flowPanel9.Location = new System.Drawing.Point(3, 201);
-            this.flowPanel9.Name = "flowPanel9";
-            this.flowPanel9.Size = new System.Drawing.Size(694, 44);
-            this.flowPanel9.TabIndex = 22;
-            this.flowPanel9.Text = "flowPanel9";
-            // 
-            // button30
-            // 
-            this.button30.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button30.Location = new System.Drawing.Point(433, 3);
-            this.button30.Name = "button30";
-            this.button30.Size = new System.Drawing.Size(80, 38);
-            this.button30.TabIndex = 5;
-            this.button30.Text = "Info";
-            this.button30.Type = AntdUI.TTypeMini.Info;
-            // 
-            // button31
-            // 
-            this.button31.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button31.Location = new System.Drawing.Point(347, 3);
-            this.button31.Name = "button31";
-            this.button31.Size = new System.Drawing.Size(80, 38);
-            this.button31.TabIndex = 4;
-            this.button31.Text = "Error";
-            this.button31.Type = AntdUI.TTypeMini.Error;
-            // 
-            // button32
-            // 
-            this.button32.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button32.Location = new System.Drawing.Point(261, 3);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(80, 38);
-            this.button32.TabIndex = 3;
-            this.button32.Text = "Warn";
-            this.button32.Type = AntdUI.TTypeMini.Warn;
-            // 
-            // button38
-            // 
-            this.button38.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button38.Location = new System.Drawing.Point(175, 3);
-            this.button38.Name = "button38";
-            this.button38.Size = new System.Drawing.Size(80, 38);
-            this.button38.TabIndex = 2;
-            this.button38.Text = "Success";
-            this.button38.Type = AntdUI.TTypeMini.Success;
-            // 
-            // button40
-            // 
-            this.button40.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button40.Location = new System.Drawing.Point(89, 3);
-            this.button40.Name = "button40";
-            this.button40.Size = new System.Drawing.Size(80, 38);
-            this.button40.TabIndex = 1;
-            this.button40.Text = "Primary";
-            this.button40.Type = AntdUI.TTypeMini.Primary;
-            // 
-            // button41
-            // 
-            this.button41.Cursor = System.Windows.Forms.Cursors.Default;
-            this.button41.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.button41.Location = new System.Drawing.Point(3, 3);
-            this.button41.Name = "button41";
-            this.button41.Size = new System.Drawing.Size(80, 38);
-            this.button41.TabIndex = 0;
-            this.button41.Text = "Default";
             // 
             // flowPanel8
             // 
@@ -439,7 +242,7 @@
             this.button36.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button36.Ghost = true;
             this.button36.JoinLeft = true;
-            this.button36.Location = new System.Drawing.Point(88, 3);
+            this.button36.Location = new System.Drawing.Point(87, 3);
             this.button36.Name = "button36";
             this.button36.Size = new System.Drawing.Size(85, 38);
             this.button36.TabIndex = 4;
@@ -877,14 +680,209 @@
             this.label4.TabIndex = 23;
             this.label4.Text = "文本按钮";
             // 
+            // flowPanel9
+            // 
+            this.flowPanel9.Controls.Add(this.button30);
+            this.flowPanel9.Controls.Add(this.button31);
+            this.flowPanel9.Controls.Add(this.button32);
+            this.flowPanel9.Controls.Add(this.button38);
+            this.flowPanel9.Controls.Add(this.button40);
+            this.flowPanel9.Controls.Add(this.button41);
+            this.flowPanel9.Location = new System.Drawing.Point(3, 201);
+            this.flowPanel9.Name = "flowPanel9";
+            this.flowPanel9.Size = new System.Drawing.Size(694, 44);
+            this.flowPanel9.TabIndex = 22;
+            this.flowPanel9.Text = "flowPanel9";
+            // 
+            // button30
+            // 
+            this.button30.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button30.Location = new System.Drawing.Point(433, 3);
+            this.button30.Name = "button30";
+            this.button30.Size = new System.Drawing.Size(80, 38);
+            this.button30.TabIndex = 5;
+            this.button30.Text = "Info";
+            this.button30.Type = AntdUI.TTypeMini.Info;
+            // 
+            // button31
+            // 
+            this.button31.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button31.Location = new System.Drawing.Point(347, 3);
+            this.button31.Name = "button31";
+            this.button31.Size = new System.Drawing.Size(80, 38);
+            this.button31.TabIndex = 4;
+            this.button31.Text = "Error";
+            this.button31.Type = AntdUI.TTypeMini.Error;
+            // 
+            // button32
+            // 
+            this.button32.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button32.Location = new System.Drawing.Point(261, 3);
+            this.button32.Name = "button32";
+            this.button32.Size = new System.Drawing.Size(80, 38);
+            this.button32.TabIndex = 3;
+            this.button32.Text = "Warn";
+            this.button32.Type = AntdUI.TTypeMini.Warn;
+            // 
+            // button38
+            // 
+            this.button38.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button38.Location = new System.Drawing.Point(175, 3);
+            this.button38.Name = "button38";
+            this.button38.Size = new System.Drawing.Size(80, 38);
+            this.button38.TabIndex = 2;
+            this.button38.Text = "Success";
+            this.button38.Type = AntdUI.TTypeMini.Success;
+            // 
+            // button40
+            // 
+            this.button40.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button40.Location = new System.Drawing.Point(89, 3);
+            this.button40.Name = "button40";
+            this.button40.Size = new System.Drawing.Size(80, 38);
+            this.button40.TabIndex = 1;
+            this.button40.Text = "Primary";
+            this.button40.Type = AntdUI.TTypeMini.Primary;
+            // 
+            // button41
+            // 
+            this.button41.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button41.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button41.Location = new System.Drawing.Point(3, 3);
+            this.button41.Name = "button41";
+            this.button41.Size = new System.Drawing.Size(80, 38);
+            this.button41.TabIndex = 0;
+            this.button41.Text = "Default";
+            // 
+            // label11
+            // 
+            this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label11.Location = new System.Drawing.Point(3, 171);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(694, 24);
+            this.label11.TabIndex = 21;
+            this.label11.Text = "水波效果";
+            // 
+            // flowPanel1
+            // 
+            this.flowPanel1.Controls.Add(this.button6);
+            this.flowPanel1.Controls.Add(this.button5);
+            this.flowPanel1.Controls.Add(this.button4);
+            this.flowPanel1.Controls.Add(this.button3);
+            this.flowPanel1.Controls.Add(this.button2);
+            this.flowPanel1.Controls.Add(this.button1);
+            this.flowPanel1.Location = new System.Drawing.Point(3, 127);
+            this.flowPanel1.Name = "flowPanel1";
+            this.flowPanel1.Size = new System.Drawing.Size(694, 38);
+            this.flowPanel1.TabIndex = 6;
+            this.flowPanel1.Text = "flowPanel1";
+            // 
+            // button6
+            // 
+            this.button6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button6.Location = new System.Drawing.Point(433, 3);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(80, 32);
+            this.button6.TabIndex = 5;
+            this.button6.Text = "Info";
+            this.button6.Type = AntdUI.TTypeMini.Info;
+            this.button6.WaveSize = 0;
+            // 
+            // button5
+            // 
+            this.button5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button5.Location = new System.Drawing.Point(347, 3);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(80, 32);
+            this.button5.TabIndex = 4;
+            this.button5.Text = "Error";
+            this.button5.Type = AntdUI.TTypeMini.Error;
+            this.button5.WaveSize = 0;
+            // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button4.Location = new System.Drawing.Point(261, 3);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(80, 32);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "Warn";
+            this.button4.Type = AntdUI.TTypeMini.Warn;
+            this.button4.WaveSize = 0;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button3.Location = new System.Drawing.Point(175, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(80, 32);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "Success";
+            this.button3.Type = AntdUI.TTypeMini.Success;
+            this.button3.WaveSize = 0;
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button2.Location = new System.Drawing.Point(89, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(80, 32);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "Primary";
+            this.button2.Type = AntdUI.TTypeMini.Primary;
+            this.button2.WaveSize = 0;
+            // 
+            // button1
+            // 
+            this.button1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button1.Location = new System.Drawing.Point(3, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(80, 32);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "Default";
+            this.button1.WaveSize = 0;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.Location = new System.Drawing.Point(3, 97);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(694, 24);
+            this.label3.TabIndex = 5;
+            this.label3.Text = "按钮类型";
+            // 
+            // divider1
+            // 
+            this.divider1.Location = new System.Drawing.Point(3, 79);
+            this.divider1.Name = "divider1";
+            this.divider1.Size = new System.Drawing.Size(694, 12);
+            this.divider1.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.Location = new System.Drawing.Point(3, 49);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(694, 24);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "按钮用于开始一个即时操作。";
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(3, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(694, 40);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Button 按钮";
+            // 
             // ButtonDemo
             // 
             this.Controls.Add(this.stackPanel1);
             this.Name = "ButtonDemo";
             this.Size = new System.Drawing.Size(700, 809);
             this.stackPanel1.ResumeLayout(false);
-            this.flowPanel1.ResumeLayout(false);
-            this.flowPanel9.ResumeLayout(false);
             this.flowPanel8.ResumeLayout(false);
             this.flowPanel7.ResumeLayout(false);
             this.flowPanel6.ResumeLayout(false);
@@ -894,6 +892,8 @@
             this.flowPanel4.ResumeLayout(false);
             this.flowPanel3.ResumeLayout(false);
             this.flowPanel2.ResumeLayout(false);
+            this.flowPanel9.ResumeLayout(false);
+            this.flowPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

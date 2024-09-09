@@ -10,6 +10,6 @@ namespace AntdUIDemo.Models
     {
         public string IconSvg { get; set; } = null;
         public string Text { get; set; } = string.Empty;
-        public object Tag { get; set; } = null;
+        public string Tag { get; set; } = null;
     }
 }

@@ -13,6 +13,20 @@ namespace AntdUIDemo.Utils
     {
         private static readonly string configFilePath = "appsettings.json";
 
+        public static JObject GetAppSettings(string configFilePath = "appsettings.json")
+        {
+            if (!File.Exists(configFilePath))
+            {
+                // 如果文件不存在，创建默认的配置文件
+                CreateDefaultConfigFile(configFilePath);
+            }
+
+            var json = File.ReadAllText(configFilePath);
+            var jsonObj = JObject.Parse(json);
+
+            return (JObject)jsonObj["AppSettings"];
+        }
+
         public static void UpdateAppSetting(string key, string value)
         {
             // 检查配置文件是否存在

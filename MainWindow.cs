@@ -48,8 +48,7 @@ namespace AntdUIDemo
         private void LoadAppConfig()
         {
             // 读取 appsettings.json 文件
-            var appSettings = ConfigurationHelper.GetAppSettings();
-            if (appSettings == null) return;
+            var appSettings = AppSetting.GetAppSettings();
             // 加载色彩模式
             var value = appSettings["ColorMode"]?.ToString();
             if (value == "Auto")
@@ -85,8 +84,7 @@ namespace AntdUIDemo
         private void Button_color_Click(object sender, EventArgs e)
         {
             // 读取 appsettings.json 文件
-            var appSettings = ConfigurationHelper.GetAppSettings();
-            if (appSettings == null) return;
+            var appSettings = AppSetting.GetAppSettings();
             var value = appSettings["ColorMode"]?.ToString();
             if (value == "Auto")
             {
