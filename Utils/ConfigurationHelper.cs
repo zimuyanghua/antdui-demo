@@ -12,6 +12,10 @@ namespace AntdUIDemo.Utils
     {
         public static JObject GetAppSettings(string configFilePath = "appsettings.json")
         {
+            if (!File.Exists(configFilePath))
+            {
+                return null;
+            }
             // Read the JSON file
             var json = File.ReadAllText(configFilePath);
 
