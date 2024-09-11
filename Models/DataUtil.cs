@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AntdUIDemo.Models
 {
-    public static class DataUtil
+    public class DataUtil
     {
         public static readonly Dictionary<string, List<MenuItems>> MenuItems = new Dictionary<string, List<MenuItems>>()
     {
