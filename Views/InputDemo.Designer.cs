@@ -226,11 +226,6 @@
             this.button_loading.Cursor = System.Windows.Forms.Cursors.Default;
             this.button_loading.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button_loading.IconSvg = resources.GetString("button_loading.IconSvg");
-            this.button_loading.Image = null;
-            this.button_loading.ImageHover = null;
-            this.button_loading.ImageHoverSvg = null;
-            this.button_loading.ImageSize = new System.Drawing.Size(0, 0);
-            this.button_loading.ImageSvg = resources.GetString("button_loading.ImageSvg");
             this.button_loading.JoinLeft = true;
             this.button_loading.Location = new System.Drawing.Point(165, 3);
             this.button_loading.Name = "button_loading";
@@ -279,11 +274,6 @@
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.button1.IconSvg = resources.GetString("button1.IconSvg");
-            this.button1.Image = null;
-            this.button1.ImageHover = null;
-            this.button1.ImageHoverSvg = null;
-            this.button1.ImageSize = new System.Drawing.Size(0, 0);
-            this.button1.ImageSvg = resources.GetString("button1.ImageSvg");
             this.button1.JoinRight = true;
             this.button1.Location = new System.Drawing.Point(3, 3);
             this.button1.Name = "button1";
