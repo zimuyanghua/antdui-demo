@@ -75,7 +75,14 @@ namespace AntdUIDemo.Views
 
         private void switch_autoscroll_CheckedChanged(object sender, BoolEventArgs e)
         {
-            flowPanel.AutoScroll = switch_autoscroll.Checked;
+            if (flowPanel.InvokeRequired)
+            {
+                flowPanel.Invoke(new Action(() => { flowPanel.AutoScroll = switch_autoscroll.Checked; }));
+            }
+            else
+            {
+                flowPanel.AutoScroll = switch_autoscroll.Checked;
+            }
         }
 
         // 初始化下拉框
@@ -95,6 +102,10 @@ namespace AntdUIDemo.Views
             {
                 flowPanel.Invoke(new Action(() => { flowPanel.Align = (TAlignFlow)select_align.SelectedValue; }));
             }
+            else
+            {
+                flowPanel.Align = (TAlignFlow)select_align.SelectedValue;
+            }
         }
 
         private void input_gap_ValueChanged(object sender, DecimalEventArgs e)
@@ -102,6 +113,10 @@ namespace AntdUIDemo.Views
             if (flowPanel.InvokeRequired)
             {
                 flowPanel.Invoke(new Action(() => { flowPanel.Gap = (int)input_gap.Value; }));
+            }
+            else
+            {
+                flowPanel.Gap = (int)input_gap.Value;
             }
         }
         // 添加按钮

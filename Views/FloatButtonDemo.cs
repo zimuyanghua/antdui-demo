@@ -163,16 +163,19 @@ namespace AntdUIDemo.Views
             if (InvokeRequired)
             {
                 Invoke(new Action(CloseFloatButtonForm));
-                return;
             }
-
-            if (floatButtonForm != null)
+            else
             {
-                floatButtonForm.Close();
-                floatButtonForm.Dispose();
-                floatButtonForm = null;
+                // Ensure that floatButtonForm is not null before attempting to close it
+                if (floatButtonForm != null)
+                {
+                    floatButtonForm.Close();
+                    floatButtonForm.Dispose();
+                    floatButtonForm = null;
+                }
             }
         }
+
 
 
         #region EventHandler

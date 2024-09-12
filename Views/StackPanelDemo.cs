@@ -89,6 +89,10 @@ namespace AntdUIDemo.Views
                     stackPanel.ItemSize = input_itemsize.Text;
                 }));
             }
+            else
+            {
+                stackPanel.ItemSize = input_itemsize.Text;
+            }
         }
 
         private void input_gap_ValueChanged(object sender, DecimalEventArgs e)
@@ -99,6 +103,10 @@ namespace AntdUIDemo.Views
                 {
                     stackPanel.Gap = (int)input_gap.Value;
                 }));
+            }
+            else
+            {
+                stackPanel.Gap = (int)input_gap.Value;
             }
         }
 

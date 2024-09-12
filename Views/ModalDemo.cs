@@ -54,6 +54,8 @@ namespace AntdUIDemo.Views
             AntdUI.Modal.open(new AntdUI.Modal.Config(window, "Basic Modal", "Some contents...\r\nSome contents...\r\nSome contents...")
             {
                 CloseIcon = true,
+                Keyboard = false,
+                MaskClosable = false,
             });
         }
 
@@ -61,6 +63,8 @@ namespace AntdUIDemo.Views
         {
             AntdUI.Modal.open(new AntdUI.Modal.Config(window, "Basic Modal", "Some contents...\r\nSome contents...\r\nSome contents...")
             {
+                //禁止使用键盘关闭
+                Keyboard = false,
                 MaskClosable = false,
             });
         }
