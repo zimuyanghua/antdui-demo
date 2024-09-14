@@ -111,6 +111,8 @@ namespace AntdUIDemo.Views
             AntdUI.Modal.open(new AntdUI.Modal.Config(window, "Basic Modal", "Some contents...\r\nSome contents...\r\nSome contents...")
             {
                 Icon = TType.Info,
+                //内边距
+                Padding = new Size(24, 20),
             });
         }
     }

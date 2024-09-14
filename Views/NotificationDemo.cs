@@ -44,6 +44,7 @@ namespace AntdUIDemo.Views
         {
             AntdUI.Notification.open(new AntdUI.Notification.Config(window, "Notification Title", "This is the content of the notification. This is the content of the notification. This is the content of the notification.", TType.Info, TAlignFrom.TR)
             {
+                Padding = new Size(24, 20),
                 CloseIcon = false,
                 Link = new Notification.ConfigLink("Link to...", new Action(() =>
                 {
@@ -56,6 +57,7 @@ namespace AntdUIDemo.Views
         {
             AntdUI.Notification.open(new AntdUI.Notification.Config(window, "Notification Title", "This is the content of the notification. This is the content of the notification. This is the content of the notification.", TType.Info, TAlignFrom.TR)
             {
+                Padding = new Size(24, 20),
                 CloseIcon = false,
             });
         }

@@ -44,6 +44,7 @@ namespace AntdUIDemo.Views
                 case "Success":
                     AntdUI.Message.loading(window, "加载中...", call: (config) =>
                     {
+                        config.Padding = new Size(12, 9);
                         //执行一些耗时操作，暂不支持异步任务
                         Thread.Sleep(2000);
                         config.Text = "加载配置...";
@@ -57,6 +58,7 @@ namespace AntdUIDemo.Views
                 case "Error":
                     AntdUI.Message.loading(window, "加载中...", call: (config) =>
                     {
+                        config.Padding = new Size(12, 9);
                         //执行一些耗时操作，暂不支持异步任务
                         Thread.Sleep(2000);
                         config.Text = "加载配置...";
@@ -70,6 +72,7 @@ namespace AntdUIDemo.Views
                 case "Info":
                     AntdUI.Message.loading(window, "加载中...", call: (config) =>
                     {
+                        config.Padding = new Size(12, 9);
                         //执行一些耗时操作，暂不支持异步任务
                         Thread.Sleep(2000);
                         config.Text = "加载配置...";
@@ -83,6 +86,7 @@ namespace AntdUIDemo.Views
                 case "Warn":
                     AntdUI.Message.loading(window, "加载中...", call: (config) =>
                     {
+                        config.Padding = new Size(12, 9);
                         //执行一些耗时操作，暂不支持异步任务
                         Thread.Sleep(2000);
                         config.Text = "加载配置...";
