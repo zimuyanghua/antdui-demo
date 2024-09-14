@@ -94,45 +94,49 @@ namespace AntdUIDemo.Views
                 floatButtonForm = FloatButton.open(new FloatButton.Config(window, new FloatButton.ConfigBtn[]
                 {
                    // 使用 svg 图片
-                   new FloatButton.ConfigBtn("按钮1","",true)
-                {
-                    Tooltip = "SVG图片按钮",
-                    IconSvg = "<svg viewBox=\"0 0 1024 1024\"><path d=\"M511.878001 1023.989c-62.999385 0-124.098788-11.699886-181.698225-34.999658-55.699456-22.49978-105.798967-54.499468-148.798547-95.599067-43.099579-40.9996-76.899249-88.899132-100.599018-142.198611-24.59976-55.29946-36.999639-114.098886-36.999639-174.698294 0-76.79925 20.699798-152.498511 59.899415-219.197859 37.799631-64.099374 92.299099-119.098837 157.498462-158.598451 14.699856-8.999912 33.899669-4.299958 42.899581 10.499897 8.999912 14.699856 4.299958 33.899669-10.499897 42.899581-56.399449 34.199666-103.498989 81.599203-136.19867 137.098661-33.599672 56.999443-51.1995 121.798811-51.1995 187.39817 0 102.498999 41.99959 199.098056 118.298845 271.697347 76.699251 73.099286 178.798254 113.298894 287.497192 113.298893s210.797941-40.299606 287.497193-113.298893c76.299255-72.799289 118.298845-169.198348 118.298844-271.797346 0-130.298728-68.699329-250.797551-183.798205-322.296852-14.599857-9.099911-19.099813-28.299724-9.999902-42.99958 9.099911-14.599857 28.299724-19.099813 42.99958-9.999903 64.099374 39.799611 117.498853 94.599076 154.59849 158.398453 38.399625 66.099354 58.699427 140.998623 58.699427 217.09788 0 60.599408-12.499878 119.398834-36.999639 174.698294-23.699769 53.299479-57.499438 101.199012-100.599017 142.198612-42.99958 40.899601-93.099091 73.099286-148.798547 95.599066-57.799436 23.099774-118.998838 34.79966-181.998223 34.79966zM511.878001 506.394055c-17.199832 0-31.199695-13.899864-31.199695-31.199696v-443.995664c0-17.199832 13.899864-31.199695 31.199695-31.199695 17.199832 0 31.199695 13.899864 31.199696 31.199695v443.895665c0.099999 17.199832-13.999863 31.299694-31.199696 31.299695z\"></path></svg>",
-                    Round = select_round.SelectedIndex == 0,
-                    Type = (TTypeMini)select_type.SelectedValue,
-                    Radius = (int)input_radius.Value,
-                    Badge = input_badge.Text,
-                    BadgeSize = (float)input_badgesize.Value,
-                    BadgeBack = colorPicker.Value,
-                },
+                   // ConfigBtn第二个text参数默认设置为IconSvg，或者如下在配置里面设置IconSvg
+                   new FloatButton.ConfigBtn("button1","",true)
+                   {
+                        // isSvg设置为true，text参数会赋值给IconSvg，否则赋值给Text,所以需要单独设置Text
+                        Text = "SVG图片",
+                        IconSvg = "<svg viewBox=\"0 0 1024 1024\"><path d=\"M511.878001 1023.989c-62.999385 0-124.098788-11.699886-181.698225-34.999658-55.699456-22.49978-105.798967-54.499468-148.798547-95.599067-43.099579-40.9996-76.899249-88.899132-100.599018-142.198611-24.59976-55.29946-36.999639-114.098886-36.999639-174.698294 0-76.79925 20.699798-152.498511 59.899415-219.197859 37.799631-64.099374 92.299099-119.098837 157.498462-158.598451 14.699856-8.999912 33.899669-4.299958 42.899581 10.499897 8.999912 14.699856 4.299958 33.899669-10.499897 42.899581-56.399449 34.199666-103.498989 81.599203-136.19867 137.098661-33.599672 56.999443-51.1995 121.798811-51.1995 187.39817 0 102.498999 41.99959 199.098056 118.298845 271.697347 76.699251 73.099286 178.798254 113.298894 287.497192 113.298893s210.797941-40.299606 287.497193-113.298893c76.299255-72.799289 118.298845-169.198348 118.298844-271.797346 0-130.298728-68.699329-250.797551-183.798205-322.296852-14.599857-9.099911-19.099813-28.299724-9.999902-42.99958 9.099911-14.599857 28.299724-19.099813 42.99958-9.999903 64.099374 39.799611 117.498853 94.599076 154.59849 158.398453 38.399625 66.099354 58.699427 140.998623 58.699427 217.09788 0 60.599408-12.499878 119.398834-36.999639 174.698294-23.699769 53.299479-57.499438 101.199012-100.599017 142.198612-42.99958 40.899601-93.099091 73.099286-148.798547 95.599066-57.799436 23.099774-118.998838 34.79966-181.998223 34.79966zM511.878001 506.394055c-17.199832 0-31.199695-13.899864-31.199695-31.199696v-443.995664c0-17.199832 13.899864-31.199695 31.199695-31.199695 17.199832 0 31.199695 13.899864 31.199696 31.199695v443.895665c0.099999 17.199832-13.999863 31.299694-31.199696 31.299695z\"></path></svg>",
+                        Tooltip = "SVG图片按钮",
+                        Round = select_round.SelectedIndex == 0,
+                        Type = (TTypeMini)select_type.SelectedValue,
+                        Radius = (int)input_radius.Value,
+                        Badge = input_badge.Text,
+                        BadgeSize = (float)input_badgesize.Value,
+                        BadgeBack = colorPicker.Value,
+                   },
                    // 使用资源图片
-                new FloatButton.ConfigBtn("按钮2", Properties.Resources.关闭)
-                {
-                    Tooltip = "资源图片按钮",
-                    Round = select_round.SelectedIndex == 0,
-                    Type = (TTypeMini)select_type.SelectedValue,
-                    Radius = (int)input_radius.Value,
-                    Badge = input_badge.Text,
-                    BadgeSize = (float)input_badgesize.Value,
-                    BadgeBack = colorPicker.Value,
-                },
+                   new FloatButton.ConfigBtn("button2", Properties.Resources.关闭)
+                   {
+                        Text = "资源图片",
+                        Tooltip = "资源图片按钮",
+                        Round = select_round.SelectedIndex == 0,
+                        Type = (TTypeMini)select_type.SelectedValue,
+                        Radius = (int)input_radius.Value,
+                        Badge = input_badge.Text,
+                        BadgeSize = (float)input_badgesize.Value,
+                        BadgeBack = colorPicker.Value,
+                    },
                   // 使用文本
-                new FloatButton.ConfigBtn("按钮3", "关闭")
-                {
-                    Tooltip = "文本按钮",
-                    Round = select_round.SelectedIndex == 0,
-                    Type = (TTypeMini)select_type.SelectedValue,
-                    Radius = (int)input_radius.Value,
-                    Badge = input_badge.Text,
-                    BadgeSize = (float)input_badgesize.Value,
-                    BadgeBack = colorPicker.Value,
-                },
-
-                }, btn =>
-                {
-                    //回调事件
-                    AntdUI.Message.info(window, btn.Tooltip, autoClose: 1);
-                })
+                    new FloatButton.ConfigBtn("button3", "文本")
+                    {
+                        Tooltip = "文本按钮",
+                        Round = select_round.SelectedIndex == 0,
+                        Type = (TTypeMini)select_type.SelectedValue,
+                        Radius = (int)input_radius.Value,
+                        Badge = input_badge.Text,
+                        BadgeSize = (float)input_badgesize.Value,
+                        BadgeBack = colorPicker.Value,
+                    },
+                    //获取button示例，可以通过button的属性判断点击了哪个按钮，推荐用Name
+                }, button =>
+                    {
+                        //回调事件
+                        AntdUI.Message.info(window, "Text:" + button.Text+", Name:" + button.Name, autoClose: 3);
+                    })
                 // 浮动全局配置
                 {
                     //字体
@@ -176,8 +180,6 @@ namespace AntdUIDemo.Views
             }
         }
 
-
-
         #region EventHandler
         private void select_intvalue_SelectedIndexChanged(object sender, IntEventArgs e)
         {
@@ -217,7 +219,5 @@ namespace AntdUIDemo.Views
             CloseFloatButtonForm();
         }
         #endregion
-
-
     }
 }
