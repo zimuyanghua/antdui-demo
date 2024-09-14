@@ -31,10 +31,18 @@ namespace AntdUIDemo
         {
             buttonSZ.Click += ButtonSZ_Click;
             button_color.Click += Button_color_Click;
-
+            input_search.TextChanged += Input_search_textchanged;
             menu.SelectChanged += Menu_SelectChanged;
             //监听系统深浅色变化
             SystemEvents.UserPreferenceChanged += SystemEvents_UserPreferenceChanged;
+        }
+
+        private void Input_search_textchanged(object sender, EventArgs e)
+        {
+            titlebar.Loading = true;
+            var text = input_search.Text.ToLower(); // 将输入文本转换为小写，确保搜索不区分大小写
+            LoadMenu(text); // 传递搜索文本
+            titlebar.Loading = false;
         }
 
         private void SystemEvents_UserPreferenceChanged(object sender, UserPreferenceChangedEventArgs e)
@@ -113,25 +121,59 @@ namespace AntdUIDemo
             }
         }
 
-        private void LoadMenu()
+        //private void LoadMenu()
+        //{
+        //    menu.Items.Clear();
+        //    foreach (var rootItem in DataUtil.MenuItems)
+        //    {
+        //        var rootMenu = new AntdUI.MenuItem { Text = rootItem.Key };
+        //        foreach (var item in rootItem.Value)
+        //        {
+        //            var menuItem = new AntdUI.MenuItem
+        //            {
+        //                Text = item.Text,
+        //                IconSvg = item.IconSvg,
+        //                Tag = item.Tag,
+        //            };
+        //            rootMenu.Sub.Add(menuItem);
+        //        }
+        //        menu.Items.Add(rootMenu);
+        //    }
+        //}
+        private void LoadMenu(string filter = "")
         {
             menu.Items.Clear();
+
             foreach (var rootItem in DataUtil.MenuItems)
             {
+                var rootKey = rootItem.Key.ToLower();
                 var rootMenu = new AntdUI.MenuItem { Text = rootItem.Key };
+                bool rootVisible = false; // 用于标记是否显示根节点
+
                 foreach (var item in rootItem.Value)
                 {
-                    var menuItem = new AntdUI.MenuItem
-                    {
-                        Text = item.Text,
-                        IconSvg = item.IconSvg,
-                        Tag = item.Tag,
-                    };
-                    rootMenu.Sub.Add(menuItem);
-                }
-                menu.Items.Add(rootMenu);
-            }
+                    var childText = item.Text.ToLower();
 
+                    // 如果子节点包含搜索文本
+                    if (childText.Contains(filter))
+                    {
+                        var menuItem = new AntdUI.MenuItem
+                        {
+                            Text = item.Text,
+                            IconSvg = item.IconSvg,
+                            Tag = item.Tag,
+                        };
+                        rootMenu.Sub.Add(menuItem);
+                        rootVisible = true; // 如果有子节点包含，则显示根节点
+                    }
+                }
+
+                // 如果根节点包含搜索文本，或有可见的子节点，则显示根节点
+                if (rootKey.Contains(filter) || rootVisible)
+                {
+                    menu.Items.Add(rootMenu);
+                }
+            }
         }
 
         private void Menu_SelectChanged(object sender, MenuSelectEventArgs e)

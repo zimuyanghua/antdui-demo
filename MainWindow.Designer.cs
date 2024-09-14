@@ -36,12 +36,14 @@
             this.menu = new AntdUI.Menu();
             this.panel_content = new AntdUI.StackPanel();
             this.label1 = new AntdUI.Label();
+            this.input_search = new AntdUI.Input();
             this.titlebar.SuspendLayout();
             this.panel_content.SuspendLayout();
             this.SuspendLayout();
             // 
             // titlebar
             // 
+            this.titlebar.Controls.Add(this.input_search);
             this.titlebar.Controls.Add(this.button_color);
             this.titlebar.Controls.Add(this.buttonSZ);
             this.titlebar.Dock = System.Windows.Forms.DockStyle.Top;
@@ -121,6 +123,17 @@
             this.label1.Text = "欢迎使用 AntdUI Demo";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // input_search
+            // 
+            this.input_search.Dock = System.Windows.Forms.DockStyle.Right;
+            this.input_search.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F);
+            this.input_search.Location = new System.Drawing.Point(596, 0);
+            this.input_search.Name = "input_search";
+            this.input_search.PlaceholderText = "输入关键字搜索...";
+            this.input_search.PrefixSvg = "SearchOutlined";
+            this.input_search.Size = new System.Drawing.Size(200, 40);
+            this.input_search.TabIndex = 2;
+            // 
             // MainWindow
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -132,6 +145,7 @@
             this.Controls.Add(this.titlebar);
             this.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Mode = AntdUI.TAMode.Auto;
             this.Name = "MainWindow";
             this.Opacity = 0.99D;
             this.Padding = new System.Windows.Forms.Padding(6, 0, 0, 6);
@@ -153,5 +167,6 @@
         private AntdUI.Button buttonSZ;
         private AntdUI.Button button_color;
         private AntdUI.Label label1;
+        private AntdUI.Input input_search;
     }
 }
