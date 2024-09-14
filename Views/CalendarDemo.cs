@@ -1,4 +1,5 @@
 ﻿using AntdUI;
+using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
@@ -20,6 +21,18 @@ namespace AntdUIDemo.Views
         private void BindEventHandler()
         {
             calendar.DateChanged += Calendar_DateChanged;
+            switch_showtoday.CheckedChanged += Switch_showtoday_CheckedChanged;
+            switch_showchinese.CheckedChanged += Switch_showchinese_CheckedChanged;
+        }
+
+        private void Switch_showchinese_CheckedChanged(object sender, BoolEventArgs e)
+        {
+            calendar.ShowChinese = e.Value;
+        }
+
+        private void Switch_showtoday_CheckedChanged(object sender, BoolEventArgs e)
+        {
+            calendar.ShowButtonToDay = e.Value;
         }
 
         private void Calendar_DateChanged(object sender, DateTimeEventArgs e)
