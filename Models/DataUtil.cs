@@ -91,6 +91,7 @@ namespace AntdUIDemo.Models
                 new MenuItems { Text = "Battery 电池", Tag = "Battery" },
                 new MenuItems { Text = "ContextMenuStrip 快捷菜单", Tag = "ContextMenuStrip" },
                 new MenuItems { Text = "Image3D 图片3D", Tag = "Image3D" },
+                new MenuItems { Text = "PageHeader 页头", Tag= "PageHeader"},
                 new MenuItems { Text = "WindowBar 窗口栏", Tag = "WindowBar" }
             }
         }

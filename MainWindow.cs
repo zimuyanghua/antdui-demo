@@ -299,6 +299,9 @@ namespace AntdUIDemo
                 case "Image3D":
                     control = new Image3DDemo();
                     break;
+                case "PageHeader":
+                    control = new PageHeaderDemo(this);
+                    break;
                 case "WindowBar":
                     control = new WindowBarDemo();
                     break;
