@@ -55,6 +55,8 @@
 #### VirtualPanel 虚拟布局
 
 ### 导航
+#### Breadcrumb 面包屑
+![Breadcrumb](assets/screenshots/Breadcrumb.png)
 #### Dropdown 下拉菜单
 ![Dropdown](assets/screenshots/Dropdown.png)
 #### Menu 导航菜单

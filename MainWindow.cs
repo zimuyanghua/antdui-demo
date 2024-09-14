@@ -170,6 +170,9 @@ namespace AntdUIDemo
                 case "StackPanel":
                     control = new StackPanelDemo();
                     break;
+                case "Breadcrumb":
+                    control = new BreadcrumbDemo();
+                    break;
                 case "Dropdown":
                     control = new DropDownDemo();
                     break;
