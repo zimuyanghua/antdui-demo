@@ -58,6 +58,7 @@ namespace AntdUIDemo.Models
                 new MenuItems { Text = "Badge 徽标数", Tag = "Badge"},
                 new MenuItems { Text = "Calendar 日历", Tag = "Calendar"},
                 new MenuItems { Text = "Carousel 走马灯", Tag = "Carousel"},
+                new MenuItems { Text = "Collapse 折叠面板", Tag = "Collapse"},
                 new MenuItems { Text = "Label 标签", Tag = "Label"},
                 new MenuItems { Text = "Popover 气泡卡片", Tag = "Popover"},
                 new MenuItems { Text = "Preview 图片预览", Tag = "Preview"},

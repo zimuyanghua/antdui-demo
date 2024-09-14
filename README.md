@@ -103,6 +103,8 @@
 ![Calendar](assets/screenshots/Calendar.png)
 #### Carousel 走马灯
 ![Carousel](assets/screenshots/Carousel.png)
+#### Collapse 折叠面板
+![Collapse](assets/screenshots/Collapse.png)
 #### Label 标签
 ![Label](assets/screenshots/Label.png)
 #### Popover 气泡卡片

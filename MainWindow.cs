@@ -236,6 +236,9 @@ namespace AntdUIDemo
                 case "Carousel":
                     control = new CarouselDemo();
                     break;
+                case "Collapse":
+                    control = new CollapseDemo();
+                    break;
                 case "Label":
                     control = new LabelDemo();
                     break;
