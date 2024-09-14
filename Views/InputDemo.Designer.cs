@@ -71,6 +71,7 @@
             this.label2 = new AntdUI.Label();
             this.label1 = new AntdUI.Label();
             this.tooltipComponent1 = new AntdUI.TooltipComponent();
+            this.input17 = new AntdUI.Input();
             this.stackPanel1.SuspendLayout();
             this.flowPanel8.SuspendLayout();
             this.flowPanel7.SuspendLayout();
@@ -336,6 +337,7 @@
             // 
             // flowPanel5
             // 
+            this.flowPanel5.Controls.Add(this.input17);
             this.flowPanel5.Controls.Add(this.input6);
             this.flowPanel5.Controls.Add(this.input5);
             this.flowPanel5.Location = new System.Drawing.Point(3, 387);
@@ -350,7 +352,8 @@
             this.input6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.input6.Location = new System.Drawing.Point(209, 3);
             this.input6.Name = "input6";
-            this.input6.PasswordChar = '#';
+            this.input6.PasswordChar = '*';
+            this.input6.PasswordPaste = true;
             this.input6.PlaceholderText = "密码不可复制";
             this.input6.Size = new System.Drawing.Size(200, 32);
             this.input6.TabIndex = 1;
@@ -365,6 +368,7 @@
             this.input5.Name = "input5";
             this.input5.PasswordChar = '*';
             this.input5.PasswordCopy = true;
+            this.input5.PasswordPaste = true;
             this.input5.PlaceholderText = "输入密码";
             this.input5.Size = new System.Drawing.Size(200, 32);
             this.input5.TabIndex = 0;
@@ -552,6 +556,20 @@
             this.tooltipComponent1.ArrowAlign = AntdUI.TAlign.TL;
             this.tooltipComponent1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             // 
+            // input17
+            // 
+            this.input17.Badge = "";
+            this.input17.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.input17.Location = new System.Drawing.Point(415, 3);
+            this.input17.Name = "input17";
+            this.input17.PasswordChar = '*';
+            this.input17.PasswordCopy = true;
+            this.input17.PlaceholderText = "密码不可粘贴";
+            this.input17.Size = new System.Drawing.Size(200, 32);
+            this.input17.TabIndex = 2;
+            this.input17.UseSystemPasswordChar = true;
+            this.input17.WaveSize = 0;
+            // 
             // InputDemo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -617,5 +635,6 @@
         private AntdUI.Input input12;
         private AntdUI.Input input15;
         private AntdUI.Input input_status;
+        private AntdUI.Input input17;
     }
 }
