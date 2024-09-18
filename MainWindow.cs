@@ -121,25 +121,6 @@ namespace AntdUIDemo
             }
         }
 
-        //private void LoadMenu()
-        //{
-        //    menu.Items.Clear();
-        //    foreach (var rootItem in DataUtil.MenuItems)
-        //    {
-        //        var rootMenu = new AntdUI.MenuItem { Text = rootItem.Key };
-        //        foreach (var item in rootItem.Value)
-        //        {
-        //            var menuItem = new AntdUI.MenuItem
-        //            {
-        //                Text = item.Text,
-        //                IconSvg = item.IconSvg,
-        //                Tag = item.Tag,
-        //            };
-        //            rootMenu.Sub.Add(menuItem);
-        //        }
-        //        menu.Items.Add(rootMenu);
-        //    }
-        //}
         private void LoadMenu(string filter = "")
         {
             menu.Items.Clear();
@@ -196,6 +177,9 @@ namespace AntdUIDemo
                     break;
                 case "FloatButton":
                     control = new FloatButtonDemo(this);
+                    break;
+                case "Icon":
+                    control = new IconDemo(this);
                     break;
                 case "Divider":
                     control = new DividerDemo();
@@ -349,6 +333,9 @@ namespace AntdUIDemo
                     break;
                 case "PageHeader":
                     control = new PageHeaderDemo(this);
+                    break;
+                case "Signal":
+                    control = new SignalDemo();
                     break;
                 case "WindowBar":
                     control = new WindowBarDemo();

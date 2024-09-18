@@ -125,6 +125,7 @@
             // 
             // input_search
             // 
+            this.input_search.AllowClear = true;
             this.input_search.Dock = System.Windows.Forms.DockStyle.Right;
             this.input_search.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F);
             this.input_search.Location = new System.Drawing.Point(596, 0);

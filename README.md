@@ -4,7 +4,7 @@
 
 <h1>AntdUI Demo</h1>
 
-本项目基于 `Winform .NET Framework 4.8` 开发，是 [AntdUI](https://gitee.com/antdui/AntdUI) 的 Demo 项目，当前版本 `1.6.0`
+本项目基于 `Winform .NET Framework 4.8` 开发，是 [AntdUI](https://gitee.com/antdui/AntdUI) 的 Demo 项目，当前版本 `1.6.1`
 
 </div>
 
@@ -40,6 +40,8 @@
 ![Button](assets/screenshots/Button.png)
 #### FloatButton 悬浮按钮
 ![FloatButton](assets/screenshots/FloatButton.png)
+#### Icon 图标
+![Icon](assets/screenshots/Icon.png)
 
 ### 布局
 #### Divider 分割线
@@ -157,5 +159,7 @@
 ![Image3D](assets/screenshots/Image3D.png)
 #### PageHeader 页头
 ![PageHeader](assets/screenshots/PageHeader.png)
+#### Signal 信号
+![Signal](assets/screenshots/Signal.png)
 #### WindowBar 窗口栏
 ![WindowBar](assets/screenshots/WindowBar.png)

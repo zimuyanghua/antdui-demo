@@ -14,6 +14,7 @@ namespace AntdUIDemo.Models
             {
                 new MenuItems { Text = "Button 按钮" , Tag = "Button"},
                 new MenuItems { Text = "FloatButton 悬浮按钮", Tag = "FloatButton"},
+                new MenuItems { Text = "Icon 图标", Tag = "Icon"},
             }
         },
         { "布局", new List<MenuItems>
@@ -94,6 +95,7 @@ namespace AntdUIDemo.Models
                 new MenuItems { Text = "ContextMenuStrip 快捷菜单", Tag = "ContextMenuStrip" },
                 new MenuItems { Text = "Image3D 图片3D", Tag = "Image3D" },
                 new MenuItems { Text = "PageHeader 页头", Tag= "PageHeader"},
+                new MenuItems { Text = "Signal 信号", Tag = "Signal" },
                 new MenuItems { Text = "WindowBar 窗口栏", Tag = "WindowBar" }
             }
         }
