@@ -51,6 +51,7 @@
             this.input13 = new AntdUI.Input();
             this.label8 = new AntdUI.Label();
             this.flowPanel5 = new AntdUI.FlowPanel();
+            this.input17 = new AntdUI.Input();
             this.input6 = new AntdUI.Input();
             this.input5 = new AntdUI.Input();
             this.label6 = new AntdUI.Label();
@@ -71,7 +72,10 @@
             this.label2 = new AntdUI.Label();
             this.label1 = new AntdUI.Label();
             this.tooltipComponent1 = new AntdUI.TooltipComponent();
-            this.input17 = new AntdUI.Input();
+            this.label11 = new AntdUI.Label();
+            this.flowPanel9 = new AntdUI.FlowPanel();
+            this.input20 = new AntdUI.Input();
+            this.input18 = new AntdUI.Input();
             this.stackPanel1.SuspendLayout();
             this.flowPanel8.SuspendLayout();
             this.flowPanel7.SuspendLayout();
@@ -83,10 +87,13 @@
             this.flowPanel4.SuspendLayout();
             this.flowPanel2.SuspendLayout();
             this.flowPanel1.SuspendLayout();
+            this.flowPanel9.SuspendLayout();
             this.SuspendLayout();
             // 
             // stackPanel1
             // 
+            this.stackPanel1.Controls.Add(this.flowPanel9);
+            this.stackPanel1.Controls.Add(this.label11);
             this.stackPanel1.Controls.Add(this.flowPanel8);
             this.stackPanel1.Controls.Add(this.label10);
             this.stackPanel1.Controls.Add(this.flowPanel7);
@@ -109,7 +116,7 @@
             this.stackPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.stackPanel1.Location = new System.Drawing.Point(0, 0);
             this.stackPanel1.Name = "stackPanel1";
-            this.stackPanel1.Size = new System.Drawing.Size(700, 768);
+            this.stackPanel1.Size = new System.Drawing.Size(700, 821);
             this.stackPanel1.TabIndex = 0;
             this.stackPanel1.Text = "stackPanel1";
             this.stackPanel1.Vertical = true;
@@ -346,6 +353,20 @@
             this.flowPanel5.TabIndex = 16;
             this.flowPanel5.Text = "flowPanel5";
             // 
+            // input17
+            // 
+            this.input17.Badge = "";
+            this.input17.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.input17.Location = new System.Drawing.Point(415, 3);
+            this.input17.Name = "input17";
+            this.input17.PasswordChar = '*';
+            this.input17.PasswordCopy = true;
+            this.input17.PlaceholderText = "密码不可粘贴";
+            this.input17.Size = new System.Drawing.Size(200, 32);
+            this.input17.TabIndex = 2;
+            this.input17.UseSystemPasswordChar = true;
+            this.input17.WaveSize = 0;
+            // 
             // input6
             // 
             this.input6.Badge = "";
@@ -353,7 +374,6 @@
             this.input6.Location = new System.Drawing.Point(209, 3);
             this.input6.Name = "input6";
             this.input6.PasswordChar = '*';
-            this.input6.PasswordPaste = true;
             this.input6.PlaceholderText = "密码不可复制";
             this.input6.Size = new System.Drawing.Size(200, 32);
             this.input6.TabIndex = 1;
@@ -368,7 +388,6 @@
             this.input5.Name = "input5";
             this.input5.PasswordChar = '*';
             this.input5.PasswordCopy = true;
-            this.input5.PasswordPaste = true;
             this.input5.PlaceholderText = "输入密码";
             this.input5.Size = new System.Drawing.Size(200, 32);
             this.input5.TabIndex = 0;
@@ -556,26 +575,54 @@
             this.tooltipComponent1.ArrowAlign = AntdUI.TAlign.TL;
             this.tooltipComponent1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             // 
-            // input17
+            // label11
             // 
-            this.input17.Badge = "";
-            this.input17.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.input17.Location = new System.Drawing.Point(415, 3);
-            this.input17.Name = "input17";
-            this.input17.PasswordChar = '*';
-            this.input17.PasswordCopy = true;
-            this.input17.PlaceholderText = "密码不可粘贴";
-            this.input17.Size = new System.Drawing.Size(200, 32);
-            this.input17.TabIndex = 2;
-            this.input17.UseSystemPasswordChar = true;
-            this.input17.WaveSize = 0;
+            this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label11.Location = new System.Drawing.Point(3, 727);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(694, 24);
+            this.label11.TabIndex = 27;
+            this.label11.Text = "光标颜色速度";
+            // 
+            // flowPanel9
+            // 
+            this.flowPanel9.Controls.Add(this.input18);
+            this.flowPanel9.Controls.Add(this.input20);
+            this.flowPanel9.Location = new System.Drawing.Point(3, 757);
+            this.flowPanel9.Name = "flowPanel9";
+            this.flowPanel9.Size = new System.Drawing.Size(694, 38);
+            this.flowPanel9.TabIndex = 28;
+            this.flowPanel9.Text = "flowPanel9";
+            // 
+            // input20
+            // 
+            this.input20.Badge = "";
+            this.input20.CaretColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
+            this.input20.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.input20.Location = new System.Drawing.Point(3, 3);
+            this.input20.Name = "input20";
+            this.input20.Size = new System.Drawing.Size(200, 32);
+            this.input20.TabIndex = 0;
+            this.input20.WaveSize = 0;
+            // 
+            // input18
+            // 
+            this.input18.Badge = "";
+            this.input18.CaretColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(87)))), ((int)(((byte)(34)))));
+            this.input18.CaretSpeed = 500;
+            this.input18.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.input18.Location = new System.Drawing.Point(209, 3);
+            this.input18.Name = "input18";
+            this.input18.Size = new System.Drawing.Size(200, 32);
+            this.input18.TabIndex = 1;
+            this.input18.WaveSize = 0;
             // 
             // InputDemo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.Controls.Add(this.stackPanel1);
             this.Name = "InputDemo";
-            this.Size = new System.Drawing.Size(700, 768);
+            this.Size = new System.Drawing.Size(700, 821);
             this.stackPanel1.ResumeLayout(false);
             this.flowPanel8.ResumeLayout(false);
             this.flowPanel7.ResumeLayout(false);
@@ -587,6 +634,7 @@
             this.flowPanel4.ResumeLayout(false);
             this.flowPanel2.ResumeLayout(false);
             this.flowPanel1.ResumeLayout(false);
+            this.flowPanel9.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -636,5 +684,9 @@
         private AntdUI.Input input15;
         private AntdUI.Input input_status;
         private AntdUI.Input input17;
+        private AntdUI.FlowPanel flowPanel9;
+        private AntdUI.Input input20;
+        private AntdUI.Label label11;
+        private AntdUI.Input input18;
     }
 }

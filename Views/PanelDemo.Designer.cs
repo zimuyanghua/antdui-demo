@@ -104,7 +104,7 @@
             this.stackPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.stackPanel1.Location = new System.Drawing.Point(0, 0);
             this.stackPanel1.Name = "stackPanel1";
-            this.stackPanel1.Size = new System.Drawing.Size(700, 569);
+            this.stackPanel1.Size = new System.Drawing.Size(700, 560);
             this.stackPanel1.TabIndex = 0;
             this.stackPanel1.Text = "stackPanel1";
             this.stackPanel1.Vertical = true;
@@ -678,7 +678,7 @@
             // 
             this.Controls.Add(this.stackPanel1);
             this.Name = "PanelDemo";
-            this.Size = new System.Drawing.Size(700, 569);
+            this.Size = new System.Drawing.Size(700, 560);
             this.Load += new System.EventHandler(this.PanelDemo_Load);
             this.stackPanel1.ResumeLayout(false);
             this.stackPanel2.ResumeLayout(false);

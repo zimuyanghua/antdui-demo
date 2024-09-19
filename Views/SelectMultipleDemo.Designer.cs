@@ -30,47 +30,47 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SelectMultipleDemo));
             this.stackPanel1 = new AntdUI.StackPanel();
-            this.divider1 = new AntdUI.Divider();
-            this.label2 = new AntdUI.Label();
-            this.label1 = new AntdUI.Label();
-            this.label3 = new AntdUI.Label();
-            this.flowPanel1 = new AntdUI.FlowPanel();
-            this.selectMultiple1 = new AntdUI.SelectMultiple();
-            this.selectMultiple2 = new AntdUI.SelectMultiple();
-            this.selectMultiple3 = new AntdUI.SelectMultiple();
-            this.flowPanel2 = new AntdUI.FlowPanel();
-            this.selectMultiple_del = new AntdUI.SelectMultiple();
-            this.selectMultiple4 = new AntdUI.SelectMultiple();
-            this.label4 = new AntdUI.Label();
+            this.flowPanel6 = new AntdUI.FlowPanel();
+            this.selectMultiple18 = new AntdUI.SelectMultiple();
+            this.selectMultiple20 = new AntdUI.SelectMultiple();
+            this.label7 = new AntdUI.Label();
+            this.flowPanel5 = new AntdUI.FlowPanel();
+            this.selectMultiple16 = new AntdUI.SelectMultiple();
+            this.selectMultiple15 = new AntdUI.SelectMultiple();
+            this.selectMultiple17 = new AntdUI.SelectMultiple();
+            this.label5 = new AntdUI.Label();
+            this.flowPanel4 = new AntdUI.FlowPanel();
+            this.selectMultiple14 = new AntdUI.SelectMultiple();
+            this.selectMultiple13 = new AntdUI.SelectMultiple();
+            this.selectMultiple12 = new AntdUI.SelectMultiple();
+            this.label6 = new AntdUI.Label();
             this.flowPanel3 = new AntdUI.FlowPanel();
-            this.selectMultiple7 = new AntdUI.SelectMultiple();
-            this.selectMultiple5 = new AntdUI.SelectMultiple();
-            this.selectMultiple6 = new AntdUI.SelectMultiple();
-            this.selectMultiple11 = new AntdUI.SelectMultiple();
             this.selectMultiple8 = new AntdUI.SelectMultiple();
             this.selectMultiple9 = new AntdUI.SelectMultiple();
             this.selectMultiple10 = new AntdUI.SelectMultiple();
-            this.label6 = new AntdUI.Label();
-            this.flowPanel4 = new AntdUI.FlowPanel();
-            this.selectMultiple12 = new AntdUI.SelectMultiple();
-            this.selectMultiple13 = new AntdUI.SelectMultiple();
-            this.selectMultiple14 = new AntdUI.SelectMultiple();
-            this.label5 = new AntdUI.Label();
-            this.flowPanel5 = new AntdUI.FlowPanel();
-            this.selectMultiple17 = new AntdUI.SelectMultiple();
-            this.selectMultiple15 = new AntdUI.SelectMultiple();
-            this.selectMultiple16 = new AntdUI.SelectMultiple();
-            this.label7 = new AntdUI.Label();
-            this.flowPanel6 = new AntdUI.FlowPanel();
-            this.selectMultiple20 = new AntdUI.SelectMultiple();
-            this.selectMultiple18 = new AntdUI.SelectMultiple();
+            this.selectMultiple6 = new AntdUI.SelectMultiple();
+            this.selectMultiple5 = new AntdUI.SelectMultiple();
+            this.selectMultiple7 = new AntdUI.SelectMultiple();
+            this.label4 = new AntdUI.Label();
+            this.flowPanel2 = new AntdUI.FlowPanel();
+            this.selectMultiple11 = new AntdUI.SelectMultiple();
+            this.selectMultiple4 = new AntdUI.SelectMultiple();
+            this.selectMultiple_del = new AntdUI.SelectMultiple();
+            this.flowPanel1 = new AntdUI.FlowPanel();
+            this.selectMultiple3 = new AntdUI.SelectMultiple();
+            this.selectMultiple2 = new AntdUI.SelectMultiple();
+            this.selectMultiple1 = new AntdUI.SelectMultiple();
+            this.label3 = new AntdUI.Label();
+            this.divider1 = new AntdUI.Divider();
+            this.label2 = new AntdUI.Label();
+            this.label1 = new AntdUI.Label();
             this.stackPanel1.SuspendLayout();
-            this.flowPanel1.SuspendLayout();
-            this.flowPanel2.SuspendLayout();
-            this.flowPanel3.SuspendLayout();
-            this.flowPanel4.SuspendLayout();
-            this.flowPanel5.SuspendLayout();
             this.flowPanel6.SuspendLayout();
+            this.flowPanel5.SuspendLayout();
+            this.flowPanel4.SuspendLayout();
+            this.flowPanel3.SuspendLayout();
+            this.flowPanel2.SuspendLayout();
+            this.flowPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // stackPanel1
@@ -92,166 +92,220 @@
             this.stackPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.stackPanel1.Location = new System.Drawing.Point(0, 0);
             this.stackPanel1.Name = "stackPanel1";
-            this.stackPanel1.Size = new System.Drawing.Size(700, 568);
+            this.stackPanel1.Size = new System.Drawing.Size(700, 550);
             this.stackPanel1.TabIndex = 0;
             this.stackPanel1.Text = "stackPanel1";
             this.stackPanel1.Vertical = true;
             // 
-            // divider1
+            // flowPanel6
             // 
-            this.divider1.Location = new System.Drawing.Point(3, 79);
-            this.divider1.Name = "divider1";
-            this.divider1.Size = new System.Drawing.Size(694, 12);
-            this.divider1.TabIndex = 13;
+            this.flowPanel6.Controls.Add(this.selectMultiple18);
+            this.flowPanel6.Controls.Add(this.selectMultiple20);
+            this.flowPanel6.Gap = 6;
+            this.flowPanel6.Location = new System.Drawing.Point(3, 467);
+            this.flowPanel6.Name = "flowPanel6";
+            this.flowPanel6.Size = new System.Drawing.Size(694, 38);
+            this.flowPanel6.TabIndex = 29;
+            this.flowPanel6.Text = "flowPanel6";
             // 
-            // label2
+            // selectMultiple18
             // 
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(3, 49);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(694, 24);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "多选下拉选择器。";
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(3, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(694, 40);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "SelectMultiple 多选选择器";
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(3, 97);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(694, 24);
-            this.label3.TabIndex = 14;
-            this.label3.Text = "基本用法";
-            // 
-            // flowPanel1
-            // 
-            this.flowPanel1.Controls.Add(this.selectMultiple3);
-            this.flowPanel1.Controls.Add(this.selectMultiple2);
-            this.flowPanel1.Controls.Add(this.selectMultiple1);
-            this.flowPanel1.Gap = 6;
-            this.flowPanel1.Location = new System.Drawing.Point(3, 127);
-            this.flowPanel1.Name = "flowPanel1";
-            this.flowPanel1.Size = new System.Drawing.Size(694, 38);
-            this.flowPanel1.TabIndex = 15;
-            this.flowPanel1.Text = "flowPanel1";
-            // 
-            // selectMultiple1
-            // 
-            this.selectMultiple1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.selectMultiple1.Items.AddRange(new object[] {
+            this.selectMultiple18.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.selectMultiple18.Items.AddRange(new object[] {
             "Jack",
             "Lucy",
             "SelectMultiple",
             "Tom",
             "Jerry"});
-            this.selectMultiple1.Location = new System.Drawing.Point(3, 3);
-            this.selectMultiple1.Name = "selectMultiple1";
-            this.selectMultiple1.SelectedValue = new object[0];
-            this.selectMultiple1.Size = new System.Drawing.Size(200, 32);
-            this.selectMultiple1.TabIndex = 0;
-            this.selectMultiple1.WaveSize = 0;
+            this.selectMultiple18.Location = new System.Drawing.Point(215, 3);
+            this.selectMultiple18.Name = "selectMultiple18";
+            this.selectMultiple18.PlaceholderText = "文本";
+            this.selectMultiple18.PrefixText = "+";
+            this.selectMultiple18.SelectedValue = new object[0];
+            this.selectMultiple18.Size = new System.Drawing.Size(200, 32);
+            this.selectMultiple18.SuffixText = "$";
+            this.selectMultiple18.TabIndex = 1;
+            this.selectMultiple18.WaveSize = 0;
             // 
-            // selectMultiple2
+            // selectMultiple20
             // 
-            this.selectMultiple2.AllowClear = true;
-            this.selectMultiple2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.selectMultiple2.Items.AddRange(new object[] {
+            this.selectMultiple20.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.selectMultiple20.Items.AddRange(new object[] {
             "Jack",
             "Lucy",
             "SelectMultiple",
             "Tom",
             "Jerry"});
-            this.selectMultiple2.Location = new System.Drawing.Point(215, 3);
-            this.selectMultiple2.Name = "selectMultiple2";
-            this.selectMultiple2.PlaceholderText = "允许全部清除";
-            this.selectMultiple2.SelectedValue = new object[0];
-            this.selectMultiple2.Size = new System.Drawing.Size(200, 32);
-            this.selectMultiple2.TabIndex = 1;
-            this.selectMultiple2.WaveSize = 0;
+            this.selectMultiple20.Location = new System.Drawing.Point(3, 3);
+            this.selectMultiple20.Name = "selectMultiple20";
+            this.selectMultiple20.PlaceholderText = "图标";
+            this.selectMultiple20.PrefixSvg = resources.GetString("selectMultiple20.PrefixSvg");
+            this.selectMultiple20.SelectedValue = new object[0];
+            this.selectMultiple20.Size = new System.Drawing.Size(200, 32);
+            this.selectMultiple20.SuffixSvg = resources.GetString("selectMultiple20.SuffixSvg");
+            this.selectMultiple20.TabIndex = 0;
+            this.selectMultiple20.WaveSize = 0;
             // 
-            // selectMultiple3
+            // label7
             // 
-            this.selectMultiple3.AllowClear = true;
-            this.selectMultiple3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.selectMultiple3.Items.AddRange(new object[] {
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label7.Location = new System.Drawing.Point(3, 437);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(694, 24);
+            this.label7.TabIndex = 28;
+            this.label7.Text = "前/后标签";
+            // 
+            // flowPanel5
+            // 
+            this.flowPanel5.Controls.Add(this.selectMultiple16);
+            this.flowPanel5.Controls.Add(this.selectMultiple15);
+            this.flowPanel5.Controls.Add(this.selectMultiple17);
+            this.flowPanel5.Gap = 6;
+            this.flowPanel5.Location = new System.Drawing.Point(3, 393);
+            this.flowPanel5.Name = "flowPanel5";
+            this.flowPanel5.Size = new System.Drawing.Size(694, 38);
+            this.flowPanel5.TabIndex = 27;
+            this.flowPanel5.Text = "flowPanel5";
+            // 
+            // selectMultiple16
+            // 
+            this.selectMultiple16.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.selectMultiple16.Items.AddRange(new object[] {
             "Jack",
             "Lucy",
             "SelectMultiple",
             "Tom",
             "Jerry"});
-            this.selectMultiple3.List = true;
-            this.selectMultiple3.Location = new System.Drawing.Point(427, 3);
-            this.selectMultiple3.Name = "selectMultiple3";
-            this.selectMultiple3.PlaceholderText = "列表模式";
-            this.selectMultiple3.SelectedValue = new object[0];
-            this.selectMultiple3.Size = new System.Drawing.Size(200, 32);
-            this.selectMultiple3.TabIndex = 2;
-            this.selectMultiple3.WaveSize = 0;
+            this.selectMultiple16.Location = new System.Drawing.Point(427, 3);
+            this.selectMultiple16.MaxChoiceCount = 5;
+            this.selectMultiple16.MaxCount = 5;
+            this.selectMultiple16.Name = "selectMultiple16";
+            this.selectMultiple16.PlaceholderText = "5";
+            this.selectMultiple16.SelectedValue = new object[0];
+            this.selectMultiple16.Size = new System.Drawing.Size(200, 32);
+            this.selectMultiple16.TabIndex = 3;
+            this.selectMultiple16.WaveSize = 0;
             // 
-            // flowPanel2
+            // selectMultiple15
             // 
-            this.flowPanel2.Controls.Add(this.selectMultiple11);
-            this.flowPanel2.Controls.Add(this.selectMultiple4);
-            this.flowPanel2.Controls.Add(this.selectMultiple_del);
-            this.flowPanel2.Gap = 6;
-            this.flowPanel2.Location = new System.Drawing.Point(3, 171);
-            this.flowPanel2.Name = "flowPanel2";
-            this.flowPanel2.Size = new System.Drawing.Size(694, 38);
-            this.flowPanel2.TabIndex = 16;
-            this.flowPanel2.Text = "flowPanel2";
-            // 
-            // selectMultiple_del
-            // 
-            this.selectMultiple_del.CanDelete = false;
-            this.selectMultiple_del.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.selectMultiple_del.Items.AddRange(new object[] {
+            this.selectMultiple15.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.selectMultiple15.Items.AddRange(new object[] {
             "Jack",
             "Lucy",
             "SelectMultiple",
             "Tom",
             "Jerry"});
-            this.selectMultiple_del.Location = new System.Drawing.Point(3, 3);
-            this.selectMultiple_del.Name = "selectMultiple_del";
-            this.selectMultiple_del.PlaceholderText = "无删除图标";
-            this.selectMultiple_del.SelectedValue = new object[0];
-            this.selectMultiple_del.Size = new System.Drawing.Size(200, 32);
-            this.selectMultiple_del.TabIndex = 0;
-            this.selectMultiple_del.WaveSize = 0;
+            this.selectMultiple15.Location = new System.Drawing.Point(215, 3);
+            this.selectMultiple15.MaxChoiceCount = 4;
+            this.selectMultiple15.MaxCount = 5;
+            this.selectMultiple15.Name = "selectMultiple15";
+            this.selectMultiple15.PlaceholderText = "4";
+            this.selectMultiple15.SelectedValue = new object[0];
+            this.selectMultiple15.Size = new System.Drawing.Size(200, 32);
+            this.selectMultiple15.TabIndex = 2;
+            this.selectMultiple15.WaveSize = 0;
             // 
-            // selectMultiple4
+            // selectMultiple17
             // 
-            this.selectMultiple4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.selectMultiple4.Items.AddRange(new object[] {
+            this.selectMultiple17.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.selectMultiple17.Items.AddRange(new object[] {
             "Jack",
             "Lucy",
             "SelectMultiple",
             "Tom",
             "Jerry"});
-            this.selectMultiple4.Location = new System.Drawing.Point(215, 3);
-            this.selectMultiple4.Name = "selectMultiple4";
-            this.selectMultiple4.PlaceholderText = "圆形";
-            this.selectMultiple4.Round = true;
-            this.selectMultiple4.SelectedValue = new object[0];
-            this.selectMultiple4.Size = new System.Drawing.Size(200, 32);
-            this.selectMultiple4.TabIndex = 1;
-            this.selectMultiple4.WaveSize = 0;
+            this.selectMultiple17.Location = new System.Drawing.Point(3, 3);
+            this.selectMultiple17.MaxChoiceCount = 3;
+            this.selectMultiple17.MaxCount = 5;
+            this.selectMultiple17.Name = "selectMultiple17";
+            this.selectMultiple17.PlaceholderText = "3";
+            this.selectMultiple17.SelectedValue = new object[0];
+            this.selectMultiple17.Size = new System.Drawing.Size(200, 32);
+            this.selectMultiple17.TabIndex = 1;
+            this.selectMultiple17.WaveSize = 0;
             // 
-            // label4
+            // label5
             // 
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(3, 215);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(694, 24);
-            this.label4.TabIndex = 17;
-            this.label4.Text = "弹出位置";
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.Location = new System.Drawing.Point(3, 363);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(694, 24);
+            this.label5.TabIndex = 26;
+            this.label5.Text = "选择数量";
+            // 
+            // flowPanel4
+            // 
+            this.flowPanel4.Controls.Add(this.selectMultiple14);
+            this.flowPanel4.Controls.Add(this.selectMultiple13);
+            this.flowPanel4.Controls.Add(this.selectMultiple12);
+            this.flowPanel4.Gap = 6;
+            this.flowPanel4.Location = new System.Drawing.Point(3, 319);
+            this.flowPanel4.Name = "flowPanel4";
+            this.flowPanel4.Size = new System.Drawing.Size(694, 38);
+            this.flowPanel4.TabIndex = 25;
+            this.flowPanel4.Text = "flowPanel4";
+            // 
+            // selectMultiple14
+            // 
+            this.selectMultiple14.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.selectMultiple14.Items.AddRange(new object[] {
+            "Jack",
+            "Lucy",
+            "SelectMultiple",
+            "Tom",
+            "Jerry"});
+            this.selectMultiple14.Location = new System.Drawing.Point(427, 3);
+            this.selectMultiple14.MaxCount = 5;
+            this.selectMultiple14.Name = "selectMultiple14";
+            this.selectMultiple14.PlaceholderText = "5";
+            this.selectMultiple14.SelectedValue = new object[0];
+            this.selectMultiple14.Size = new System.Drawing.Size(200, 32);
+            this.selectMultiple14.TabIndex = 3;
+            this.selectMultiple14.WaveSize = 0;
+            // 
+            // selectMultiple13
+            // 
+            this.selectMultiple13.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.selectMultiple13.Items.AddRange(new object[] {
+            "Jack",
+            "Lucy",
+            "SelectMultiple",
+            "Tom",
+            "Jerry"});
+            this.selectMultiple13.Location = new System.Drawing.Point(215, 3);
+            this.selectMultiple13.Name = "selectMultiple13";
+            this.selectMultiple13.PlaceholderText = "4";
+            this.selectMultiple13.SelectedValue = new object[0];
+            this.selectMultiple13.Size = new System.Drawing.Size(200, 32);
+            this.selectMultiple13.TabIndex = 2;
+            this.selectMultiple13.WaveSize = 0;
+            // 
+            // selectMultiple12
+            // 
+            this.selectMultiple12.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.selectMultiple12.Items.AddRange(new object[] {
+            "Jack",
+            "Lucy",
+            "SelectMultiple",
+            "Tom",
+            "Jerry"});
+            this.selectMultiple12.Location = new System.Drawing.Point(3, 3);
+            this.selectMultiple12.MaxCount = 3;
+            this.selectMultiple12.Name = "selectMultiple12";
+            this.selectMultiple12.PlaceholderText = "3";
+            this.selectMultiple12.SelectedValue = new object[0];
+            this.selectMultiple12.Size = new System.Drawing.Size(200, 32);
+            this.selectMultiple12.TabIndex = 1;
+            this.selectMultiple12.WaveSize = 0;
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.Location = new System.Drawing.Point(3, 289);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(694, 24);
+            this.label6.TabIndex = 24;
+            this.label6.Text = "显示数量";
             // 
             // flowPanel3
             // 
@@ -267,80 +321,6 @@
             this.flowPanel3.Size = new System.Drawing.Size(694, 38);
             this.flowPanel3.TabIndex = 18;
             this.flowPanel3.Text = "flowPanel3";
-            // 
-            // selectMultiple7
-            // 
-            this.selectMultiple7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.selectMultiple7.Items.AddRange(new object[] {
-            "Jack Jack Jack Jack Jack",
-            "Lucy",
-            "SelectMultiple",
-            "Tom",
-            "Jerry"});
-            this.selectMultiple7.ListAutoWidth = true;
-            this.selectMultiple7.Location = new System.Drawing.Point(3, 3);
-            this.selectMultiple7.Name = "selectMultiple7";
-            this.selectMultiple7.PlaceholderText = "BL";
-            this.selectMultiple7.SelectedValue = new object[0];
-            this.selectMultiple7.Size = new System.Drawing.Size(90, 32);
-            this.selectMultiple7.TabIndex = 0;
-            this.selectMultiple7.WaveSize = 0;
-            // 
-            // selectMultiple5
-            // 
-            this.selectMultiple5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.selectMultiple5.Items.AddRange(new object[] {
-            "Jack Jack Jack Jack Jack",
-            "Lucy",
-            "SelectMultiple",
-            "Tom",
-            "Jerry"});
-            this.selectMultiple5.ListAutoWidth = true;
-            this.selectMultiple5.Location = new System.Drawing.Point(105, 3);
-            this.selectMultiple5.Name = "selectMultiple5";
-            this.selectMultiple5.PlaceholderText = "Bottom";
-            this.selectMultiple5.Placement = AntdUI.TAlignFrom.Bottom;
-            this.selectMultiple5.SelectedValue = new object[0];
-            this.selectMultiple5.Size = new System.Drawing.Size(90, 32);
-            this.selectMultiple5.TabIndex = 1;
-            this.selectMultiple5.WaveSize = 0;
-            // 
-            // selectMultiple6
-            // 
-            this.selectMultiple6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.selectMultiple6.Items.AddRange(new object[] {
-            "Jack Jack Jack Jack Jack",
-            "Lucy",
-            "SelectMultiple",
-            "Tom",
-            "Jerry"});
-            this.selectMultiple6.ListAutoWidth = true;
-            this.selectMultiple6.Location = new System.Drawing.Point(207, 3);
-            this.selectMultiple6.Name = "selectMultiple6";
-            this.selectMultiple6.PlaceholderText = "BR";
-            this.selectMultiple6.Placement = AntdUI.TAlignFrom.BR;
-            this.selectMultiple6.SelectedValue = new object[0];
-            this.selectMultiple6.Size = new System.Drawing.Size(90, 32);
-            this.selectMultiple6.TabIndex = 2;
-            this.selectMultiple6.WaveSize = 0;
-            // 
-            // selectMultiple11
-            // 
-            this.selectMultiple11.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.selectMultiple11.Items.AddRange(new object[] {
-            "Jack",
-            "Lucy",
-            "SelectMultiple",
-            "Tom",
-            "Jerry"});
-            this.selectMultiple11.Location = new System.Drawing.Point(427, 3);
-            this.selectMultiple11.Name = "selectMultiple11";
-            this.selectMultiple11.PlaceholderText = "不显示箭头";
-            this.selectMultiple11.SelectedValue = new object[0];
-            this.selectMultiple11.ShowIcon = false;
-            this.selectMultiple11.Size = new System.Drawing.Size(200, 32);
-            this.selectMultiple11.TabIndex = 2;
-            this.selectMultiple11.WaveSize = 0;
             // 
             // selectMultiple8
             // 
@@ -399,229 +379,249 @@
             this.selectMultiple10.TabIndex = 3;
             this.selectMultiple10.WaveSize = 0;
             // 
-            // label6
+            // selectMultiple6
             // 
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.Location = new System.Drawing.Point(3, 289);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(694, 24);
-            this.label6.TabIndex = 24;
-            this.label6.Text = "显示数量";
+            this.selectMultiple6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.selectMultiple6.Items.AddRange(new object[] {
+            "Jack Jack Jack Jack Jack",
+            "Lucy",
+            "SelectMultiple",
+            "Tom",
+            "Jerry"});
+            this.selectMultiple6.ListAutoWidth = true;
+            this.selectMultiple6.Location = new System.Drawing.Point(207, 3);
+            this.selectMultiple6.Name = "selectMultiple6";
+            this.selectMultiple6.PlaceholderText = "BR";
+            this.selectMultiple6.Placement = AntdUI.TAlignFrom.BR;
+            this.selectMultiple6.SelectedValue = new object[0];
+            this.selectMultiple6.Size = new System.Drawing.Size(90, 32);
+            this.selectMultiple6.TabIndex = 2;
+            this.selectMultiple6.WaveSize = 0;
             // 
-            // flowPanel4
+            // selectMultiple5
             // 
-            this.flowPanel4.Controls.Add(this.selectMultiple14);
-            this.flowPanel4.Controls.Add(this.selectMultiple13);
-            this.flowPanel4.Controls.Add(this.selectMultiple12);
-            this.flowPanel4.Gap = 6;
-            this.flowPanel4.Location = new System.Drawing.Point(3, 319);
-            this.flowPanel4.Name = "flowPanel4";
-            this.flowPanel4.Size = new System.Drawing.Size(694, 38);
-            this.flowPanel4.TabIndex = 25;
-            this.flowPanel4.Text = "flowPanel4";
+            this.selectMultiple5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.selectMultiple5.Items.AddRange(new object[] {
+            "Jack Jack Jack Jack Jack",
+            "Lucy",
+            "SelectMultiple",
+            "Tom",
+            "Jerry"});
+            this.selectMultiple5.ListAutoWidth = true;
+            this.selectMultiple5.Location = new System.Drawing.Point(105, 3);
+            this.selectMultiple5.Name = "selectMultiple5";
+            this.selectMultiple5.PlaceholderText = "Bottom";
+            this.selectMultiple5.Placement = AntdUI.TAlignFrom.Bottom;
+            this.selectMultiple5.SelectedValue = new object[0];
+            this.selectMultiple5.Size = new System.Drawing.Size(90, 32);
+            this.selectMultiple5.TabIndex = 1;
+            this.selectMultiple5.WaveSize = 0;
             // 
-            // selectMultiple12
+            // selectMultiple7
             // 
-            this.selectMultiple12.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.selectMultiple12.Items.AddRange(new object[] {
+            this.selectMultiple7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.selectMultiple7.Items.AddRange(new object[] {
+            "Jack Jack Jack Jack Jack",
+            "Lucy",
+            "SelectMultiple",
+            "Tom",
+            "Jerry"});
+            this.selectMultiple7.ListAutoWidth = true;
+            this.selectMultiple7.Location = new System.Drawing.Point(3, 3);
+            this.selectMultiple7.Name = "selectMultiple7";
+            this.selectMultiple7.PlaceholderText = "BL";
+            this.selectMultiple7.SelectedValue = new object[0];
+            this.selectMultiple7.Size = new System.Drawing.Size(90, 32);
+            this.selectMultiple7.TabIndex = 0;
+            this.selectMultiple7.WaveSize = 0;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.Location = new System.Drawing.Point(3, 215);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(694, 24);
+            this.label4.TabIndex = 17;
+            this.label4.Text = "弹出位置";
+            // 
+            // flowPanel2
+            // 
+            this.flowPanel2.Controls.Add(this.selectMultiple11);
+            this.flowPanel2.Controls.Add(this.selectMultiple4);
+            this.flowPanel2.Controls.Add(this.selectMultiple_del);
+            this.flowPanel2.Gap = 6;
+            this.flowPanel2.Location = new System.Drawing.Point(3, 171);
+            this.flowPanel2.Name = "flowPanel2";
+            this.flowPanel2.Size = new System.Drawing.Size(694, 38);
+            this.flowPanel2.TabIndex = 16;
+            this.flowPanel2.Text = "flowPanel2";
+            // 
+            // selectMultiple11
+            // 
+            this.selectMultiple11.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.selectMultiple11.Items.AddRange(new object[] {
             "Jack",
             "Lucy",
             "SelectMultiple",
             "Tom",
             "Jerry"});
-            this.selectMultiple12.Location = new System.Drawing.Point(3, 3);
-            this.selectMultiple12.MaxCount = 3;
-            this.selectMultiple12.Name = "selectMultiple12";
-            this.selectMultiple12.PlaceholderText = "3";
-            this.selectMultiple12.SelectedValue = new object[0];
-            this.selectMultiple12.Size = new System.Drawing.Size(200, 32);
-            this.selectMultiple12.TabIndex = 1;
-            this.selectMultiple12.WaveSize = 0;
+            this.selectMultiple11.Location = new System.Drawing.Point(427, 3);
+            this.selectMultiple11.Name = "selectMultiple11";
+            this.selectMultiple11.PlaceholderText = "不显示箭头";
+            this.selectMultiple11.SelectedValue = new object[0];
+            this.selectMultiple11.ShowIcon = false;
+            this.selectMultiple11.Size = new System.Drawing.Size(200, 32);
+            this.selectMultiple11.TabIndex = 2;
+            this.selectMultiple11.WaveSize = 0;
             // 
-            // selectMultiple13
+            // selectMultiple4
             // 
-            this.selectMultiple13.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.selectMultiple13.Items.AddRange(new object[] {
+            this.selectMultiple4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.selectMultiple4.Items.AddRange(new object[] {
             "Jack",
             "Lucy",
             "SelectMultiple",
             "Tom",
             "Jerry"});
-            this.selectMultiple13.Location = new System.Drawing.Point(215, 3);
-            this.selectMultiple13.Name = "selectMultiple13";
-            this.selectMultiple13.PlaceholderText = "4";
-            this.selectMultiple13.SelectedValue = new object[0];
-            this.selectMultiple13.Size = new System.Drawing.Size(200, 32);
-            this.selectMultiple13.TabIndex = 2;
-            this.selectMultiple13.WaveSize = 0;
+            this.selectMultiple4.Location = new System.Drawing.Point(215, 3);
+            this.selectMultiple4.Name = "selectMultiple4";
+            this.selectMultiple4.PlaceholderText = "圆形";
+            this.selectMultiple4.Round = true;
+            this.selectMultiple4.SelectedValue = new object[0];
+            this.selectMultiple4.Size = new System.Drawing.Size(200, 32);
+            this.selectMultiple4.TabIndex = 1;
+            this.selectMultiple4.WaveSize = 0;
             // 
-            // selectMultiple14
+            // selectMultiple_del
             // 
-            this.selectMultiple14.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.selectMultiple14.Items.AddRange(new object[] {
+            this.selectMultiple_del.CanDelete = false;
+            this.selectMultiple_del.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.selectMultiple_del.Items.AddRange(new object[] {
             "Jack",
             "Lucy",
             "SelectMultiple",
             "Tom",
             "Jerry"});
-            this.selectMultiple14.Location = new System.Drawing.Point(427, 3);
-            this.selectMultiple14.MaxCount = 5;
-            this.selectMultiple14.Name = "selectMultiple14";
-            this.selectMultiple14.PlaceholderText = "5";
-            this.selectMultiple14.SelectedValue = new object[0];
-            this.selectMultiple14.Size = new System.Drawing.Size(200, 32);
-            this.selectMultiple14.TabIndex = 3;
-            this.selectMultiple14.WaveSize = 0;
+            this.selectMultiple_del.Location = new System.Drawing.Point(3, 3);
+            this.selectMultiple_del.Name = "selectMultiple_del";
+            this.selectMultiple_del.PlaceholderText = "无删除图标";
+            this.selectMultiple_del.SelectedValue = new object[0];
+            this.selectMultiple_del.Size = new System.Drawing.Size(200, 32);
+            this.selectMultiple_del.TabIndex = 0;
+            this.selectMultiple_del.WaveSize = 0;
             // 
-            // label5
+            // flowPanel1
             // 
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(3, 363);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(694, 24);
-            this.label5.TabIndex = 26;
-            this.label5.Text = "选择数量";
+            this.flowPanel1.Controls.Add(this.selectMultiple3);
+            this.flowPanel1.Controls.Add(this.selectMultiple2);
+            this.flowPanel1.Controls.Add(this.selectMultiple1);
+            this.flowPanel1.Gap = 6;
+            this.flowPanel1.Location = new System.Drawing.Point(3, 127);
+            this.flowPanel1.Name = "flowPanel1";
+            this.flowPanel1.Size = new System.Drawing.Size(694, 38);
+            this.flowPanel1.TabIndex = 15;
+            this.flowPanel1.Text = "flowPanel1";
             // 
-            // flowPanel5
+            // selectMultiple3
             // 
-            this.flowPanel5.Controls.Add(this.selectMultiple16);
-            this.flowPanel5.Controls.Add(this.selectMultiple15);
-            this.flowPanel5.Controls.Add(this.selectMultiple17);
-            this.flowPanel5.Gap = 6;
-            this.flowPanel5.Location = new System.Drawing.Point(3, 393);
-            this.flowPanel5.Name = "flowPanel5";
-            this.flowPanel5.Size = new System.Drawing.Size(694, 38);
-            this.flowPanel5.TabIndex = 27;
-            this.flowPanel5.Text = "flowPanel5";
-            // 
-            // selectMultiple17
-            // 
-            this.selectMultiple17.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.selectMultiple17.Items.AddRange(new object[] {
+            this.selectMultiple3.AllowClear = true;
+            this.selectMultiple3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.selectMultiple3.Items.AddRange(new object[] {
             "Jack",
             "Lucy",
             "SelectMultiple",
             "Tom",
             "Jerry"});
-            this.selectMultiple17.Location = new System.Drawing.Point(3, 3);
-            this.selectMultiple17.MaxChoiceCount = 3;
-            this.selectMultiple17.MaxCount = 5;
-            this.selectMultiple17.Name = "selectMultiple17";
-            this.selectMultiple17.PlaceholderText = "3";
-            this.selectMultiple17.SelectedValue = new object[0];
-            this.selectMultiple17.Size = new System.Drawing.Size(200, 32);
-            this.selectMultiple17.TabIndex = 1;
-            this.selectMultiple17.WaveSize = 0;
+            this.selectMultiple3.List = true;
+            this.selectMultiple3.Location = new System.Drawing.Point(427, 3);
+            this.selectMultiple3.Name = "selectMultiple3";
+            this.selectMultiple3.PlaceholderText = "列表模式";
+            this.selectMultiple3.SelectedValue = new object[0];
+            this.selectMultiple3.Size = new System.Drawing.Size(200, 32);
+            this.selectMultiple3.TabIndex = 2;
+            this.selectMultiple3.WaveSize = 0;
             // 
-            // selectMultiple15
+            // selectMultiple2
             // 
-            this.selectMultiple15.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.selectMultiple15.Items.AddRange(new object[] {
+            this.selectMultiple2.AllowClear = true;
+            this.selectMultiple2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.selectMultiple2.Items.AddRange(new object[] {
             "Jack",
             "Lucy",
             "SelectMultiple",
             "Tom",
             "Jerry"});
-            this.selectMultiple15.Location = new System.Drawing.Point(215, 3);
-            this.selectMultiple15.MaxChoiceCount = 4;
-            this.selectMultiple15.MaxCount = 5;
-            this.selectMultiple15.Name = "selectMultiple15";
-            this.selectMultiple15.PlaceholderText = "4";
-            this.selectMultiple15.SelectedValue = new object[0];
-            this.selectMultiple15.Size = new System.Drawing.Size(200, 32);
-            this.selectMultiple15.TabIndex = 2;
-            this.selectMultiple15.WaveSize = 0;
+            this.selectMultiple2.Location = new System.Drawing.Point(215, 3);
+            this.selectMultiple2.Name = "selectMultiple2";
+            this.selectMultiple2.PlaceholderText = "允许全部清除";
+            this.selectMultiple2.SelectedValue = new object[0];
+            this.selectMultiple2.Size = new System.Drawing.Size(200, 32);
+            this.selectMultiple2.TabIndex = 1;
+            this.selectMultiple2.WaveSize = 0;
             // 
-            // selectMultiple16
+            // selectMultiple1
             // 
-            this.selectMultiple16.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.selectMultiple16.Items.AddRange(new object[] {
+            this.selectMultiple1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.selectMultiple1.Items.AddRange(new object[] {
             "Jack",
             "Lucy",
             "SelectMultiple",
             "Tom",
             "Jerry"});
-            this.selectMultiple16.Location = new System.Drawing.Point(427, 3);
-            this.selectMultiple16.MaxChoiceCount = 5;
-            this.selectMultiple16.MaxCount = 5;
-            this.selectMultiple16.Name = "selectMultiple16";
-            this.selectMultiple16.PlaceholderText = "5";
-            this.selectMultiple16.SelectedValue = new object[0];
-            this.selectMultiple16.Size = new System.Drawing.Size(200, 32);
-            this.selectMultiple16.TabIndex = 3;
-            this.selectMultiple16.WaveSize = 0;
+            this.selectMultiple1.Location = new System.Drawing.Point(3, 3);
+            this.selectMultiple1.Name = "selectMultiple1";
+            this.selectMultiple1.SelectedValue = new object[0];
+            this.selectMultiple1.Size = new System.Drawing.Size(200, 32);
+            this.selectMultiple1.TabIndex = 0;
+            this.selectMultiple1.WaveSize = 0;
             // 
-            // label7
+            // label3
             // 
-            this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.Location = new System.Drawing.Point(3, 437);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(694, 24);
-            this.label7.TabIndex = 28;
-            this.label7.Text = "前/后标签";
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.Location = new System.Drawing.Point(3, 97);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(694, 24);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "基本用法";
             // 
-            // flowPanel6
+            // divider1
             // 
-            this.flowPanel6.Controls.Add(this.selectMultiple18);
-            this.flowPanel6.Controls.Add(this.selectMultiple20);
-            this.flowPanel6.Gap = 6;
-            this.flowPanel6.Location = new System.Drawing.Point(3, 467);
-            this.flowPanel6.Name = "flowPanel6";
-            this.flowPanel6.Size = new System.Drawing.Size(694, 38);
-            this.flowPanel6.TabIndex = 29;
-            this.flowPanel6.Text = "flowPanel6";
+            this.divider1.Location = new System.Drawing.Point(3, 79);
+            this.divider1.Name = "divider1";
+            this.divider1.Size = new System.Drawing.Size(694, 12);
+            this.divider1.TabIndex = 13;
             // 
-            // selectMultiple20
+            // label2
             // 
-            this.selectMultiple20.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.selectMultiple20.Items.AddRange(new object[] {
-            "Jack",
-            "Lucy",
-            "SelectMultiple",
-            "Tom",
-            "Jerry"});
-            this.selectMultiple20.Location = new System.Drawing.Point(3, 3);
-            this.selectMultiple20.Name = "selectMultiple20";
-            this.selectMultiple20.PlaceholderText = "图标";
-            this.selectMultiple20.PrefixSvg = resources.GetString("selectMultiple20.PrefixSvg");
-            this.selectMultiple20.SelectedValue = new object[0];
-            this.selectMultiple20.Size = new System.Drawing.Size(200, 32);
-            this.selectMultiple20.SuffixSvg = resources.GetString("selectMultiple20.SuffixSvg");
-            this.selectMultiple20.TabIndex = 0;
-            this.selectMultiple20.WaveSize = 0;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.Location = new System.Drawing.Point(3, 49);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(694, 24);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "多选下拉选择器。";
             // 
-            // selectMultiple18
+            // label1
             // 
-            this.selectMultiple18.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.selectMultiple18.Items.AddRange(new object[] {
-            "Jack",
-            "Lucy",
-            "SelectMultiple",
-            "Tom",
-            "Jerry"});
-            this.selectMultiple18.Location = new System.Drawing.Point(215, 3);
-            this.selectMultiple18.Name = "selectMultiple18";
-            this.selectMultiple18.PlaceholderText = "文本";
-            this.selectMultiple18.PrefixText = "+";
-            this.selectMultiple18.SelectedValue = new object[0];
-            this.selectMultiple18.Size = new System.Drawing.Size(200, 32);
-            this.selectMultiple18.SuffixText = "$";
-            this.selectMultiple18.TabIndex = 1;
-            this.selectMultiple18.WaveSize = 0;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(3, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(694, 40);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "SelectMultiple 多选选择器";
             // 
             // SelectMultipleDemo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.Controls.Add(this.stackPanel1);
             this.Name = "SelectMultipleDemo";
-            this.Size = new System.Drawing.Size(700, 568);
+            this.Size = new System.Drawing.Size(700, 550);
             this.stackPanel1.ResumeLayout(false);
-            this.flowPanel1.ResumeLayout(false);
-            this.flowPanel2.ResumeLayout(false);
-            this.flowPanel3.ResumeLayout(false);
-            this.flowPanel4.ResumeLayout(false);
-            this.flowPanel5.ResumeLayout(false);
             this.flowPanel6.ResumeLayout(false);
+            this.flowPanel5.ResumeLayout(false);
+            this.flowPanel4.ResumeLayout(false);
+            this.flowPanel3.ResumeLayout(false);
+            this.flowPanel2.ResumeLayout(false);
+            this.flowPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
