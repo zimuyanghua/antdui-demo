@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.titlebar = new AntdUI.WindowBar();
+            this.input_search = new AntdUI.Input();
             this.button_color = new AntdUI.Button();
             this.buttonSZ = new AntdUI.Button();
             this.divider = new AntdUI.Divider();
             this.menu = new AntdUI.Menu();
             this.panel_content = new AntdUI.StackPanel();
             this.label1 = new AntdUI.Label();
-            this.input_search = new AntdUI.Input();
             this.titlebar.SuspendLayout();
             this.panel_content.SuspendLayout();
             this.SuspendLayout();
@@ -56,6 +56,18 @@
             this.titlebar.SubText = "Demo";
             this.titlebar.TabIndex = 0;
             this.titlebar.Text = "AntdUI";
+            // 
+            // input_search
+            // 
+            this.input_search.AllowClear = true;
+            this.input_search.Dock = System.Windows.Forms.DockStyle.Right;
+            this.input_search.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F);
+            this.input_search.Location = new System.Drawing.Point(596, 0);
+            this.input_search.Name = "input_search";
+            this.input_search.PlaceholderText = "输入关键字搜索...";
+            this.input_search.PrefixSvg = "SearchOutlined";
+            this.input_search.Size = new System.Drawing.Size(200, 40);
+            this.input_search.TabIndex = 2;
             // 
             // button_color
             // 
@@ -115,25 +127,14 @@
             // 
             // label1
             // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.Location = new System.Drawing.Point(3, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(693, 563);
+            this.label1.Size = new System.Drawing.Size(709, 503);
             this.label1.TabIndex = 0;
             this.label1.Text = "欢迎使用 AntdUI Demo";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // input_search
-            // 
-            this.input_search.AllowClear = true;
-            this.input_search.Dock = System.Windows.Forms.DockStyle.Right;
-            this.input_search.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F);
-            this.input_search.Location = new System.Drawing.Point(596, 0);
-            this.input_search.Name = "input_search";
-            this.input_search.PlaceholderText = "输入关键字搜索...";
-            this.input_search.PrefixSvg = "SearchOutlined";
-            this.input_search.Size = new System.Drawing.Size(200, 40);
-            this.input_search.TabIndex = 2;
             // 
             // MainWindow
             // 
@@ -146,7 +147,6 @@
             this.Controls.Add(this.titlebar);
             this.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Mode = AntdUI.TAMode.Auto;
             this.Name = "MainWindow";
             this.Opacity = 0.99D;
             this.Padding = new System.Windows.Forms.Padding(6, 0, 0, 6);

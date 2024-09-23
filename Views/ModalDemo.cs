@@ -87,13 +87,23 @@ namespace AntdUIDemo.Views
                 OkText = "Search On Google",
                 OnOk = config =>
                 {
-                    //执行耗时操作,仅OK按钮支持异步响应
                     Thread.Sleep(2000);
                     return true;
                 },
                 OnBtns = button =>
                 {
+                    //1.6.2起，自定义按钮支持异步委托
+                    Thread.Sleep(2000);
                     AntdUI.Message.info(window, button.Text, autoClose: 1);
+                    switch (button.Text)
+                    {
+                        case "Return":
+                            return false;
+                        case "Submit":
+                            return true;
+                        default:
+                            return true;
+                    }
                 }
             });
         }

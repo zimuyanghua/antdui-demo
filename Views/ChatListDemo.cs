@@ -57,7 +57,7 @@ namespace AntdUIDemo.Views
                 #region 模拟GPT
 
                 var msg = new AntdUI.Chat.TextChatItem("", Properties.Resources.head, "2.0T 银");
-                bool isbut = chatList.AddIsBottom(msg);
+                bool isbut = chatList.AddToBottom(msg);
                 msg.Loading = true;
                 Thread.Sleep(1200);
 
