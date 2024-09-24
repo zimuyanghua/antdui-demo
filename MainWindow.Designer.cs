@@ -50,7 +50,6 @@
             this.titlebar.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.titlebar.IsMax = false;
             this.titlebar.Location = new System.Drawing.Point(6, 0);
-            this.titlebar.MaximizeBox = false;
             this.titlebar.Name = "titlebar";
             this.titlebar.Size = new System.Drawing.Size(992, 40);
             this.titlebar.SubText = "Demo";
@@ -62,7 +61,7 @@
             this.input_search.AllowClear = true;
             this.input_search.Dock = System.Windows.Forms.DockStyle.Right;
             this.input_search.Font = new System.Drawing.Font("Microsoft YaHei UI", 10F);
-            this.input_search.Location = new System.Drawing.Point(596, 0);
+            this.input_search.Location = new System.Drawing.Point(548, 0);
             this.input_search.Name = "input_search";
             this.input_search.PlaceholderText = "输入关键字搜索...";
             this.input_search.PrefixSvg = "SearchOutlined";
@@ -75,7 +74,7 @@
             this.button_color.Ghost = true;
             this.button_color.IconRatio = 0.6F;
             this.button_color.IconSvg = resources.GetString("button_color.IconSvg");
-            this.button_color.Location = new System.Drawing.Point(796, 0);
+            this.button_color.Location = new System.Drawing.Point(748, 0);
             this.button_color.Name = "button_color";
             this.button_color.Radius = 0;
             this.button_color.Size = new System.Drawing.Size(50, 40);
@@ -87,7 +86,7 @@
             this.buttonSZ.Dock = System.Windows.Forms.DockStyle.Right;
             this.buttonSZ.Ghost = true;
             this.buttonSZ.IconSvg = resources.GetString("buttonSZ.IconSvg");
-            this.buttonSZ.Location = new System.Drawing.Point(846, 0);
+            this.buttonSZ.Location = new System.Drawing.Point(798, 0);
             this.buttonSZ.Name = "buttonSZ";
             this.buttonSZ.Radius = 0;
             this.buttonSZ.Size = new System.Drawing.Size(50, 40);
@@ -123,6 +122,7 @@
             this.panel_content.Name = "panel_content";
             this.panel_content.Size = new System.Drawing.Size(715, 511);
             this.panel_content.TabIndex = 10;
+            this.panel_content.Text = "stackPanel1";
             this.panel_content.Vertical = true;
             // 
             // label1
@@ -131,10 +131,11 @@
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.label1.Location = new System.Drawing.Point(3, 3);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(709, 503);
-            this.label1.TabIndex = 0;
+            this.label1.Size = new System.Drawing.Size(709, 505);
+            this.label1.TabIndex = 13;
             this.label1.Text = "欢迎使用 AntdUI Demo";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.TooltipConfig = null;
             // 
             // MainWindow
             // 
@@ -164,10 +165,10 @@
         private AntdUI.WindowBar titlebar;
         private AntdUI.Divider divider;
         private AntdUI.Menu menu;
-        private AntdUI.StackPanel panel_content;
         private AntdUI.Button buttonSZ;
         private AntdUI.Button button_color;
-        private AntdUI.Label label1;
         private AntdUI.Input input_search;
+        private AntdUI.StackPanel panel_content;
+        private AntdUI.Label label1;
     }
 }
