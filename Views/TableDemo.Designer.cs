@@ -70,6 +70,7 @@
             // 
             this.table_base.EmptyHeader = true;
             this.table_base.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.table_base.Gap = 8;
             this.table_base.Location = new System.Drawing.Point(3, 215);
             this.table_base.Name = "table_base";
             this.table_base.ShowTip = false;
@@ -205,6 +206,7 @@
             this.label3.Size = new System.Drawing.Size(694, 24);
             this.label3.TabIndex = 24;
             this.label3.Text = "基本用法";
+            this.label3.TooltipConfig = null;
             // 
             // divider1
             // 
@@ -221,6 +223,7 @@
             this.label2.Size = new System.Drawing.Size(694, 24);
             this.label2.TabIndex = 22;
             this.label2.Text = "展示行列数据。";
+            this.label2.TooltipConfig = null;
             // 
             // label1
             // 
@@ -230,6 +233,7 @@
             this.label1.Size = new System.Drawing.Size(694, 40);
             this.label1.TabIndex = 21;
             this.label1.Text = "Table 表格";
+            this.label1.TooltipConfig = null;
             // 
             // TableDemo
             // 
