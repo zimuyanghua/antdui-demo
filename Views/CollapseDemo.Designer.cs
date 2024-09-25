@@ -347,7 +347,6 @@
             this.progress1.Loading = true;
             this.progress1.Location = new System.Drawing.Point(0, 0);
             this.progress1.Name = "progress1";
-            this.progress1.ShowText = true;
             this.progress1.Size = new System.Drawing.Size(656, 60);
             this.progress1.TabIndex = 0;
             this.progress1.Text = "%";
