@@ -13,7 +13,7 @@
     <Copyright>Copyright © 2024 czz_y</Copyright>
     <FileVersion>$(Version)</FileVersion>
     <AssemblyVersion>$(Version)</AssemblyVersion>
-    <Version>1.6.4</Version>
+    <Version>1.6.5</Version>
     <Authors>czz_y</Authors>
     <Description>基于 Winform UI框架 AntdUI 设计的Demo</Description>
     <PackageProjectUrl>https://gitee.com/mubaiyanghua/antd-uidemo</PackageProjectUrl>
@@ -30,7 +30,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="AntdUI" Version="1.6.4" />
+    <PackageReference Include="AntdUI" Version="1.6.5" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
     <PackageReference Include="NLog" Version="5.3.3" />
   </ItemGroup>
