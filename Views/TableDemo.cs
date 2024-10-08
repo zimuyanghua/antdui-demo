@@ -45,7 +45,10 @@ namespace AntdUIDemo.Views
                 new Column("CellImages", "图片",ColumnAlign.Center),
                 new Column("CellTags", "标签",ColumnAlign.Center),
                 new Column("CellBadge", "徽标",ColumnAlign.Center),
-                new Column("CellText", "富文本"),
+                new Column("CellText", "富文本")
+                {
+                    ColAlign = ColumnAlign.Center,//支持表头位置单独设置
+                },
                 new Column("CellProgress", "进度条",ColumnAlign.Center),
                 new Column("CellDivider", "分割线",ColumnAlign.Center),
                 new Column("CellLinks", "链接",ColumnAlign.Center),

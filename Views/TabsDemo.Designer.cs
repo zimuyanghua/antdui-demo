@@ -89,7 +89,7 @@
             this.stackPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.stackPanel1.Location = new System.Drawing.Point(0, 0);
             this.stackPanel1.Name = "stackPanel1";
-            this.stackPanel1.Size = new System.Drawing.Size(700, 560);
+            this.stackPanel1.Size = new System.Drawing.Size(700, 744);
             this.stackPanel1.TabIndex = 0;
             this.stackPanel1.Text = "stackPanel1";
             this.stackPanel1.Vertical = true;
@@ -131,6 +131,7 @@
             this.label10.Size = new System.Drawing.Size(688, 23);
             this.label10.TabIndex = 0;
             this.label10.Text = "Content of Tab Pane 1";
+            this.label10.TooltipConfig = null;
             // 
             // tabPage8
             // 
@@ -152,6 +153,7 @@
             this.label13.Size = new System.Drawing.Size(688, 23);
             this.label13.TabIndex = 3;
             this.label13.Text = "Content of Tab Pane 2";
+            this.label13.TooltipConfig = null;
             // 
             // tabPage9
             // 
@@ -173,6 +175,7 @@
             this.label14.Size = new System.Drawing.Size(688, 23);
             this.label14.TabIndex = 4;
             this.label14.Text = "Content of Tab Pane 3";
+            this.label14.TooltipConfig = null;
             // 
             // label9
             // 
@@ -182,6 +185,7 @@
             this.label9.Size = new System.Drawing.Size(694, 24);
             this.label9.TabIndex = 27;
             this.label9.Text = "居中位置";
+            this.label9.TooltipConfig = null;
             // 
             // tabs_close
             // 
@@ -208,6 +212,7 @@
             this.tabPage2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
             this.tabPage2.Location = new System.Drawing.Point(3, 38);
             this.tabPage2.Name = "tabPage2";
+            this.tabPage2.ReadOnly = true;
             this.tabPage2.Size = new System.Drawing.Size(688, 79);
             this.tabPage2.TabIndex = 0;
             this.tabPage2.Text = "Tab1";
@@ -220,6 +225,7 @@
             this.label12.Size = new System.Drawing.Size(688, 23);
             this.label12.TabIndex = 1;
             this.label12.Text = "Content of Tab Pane 1";
+            this.label12.TooltipConfig = null;
             // 
             // tabPage3
             // 
@@ -241,6 +247,7 @@
             this.label11.Size = new System.Drawing.Size(688, 23);
             this.label11.TabIndex = 2;
             this.label11.Text = "Content of Tab Pane 2";
+            this.label11.TooltipConfig = null;
             // 
             // tabPage4
             // 
@@ -262,6 +269,7 @@
             this.label8.Size = new System.Drawing.Size(688, 23);
             this.label8.TabIndex = 3;
             this.label8.Text = "Content of Tab Pane 3";
+            this.label8.TooltipConfig = null;
             // 
             // label7
             // 
@@ -271,6 +279,7 @@
             this.label7.Size = new System.Drawing.Size(694, 24);
             this.label7.TabIndex = 24;
             this.label7.Text = "卡片样式";
+            this.label7.TooltipConfig = null;
             // 
             // tabs1
             // 
@@ -307,6 +316,7 @@
             this.label4.Size = new System.Drawing.Size(688, 23);
             this.label4.TabIndex = 0;
             this.label4.Text = "Content of Tab Pane 1";
+            this.label4.TooltipConfig = null;
             // 
             // tabPage6
             // 
@@ -327,6 +337,7 @@
             this.label5.Size = new System.Drawing.Size(688, 23);
             this.label5.TabIndex = 1;
             this.label5.Text = "Content of Tab Pane 2";
+            this.label5.TooltipConfig = null;
             // 
             // tabPage7
             // 
@@ -347,6 +358,7 @@
             this.label6.Size = new System.Drawing.Size(688, 23);
             this.label6.TabIndex = 2;
             this.label6.Text = "Content of Tab Pane 3";
+            this.label6.TooltipConfig = null;
             // 
             // label3
             // 
@@ -356,6 +368,7 @@
             this.label3.Size = new System.Drawing.Size(694, 24);
             this.label3.TabIndex = 22;
             this.label3.Text = "基本用法";
+            this.label3.TooltipConfig = null;
             // 
             // divider1
             // 
@@ -372,6 +385,7 @@
             this.label2.Size = new System.Drawing.Size(694, 24);
             this.label2.TabIndex = 6;
             this.label2.Text = "选项卡切换组件。";
+            this.label2.TooltipConfig = null;
             // 
             // label1
             // 
@@ -381,13 +395,14 @@
             this.label1.Size = new System.Drawing.Size(694, 40);
             this.label1.TabIndex = 5;
             this.label1.Text = "Tabs 标签页";
+            this.label1.TooltipConfig = null;
             // 
             // TabsDemo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.Controls.Add(this.stackPanel1);
             this.Name = "TabsDemo";
-            this.Size = new System.Drawing.Size(700, 560);
+            this.Size = new System.Drawing.Size(700, 744);
             this.stackPanel1.ResumeLayout(false);
             this.tabs3.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);

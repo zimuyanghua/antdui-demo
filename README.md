@@ -4,7 +4,7 @@
 
 <h1>AntdUI Demo</h1>
 
-本项目基于 `Winform .NET Framework 4.8` 开发，是 [AntdUI](https://gitee.com/antdui/AntdUI) 的 Demo 项目，当前版本 `1.6.5`
+本项目基于 `Winform .NET Framework 4.8` 开发，是 [AntdUI](https://gitee.com/antdui/AntdUI) 的 Demo 项目，当前版本 `1.6.6`
 
 </div>
 
@@ -91,6 +91,8 @@
 ![SelectMultiple](assets/screenshots/SelectMultiple.png)
 #### Slider 滑动输入条
 ![Slider](assets/screenshots/Slider.png)
+#### SliderRange 滑动范围输入条
+![SliderRange](assets/screenshots/SliderRange.png)
 #### Switch 开关
 ![Switch](assets/screenshots/Switch.png)
 #### TimePicker 时间选择框

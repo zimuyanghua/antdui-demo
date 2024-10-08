@@ -49,6 +49,7 @@ namespace AntdUIDemo.Models
                 new MenuItems { Text = "Select 选择器", Tag = "Select"},
                 new MenuItems { Text = "SelectMultiple 多选选择器", Tag = "SelectMultiple"},
                 new MenuItems { Text = "Slider 滑动输入条", Tag = "Slider"},
+                new MenuItems { Text = "SliderRange 滑动范围输入条", Tag = "SliderRange"},
                 new MenuItems { Text = "Switch 开关", Tag = "Switch"},
                 new MenuItems { Text = "TimePicker 时间选择框", Tag = "TimePicker"},
             }

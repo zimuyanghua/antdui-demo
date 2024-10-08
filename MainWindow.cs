@@ -244,6 +244,9 @@ namespace AntdUIDemo
                 case "Slider":
                     control = new SliderDemo();
                     break;
+                case "SliderRange":
+                    control = new SliderRangeDemo();
+                    break;
                 case "Switch":
                     control = new SwitchDemo();
                     break;

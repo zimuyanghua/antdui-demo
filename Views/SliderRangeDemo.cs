@@ -10,12 +10,10 @@ using System.Windows.Forms;
 
 namespace AntdUIDemo.Views
 {
-    public partial class TabsDemo : UserControl
+    public partial class SliderRangeDemo : UserControl
     {
-        private AntdUI.Window window;
-        public TabsDemo(AntdUI.Window _window)
+        public SliderRangeDemo()
         {
-            window = _window;
             InitializeComponent();
         }
     }
