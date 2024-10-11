@@ -29,6 +29,13 @@
         private void InitializeComponent()
         {
             this.stackPanel1 = new AntdUI.StackPanel();
+            this.progress18 = new AntdUI.Progress();
+            this.progress17 = new AntdUI.Progress();
+            this.progress16 = new AntdUI.Progress();
+            this.progress15 = new AntdUI.Progress();
+            this.progress14 = new AntdUI.Progress();
+            this.progress12 = new AntdUI.Progress();
+            this.label7 = new AntdUI.Label();
             this.progress13 = new AntdUI.Progress();
             this.label6 = new AntdUI.Label();
             this.flowPanel1 = new AntdUI.FlowPanel();
@@ -50,13 +57,7 @@
             this.divider1 = new AntdUI.Divider();
             this.label2 = new AntdUI.Label();
             this.label1 = new AntdUI.Label();
-            this.label7 = new AntdUI.Label();
-            this.progress12 = new AntdUI.Progress();
-            this.progress14 = new AntdUI.Progress();
-            this.progress15 = new AntdUI.Progress();
-            this.progress16 = new AntdUI.Progress();
-            this.progress17 = new AntdUI.Progress();
-            this.progress18 = new AntdUI.Progress();
+            this.progress19 = new AntdUI.Progress();
             this.stackPanel1.SuspendLayout();
             this.flowPanel1.SuspendLayout();
             this.flowPanel4.SuspendLayout();
@@ -64,6 +65,7 @@
             // 
             // stackPanel1
             // 
+            this.stackPanel1.Controls.Add(this.progress19);
             this.stackPanel1.Controls.Add(this.progress18);
             this.stackPanel1.Controls.Add(this.progress17);
             this.stackPanel1.Controls.Add(this.progress16);
@@ -89,10 +91,98 @@
             this.stackPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.stackPanel1.Location = new System.Drawing.Point(0, 0);
             this.stackPanel1.Name = "stackPanel1";
-            this.stackPanel1.Size = new System.Drawing.Size(700, 715);
+            this.stackPanel1.Size = new System.Drawing.Size(700, 741);
             this.stackPanel1.TabIndex = 0;
             this.stackPanel1.Text = "stackPanel1";
             this.stackPanel1.Vertical = true;
+            // 
+            // progress18
+            // 
+            this.progress18.Location = new System.Drawing.Point(3, 674);
+            this.progress18.Name = "progress18";
+            this.progress18.Shape = AntdUI.TShapeProgress.Steps;
+            this.progress18.Size = new System.Drawing.Size(694, 23);
+            this.progress18.State = AntdUI.TType.Warn;
+            this.progress18.StepGap = 5;
+            this.progress18.Steps = 50;
+            this.progress18.StepSize = 2;
+            this.progress18.TabIndex = 65;
+            this.progress18.Text = "progress18";
+            this.progress18.Value = 0.3F;
+            // 
+            // progress17
+            // 
+            this.progress17.Location = new System.Drawing.Point(3, 645);
+            this.progress17.Name = "progress17";
+            this.progress17.Shape = AntdUI.TShapeProgress.Steps;
+            this.progress17.Size = new System.Drawing.Size(694, 23);
+            this.progress17.StepGap = 8;
+            this.progress17.Steps = 20;
+            this.progress17.StepSize = 10;
+            this.progress17.TabIndex = 64;
+            this.progress17.Text = "progress17";
+            this.progress17.Value = 0.3F;
+            // 
+            // progress16
+            // 
+            this.progress16.Location = new System.Drawing.Point(3, 616);
+            this.progress16.Name = "progress16";
+            this.progress16.Shape = AntdUI.TShapeProgress.Steps;
+            this.progress16.Size = new System.Drawing.Size(694, 23);
+            this.progress16.State = AntdUI.TType.Success;
+            this.progress16.Steps = 50;
+            this.progress16.StepSize = 2;
+            this.progress16.TabIndex = 63;
+            this.progress16.Text = "progress16";
+            this.progress16.Value = 1F;
+            // 
+            // progress15
+            // 
+            this.progress15.Location = new System.Drawing.Point(3, 587);
+            this.progress15.Name = "progress15";
+            this.progress15.Shape = AntdUI.TShapeProgress.Steps;
+            this.progress15.Size = new System.Drawing.Size(694, 23);
+            this.progress15.State = AntdUI.TType.Error;
+            this.progress15.Steps = 50;
+            this.progress15.StepSize = 5;
+            this.progress15.TabIndex = 62;
+            this.progress15.Text = "progress15";
+            this.progress15.Value = 0.7F;
+            // 
+            // progress14
+            // 
+            this.progress14.Location = new System.Drawing.Point(3, 558);
+            this.progress14.Name = "progress14";
+            this.progress14.Shape = AntdUI.TShapeProgress.Steps;
+            this.progress14.Size = new System.Drawing.Size(694, 23);
+            this.progress14.Steps = 50;
+            this.progress14.StepSize = 5;
+            this.progress14.TabIndex = 61;
+            this.progress14.Text = "progress14";
+            this.progress14.Value = 0.5F;
+            // 
+            // progress12
+            // 
+            this.progress12.Location = new System.Drawing.Point(3, 529);
+            this.progress12.Name = "progress12";
+            this.progress12.Shape = AntdUI.TShapeProgress.Steps;
+            this.progress12.Size = new System.Drawing.Size(694, 23);
+            this.progress12.Steps = 50;
+            this.progress12.StepSize = 5;
+            this.progress12.TabIndex = 60;
+            this.progress12.Text = "progress12";
+            this.progress12.TextUnit = "";
+            this.progress12.Value = 0.3F;
+            // 
+            // label7
+            // 
+            this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label7.Location = new System.Drawing.Point(3, 499);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(694, 24);
+            this.label7.TabIndex = 59;
+            this.label7.Text = "步骤进度条";
+            this.label7.TooltipConfig = null;
             // 
             // progress13
             // 
@@ -330,100 +420,26 @@
             this.label1.Text = "Progress 进度条";
             this.label1.TooltipConfig = null;
             // 
-            // label7
+            // progress19
             // 
-            this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label7.Location = new System.Drawing.Point(3, 499);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(694, 24);
-            this.label7.TabIndex = 59;
-            this.label7.Text = "步骤进度条";
-            this.label7.TooltipConfig = null;
-            // 
-            // progress12
-            // 
-            this.progress12.Location = new System.Drawing.Point(3, 529);
-            this.progress12.Name = "progress12";
-            this.progress12.Shape = AntdUI.TShapeProgress.Steps;
-            this.progress12.Size = new System.Drawing.Size(694, 23);
-            this.progress12.Steps = 50;
-            this.progress12.StepSize = 5;
-            this.progress12.TabIndex = 60;
-            this.progress12.Text = "progress12";
-            this.progress12.TextUnit = "";
-            this.progress12.Value = 0.3F;
-            // 
-            // progress14
-            // 
-            this.progress14.Location = new System.Drawing.Point(3, 558);
-            this.progress14.Name = "progress14";
-            this.progress14.Shape = AntdUI.TShapeProgress.Steps;
-            this.progress14.Size = new System.Drawing.Size(694, 23);
-            this.progress14.Steps = 50;
-            this.progress14.StepSize = 5;
-            this.progress14.TabIndex = 61;
-            this.progress14.Text = "progress14";
-            this.progress14.Value = 0.5F;
-            // 
-            // progress15
-            // 
-            this.progress15.Location = new System.Drawing.Point(3, 587);
-            this.progress15.Name = "progress15";
-            this.progress15.Shape = AntdUI.TShapeProgress.Steps;
-            this.progress15.Size = new System.Drawing.Size(694, 23);
-            this.progress15.State = AntdUI.TType.Error;
-            this.progress15.Steps = 50;
-            this.progress15.StepSize = 5;
-            this.progress15.TabIndex = 62;
-            this.progress15.Text = "progress15";
-            this.progress15.Value = 0.7F;
-            // 
-            // progress16
-            // 
-            this.progress16.Location = new System.Drawing.Point(3, 616);
-            this.progress16.Name = "progress16";
-            this.progress16.Shape = AntdUI.TShapeProgress.Steps;
-            this.progress16.Size = new System.Drawing.Size(694, 23);
-            this.progress16.State = AntdUI.TType.Success;
-            this.progress16.Steps = 50;
-            this.progress16.StepSize = 5;
-            this.progress16.TabIndex = 63;
-            this.progress16.Text = "progress16";
-            this.progress16.Value = 1F;
-            // 
-            // progress17
-            // 
-            this.progress17.Location = new System.Drawing.Point(3, 645);
-            this.progress17.Name = "progress17";
-            this.progress17.Shape = AntdUI.TShapeProgress.Steps;
-            this.progress17.Size = new System.Drawing.Size(694, 23);
-            this.progress17.StepGap = 8;
-            this.progress17.Steps = 20;
-            this.progress17.StepSize = 10;
-            this.progress17.TabIndex = 64;
-            this.progress17.Text = "progress17";
-            this.progress17.Value = 0.3F;
-            // 
-            // progress18
-            // 
-            this.progress18.Location = new System.Drawing.Point(3, 674);
-            this.progress18.Name = "progress18";
-            this.progress18.Shape = AntdUI.TShapeProgress.Steps;
-            this.progress18.Size = new System.Drawing.Size(694, 23);
-            this.progress18.State = AntdUI.TType.Warn;
-            this.progress18.StepGap = 5;
-            this.progress18.Steps = 50;
-            this.progress18.StepSize = 2;
-            this.progress18.TabIndex = 65;
-            this.progress18.Text = "progress18";
-            this.progress18.Value = 0.3F;
+            this.progress19.Location = new System.Drawing.Point(3, 703);
+            this.progress19.Name = "progress19";
+            this.progress19.Shape = AntdUI.TShapeProgress.Steps;
+            this.progress19.Size = new System.Drawing.Size(694, 23);
+            this.progress19.State = AntdUI.TType.Warn;
+            this.progress19.StepGap = 5;
+            this.progress19.Steps = 50;
+            this.progress19.StepSize = 0;
+            this.progress19.TabIndex = 66;
+            this.progress19.Text = "progress19";
+            this.progress19.Value = 0.3F;
             // 
             // ProgressDemo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.Controls.Add(this.stackPanel1);
             this.Name = "ProgressDemo";
-            this.Size = new System.Drawing.Size(700, 715);
+            this.Size = new System.Drawing.Size(700, 741);
             this.stackPanel1.ResumeLayout(false);
             this.flowPanel1.ResumeLayout(false);
             this.flowPanel4.ResumeLayout(false);
@@ -462,5 +478,6 @@
         private AntdUI.Progress progress16;
         private AntdUI.Progress progress15;
         private AntdUI.Progress progress18;
+        private AntdUI.Progress progress19;
     }
 }

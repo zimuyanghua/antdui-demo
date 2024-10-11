@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            AntdUI.Tabs.StyleLine styleLine2 = new AntdUI.Tabs.StyleLine();
+            AntdUI.Tabs.StyleCard styleCard1 = new AntdUI.Tabs.StyleCard();
+            AntdUI.Tabs.StyleLine styleLine3 = new AntdUI.Tabs.StyleLine();
             AntdUI.Tabs.StyleLine styleLine1 = new AntdUI.Tabs.StyleLine();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TabsDemo));
-            AntdUI.Tabs.StyleCard styleCard1 = new AntdUI.Tabs.StyleCard();
-            AntdUI.Tabs.StyleLine styleLine2 = new AntdUI.Tabs.StyleLine();
             this.stackPanel1 = new AntdUI.StackPanel();
+            this.label15 = new AntdUI.Label();
             this.tabs3 = new AntdUI.Tabs();
             this.tabPage5 = new AntdUI.TabPage();
             this.label10 = new AntdUI.Label();
@@ -60,6 +62,24 @@
             this.divider1 = new AntdUI.Divider();
             this.label2 = new AntdUI.Label();
             this.label1 = new AntdUI.Label();
+            this.tabPage11 = new AntdUI.TabPage();
+            this.tabPage12 = new AntdUI.TabPage();
+            this.tabPage13 = new AntdUI.TabPage();
+            this.tabPage14 = new AntdUI.TabPage();
+            this.tabPage15 = new AntdUI.TabPage();
+            this.tabPage16 = new AntdUI.TabPage();
+            this.tabPage17 = new AntdUI.TabPage();
+            this.tabPage18 = new AntdUI.TabPage();
+            this.tabPage19 = new AntdUI.TabPage();
+            this.tabPage20 = new AntdUI.TabPage();
+            this.tabPage21 = new AntdUI.TabPage();
+            this.tabPage22 = new AntdUI.TabPage();
+            this.flowPanel3 = new AntdUI.FlowPanel();
+            this.tabs_typeexceed = new AntdUI.Tabs();
+            this.tabPage10 = new AntdUI.TabPage();
+            this.label16 = new AntdUI.Label();
+            this.label17 = new AntdUI.Label();
+            this.select_typeexceed = new AntdUI.Select();
             this.stackPanel1.SuspendLayout();
             this.tabs3.SuspendLayout();
             this.tabPage5.SuspendLayout();
@@ -73,10 +93,16 @@
             this.tabPage1.SuspendLayout();
             this.tabPage6.SuspendLayout();
             this.tabPage7.SuspendLayout();
+            this.flowPanel3.SuspendLayout();
+            this.tabs_typeexceed.SuspendLayout();
+            this.tabPage10.SuspendLayout();
             this.SuspendLayout();
             // 
             // stackPanel1
             // 
+            this.stackPanel1.Controls.Add(this.tabs_typeexceed);
+            this.stackPanel1.Controls.Add(this.flowPanel3);
+            this.stackPanel1.Controls.Add(this.label15);
             this.stackPanel1.Controls.Add(this.tabs3);
             this.stackPanel1.Controls.Add(this.label9);
             this.stackPanel1.Controls.Add(this.tabs_close);
@@ -94,6 +120,16 @@
             this.stackPanel1.Text = "stackPanel1";
             this.stackPanel1.Vertical = true;
             // 
+            // label15
+            // 
+            this.label15.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label15.Location = new System.Drawing.Point(3, 565);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(694, 24);
+            this.label15.TabIndex = 30;
+            this.label15.Text = "超出显示";
+            this.label15.TooltipConfig = null;
+            // 
             // tabs3
             // 
             this.tabs3.Centered = true;
@@ -106,7 +142,7 @@
             this.tabs3.Pages.Add(this.tabPage8);
             this.tabs3.Pages.Add(this.tabPage9);
             this.tabs3.Size = new System.Drawing.Size(694, 120);
-            this.tabs3.Style = styleLine1;
+            this.tabs3.Style = styleLine2;
             this.tabs3.TabIndex = 29;
             this.tabs3.Text = "tabs3";
             // 
@@ -292,7 +328,7 @@
             this.tabs1.Pages.Add(this.tabPage6);
             this.tabs1.Pages.Add(this.tabPage7);
             this.tabs1.Size = new System.Drawing.Size(694, 120);
-            this.tabs1.Style = styleLine2;
+            this.tabs1.Style = styleLine3;
             this.tabs1.TabIndex = 23;
             this.tabs1.Text = "tabs1";
             // 
@@ -397,6 +433,192 @@
             this.label1.Text = "Tabs 标签页";
             this.label1.TooltipConfig = null;
             // 
+            // tabPage11
+            // 
+            this.tabPage11.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabPage11.Location = new System.Drawing.Point(0, 0);
+            this.tabPage11.Name = "tabPage11";
+            this.tabPage11.Size = new System.Drawing.Size(0, 0);
+            this.tabPage11.TabIndex = 0;
+            this.tabPage11.Text = "Tab2";
+            // 
+            // tabPage12
+            // 
+            this.tabPage12.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabPage12.Location = new System.Drawing.Point(3, 38);
+            this.tabPage12.Name = "tabPage12";
+            this.tabPage12.Size = new System.Drawing.Size(688, 47);
+            this.tabPage12.TabIndex = 0;
+            this.tabPage12.Text = "Tab3";
+            // 
+            // tabPage13
+            // 
+            this.tabPage13.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabPage13.Location = new System.Drawing.Point(0, 0);
+            this.tabPage13.Name = "tabPage13";
+            this.tabPage13.Size = new System.Drawing.Size(0, 0);
+            this.tabPage13.TabIndex = 0;
+            this.tabPage13.Text = "Tab4";
+            // 
+            // tabPage14
+            // 
+            this.tabPage14.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabPage14.Location = new System.Drawing.Point(0, 0);
+            this.tabPage14.Name = "tabPage14";
+            this.tabPage14.Size = new System.Drawing.Size(0, 0);
+            this.tabPage14.TabIndex = 0;
+            this.tabPage14.Text = "Tab5";
+            // 
+            // tabPage15
+            // 
+            this.tabPage15.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabPage15.Location = new System.Drawing.Point(0, 0);
+            this.tabPage15.Name = "tabPage15";
+            this.tabPage15.Size = new System.Drawing.Size(0, 0);
+            this.tabPage15.TabIndex = 0;
+            this.tabPage15.Text = "Tab6";
+            // 
+            // tabPage16
+            // 
+            this.tabPage16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabPage16.Location = new System.Drawing.Point(0, 0);
+            this.tabPage16.Name = "tabPage16";
+            this.tabPage16.Size = new System.Drawing.Size(0, 0);
+            this.tabPage16.TabIndex = 0;
+            this.tabPage16.Text = "Tab7";
+            // 
+            // tabPage17
+            // 
+            this.tabPage17.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabPage17.Location = new System.Drawing.Point(0, 0);
+            this.tabPage17.Name = "tabPage17";
+            this.tabPage17.Size = new System.Drawing.Size(0, 0);
+            this.tabPage17.TabIndex = 0;
+            this.tabPage17.Text = "Tab8";
+            // 
+            // tabPage18
+            // 
+            this.tabPage18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabPage18.Location = new System.Drawing.Point(3, 38);
+            this.tabPage18.Name = "tabPage18";
+            this.tabPage18.Size = new System.Drawing.Size(688, 47);
+            this.tabPage18.TabIndex = 0;
+            this.tabPage18.Text = "Tab9";
+            // 
+            // tabPage19
+            // 
+            this.tabPage19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabPage19.Location = new System.Drawing.Point(3, 38);
+            this.tabPage19.Name = "tabPage19";
+            this.tabPage19.Size = new System.Drawing.Size(688, 47);
+            this.tabPage19.TabIndex = 0;
+            this.tabPage19.Text = "Tab10";
+            // 
+            // tabPage20
+            // 
+            this.tabPage20.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabPage20.Location = new System.Drawing.Point(3, 38);
+            this.tabPage20.Name = "tabPage20";
+            this.tabPage20.Size = new System.Drawing.Size(688, 47);
+            this.tabPage20.TabIndex = 0;
+            this.tabPage20.Text = "Tab11";
+            // 
+            // tabPage21
+            // 
+            this.tabPage21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabPage21.Location = new System.Drawing.Point(0, 0);
+            this.tabPage21.Name = "tabPage21";
+            this.tabPage21.Size = new System.Drawing.Size(0, 0);
+            this.tabPage21.TabIndex = 0;
+            this.tabPage21.Text = "Tab12";
+            // 
+            // tabPage22
+            // 
+            this.tabPage22.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabPage22.Location = new System.Drawing.Point(0, 0);
+            this.tabPage22.Name = "tabPage22";
+            this.tabPage22.Size = new System.Drawing.Size(0, 0);
+            this.tabPage22.TabIndex = 0;
+            this.tabPage22.Text = "Tab13";
+            // 
+            // flowPanel3
+            // 
+            this.flowPanel3.Controls.Add(this.select_typeexceed);
+            this.flowPanel3.Controls.Add(this.label17);
+            this.flowPanel3.Location = new System.Drawing.Point(3, 595);
+            this.flowPanel3.Name = "flowPanel3";
+            this.flowPanel3.Size = new System.Drawing.Size(694, 38);
+            this.flowPanel3.TabIndex = 33;
+            this.flowPanel3.Text = "flowPanel3";
+            // 
+            // tabs_typeexceed
+            // 
+            this.tabs_typeexceed.Cursor = System.Windows.Forms.Cursors.Default;
+            this.tabs_typeexceed.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
+            this.tabs_typeexceed.Gap = 12;
+            this.tabs_typeexceed.Location = new System.Drawing.Point(3, 639);
+            this.tabs_typeexceed.Name = "tabs_typeexceed";
+            this.tabs_typeexceed.Pages.Add(this.tabPage10);
+            this.tabs_typeexceed.Pages.Add(this.tabPage11);
+            this.tabs_typeexceed.Pages.Add(this.tabPage12);
+            this.tabs_typeexceed.Pages.Add(this.tabPage13);
+            this.tabs_typeexceed.Pages.Add(this.tabPage14);
+            this.tabs_typeexceed.Pages.Add(this.tabPage15);
+            this.tabs_typeexceed.Pages.Add(this.tabPage16);
+            this.tabs_typeexceed.Pages.Add(this.tabPage17);
+            this.tabs_typeexceed.Pages.Add(this.tabPage18);
+            this.tabs_typeexceed.Pages.Add(this.tabPage19);
+            this.tabs_typeexceed.Pages.Add(this.tabPage20);
+            this.tabs_typeexceed.Pages.Add(this.tabPage21);
+            this.tabs_typeexceed.Pages.Add(this.tabPage22);
+            this.tabs_typeexceed.Size = new System.Drawing.Size(694, 88);
+            this.tabs_typeexceed.Style = styleLine1;
+            this.tabs_typeexceed.TabIndex = 35;
+            this.tabs_typeexceed.Text = "tabs2";
+            this.tabs_typeexceed.TypExceed = AntdUI.TabTypExceed.None;
+            // 
+            // tabPage10
+            // 
+            this.tabPage10.Controls.Add(this.label16);
+            this.tabPage10.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabPage10.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.tabPage10.IconSvg = resources.GetString("tabPage10.IconSvg");
+            this.tabPage10.Location = new System.Drawing.Point(3, 38);
+            this.tabPage10.Name = "tabPage10";
+            this.tabPage10.Size = new System.Drawing.Size(688, 47);
+            this.tabPage10.TabIndex = 34;
+            this.tabPage10.Text = "Tab1";
+            // 
+            // label16
+            // 
+            this.label16.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label16.Location = new System.Drawing.Point(0, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(688, 23);
+            this.label16.TabIndex = 0;
+            this.label16.Text = "Content of Tab Pane 1";
+            this.label16.TooltipConfig = null;
+            // 
+            // label17
+            // 
+            this.label17.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label17.Location = new System.Drawing.Point(3, 3);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(112, 26);
+            this.label17.TabIndex = 6;
+            this.label17.Text = "TypeExceed";
+            this.label17.TooltipConfig = null;
+            // 
+            // select_typeexceed
+            // 
+            this.select_typeexceed.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.select_typeexceed.List = true;
+            this.select_typeexceed.Location = new System.Drawing.Point(121, 3);
+            this.select_typeexceed.Name = "select_typeexceed";
+            this.select_typeexceed.Size = new System.Drawing.Size(108, 26);
+            this.select_typeexceed.TabIndex = 12;
+            this.select_typeexceed.WaveSize = 0;
+            // 
             // TabsDemo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -416,6 +638,9 @@
             this.tabPage1.ResumeLayout(false);
             this.tabPage6.ResumeLayout(false);
             this.tabPage7.ResumeLayout(false);
+            this.flowPanel3.ResumeLayout(false);
+            this.tabs_typeexceed.ResumeLayout(false);
+            this.tabPage10.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -450,5 +675,24 @@
         private AntdUI.Label label12;
         private AntdUI.Label label13;
         private AntdUI.Label label14;
+        private AntdUI.Label label15;
+        private AntdUI.TabPage tabPage11;
+        private AntdUI.TabPage tabPage12;
+        private AntdUI.TabPage tabPage13;
+        private AntdUI.TabPage tabPage14;
+        private AntdUI.TabPage tabPage15;
+        private AntdUI.TabPage tabPage16;
+        private AntdUI.TabPage tabPage17;
+        private AntdUI.TabPage tabPage18;
+        private AntdUI.TabPage tabPage19;
+        private AntdUI.TabPage tabPage20;
+        private AntdUI.TabPage tabPage21;
+        private AntdUI.TabPage tabPage22;
+        private AntdUI.Tabs tabs_typeexceed;
+        private AntdUI.TabPage tabPage10;
+        private AntdUI.Label label16;
+        private AntdUI.FlowPanel flowPanel3;
+        private AntdUI.Label label17;
+        private AntdUI.Select select_typeexceed;
     }
 }
