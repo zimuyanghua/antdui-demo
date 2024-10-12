@@ -66,7 +66,10 @@ namespace AntdUIDemo.Views
 
         private void Popovercalendar_DateChanged(object sender, DateTimeEventArgs e)
         {
+            var calendar = sender as AntdUI.Calendar;
             AntdUI.Message.info(window, e.Value.ToString("yyyy-MM-dd"), autoClose: 1);
+            //点击完成主动释放日历控件
+            calendar.Dispose();
         }
 
         private void button_form_Click(object sender, EventArgs e)
@@ -76,7 +79,6 @@ namespace AntdUIDemo.Views
             form.Size = new Size(500, 500);
             Popover.open(new Popover.Config(button, form)
             {
-
                 ArrowAlign = TAlign.TL,
             });
         }
@@ -104,7 +106,10 @@ namespace AntdUIDemo.Views
 
         private void Popoverbutton_Click(object sender, EventArgs e)
         {
+            var button = sender as AntdUI.Button;
             AntdUI.Message.info(window, "点击了PopoverButton", autoClose: 1);
+            //点击完成主动释放按钮
+            button.Dispose();
         }
 
         private void button_close_Click(object sender, EventArgs e)
