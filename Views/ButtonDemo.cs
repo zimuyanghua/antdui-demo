@@ -52,6 +52,14 @@ namespace AntdUIDemo.Views
                     var toggle = button.Toggle;
                     var toggletype = button.ToggleType;
                     var toggleiconsvg = button.ToggleIconSvg;
+                    var loading = button.Loading;
+                    var loadingvalue = button.LoadingValue;
+                    var loadingwavecolor = button.LoadingWaveColor;
+                    var loadingwavecount = button.LoadingWaveCount;
+                    var loadingwavesize = button.LoadingWaveSize;
+                    var loadingwavevalue = button.LoadingWaveValue;
+                    var loadingwavevertical = button.LoadingWaveVertical;
+
                     // 构建SetTip文本
                     var tooltipText = new StringBuilder();
                     tooltipText.AppendLine($"Type: {type}");
@@ -93,6 +101,15 @@ namespace AntdUIDemo.Views
                         {
                             tooltipText.AppendLine($"ToggleIconSvg: 参见ToggleIconSvg属性");
                         }
+                    }
+                    if (loading)
+                    {
+                        tooltipText.AppendLine($"Loading: {loading}");
+                        tooltipText.AppendLine($"LoadingWaveColor:{loadingwavecolor}");
+                        tooltipText.AppendLine($"LoadingWaveCount:{loadingwavecount}");
+                        tooltipText.AppendLine($"LoadingWaveSize:{loadingwavesize}");
+                        tooltipText.AppendLine($"LoadingWaveValue:{loadingwavevalue}");
+                        tooltipText.AppendLine($"LoadingWaveVertical:{loadingwavevertical}");
                     }
                     tooltipComponent.SetTip(control, tooltipText.ToString());
                 }

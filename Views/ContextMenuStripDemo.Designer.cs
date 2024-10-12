@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.stackPanel1 = new AntdUI.StackPanel();
-            this.label4 = new AntdUI.Label();
-            this.divider1 = new AntdUI.Divider();
             this.label2 = new AntdUI.Label();
             this.label1 = new AntdUI.Label();
+            this.label3 = new AntdUI.Label();
             this.flowPanel = new AntdUI.FlowPanel();
             this.button_base = new AntdUI.Button();
+            this.label4 = new AntdUI.Label();
+            this.divider1 = new AntdUI.Divider();
             this.stackPanel1.SuspendLayout();
             this.flowPanel.SuspendLayout();
             this.SuspendLayout();
@@ -44,6 +45,7 @@
             this.stackPanel1.Controls.Add(this.flowPanel);
             this.stackPanel1.Controls.Add(this.label4);
             this.stackPanel1.Controls.Add(this.divider1);
+            this.stackPanel1.Controls.Add(this.label3);
             this.stackPanel1.Controls.Add(this.label2);
             this.stackPanel1.Controls.Add(this.label1);
             this.stackPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -54,22 +56,6 @@
             this.stackPanel1.Text = "stackPanel1";
             this.stackPanel1.Vertical = true;
             // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(3, 97);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(694, 24);
-            this.label4.TabIndex = 53;
-            this.label4.Text = "基本用法";
-            // 
-            // divider1
-            // 
-            this.divider1.Location = new System.Drawing.Point(3, 79);
-            this.divider1.Name = "divider1";
-            this.divider1.Size = new System.Drawing.Size(694, 12);
-            this.divider1.TabIndex = 52;
-            // 
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -78,6 +64,7 @@
             this.label2.Size = new System.Drawing.Size(694, 24);
             this.label2.TabIndex = 51;
             this.label2.Text = "表示快捷菜单。";
+            this.label2.TooltipConfig = null;
             // 
             // label1
             // 
@@ -87,14 +74,25 @@
             this.label1.Size = new System.Drawing.Size(694, 40);
             this.label1.TabIndex = 50;
             this.label1.Text = "ContextMenuStrip 快捷菜单";
+            this.label1.TooltipConfig = null;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.label3.Location = new System.Drawing.Point(3, 79);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(694, 24);
+            this.label3.TabIndex = 55;
+            this.label3.Text = "ContextMenuStrip没有工具箱控件，使用代码方式调用。";
+            this.label3.TooltipConfig = null;
             // 
             // flowPanel
             // 
             this.flowPanel.Controls.Add(this.button_base);
-            this.flowPanel.Location = new System.Drawing.Point(3, 127);
+            this.flowPanel.Location = new System.Drawing.Point(3, 157);
             this.flowPanel.Name = "flowPanel";
             this.flowPanel.Size = new System.Drawing.Size(694, 38);
-            this.flowPanel.TabIndex = 54;
+            this.flowPanel.TabIndex = 58;
             this.flowPanel.Text = "flowPanel1";
             // 
             // button_base
@@ -107,6 +105,23 @@
             this.button_base.Text = "Click";
             this.button_base.Type = AntdUI.TTypeMini.Primary;
             this.button_base.WaveSize = 0;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.Location = new System.Drawing.Point(3, 127);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(694, 24);
+            this.label4.TabIndex = 57;
+            this.label4.Text = "基本用法";
+            this.label4.TooltipConfig = null;
+            // 
+            // divider1
+            // 
+            this.divider1.Location = new System.Drawing.Point(3, 109);
+            this.divider1.Name = "divider1";
+            this.divider1.Size = new System.Drawing.Size(694, 12);
+            this.divider1.TabIndex = 56;
             // 
             // ContextMenuStripDemo
             // 
@@ -123,11 +138,12 @@
         #endregion
 
         private AntdUI.StackPanel stackPanel1;
-        private AntdUI.Label label4;
-        private AntdUI.Divider divider1;
         private AntdUI.Label label2;
         private AntdUI.Label label1;
         private AntdUI.FlowPanel flowPanel;
         private AntdUI.Button button_base;
+        private AntdUI.Label label4;
+        private AntdUI.Divider divider1;
+        private AntdUI.Label label3;
     }
 }
