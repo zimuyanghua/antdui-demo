@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             this.stackPanel1 = new AntdUI.StackPanel();
+            this.stackPanel3 = new AntdUI.StackPanel();
+            this.select_align = new AntdUI.Select();
+            this.label10 = new AntdUI.Label();
+            this.label4 = new AntdUI.Label();
+            this.flowPanel1 = new AntdUI.FlowPanel();
             this.label3 = new AntdUI.Label();
             this.divider1 = new AntdUI.Divider();
             this.label2 = new AntdUI.Label();
             this.label1 = new AntdUI.Label();
-            this.flowPanel1 = new AntdUI.FlowPanel();
-            this.button = new AntdUI.Button();
-            this.label4 = new AntdUI.Label();
-            this.stackPanel3 = new AntdUI.StackPanel();
-            this.select_align = new AntdUI.Select();
-            this.label10 = new AntdUI.Label();
             this.switch_mask = new AntdUI.Switch();
             this.label5 = new AntdUI.Label();
             this.switch_mc = new AntdUI.Switch();
             this.label6 = new AntdUI.Label();
+            this.button = new AntdUI.Button();
             this.stackPanel1.SuspendLayout();
-            this.flowPanel1.SuspendLayout();
             this.stackPanel3.SuspendLayout();
+            this.flowPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // stackPanel1
@@ -65,6 +65,60 @@
             this.stackPanel1.Text = "stackPanel1";
             this.stackPanel1.Vertical = true;
             // 
+            // stackPanel3
+            // 
+            this.stackPanel3.Controls.Add(this.switch_mc);
+            this.stackPanel3.Controls.Add(this.label6);
+            this.stackPanel3.Controls.Add(this.switch_mask);
+            this.stackPanel3.Controls.Add(this.label5);
+            this.stackPanel3.Controls.Add(this.select_align);
+            this.stackPanel3.Controls.Add(this.label10);
+            this.stackPanel3.Gap = 4;
+            this.stackPanel3.Location = new System.Drawing.Point(3, 201);
+            this.stackPanel3.Name = "stackPanel3";
+            this.stackPanel3.Size = new System.Drawing.Size(694, 32);
+            this.stackPanel3.TabIndex = 32;
+            this.stackPanel3.Text = "stackPanel3";
+            // 
+            // select_align
+            // 
+            this.select_align.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.select_align.List = true;
+            this.select_align.Location = new System.Drawing.Point(88, 3);
+            this.select_align.Name = "select_align";
+            this.select_align.Size = new System.Drawing.Size(90, 26);
+            this.select_align.TabIndex = 5;
+            this.select_align.WaveSize = 0;
+            // 
+            // label10
+            // 
+            this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label10.Location = new System.Drawing.Point(3, 3);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(75, 26);
+            this.label10.TabIndex = 4;
+            this.label10.Text = "Align";
+            this.label10.TooltipConfig = null;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
+            this.label4.Location = new System.Drawing.Point(3, 171);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(694, 24);
+            this.label4.TabIndex = 31;
+            this.label4.Text = "控件配置";
+            this.label4.TooltipConfig = null;
+            // 
+            // flowPanel1
+            // 
+            this.flowPanel1.Controls.Add(this.button);
+            this.flowPanel1.Location = new System.Drawing.Point(3, 127);
+            this.flowPanel1.Name = "flowPanel1";
+            this.flowPanel1.Size = new System.Drawing.Size(694, 38);
+            this.flowPanel1.TabIndex = 29;
+            this.flowPanel1.Text = "flowPanel1";
+            // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -73,6 +127,7 @@
             this.label3.Size = new System.Drawing.Size(694, 24);
             this.label3.TabIndex = 28;
             this.label3.Text = "基本用法";
+            this.label3.TooltipConfig = null;
             // 
             // divider1
             // 
@@ -89,6 +144,7 @@
             this.label2.Size = new System.Drawing.Size(694, 24);
             this.label2.TabIndex = 26;
             this.label2.Text = "屏幕边缘滑出的浮层面板。";
+            this.label2.TooltipConfig = null;
             // 
             // label1
             // 
@@ -98,15 +154,45 @@
             this.label1.Size = new System.Drawing.Size(694, 40);
             this.label1.TabIndex = 25;
             this.label1.Text = "Drawer 抽屉";
+            this.label1.TooltipConfig = null;
             // 
-            // flowPanel1
+            // switch_mask
             // 
-            this.flowPanel1.Controls.Add(this.button);
-            this.flowPanel1.Location = new System.Drawing.Point(3, 127);
-            this.flowPanel1.Name = "flowPanel1";
-            this.flowPanel1.Size = new System.Drawing.Size(694, 38);
-            this.flowPanel1.TabIndex = 29;
-            this.flowPanel1.Text = "flowPanel1";
+            this.switch_mask.AutoCheck = true;
+            this.switch_mask.Location = new System.Drawing.Point(273, 3);
+            this.switch_mask.Name = "switch_mask";
+            this.switch_mask.Size = new System.Drawing.Size(50, 26);
+            this.switch_mask.TabIndex = 11;
+            this.switch_mask.Text = "switch1";
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.Location = new System.Drawing.Point(188, 3);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(75, 26);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Mask";
+            this.label5.TooltipConfig = null;
+            // 
+            // switch_mc
+            // 
+            this.switch_mc.AutoCheck = true;
+            this.switch_mc.Location = new System.Drawing.Point(463, 3);
+            this.switch_mc.Name = "switch_mc";
+            this.switch_mc.Size = new System.Drawing.Size(50, 26);
+            this.switch_mc.TabIndex = 13;
+            this.switch_mc.Text = "switch1";
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.Location = new System.Drawing.Point(333, 3);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(120, 26);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "MaskClosable";
+            this.label6.TooltipConfig = null;
             // 
             // button
             // 
@@ -119,85 +205,6 @@
             this.button.Type = AntdUI.TTypeMini.Primary;
             this.button.WaveSize = 0;
             // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
-            this.label4.Location = new System.Drawing.Point(3, 171);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(694, 24);
-            this.label4.TabIndex = 31;
-            this.label4.Text = "控件配置";
-            // 
-            // stackPanel3
-            // 
-            this.stackPanel3.Controls.Add(this.switch_mc);
-            this.stackPanel3.Controls.Add(this.label6);
-            this.stackPanel3.Controls.Add(this.switch_mask);
-            this.stackPanel3.Controls.Add(this.label5);
-            this.stackPanel3.Controls.Add(this.select_align);
-            this.stackPanel3.Controls.Add(this.label10);
-            this.stackPanel3.Gap = 6;
-            this.stackPanel3.Location = new System.Drawing.Point(3, 201);
-            this.stackPanel3.Name = "stackPanel3";
-            this.stackPanel3.Size = new System.Drawing.Size(694, 38);
-            this.stackPanel3.TabIndex = 32;
-            this.stackPanel3.Text = "stackPanel3";
-            // 
-            // select_align
-            // 
-            this.select_align.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.select_align.List = true;
-            this.select_align.Location = new System.Drawing.Point(135, 3);
-            this.select_align.Name = "select_align";
-            this.select_align.Size = new System.Drawing.Size(75, 32);
-            this.select_align.TabIndex = 5;
-            this.select_align.WaveSize = 0;
-            // 
-            // label10
-            // 
-            this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label10.Location = new System.Drawing.Point(3, 3);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(120, 32);
-            this.label10.TabIndex = 4;
-            this.label10.Text = "Align";
-            // 
-            // switch_mask
-            // 
-            this.switch_mask.AutoCheck = true;
-            this.switch_mask.Location = new System.Drawing.Point(354, 3);
-            this.switch_mask.Name = "switch_mask";
-            this.switch_mask.Size = new System.Drawing.Size(60, 32);
-            this.switch_mask.TabIndex = 7;
-            this.switch_mask.Text = "switch1";
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(222, 3);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(120, 32);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Mask";
-            // 
-            // switch_mc
-            // 
-            this.switch_mc.AutoCheck = true;
-            this.switch_mc.Location = new System.Drawing.Point(558, 3);
-            this.switch_mc.Name = "switch_mc";
-            this.switch_mc.Size = new System.Drawing.Size(60, 32);
-            this.switch_mc.TabIndex = 9;
-            this.switch_mc.Text = "switch1";
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.Location = new System.Drawing.Point(426, 3);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(120, 32);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "MaskClosable";
-            // 
             // DrawerDemo
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -205,8 +212,8 @@
             this.Name = "DrawerDemo";
             this.Size = new System.Drawing.Size(700, 327);
             this.stackPanel1.ResumeLayout(false);
-            this.flowPanel1.ResumeLayout(false);
             this.stackPanel3.ResumeLayout(false);
+            this.flowPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -219,14 +226,14 @@
         private AntdUI.Label label2;
         private AntdUI.Label label1;
         private AntdUI.FlowPanel flowPanel1;
-        private AntdUI.Button button;
         private AntdUI.Label label4;
         private AntdUI.StackPanel stackPanel3;
         private AntdUI.Select select_align;
         private AntdUI.Label label10;
-        private AntdUI.Switch switch_mask;
-        private AntdUI.Label label5;
         private AntdUI.Switch switch_mc;
         private AntdUI.Label label6;
+        private AntdUI.Switch switch_mask;
+        private AntdUI.Label label5;
+        private AntdUI.Button button;
     }
 }

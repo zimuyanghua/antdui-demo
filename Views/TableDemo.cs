@@ -51,8 +51,11 @@ namespace AntdUIDemo.Views
                 },
                 new Column("CellProgress", "进度条",ColumnAlign.Center),
                 new Column("CellDivider", "分割线",ColumnAlign.Center),
-                new Column("CellLinks", "链接",ColumnAlign.Center),
-                };
+                new Column("CellLinks", "链接", ColumnAlign.Center)
+                {
+                    Fixed = true,//冻结列
+                },
+            };
         }
 
         private void BindEventHandler()

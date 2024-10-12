@@ -36,7 +36,6 @@
             this.input_shadowOH = new AntdUI.InputNumber();
             this.label12 = new AntdUI.Label();
             this.stackPanel14 = new AntdUI.StackPanel();
-            this.select_shadowOA = new AntdUI.Select();
             this.label13 = new AntdUI.Label();
             this.stackPanel3 = new AntdUI.StackPanel();
             this.buttonCZ = new AntdUI.Button();
@@ -76,6 +75,7 @@
             this.divider1 = new AntdUI.Divider();
             this.label2 = new AntdUI.Label();
             this.label1 = new AntdUI.Label();
+            this.switch_shadowOA = new AntdUI.Switch();
             this.stackPanel1.SuspendLayout();
             this.stackPanel2.SuspendLayout();
             this.stackPanel15.SuspendLayout();
@@ -191,32 +191,17 @@
             this.label12.Size = new System.Drawing.Size(220, 26);
             this.label12.TabIndex = 4;
             this.label12.Text = "ShadowOpacityHover";
+            this.label12.TooltipConfig = null;
             // 
             // stackPanel14
             // 
-            this.stackPanel14.Controls.Add(this.select_shadowOA);
+            this.stackPanel14.Controls.Add(this.switch_shadowOA);
             this.stackPanel14.Controls.Add(this.label13);
             this.stackPanel14.Location = new System.Drawing.Point(3, 3);
             this.stackPanel14.Name = "stackPanel14";
             this.stackPanel14.Size = new System.Drawing.Size(456, 32);
             this.stackPanel14.TabIndex = 29;
             this.stackPanel14.Text = "stackPanel14";
-            // 
-            // select_shadowOA
-            // 
-            this.select_shadowOA.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.select_shadowOA.Items.AddRange(new object[] {
-            "True",
-            "False"});
-            this.select_shadowOA.List = true;
-            this.select_shadowOA.Location = new System.Drawing.Point(229, 3);
-            this.select_shadowOA.Name = "select_shadowOA";
-            this.select_shadowOA.SelectedIndex = 0;
-            this.select_shadowOA.SelectedValue = "True";
-            this.select_shadowOA.Size = new System.Drawing.Size(75, 26);
-            this.select_shadowOA.TabIndex = 11;
-            this.select_shadowOA.Text = "True";
-            this.select_shadowOA.WaveSize = 0;
             // 
             // label13
             // 
@@ -226,6 +211,7 @@
             this.label13.Size = new System.Drawing.Size(220, 26);
             this.label13.TabIndex = 4;
             this.label13.Text = "ShadowOpacityAnimation";
+            this.label13.TooltipConfig = null;
             // 
             // stackPanel3
             // 
@@ -308,6 +294,7 @@
             this.label11.Size = new System.Drawing.Size(130, 26);
             this.label11.TabIndex = 4;
             this.label11.Text = "ShadowOpacity";
+            this.label11.TooltipConfig = null;
             // 
             // stackPanel11
             // 
@@ -342,6 +329,7 @@
             this.label9.Size = new System.Drawing.Size(130, 26);
             this.label9.TabIndex = 4;
             this.label9.Text = "ShadowOffsetY";
+            this.label9.TooltipConfig = null;
             // 
             // stackPanel10
             // 
@@ -376,6 +364,7 @@
             this.label8.Size = new System.Drawing.Size(130, 26);
             this.label8.TabIndex = 4;
             this.label8.Text = "ShadowOffsetX";
+            this.label8.TooltipConfig = null;
             // 
             // stackPanel9
             // 
@@ -407,6 +396,7 @@
             this.label7.Size = new System.Drawing.Size(130, 26);
             this.label7.TabIndex = 4;
             this.label7.Text = "ShadowColor";
+            this.label7.TooltipConfig = null;
             // 
             // stackPanel8
             // 
@@ -436,6 +426,7 @@
             this.label6.Size = new System.Drawing.Size(130, 26);
             this.label6.TabIndex = 4;
             this.label6.Text = "ShadowAlign";
+            this.label6.TooltipConfig = null;
             // 
             // stackPanel7
             // 
@@ -475,6 +466,7 @@
             this.label5.Size = new System.Drawing.Size(130, 26);
             this.label5.TabIndex = 4;
             this.label5.Text = "Shadow";
+            this.label5.TooltipConfig = null;
             // 
             // stackPanel17
             // 
@@ -510,6 +502,7 @@
             this.label15.Size = new System.Drawing.Size(130, 26);
             this.label15.TabIndex = 4;
             this.label15.Text = "BorderWidth";
+            this.label15.TooltipConfig = null;
             // 
             // stackPanel16
             // 
@@ -541,6 +534,7 @@
             this.label14.Size = new System.Drawing.Size(130, 26);
             this.label14.TabIndex = 4;
             this.label14.Text = "BorderColor";
+            this.label14.TooltipConfig = null;
             // 
             // stackPanel6
             // 
@@ -580,6 +574,7 @@
             this.label4.Size = new System.Drawing.Size(130, 26);
             this.label4.TabIndex = 4;
             this.label4.Text = "Radius";
+            this.label4.TooltipConfig = null;
             // 
             // stackPanel5
             // 
@@ -619,6 +614,7 @@
             this.label3.Size = new System.Drawing.Size(130, 26);
             this.label3.TabIndex = 4;
             this.label3.Text = "ArrowSize";
+            this.label3.TooltipConfig = null;
             // 
             // stackPanel4
             // 
@@ -648,6 +644,7 @@
             this.label10.Size = new System.Drawing.Size(130, 26);
             this.label10.TabIndex = 4;
             this.label10.Text = "ArrowAlign";
+            this.label10.TooltipConfig = null;
             // 
             // divider1
             // 
@@ -664,6 +661,7 @@
             this.label2.Size = new System.Drawing.Size(694, 24);
             this.label2.TabIndex = 7;
             this.label2.Text = "普通布局面板";
+            this.label2.TooltipConfig = null;
             // 
             // label1
             // 
@@ -673,6 +671,17 @@
             this.label1.Size = new System.Drawing.Size(694, 40);
             this.label1.TabIndex = 6;
             this.label1.Text = "Panel 面板";
+            this.label1.TooltipConfig = null;
+            // 
+            // switch_shadowOA
+            // 
+            this.switch_shadowOA.AutoCheck = true;
+            this.switch_shadowOA.Checked = true;
+            this.switch_shadowOA.Location = new System.Drawing.Point(229, 3);
+            this.switch_shadowOA.Name = "switch_shadowOA";
+            this.switch_shadowOA.Size = new System.Drawing.Size(50, 26);
+            this.switch_shadowOA.TabIndex = 12;
+            this.switch_shadowOA.Text = "switch1";
             // 
             // PanelDemo
             // 
@@ -714,7 +723,6 @@
         private AntdUI.InputNumber input_shadowOH;
         private AntdUI.Label label12;
         private AntdUI.StackPanel stackPanel14;
-        private AntdUI.Select select_shadowOA;
         private AntdUI.Label label13;
         private AntdUI.StackPanel stackPanel3;
         private AntdUI.StackPanel stackPanel17;
@@ -751,5 +759,6 @@
         private AntdUI.InputNumber input_shadow;
         private AntdUI.Label label5;
         private AntdUI.Button buttonCZ;
+        private AntdUI.Switch switch_shadowOA;
     }
 }

@@ -1,15 +1,12 @@
 ﻿using AntdUI;
-using Newtonsoft.Json.Linq;
 using AntdUIDemo.Controls;
 using AntdUIDemo.Models;
 using AntdUIDemo.Utils;
 using AntdUIDemo.Views;
+using AntdUIDemo.Views.SubView;
 using Microsoft.Win32;
 using System;
-using System.Configuration;
-using System.Drawing;
 using System.Windows.Forms;
-using System.IO;
 
 namespace AntdUIDemo
 {
@@ -23,8 +20,17 @@ namespace AntdUIDemo
             LoadAppConfig();
             //加载菜单
             LoadMenu();
+            //加载欢迎页
+            InitData();
             //绑定事件
             BindEventHandler();
+        }
+
+        private void InitData()
+        {
+            var control = new Wellcome();
+            AutoDpi(control);
+            panel_content.Controls.Add(control);
         }
 
         private void BindEventHandler()

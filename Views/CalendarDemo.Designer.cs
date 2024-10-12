@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.stackPanel1 = new AntdUI.StackPanel();
+            this.calendar = new AntdUI.Calendar();
+            this.flowPanel1 = new AntdUI.FlowPanel();
+            this.switch_showchinese = new AntdUI.Switch();
+            this.label4 = new AntdUI.Label();
+            this.switch_showtoday = new AntdUI.Switch();
+            this.label6 = new AntdUI.Label();
             this.label3 = new AntdUI.Label();
             this.divider1 = new AntdUI.Divider();
             this.label2 = new AntdUI.Label();
             this.label1 = new AntdUI.Label();
-            this.flowPanel1 = new AntdUI.FlowPanel();
-            this.calendar = new AntdUI.Calendar();
-            this.switch_showtoday = new AntdUI.Switch();
-            this.label6 = new AntdUI.Label();
-            this.switch_showchinese = new AntdUI.Switch();
-            this.label4 = new AntdUI.Label();
             this.stackPanel1.SuspendLayout();
             this.flowPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -59,6 +59,70 @@
             this.stackPanel1.Text = "stackPanel1";
             this.stackPanel1.Vertical = true;
             // 
+            // calendar
+            // 
+            this.calendar.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
+            this.calendar.Full = true;
+            this.calendar.Location = new System.Drawing.Point(3, 165);
+            this.calendar.Name = "calendar";
+            this.calendar.ShowChinese = true;
+            this.calendar.Size = new System.Drawing.Size(694, 376);
+            this.calendar.TabIndex = 26;
+            this.calendar.Text = "calendar1";
+            this.calendar.Value = new System.DateTime(2024, 8, 30, 8, 41, 9, 706);
+            // 
+            // flowPanel1
+            // 
+            this.flowPanel1.Controls.Add(this.switch_showchinese);
+            this.flowPanel1.Controls.Add(this.label4);
+            this.flowPanel1.Controls.Add(this.switch_showtoday);
+            this.flowPanel1.Controls.Add(this.label6);
+            this.flowPanel1.Location = new System.Drawing.Point(3, 127);
+            this.flowPanel1.Name = "flowPanel1";
+            this.flowPanel1.Size = new System.Drawing.Size(694, 32);
+            this.flowPanel1.TabIndex = 25;
+            this.flowPanel1.Text = "flowPanel1";
+            // 
+            // switch_showchinese
+            // 
+            this.switch_showchinese.AutoCheck = true;
+            this.switch_showchinese.Checked = true;
+            this.switch_showchinese.Location = new System.Drawing.Point(381, 3);
+            this.switch_showchinese.Name = "switch_showchinese";
+            this.switch_showchinese.Size = new System.Drawing.Size(50, 26);
+            this.switch_showchinese.TabIndex = 13;
+            this.switch_showchinese.Text = "switch1";
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label4.Location = new System.Drawing.Point(220, 3);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(155, 26);
+            this.label4.TabIndex = 12;
+            this.label4.Text = "ShowChinese";
+            this.label4.TooltipConfig = null;
+            // 
+            // switch_showtoday
+            // 
+            this.switch_showtoday.AutoCheck = true;
+            this.switch_showtoday.Checked = true;
+            this.switch_showtoday.Location = new System.Drawing.Point(164, 3);
+            this.switch_showtoday.Name = "switch_showtoday";
+            this.switch_showtoday.Size = new System.Drawing.Size(50, 26);
+            this.switch_showtoday.TabIndex = 11;
+            this.switch_showtoday.Text = "switch1";
+            // 
+            // label6
+            // 
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.Location = new System.Drawing.Point(3, 3);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(155, 26);
+            this.label6.TabIndex = 10;
+            this.label6.Text = "ShowButtonToday";
+            this.label6.TooltipConfig = null;
+            // 
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -67,6 +131,7 @@
             this.label3.Size = new System.Drawing.Size(694, 24);
             this.label3.TabIndex = 23;
             this.label3.Text = "基本用法";
+            this.label3.TooltipConfig = null;
             // 
             // divider1
             // 
@@ -83,6 +148,7 @@
             this.label2.Size = new System.Drawing.Size(694, 24);
             this.label2.TabIndex = 21;
             this.label2.Text = "按照日历形式展示数据的容器。";
+            this.label2.TooltipConfig = null;
             // 
             // label1
             // 
@@ -92,68 +158,7 @@
             this.label1.Size = new System.Drawing.Size(694, 40);
             this.label1.TabIndex = 20;
             this.label1.Text = "Calendar 日历";
-            // 
-            // flowPanel1
-            // 
-            this.flowPanel1.Controls.Add(this.switch_showchinese);
-            this.flowPanel1.Controls.Add(this.label4);
-            this.flowPanel1.Controls.Add(this.switch_showtoday);
-            this.flowPanel1.Controls.Add(this.label6);
-            this.flowPanel1.Location = new System.Drawing.Point(3, 127);
-            this.flowPanel1.Name = "flowPanel1";
-            this.flowPanel1.Size = new System.Drawing.Size(694, 38);
-            this.flowPanel1.TabIndex = 25;
-            this.flowPanel1.Text = "flowPanel1";
-            // 
-            // calendar
-            // 
-            this.calendar.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F);
-            this.calendar.Full = true;
-            this.calendar.Location = new System.Drawing.Point(3, 171);
-            this.calendar.Name = "calendar";
-            this.calendar.ShowChinese = true;
-            this.calendar.Size = new System.Drawing.Size(694, 376);
-            this.calendar.TabIndex = 26;
-            this.calendar.Text = "calendar1";
-            this.calendar.Value = new System.DateTime(2024, 8, 30, 8, 41, 9, 706);
-            // 
-            // switch_showtoday
-            // 
-            this.switch_showtoday.AutoCheck = true;
-            this.switch_showtoday.Checked = true;
-            this.switch_showtoday.Location = new System.Drawing.Point(164, 3);
-            this.switch_showtoday.Name = "switch_showtoday";
-            this.switch_showtoday.Size = new System.Drawing.Size(60, 32);
-            this.switch_showtoday.TabIndex = 11;
-            this.switch_showtoday.Text = "switch1";
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.Location = new System.Drawing.Point(3, 3);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(155, 32);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "ShowButtonToday";
-            // 
-            // switch_showchinese
-            // 
-            this.switch_showchinese.AutoCheck = true;
-            this.switch_showchinese.Checked = true;
-            this.switch_showchinese.Location = new System.Drawing.Point(391, 3);
-            this.switch_showchinese.Name = "switch_showchinese";
-            this.switch_showchinese.Size = new System.Drawing.Size(60, 32);
-            this.switch_showchinese.TabIndex = 13;
-            this.switch_showchinese.Text = "switch1";
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.Location = new System.Drawing.Point(230, 3);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(155, 32);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "ShowChinese";
+            this.label1.TooltipConfig = null;
             // 
             // CalendarDemo
             // 

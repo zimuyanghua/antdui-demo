@@ -82,6 +82,7 @@
             this.label1.Size = new System.Drawing.Size(694, 40);
             this.label1.TabIndex = 3;
             this.label1.Text = "Pagination 分页";
+            this.label1.TooltipConfig = null;
             // 
             // label2
             // 
@@ -91,6 +92,7 @@
             this.label2.Size = new System.Drawing.Size(694, 24);
             this.label2.TabIndex = 4;
             this.label2.Text = "采用分页的形式分隔长列表，每次只加载一个页面。";
+            this.label2.TooltipConfig = null;
             // 
             // divider1
             // 
@@ -107,6 +109,7 @@
             this.label12.Size = new System.Drawing.Size(694, 24);
             this.label12.TabIndex = 41;
             this.label12.Text = "控件配置";
+            this.label12.TooltipConfig = null;
             // 
             // stackPanel1
             // 
@@ -181,7 +184,6 @@
             this.switch_right.TabIndex = 15;
             this.switch_right.Text = "switch1";
             this.switch_right.UnCheckedText = "No";
-            this.switch_right.WaveSize = 0;
             // 
             // label15
             // 
@@ -191,6 +193,7 @@
             this.label15.Size = new System.Drawing.Size(120, 26);
             this.label15.TabIndex = 14;
             this.label15.Text = "RightToLeft";
+            this.label15.TooltipConfig = null;
             // 
             // stackPanel5
             // 
@@ -232,6 +235,7 @@
             this.label13.Size = new System.Drawing.Size(155, 26);
             this.label13.TabIndex = 17;
             this.label13.Text = "SizeChangerWidth";
+            this.label13.TooltipConfig = null;
             // 
             // selectMultiple
             // 
@@ -258,6 +262,7 @@
             this.label14.Size = new System.Drawing.Size(150, 26);
             this.label14.TabIndex = 8;
             this.label14.Text = "PageSizeOptions";
+            this.label14.TooltipConfig = null;
             // 
             // stackPanel4
             // 
@@ -281,11 +286,10 @@
             this.switch_show.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.switch_show.Location = new System.Drawing.Point(588, 3);
             this.switch_show.Name = "switch_show";
-            this.switch_show.Size = new System.Drawing.Size(60, 26);
+            this.switch_show.Size = new System.Drawing.Size(50, 26);
             this.switch_show.TabIndex = 13;
             this.switch_show.Text = "switch1";
             this.switch_show.UnCheckedText = "";
-            this.switch_show.WaveSize = 0;
             // 
             // label9
             // 
@@ -295,6 +299,7 @@
             this.label9.Size = new System.Drawing.Size(155, 26);
             this.label9.TabIndex = 12;
             this.label9.Text = "ShowSizeChanger";
+            this.label9.TooltipConfig = null;
             // 
             // input_textdesc
             // 
@@ -313,6 +318,7 @@
             this.label10.Size = new System.Drawing.Size(120, 26);
             this.label10.TabIndex = 10;
             this.label10.Text = "TextDesc";
+            this.label10.TooltipConfig = null;
             // 
             // input_radius
             // 
@@ -342,6 +348,7 @@
             this.label11.Size = new System.Drawing.Size(120, 26);
             this.label11.TabIndex = 8;
             this.label11.Text = "Radius";
+            this.label11.TooltipConfig = null;
             // 
             // stackPanel3
             // 
@@ -385,6 +392,7 @@
             this.label5.Size = new System.Drawing.Size(155, 26);
             this.label5.TabIndex = 15;
             this.label5.Text = "Gap";
+            this.label5.TooltipConfig = null;
             // 
             // colorPicker
             // 
@@ -395,6 +403,7 @@
             this.colorPicker.Size = new System.Drawing.Size(100, 26);
             this.colorPicker.TabIndex = 14;
             this.colorPicker.Text = "colorPicker1";
+            this.colorPicker.Value = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(119)))), ((int)(((byte)(255)))));
             this.colorPicker.WaveSize = 0;
             // 
             // label6
@@ -405,6 +414,7 @@
             this.label6.Size = new System.Drawing.Size(120, 26);
             this.label6.TabIndex = 10;
             this.label6.Text = "Fill";
+            this.label6.TooltipConfig = null;
             // 
             // input_max
             // 
@@ -429,6 +439,7 @@
             this.label8.Size = new System.Drawing.Size(120, 26);
             this.label8.TabIndex = 8;
             this.label8.Text = "MaxPageTotal";
+            this.label8.TooltipConfig = null;
             // 
             // stackPanel2
             // 
@@ -472,6 +483,7 @@
             this.label4.Size = new System.Drawing.Size(155, 26);
             this.label4.TabIndex = 12;
             this.label4.Text = "Total";
+            this.label4.TooltipConfig = null;
             // 
             // input_pagesize
             // 
@@ -501,6 +513,7 @@
             this.label3.Size = new System.Drawing.Size(120, 26);
             this.label3.TabIndex = 10;
             this.label3.Text = "PageSize";
+            this.label3.TooltipConfig = null;
             // 
             // input_current
             // 
@@ -530,6 +543,7 @@
             this.label7.Size = new System.Drawing.Size(120, 26);
             this.label7.TabIndex = 8;
             this.label7.Text = "Current";
+            this.label7.TooltipConfig = null;
             // 
             // PaginationDemo
             // 

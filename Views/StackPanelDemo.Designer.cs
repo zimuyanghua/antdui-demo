@@ -32,15 +32,6 @@
             this.stackPanel2 = new AntdUI.StackPanel();
             this.stackPanel = new AntdUI.StackPanel();
             this.stackPanel3 = new AntdUI.StackPanel();
-            this.stackPanel7 = new AntdUI.StackPanel();
-            this.input_itemsize = new AntdUI.Input();
-            this.label5 = new AntdUI.Label();
-            this.stackPanel5 = new AntdUI.StackPanel();
-            this.input_gap = new AntdUI.InputNumber();
-            this.label3 = new AntdUI.Label();
-            this.divider1 = new AntdUI.Divider();
-            this.label2 = new AntdUI.Label();
-            this.label1 = new AntdUI.Label();
             this.buttonCZ = new AntdUI.Button();
             this.buttonDEL = new AntdUI.Button();
             this.buttonADD = new AntdUI.Button();
@@ -50,13 +41,22 @@
             this.stackPanel6 = new AntdUI.StackPanel();
             this.switch_autoscroll = new AntdUI.Switch();
             this.label4 = new AntdUI.Label();
+            this.stackPanel7 = new AntdUI.StackPanel();
+            this.input_itemsize = new AntdUI.Input();
+            this.label5 = new AntdUI.Label();
+            this.stackPanel5 = new AntdUI.StackPanel();
+            this.input_gap = new AntdUI.InputNumber();
+            this.label3 = new AntdUI.Label();
+            this.divider1 = new AntdUI.Divider();
+            this.label2 = new AntdUI.Label();
+            this.label1 = new AntdUI.Label();
             this.stackPanel1.SuspendLayout();
             this.stackPanel2.SuspendLayout();
             this.stackPanel3.SuspendLayout();
-            this.stackPanel7.SuspendLayout();
-            this.stackPanel5.SuspendLayout();
             this.stackPanel8.SuspendLayout();
             this.stackPanel6.SuspendLayout();
+            this.stackPanel7.SuspendLayout();
+            this.stackPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // stackPanel1
@@ -108,94 +108,6 @@
             this.stackPanel3.Text = "stackPanel3";
             this.stackPanel3.Vertical = true;
             // 
-            // stackPanel7
-            // 
-            this.stackPanel7.Controls.Add(this.input_itemsize);
-            this.stackPanel7.Controls.Add(this.label5);
-            this.stackPanel7.Location = new System.Drawing.Point(3, 41);
-            this.stackPanel7.Name = "stackPanel7";
-            this.stackPanel7.Size = new System.Drawing.Size(214, 32);
-            this.stackPanel7.TabIndex = 20;
-            this.stackPanel7.Text = "stackPanel7";
-            // 
-            // input_itemsize
-            // 
-            this.input_itemsize.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.input_itemsize.Location = new System.Drawing.Point(97, 3);
-            this.input_itemsize.Name = "input_itemsize";
-            this.input_itemsize.PlaceholderText = "数值或百分比";
-            this.input_itemsize.Size = new System.Drawing.Size(115, 26);
-            this.input_itemsize.TabIndex = 5;
-            this.input_itemsize.WaveSize = 0;
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.Location = new System.Drawing.Point(3, 3);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(88, 26);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "ItemSize";
-            // 
-            // stackPanel5
-            // 
-            this.stackPanel5.Controls.Add(this.input_gap);
-            this.stackPanel5.Controls.Add(this.label3);
-            this.stackPanel5.Location = new System.Drawing.Point(3, 3);
-            this.stackPanel5.Name = "stackPanel5";
-            this.stackPanel5.Size = new System.Drawing.Size(214, 32);
-            this.stackPanel5.TabIndex = 19;
-            this.stackPanel5.Text = "stackPanel5";
-            // 
-            // input_gap
-            // 
-            this.input_gap.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
-            this.input_gap.Location = new System.Drawing.Point(97, 3);
-            this.input_gap.Minimum = new decimal(new int[] {
-            0,
-            0,
-            0,
-            0});
-            this.input_gap.Name = "input_gap";
-            this.input_gap.Size = new System.Drawing.Size(115, 26);
-            this.input_gap.TabIndex = 5;
-            this.input_gap.Text = "0";
-            this.input_gap.WaveSize = 0;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.Location = new System.Drawing.Point(3, 3);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 26);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Gap";
-            // 
-            // divider1
-            // 
-            this.divider1.Location = new System.Drawing.Point(3, 79);
-            this.divider1.Name = "divider1";
-            this.divider1.Size = new System.Drawing.Size(694, 12);
-            this.divider1.TabIndex = 10;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.Location = new System.Drawing.Point(3, 49);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(694, 24);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "将子元素排列成水平或垂直的一行。";
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(3, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(694, 40);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "StackPanel 堆叠布局";
-            // 
             // buttonCZ
             // 
             this.buttonCZ.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
@@ -245,10 +157,9 @@
             this.switch_vertical.Checked = true;
             this.switch_vertical.Location = new System.Drawing.Point(97, 3);
             this.switch_vertical.Name = "switch_vertical";
-            this.switch_vertical.Size = new System.Drawing.Size(60, 26);
+            this.switch_vertical.Size = new System.Drawing.Size(50, 26);
             this.switch_vertical.TabIndex = 6;
             this.switch_vertical.Text = "switch1";
-            this.switch_vertical.WaveSize = 0;
             // 
             // label6
             // 
@@ -258,6 +169,7 @@
             this.label6.Size = new System.Drawing.Size(88, 26);
             this.label6.TabIndex = 4;
             this.label6.Text = "Vertical";
+            this.label6.TooltipConfig = null;
             // 
             // stackPanel6
             // 
@@ -274,10 +186,9 @@
             this.switch_autoscroll.AutoCheck = true;
             this.switch_autoscroll.Location = new System.Drawing.Point(97, 3);
             this.switch_autoscroll.Name = "switch_autoscroll";
-            this.switch_autoscroll.Size = new System.Drawing.Size(60, 26);
+            this.switch_autoscroll.Size = new System.Drawing.Size(50, 26);
             this.switch_autoscroll.TabIndex = 5;
             this.switch_autoscroll.Text = "switch1";
-            this.switch_autoscroll.WaveSize = 0;
             // 
             // label4
             // 
@@ -287,6 +198,99 @@
             this.label4.Size = new System.Drawing.Size(88, 26);
             this.label4.TabIndex = 4;
             this.label4.Text = "AutoScroll";
+            this.label4.TooltipConfig = null;
+            // 
+            // stackPanel7
+            // 
+            this.stackPanel7.Controls.Add(this.input_itemsize);
+            this.stackPanel7.Controls.Add(this.label5);
+            this.stackPanel7.Location = new System.Drawing.Point(3, 41);
+            this.stackPanel7.Name = "stackPanel7";
+            this.stackPanel7.Size = new System.Drawing.Size(214, 32);
+            this.stackPanel7.TabIndex = 20;
+            this.stackPanel7.Text = "stackPanel7";
+            // 
+            // input_itemsize
+            // 
+            this.input_itemsize.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.input_itemsize.Location = new System.Drawing.Point(97, 3);
+            this.input_itemsize.Name = "input_itemsize";
+            this.input_itemsize.PlaceholderText = "数值或百分比";
+            this.input_itemsize.Size = new System.Drawing.Size(115, 26);
+            this.input_itemsize.TabIndex = 5;
+            this.input_itemsize.WaveSize = 0;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.Location = new System.Drawing.Point(3, 3);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(88, 26);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "ItemSize";
+            this.label5.TooltipConfig = null;
+            // 
+            // stackPanel5
+            // 
+            this.stackPanel5.Controls.Add(this.input_gap);
+            this.stackPanel5.Controls.Add(this.label3);
+            this.stackPanel5.Location = new System.Drawing.Point(3, 3);
+            this.stackPanel5.Name = "stackPanel5";
+            this.stackPanel5.Size = new System.Drawing.Size(214, 32);
+            this.stackPanel5.TabIndex = 19;
+            this.stackPanel5.Text = "stackPanel5";
+            // 
+            // input_gap
+            // 
+            this.input_gap.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F);
+            this.input_gap.Location = new System.Drawing.Point(97, 3);
+            this.input_gap.Minimum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.input_gap.Name = "input_gap";
+            this.input_gap.Size = new System.Drawing.Size(115, 26);
+            this.input_gap.TabIndex = 5;
+            this.input_gap.Text = "0";
+            this.input_gap.WaveSize = 0;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.Location = new System.Drawing.Point(3, 3);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(88, 26);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Gap";
+            this.label3.TooltipConfig = null;
+            // 
+            // divider1
+            // 
+            this.divider1.Location = new System.Drawing.Point(3, 79);
+            this.divider1.Name = "divider1";
+            this.divider1.Size = new System.Drawing.Size(694, 12);
+            this.divider1.TabIndex = 10;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label2.Location = new System.Drawing.Point(3, 49);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(694, 24);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "将子元素排列成水平或垂直的一行。";
+            this.label2.TooltipConfig = null;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label1.Location = new System.Drawing.Point(3, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(694, 40);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "StackPanel 堆叠布局";
+            this.label1.TooltipConfig = null;
             // 
             // StackPanelDemo
             // 
@@ -298,10 +302,10 @@
             this.stackPanel1.ResumeLayout(false);
             this.stackPanel2.ResumeLayout(false);
             this.stackPanel3.ResumeLayout(false);
-            this.stackPanel7.ResumeLayout(false);
-            this.stackPanel5.ResumeLayout(false);
             this.stackPanel8.ResumeLayout(false);
             this.stackPanel6.ResumeLayout(false);
+            this.stackPanel7.ResumeLayout(false);
+            this.stackPanel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

@@ -129,7 +129,7 @@
             this.select_Status.List = true;
             this.select_Status.Location = new System.Drawing.Point(280, 3);
             this.select_Status.Name = "select_Status";
-            this.select_Status.Size = new System.Drawing.Size(75, 26);
+            this.select_Status.Size = new System.Drawing.Size(90, 26);
             this.select_Status.TabIndex = 13;
             this.select_Status.WaveSize = 0;
             // 
@@ -141,6 +141,7 @@
             this.label3.Size = new System.Drawing.Size(92, 26);
             this.label3.TabIndex = 12;
             this.label3.Text = "Status";
+            this.label3.TooltipConfig = null;
             // 
             // input_current
             // 
@@ -175,6 +176,7 @@
             this.label8.Size = new System.Drawing.Size(92, 26);
             this.label8.TabIndex = 10;
             this.label8.Text = "Current";
+            this.label8.TooltipConfig = null;
             // 
             // label12
             // 
@@ -184,6 +186,7 @@
             this.label12.Size = new System.Drawing.Size(694, 24);
             this.label12.TabIndex = 42;
             this.label12.Text = "控件配置";
+            this.label12.TooltipConfig = null;
             // 
             // divider1
             // 
@@ -200,6 +203,7 @@
             this.label2.Size = new System.Drawing.Size(694, 24);
             this.label2.TabIndex = 6;
             this.label2.Text = "引导用户按照流程完成任务的导航条。";
+            this.label2.TooltipConfig = null;
             // 
             // label1
             // 
@@ -209,6 +213,7 @@
             this.label1.Size = new System.Drawing.Size(694, 40);
             this.label1.TabIndex = 5;
             this.label1.Text = "Steps 步骤条";
+            this.label1.TooltipConfig = null;
             // 
             // StepsDemo
             // 

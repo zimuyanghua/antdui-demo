@@ -36,9 +36,7 @@
             this.divider = new AntdUI.Divider();
             this.menu = new AntdUI.Menu();
             this.panel_content = new AntdUI.StackPanel();
-            this.label1 = new AntdUI.Label();
             this.titlebar.SuspendLayout();
-            this.panel_content.SuspendLayout();
             this.SuspendLayout();
             // 
             // titlebar
@@ -116,7 +114,6 @@
             // panel_content
             // 
             this.panel_content.AutoScroll = true;
-            this.panel_content.Controls.Add(this.label1);
             this.panel_content.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_content.Location = new System.Drawing.Point(283, 52);
             this.panel_content.Name = "panel_content";
@@ -124,18 +121,6 @@
             this.panel_content.TabIndex = 10;
             this.panel_content.Text = "stackPanel1";
             this.panel_content.Vertical = true;
-            // 
-            // label1
-            // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label1.Location = new System.Drawing.Point(3, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(735, 505);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "欢迎使用 AntdUI Demo";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.TooltipConfig = null;
             // 
             // MainWindow
             // 
@@ -154,7 +139,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AntdUI Demo";
             this.titlebar.ResumeLayout(false);
-            this.panel_content.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -168,6 +152,5 @@
         private AntdUI.Button button_color;
         private AntdUI.Input input_search;
         private AntdUI.StackPanel panel_content;
-        private AntdUI.Label label1;
     }
 }

@@ -1,6 +1,5 @@
 ﻿using AntdUI;
 using System;
-using System.Drawing;
 using System.Windows.Forms;
 
 namespace AntdUIDemo.Views
@@ -24,7 +23,8 @@ namespace AntdUIDemo.Views
 
             select_arrowalign.SelectedIndexChanged += select_intvalue_SelectedIndexChanged;
             select_shadowalign.SelectedIndexChanged += select_intvalue_SelectedIndexChanged;
-            select_shadowOA.SelectedIndexChanged += select_intvalue_SelectedIndexChanged;
+
+            switch_shadowOA.CheckedChanged += switch_CheckedChanged;
 
             input_arrowsize.ValueChanged += input_decimalvalue_ValueChanged;
             input_radius.ValueChanged += input_decimalvalue_ValueChanged;
@@ -61,7 +61,8 @@ namespace AntdUIDemo.Views
         {
             select_arrowalign.SelectedIndex = 0;
             select_shadowalign.SelectedIndex = 0;
-            select_shadowOA.SelectedIndex = 0;
+
+            switch_shadowOA.Checked = true;
 
             input_arrowsize.Value = 8;
             input_radius.Value = 6;
@@ -94,13 +95,18 @@ namespace AntdUIDemo.Views
             panel.ShadowOffsetX = (int)input_shadowX.Value;
             panel.ShadowOffsetY = (int)input_shadowY.Value;
             panel.ShadowOpacity = (float)input_shadowO.Value;
-            panel.ShadowOpacityAnimation = select_shadowOA.SelectedIndex == 0;
+            panel.ShadowOpacityAnimation = switch_shadowOA.Checked;
             panel.ShadowOpacityHover = (float)input_shadowOH.Value;
         }
 
         #region 控件事件
 
         private void colorPicker_ValueChanged(object sender, ColorEventArgs e)
+        {
+            LoadPanel();
+        }
+
+        private void switch_CheckedChanged(object sender, BoolEventArgs e)
         {
             LoadPanel();
         }

@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(InputDemo));
             this.stackPanel1 = new AntdUI.StackPanel();
+            this.flowPanel9 = new AntdUI.FlowPanel();
+            this.input18 = new AntdUI.Input();
+            this.input20 = new AntdUI.Input();
+            this.label11 = new AntdUI.Label();
             this.flowPanel8 = new AntdUI.FlowPanel();
             this.input_status = new AntdUI.Input();
             this.input15 = new AntdUI.Input();
@@ -72,11 +76,8 @@
             this.label2 = new AntdUI.Label();
             this.label1 = new AntdUI.Label();
             this.tooltipComponent1 = new AntdUI.TooltipComponent();
-            this.label11 = new AntdUI.Label();
-            this.flowPanel9 = new AntdUI.FlowPanel();
-            this.input20 = new AntdUI.Input();
-            this.input18 = new AntdUI.Input();
             this.stackPanel1.SuspendLayout();
+            this.flowPanel9.SuspendLayout();
             this.flowPanel8.SuspendLayout();
             this.flowPanel7.SuspendLayout();
             this.flowPanel3.SuspendLayout();
@@ -87,7 +88,6 @@
             this.flowPanel4.SuspendLayout();
             this.flowPanel2.SuspendLayout();
             this.flowPanel1.SuspendLayout();
-            this.flowPanel9.SuspendLayout();
             this.SuspendLayout();
             // 
             // stackPanel1
@@ -120,6 +120,49 @@
             this.stackPanel1.TabIndex = 0;
             this.stackPanel1.Text = "stackPanel1";
             this.stackPanel1.Vertical = true;
+            // 
+            // flowPanel9
+            // 
+            this.flowPanel9.Controls.Add(this.input18);
+            this.flowPanel9.Controls.Add(this.input20);
+            this.flowPanel9.Location = new System.Drawing.Point(3, 757);
+            this.flowPanel9.Name = "flowPanel9";
+            this.flowPanel9.Size = new System.Drawing.Size(694, 38);
+            this.flowPanel9.TabIndex = 28;
+            this.flowPanel9.Text = "flowPanel9";
+            // 
+            // input18
+            // 
+            this.input18.Badge = "";
+            this.input18.CaretColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(87)))), ((int)(((byte)(34)))));
+            this.input18.CaretSpeed = 500;
+            this.input18.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.input18.Location = new System.Drawing.Point(209, 3);
+            this.input18.Name = "input18";
+            this.input18.Size = new System.Drawing.Size(200, 32);
+            this.input18.TabIndex = 1;
+            this.input18.WaveSize = 0;
+            // 
+            // input20
+            // 
+            this.input20.Badge = "";
+            this.input20.CaretColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
+            this.input20.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.input20.Location = new System.Drawing.Point(3, 3);
+            this.input20.Name = "input20";
+            this.input20.Size = new System.Drawing.Size(200, 32);
+            this.input20.TabIndex = 0;
+            this.input20.WaveSize = 0;
+            // 
+            // label11
+            // 
+            this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label11.Location = new System.Drawing.Point(3, 727);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(694, 24);
+            this.label11.TabIndex = 27;
+            this.label11.Text = "光标颜色速度";
+            this.label11.TooltipConfig = null;
             // 
             // flowPanel8
             // 
@@ -175,6 +218,7 @@
             this.label10.Size = new System.Drawing.Size(694, 24);
             this.label10.TabIndex = 25;
             this.label10.Text = "状态";
+            this.label10.TooltipConfig = null;
             // 
             // flowPanel7
             // 
@@ -205,6 +249,7 @@
             this.label9.Size = new System.Drawing.Size(694, 24);
             this.label9.TabIndex = 23;
             this.label9.Text = "提示组合";
+            this.label9.TooltipConfig = null;
             // 
             // flowPanel3
             // 
@@ -298,6 +343,7 @@
             this.label7.Size = new System.Drawing.Size(694, 24);
             this.label7.TabIndex = 21;
             this.label7.Text = "按钮组合";
+            this.label7.TooltipConfig = null;
             // 
             // flowPanel6
             // 
@@ -341,6 +387,7 @@
             this.label8.Size = new System.Drawing.Size(694, 24);
             this.label8.TabIndex = 19;
             this.label8.Text = "边框显示";
+            this.label8.TooltipConfig = null;
             // 
             // flowPanel5
             // 
@@ -361,6 +408,7 @@
             this.input17.Name = "input17";
             this.input17.PasswordChar = '*';
             this.input17.PasswordCopy = true;
+            this.input17.PasswordPaste = false;
             this.input17.PlaceholderText = "密码不可粘贴";
             this.input17.Size = new System.Drawing.Size(200, 32);
             this.input17.TabIndex = 2;
@@ -401,6 +449,7 @@
             this.label6.Size = new System.Drawing.Size(694, 24);
             this.label6.TabIndex = 15;
             this.label6.Text = "密码框";
+            this.label6.TooltipConfig = null;
             // 
             // flowPanel4
             // 
@@ -444,6 +493,7 @@
             this.label5.Size = new System.Drawing.Size(694, 24);
             this.label5.TabIndex = 13;
             this.label5.Text = "多行文本";
+            this.label5.TooltipConfig = null;
             // 
             // flowPanel2
             // 
@@ -490,6 +540,7 @@
             this.label4.Size = new System.Drawing.Size(694, 24);
             this.label4.TabIndex = 10;
             this.label4.Text = "前/后标签";
+            this.label4.TooltipConfig = null;
             // 
             // flowPanel1
             // 
@@ -544,6 +595,7 @@
             this.label3.Size = new System.Drawing.Size(694, 24);
             this.label3.TabIndex = 8;
             this.label3.Text = "基本类型";
+            this.label3.TooltipConfig = null;
             // 
             // divider1
             // 
@@ -560,6 +612,7 @@
             this.label2.Size = new System.Drawing.Size(694, 24);
             this.label2.TabIndex = 6;
             this.label2.Text = "通过鼠标或键盘输入内容，是最基础的表单域的包装。";
+            this.label2.TooltipConfig = null;
             // 
             // label1
             // 
@@ -569,53 +622,12 @@
             this.label1.Size = new System.Drawing.Size(694, 40);
             this.label1.TabIndex = 5;
             this.label1.Text = "Input 输入框";
+            this.label1.TooltipConfig = null;
             // 
             // tooltipComponent1
             // 
             this.tooltipComponent1.ArrowAlign = AntdUI.TAlign.TL;
             this.tooltipComponent1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            // 
-            // label11
-            // 
-            this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label11.Location = new System.Drawing.Point(3, 727);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(694, 24);
-            this.label11.TabIndex = 27;
-            this.label11.Text = "光标颜色速度";
-            // 
-            // flowPanel9
-            // 
-            this.flowPanel9.Controls.Add(this.input18);
-            this.flowPanel9.Controls.Add(this.input20);
-            this.flowPanel9.Location = new System.Drawing.Point(3, 757);
-            this.flowPanel9.Name = "flowPanel9";
-            this.flowPanel9.Size = new System.Drawing.Size(694, 38);
-            this.flowPanel9.TabIndex = 28;
-            this.flowPanel9.Text = "flowPanel9";
-            // 
-            // input20
-            // 
-            this.input20.Badge = "";
-            this.input20.CaretColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(175)))), ((int)(((byte)(80)))));
-            this.input20.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.input20.Location = new System.Drawing.Point(3, 3);
-            this.input20.Name = "input20";
-            this.input20.Size = new System.Drawing.Size(200, 32);
-            this.input20.TabIndex = 0;
-            this.input20.WaveSize = 0;
-            // 
-            // input18
-            // 
-            this.input18.Badge = "";
-            this.input18.CaretColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(87)))), ((int)(((byte)(34)))));
-            this.input18.CaretSpeed = 500;
-            this.input18.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.input18.Location = new System.Drawing.Point(209, 3);
-            this.input18.Name = "input18";
-            this.input18.Size = new System.Drawing.Size(200, 32);
-            this.input18.TabIndex = 1;
-            this.input18.WaveSize = 0;
             // 
             // InputDemo
             // 
@@ -624,6 +636,7 @@
             this.Name = "InputDemo";
             this.Size = new System.Drawing.Size(700, 821);
             this.stackPanel1.ResumeLayout(false);
+            this.flowPanel9.ResumeLayout(false);
             this.flowPanel8.ResumeLayout(false);
             this.flowPanel7.ResumeLayout(false);
             this.flowPanel3.ResumeLayout(false);
@@ -634,7 +647,6 @@
             this.flowPanel4.ResumeLayout(false);
             this.flowPanel2.ResumeLayout(false);
             this.flowPanel1.ResumeLayout(false);
-            this.flowPanel9.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
