@@ -15,7 +15,7 @@
     <AssemblyVersion>$(Version)</AssemblyVersion>
     <Version>1.6.8 </Version>
     <Authors>czz_y</Authors>
-    <Description>基于 Winform UI框架 AntdUI 设计的Demo</Description>
+    <Description>基于 Winform UI框架 AntdUI 设计的 Demo</Description>
     <PackageProjectUrl>https://gitee.com/mubaiyanghua/antd-uidemo</PackageProjectUrl>
     <PackageIcon>logo.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
