@@ -18,11 +18,11 @@ namespace AntdUIDemo.Views
 
         private void BindEventHandler()
         {
-            select_collapsed.SelectedIndexChanged += select_intvalue_SelectedIndexChanged;
-            select_indent.SelectedIndexChanged += select_intvalue_SelectedIndexChanged;
-            select_round.SelectedIndexChanged += select_intvalue_SelectedIndexChanged;
-            select_showsubback.SelectedIndexChanged += select_intvalue_SelectedIndexChanged;
-            select_unique.SelectedIndexChanged += select_intvalue_SelectedIndexChanged;
+            switch_collapsed.CheckedChanged += switch_CheckedChanged;
+            switch_indent.CheckedChanged += switch_CheckedChanged;
+            switch_round.CheckedChanged += switch_CheckedChanged;
+            switch_showsubback.CheckedChanged += switch_CheckedChanged;
+            switch_unique.CheckedChanged += switch_CheckedChanged;
 
             input_radius.ValueChanged += Input_decimal_ValueChanged;
 
@@ -32,6 +32,11 @@ namespace AntdUIDemo.Views
             colorPicker_backactive.ValueChanged += ColorPicker_ValueChanged;
 
             buttonCZ.Click += ButtonCZ_Click;
+        }
+
+        private void switch_CheckedChanged(object sender, BoolEventArgs e)
+        {
+            LoadMenu();
         }
 
         private void ButtonCZ_Click(object sender, EventArgs e)
@@ -57,11 +62,11 @@ namespace AntdUIDemo.Views
 
         private void InitData()
         {
-            select_collapsed.SelectedIndex = 1;
-            select_indent.SelectedIndex = 0;
-            select_round.SelectedIndex = 1;
-            select_showsubback.SelectedIndex = 1;
-            select_unique.SelectedIndex = 1;
+            switch_collapsed.Checked = false;
+            switch_indent.Checked = true;
+            switch_round.Checked = false;
+            switch_showsubback.Checked = false;
+            switch_unique.Checked = false;
 
             input_radius.Value = 6;
 
@@ -80,11 +85,11 @@ namespace AntdUIDemo.Views
 
         private void ApplyMenuSettings(AntdUI.Menu menu)
         {
-            menu.Collapsed = select_collapsed.SelectedIndex == 0;
-            menu.Indent = select_indent.SelectedIndex == 0;
-            menu.Round = select_round.SelectedIndex == 0;
-            menu.ShowSubBack = select_showsubback.SelectedIndex == 0;
-            menu.Unique = select_unique.SelectedIndex == 0;
+            menu.Collapsed = switch_collapsed.Checked;
+            menu.Indent = switch_indent.Checked;
+            menu.Round = switch_round.Checked;
+            menu.ShowSubBack = switch_showsubback.Checked;
+            menu.Unique = switch_unique.Checked;
 
             menu.Radius = (int)input_radius.Value;
 
