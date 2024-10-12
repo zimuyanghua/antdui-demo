@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AntdUI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,6 +33,46 @@ namespace AntdUIDemo.Views
             button_i.Click += Button_loading_Click;
             button_w.Click += Button_loading_Click;
             button_s.Click += Button_loading_Click;
+
+            button_BL.Click += Button_Align_Click;
+            button_Bottom.Click += Button_Align_Click;
+            button_BR.Click += Button_Align_Click;
+            button_TL.Click += Button_Align_Click;
+            button_Top.Click += Button_Align_Click;
+            button_TR.Click += Button_Align_Click;
+        }
+
+        private void Button_Align_Click(object sender, EventArgs e)
+        {
+            var button = (AntdUI.Button)sender;
+            var text = button.Text;
+            var align = TAlignFrom.TR;
+            switch (text)
+            {
+                case "TL":
+                    align = TAlignFrom.TL;
+                    break;
+                case "TR":
+                    align = TAlignFrom.TR;
+                    break;
+                case "Top":
+                    align = TAlignFrom.Top;
+                    break;
+                case "BR":
+                    align = TAlignFrom.BR;
+                    break;
+                case "BL":
+                    align = TAlignFrom.BL;
+                    break;
+                case "Bottom":
+                    align = TAlignFrom.Bottom;
+                    break;
+            }
+            AntdUI.Message.open(new AntdUI.Message.Config(window, "Hello AntdUI Demo!", TType.Info)
+            {
+                AutoClose = 3,
+                Align = align
+            });
         }
 
         private void Button_loading_Click(object sender, EventArgs e)

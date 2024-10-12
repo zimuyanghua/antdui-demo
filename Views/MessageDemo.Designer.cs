@@ -44,13 +44,24 @@
             this.divider1 = new AntdUI.Divider();
             this.label2 = new AntdUI.Label();
             this.label1 = new AntdUI.Label();
+            this.flowPanel3 = new AntdUI.FlowPanel();
+            this.button_BL = new AntdUI.Button();
+            this.button_Bottom = new AntdUI.Button();
+            this.button_BR = new AntdUI.Button();
+            this.button_TR = new AntdUI.Button();
+            this.button_Top = new AntdUI.Button();
+            this.button_TL = new AntdUI.Button();
+            this.label5 = new AntdUI.Label();
             this.stackPanel1.SuspendLayout();
             this.flowPanel1.SuspendLayout();
             this.flowPanel2.SuspendLayout();
+            this.flowPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // stackPanel1
             // 
+            this.stackPanel1.Controls.Add(this.flowPanel3);
+            this.stackPanel1.Controls.Add(this.label5);
             this.stackPanel1.Controls.Add(this.flowPanel1);
             this.stackPanel1.Controls.Add(this.label4);
             this.stackPanel1.Controls.Add(this.flowPanel2);
@@ -139,6 +150,7 @@
             this.label4.Size = new System.Drawing.Size(694, 24);
             this.label4.TabIndex = 41;
             this.label4.Text = "延时用法";
+            this.label4.TooltipConfig = null;
             // 
             // flowPanel2
             // 
@@ -204,6 +216,7 @@
             this.label3.Size = new System.Drawing.Size(694, 24);
             this.label3.TabIndex = 25;
             this.label3.Text = "基本用法";
+            this.label3.TooltipConfig = null;
             // 
             // divider1
             // 
@@ -220,6 +233,7 @@
             this.label2.Size = new System.Drawing.Size(694, 24);
             this.label2.TabIndex = 23;
             this.label2.Text = "全局展示操作反馈信息。";
+            this.label2.TooltipConfig = null;
             // 
             // label1
             // 
@@ -229,6 +243,97 @@
             this.label1.Size = new System.Drawing.Size(694, 40);
             this.label1.TabIndex = 22;
             this.label1.Text = "Message 全局提示";
+            this.label1.TooltipConfig = null;
+            // 
+            // flowPanel3
+            // 
+            this.flowPanel3.Controls.Add(this.button_BL);
+            this.flowPanel3.Controls.Add(this.button_Bottom);
+            this.flowPanel3.Controls.Add(this.button_BR);
+            this.flowPanel3.Controls.Add(this.button_TR);
+            this.flowPanel3.Controls.Add(this.button_Top);
+            this.flowPanel3.Controls.Add(this.button_TL);
+            this.flowPanel3.Location = new System.Drawing.Point(3, 275);
+            this.flowPanel3.Name = "flowPanel3";
+            this.flowPanel3.Size = new System.Drawing.Size(694, 38);
+            this.flowPanel3.TabIndex = 47;
+            this.flowPanel3.Text = "flowPanel3";
+            // 
+            // button_BL
+            // 
+            this.button_BL.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button_BL.Location = new System.Drawing.Point(433, 3);
+            this.button_BL.Name = "button_BL";
+            this.button_BL.Size = new System.Drawing.Size(80, 32);
+            this.button_BL.TabIndex = 7;
+            this.button_BL.Text = "BL";
+            this.button_BL.Type = AntdUI.TTypeMini.Primary;
+            this.button_BL.WaveSize = 0;
+            // 
+            // button_Bottom
+            // 
+            this.button_Bottom.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button_Bottom.Location = new System.Drawing.Point(347, 3);
+            this.button_Bottom.Name = "button_Bottom";
+            this.button_Bottom.Size = new System.Drawing.Size(80, 32);
+            this.button_Bottom.TabIndex = 6;
+            this.button_Bottom.Text = "Bottom";
+            this.button_Bottom.Type = AntdUI.TTypeMini.Primary;
+            this.button_Bottom.WaveSize = 0;
+            // 
+            // button_BR
+            // 
+            this.button_BR.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button_BR.Location = new System.Drawing.Point(261, 3);
+            this.button_BR.Name = "button_BR";
+            this.button_BR.Size = new System.Drawing.Size(80, 32);
+            this.button_BR.TabIndex = 5;
+            this.button_BR.Text = "BR";
+            this.button_BR.Type = AntdUI.TTypeMini.Primary;
+            this.button_BR.WaveSize = 0;
+            // 
+            // button_TR
+            // 
+            this.button_TR.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button_TR.Location = new System.Drawing.Point(175, 3);
+            this.button_TR.Name = "button_TR";
+            this.button_TR.Size = new System.Drawing.Size(80, 32);
+            this.button_TR.TabIndex = 4;
+            this.button_TR.Text = "TR";
+            this.button_TR.Type = AntdUI.TTypeMini.Primary;
+            this.button_TR.WaveSize = 0;
+            // 
+            // button_Top
+            // 
+            this.button_Top.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button_Top.Location = new System.Drawing.Point(89, 3);
+            this.button_Top.Name = "button_Top";
+            this.button_Top.Size = new System.Drawing.Size(80, 32);
+            this.button_Top.TabIndex = 3;
+            this.button_Top.Text = "Top";
+            this.button_Top.Type = AntdUI.TTypeMini.Primary;
+            this.button_Top.WaveSize = 0;
+            // 
+            // button_TL
+            // 
+            this.button_TL.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.button_TL.Location = new System.Drawing.Point(3, 3);
+            this.button_TL.Name = "button_TL";
+            this.button_TL.Size = new System.Drawing.Size(80, 32);
+            this.button_TL.TabIndex = 2;
+            this.button_TL.Text = "TL";
+            this.button_TL.Type = AntdUI.TTypeMini.Primary;
+            this.button_TL.WaveSize = 0;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label5.Location = new System.Drawing.Point(3, 245);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(694, 24);
+            this.label5.TabIndex = 46;
+            this.label5.Text = "弹出位置";
+            this.label5.TooltipConfig = null;
             // 
             // MessageDemo
             // 
@@ -239,6 +344,7 @@
             this.stackPanel1.ResumeLayout(false);
             this.flowPanel1.ResumeLayout(false);
             this.flowPanel2.ResumeLayout(false);
+            this.flowPanel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -261,5 +367,13 @@
         private AntdUI.Button button_e;
         private AntdUI.Button button_s;
         private AntdUI.Label label4;
+        private AntdUI.FlowPanel flowPanel3;
+        private AntdUI.Button button_BL;
+        private AntdUI.Button button_Bottom;
+        private AntdUI.Button button_BR;
+        private AntdUI.Button button_TR;
+        private AntdUI.Button button_Top;
+        private AntdUI.Button button_TL;
+        private AntdUI.Label label5;
     }
 }
